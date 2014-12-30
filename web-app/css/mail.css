@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+/*mail*/
+#mail{width:680px; margin:auto; padding:0}
+#mail h1{ color:#023557; font-size:18px; font-weight:bold; margin:10px 0; text-align:right}
+#mail h1 label{ color:#F00; font-size:25px; padding:10px}
+.maildetail{ margin:5px 0; border:1px solid #ccc}
+.maildetail .mail-one{ height:32px; background:#007CC3}
+.maildetail .mail-one li{ list-style:none; float:left; padding:0 5px;width:150px}
+.maildetail .mail-one li a{color:#f0f0f0; text-decoration:none; display:block; line-height:32px}
+.maildetail p{padding:0 5px}
+a{ text-decoration:none; color:#0E70A5}
+.mail-list{ padding:15px 5px 0 5px}
+.mail-list h2{color:#007CC3; font-size:22px; font-weight:bold; border-bottom:2px solid #007CC3}
+.mail-list table{width:100%}
+.mail-list table tr td{ padding:5px 0}
+.mail-list table tr td label{ font-weight:bold}
+.mail-list table tr td a{color:#333}
+.mail-list table tr td.mdh a{ font-size:20px; color:#0E70A5; font-weight:bold}
+.mail-list .note{ color:red; background:#F7E496}
+.mail-list table tr td.mdl a{ font-size:15px; color:#0E70A5;}
+.mail-list p{ padding:5px 0}

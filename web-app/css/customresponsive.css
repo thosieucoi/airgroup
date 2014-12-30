@@ -1,0 +1,146 @@
+.clearfix {
+	zoom: 1;
+}
+
+.clearfix:before,.clearfix:after {
+	content: "";
+	display: table;
+	line-height: 0;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.hide-text {
+	background-color: transparent;
+	border: 0;
+	color: transparent;
+	font: 0/0 a;
+	text-shadow: none;
+}
+
+.input-block-level {
+	box-sizing: border-box;
+	display: block;
+	min-height: 30px;
+	moz-box-sizing: border-box;
+	webkit-box-sizing: border-box;
+	width: 100%;
+}
+
+@
+-ms-viewport {
+	width: device-width;
+}
+
+.hidden {
+	display: none;
+	visibility: hidden;
+}
+
+@media print {
+	.visible-print {
+		display: inherit !important;
+	}
+	.hidden-print {
+		display: none !important;
+	}
+}
+
+@media ( min-width :1200px) {
+}
+
+@media ( min-width :769px) and (max-width:979px) {
+	.bill-information td {
+		display: block;
+	}
+
+}
+
+@media ( max-width :768px) {
+	.bill-information td {
+		display: block;
+	}
+
+}
+
+@media ( max-width :480px) {
+	#tim-chuyen-bay .tour-box{
+		height: 395px;
+	}
+	
+	div.sbzoff{
+		display: none !important; 
+	}
+	
+	div.sbzon{
+		display: none !important;
+	}
+	
+	#tour-page #tour-section #chon-chuyen-bay-1 .infor-t textarea {
+		width: 100%;
+	}
+	.check-box {
+		padding: 7px 11px 20px 20px;
+	}
+	#tour-page #tour-section #chon-chuyen-bay-1 .infor-t .pay-checked .pay-add
+		{
+		margin: 0 0 0 0px;
+	}
+	#tour-page #tour-section #chon-chuyen-bay-1 input[type="submit"] {
+		padding: 10px 15px;
+	}
+	#break-crumb {
+		height: 0px;
+	}
+	.fare-condition td {
+		display: block;
+	}
+	.fare-information td {
+		float: left;
+	}
+	.luggage-information td {
+		float: left;
+	}
+	.luggage-information td select {
+		width: 201px;
+	}
+	.passenger-information td {
+		display: block;
+	}
+	.contact-v td {
+		display: block;
+	}
+	.bill-information td {
+		display: block;
+	}
+	#tour-page #tour-section #chon-chuyen-bay-1 .qt-select {
+		margin: 10px 0px 25px
+	}
+	#tour-page #tour-section #chon-chuyen-bay-1 {
+		min-height: 515px;
+	}
+	#tour-page #tour-section .right {
+		float: right;
+		width: 100%;
+	}
+	element.style {
+		display: block;
+	}
+	#tour-page #tour-section .toen {
+		left: 4px !important;
+	}
+	#tour-page #tour-section .ticketone {
+		left: 4px !important;
+	}
+}
+
+@media ( min-width :992px) {
+}
+
+@media ( max-width :979px) {
+}
+
+@media ( min-width :980px) {
+}

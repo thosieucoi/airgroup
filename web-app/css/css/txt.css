@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+
+.clear {
+	clear: both
+}
+img {
+	border: 0px
+}
+a {
+	text-decoration: none;
+}
+.tit {
+	color: #004494;
+}
+ul.inside {
+	list-style-position: inside
+}
+ol.inside {
+	list-style-position: inside
+}
+ul.listnone {
+	list-style-type: circle
+

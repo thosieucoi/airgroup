@@ -1,0 +1,360 @@
+/*style bookking*/
+/*style bookking*/
+.book {
+	width:400px;
+	height:360px;
+	margin:0 10px;
+	float:left;
+	border-radius: 10px;
+	position:relative;
+	box-shadow:0px 0px 5px #333;
+	background-color:#900;
+	background: -webkit-linear-gradient(top left, #C00, #900); /* For Safari */
+	background: -o-linear-gradient(top left, #C00, #900); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(top left, #C00, #900); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to top left, #C00, #900); /* Standard syntax (must be last) */
+	
+	}
+.book-head {
+	padding:15px;
+	margin-left:20px;
+	background:url(../Image/icon/icon-air.png)  no-repeat ;
+	text-align:center;
+	font-size:16px;
+	font-weight:bold;
+	color:#FFF;
+	}
+.book-cont {
+	width:90%;
+	margin: 0 auto;
+	padding:0 5%;
+	color: #FFF;
+	font-size: 14px;
+	float: left;}
+	
+.book-content-mini {
+	width:90%;
+	margin: 0 auto;
+	padding:0 5%;
+	font-size: 14px;
+	float: left;
+}
+.line {
+	width:100%;
+	font-weight: bold;
+	border-top: dotted 1px #FFFFFF;
+	float:left;
+}
+.line .line-go {
+	width: 45%;
+	margin-top:10px;
+	margin-right:10%;
+	min-width:160px;
+	float: left;
+}
+.line .line-to {
+	width: 45%;
+	margin-top:10px;
+	min-width:160px;
+	float: left;
+}
+
+.time {
+	width: 100%;
+	margin: 5px auto;
+	float:left;
+}
+.time .time-go {
+	width: 45%;
+	margin-top:5px;
+	margin-right:10%;
+	min-width:160px;
+	float: left;
+}
+.time .time-re {
+	width: 45%;
+	margin-top:5px;
+	min-width:160px;
+	float: left;
+}
+
+.number{
+	width: 100%;
+	margin: 0px auto;
+	padding:5px 0;
+	border-top: dotted 1px #FFFFFF;
+	border-bottom: dotted 1px #FFFFFF;
+	float:left;
+}
+.num-label {
+	width: 33%;
+	text-align: center;
+	margin-top: 5px;
+	float: left;
+}
+
+.book-submit {
+ 	width:100$;
+	padding:8px;
+	text-align: center;
+	clear: both
+}
+.book-submit input {
+	color: #be1e2d;
+	padding:8px 5px 8px 35px;
+	cursor: pointer;
+	background:no-repeat url(../Image/icon/seach.png) #F90;
+	color:#FFF;
+	font-size:16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border:solid 2px #FFFFFF;
+	border-radius:10px;
+	}
+#validateMessage{
+	height:15px;
+	text-align:center;
+	color:#eee;
+	}
+#gog {
+	width: 100%;
+	height: 25px;
+	margin-top: 5px;
+	border: solid 1px #CCCCCC;
+	border-radius: 3px;
+}
+#tog {
+	width: 100%;
+	height: 25px;
+	margin-top: 5px;
+	border: solid 1px #CCCCCC;
+	border-radius: 3px;
+}
+#oday {
+	width: 25%;
+	margin-top: 5px;
+	height: 25px;
+	border: solid 1px #CCCCCC;
+	border-radius: 3px;
+}
+#iday {
+	width: 25%;
+	margin-top: 5px;
+	height: 25px;
+	border: solid 1px #CCCCCC;
+	border-radius: 3px;
+}
+#omonth {
+	width: 55%;
+	margin-top: 5px;
+	height: 25px;
+	border: solid 1px #CCCCCC;
+	border-radius: 3px;
+}
+#imonth {
+	width: 55%;
+	margin-top: 5px;
+	height: 25px;
+	border: solid 1px #CCCCCC;
+	border-radius: 3px;
+}
+
+#adults {
+	width: 50%;
+	margin: 5px 0;
+	height: 25px;
+	border: solid 1px #CCCCCC;
+	border-radius: 3px;
+}
+#kids {
+	width: 50%;
+	margin: 5px 0;
+	height: 25px;
+	border: solid 1px #CCCCCC;
+	border-radius: 3px;
+}
+#infants {
+	width: 50%;
+	margin: 5px 0;
+	height: 25px;
+	border: solid 1px #CCCCCC;
+	border-radius: 3px;
+}
+
+
+
+/*ticket select*/
+.ticketone {
+	font-family:Arial, Helvetica, sans-serif;
+	position: absolute;
+	background: #FCFBBB;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	display: none;
+	height: auto;
+	left: 15px;
+	outline: 0 none;
+	top: 130px;
+	width: 580px;
+	z-index: 1005;
+	border: 1px solid #f0f0f0;
+}
+.ticketone .titla {
+	background: #F7B64A;
+	margin: 5px;
+	padding: 8px 10px;
+	border: 1px solid #F93;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	text-align: left
+}
+.ticketone .titla .close {
+	float: right;
+	font-weight: bold;
+	color: #fff;
+	font-size: 16px;
+	padding: 0 5px
+}
+.ticketone .titla .close:hover {
+	background: #ccc
+}
+.ticketone .se-ticket {
+	float: left;
+	text-align: left;
+	margin: 8px 15px
+}
+.ticketone .se-ticket ul {
+	margin-bottom: 10px;
+	list-style-type: none
+}
+.ticketone .se-ticket ul li {
+	line-height: 24px;
+	padding: 0 30px 0 5px
+}
+.ticketone .se-ticket ul .se-title {
+	padding: 0
+}
+.ticketone .se-ticket ul .se-title a {
+	color: 16px;
+	font-weight: bold;
+	color: #FF7B0F;
+}
+.ticketone .se-ticket ul li:hover {
+	background: #FF7B0F
+}
+.book .ticketone .se-ticket ul li:hover a {
+	color: #fff
+}
+.ticketone .se-ticket ul .se-title:hover {
+	background: none
+}
+.ticketone .se-ticket ul .se-title:hover a {
+	color: #FF7B0F;
+}
+.toen .word, #main .content .book .ticketone .word {
+	margin: 8px 8px !important;
+}
+.ticketone .word h3 {
+	font-weight: bold;
+	color: #FF7B0F;
+	text-align: center;
+	margin-bottom: 10px
+}
+.ticketone .word span {	
+	text-align: center;
+}
+.ticketone .word .auto-segg {
+	margin-top: 10px;
+}
+#tabs {
+	height: 30px;
+	width: 260px
+}
+.toen {
+	left: 221px
+}
+.toen {
+	font-family:Arial, Helvetica, sans-serif;
+	position: absolute;
+	background: #FCFBBB;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	display: none;
+	height: auto;
+	left: 250px;
+	outline: 0 none;
+	top: 130px;
+	width: 580px;
+	z-index: 1005;
+	border: 1px solid #f0f0f0;
+}
+.toen .titla {
+	background: #F7B64A;
+	margin: 5px;
+	padding: 8px 10px;
+	border: 1px solid #F93;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	text-align: left
+}
+.toen .titla .close {
+	float: right;
+	font-weight: bold;
+	color: #fff;
+	font-size: 16px;
+	padding: 0 5px
+}
+.toen .titla .close:hover {
+	background: #ccc
+}
+.toen .se-ticket {
+	float: left;
+	text-align: left;
+	margin: 8px 15px
+}
+.se-ticket ul {
+	margin-bottom: 10px;
+	list-style-type: none
+}
+.toen .se-ticket ul li {
+	line-height: 24px;
+	padding: 0 30px 0 5px
+}
+.toen .se-ticket ul .se-title {
+	padding: 0
+}
+.toen .se-ticket ul .se-title a {
+	color: 16px;
+	font-weight: bold;
+	color: #FF7B0F;
+}
+.toen .se-ticket ul li:hover {
+	background: #FF7B0F
+}
+.toen .se-ticket ul li:hover a {
+	color: #fff
+}
+.toen .se-ticket ul .se-title:hover {
+	background: none
+}
+.toen .se-ticket ul .se-title:hover a {
+	color: #FF7B0F;
+}
+.toen .word h3 {
+	font-weight: bold;
+	color: #FF7B0F;
+	text-align: center;
+	margin-bottom: 10px
+}
+.toen .word span {
+	text-align: center;
+}
+.toen .word .auto-segg {
+	margin-top: 10px;
+}

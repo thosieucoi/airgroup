@@ -1,0 +1,1290 @@
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+a{
+    color: #000;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+
+label{
+    font-weight: normal;
+}
+
+#tour-page{
+    min-width: 960px;
+    position: relative;
+}
+
+.container{
+    width: 940px;
+    margin: 0 auto; padding: 0;
+}
+
+.description{
+    color: #666;
+    font-weight: normal;
+}
+
+.left{
+    float: left;
+}
+
+.center{
+    text-align: center;
+}
+
+.right{
+    float: right;
+}
+
+div.title{
+    text-align: center;
+}
+
+div.title .title{
+    font-size: 16px;
+}
+
+.title-b{
+    font-weight: bold;
+}
+
+.title-i{
+    font-style: italic;
+}
+
+.title-upper{
+    text-transform: uppercase;
+}
+
+.title-orange{
+    color: #ffa500;
+}
+
+.title-red{
+    color: #ff0000;
+}
+
+.title-blue{
+    color: #0000ff;
+}
+
+.title-while{
+    color: #fff;
+}
+
+.title-font-11{
+    font-size: 11px;
+}
+
+[class*="icon-"]{
+    display: inline-block;
+}
+
+.icon-home{
+    background-image: url(../newuiimg/icon-home.png);
+    height: 16px;
+    width: 18px;
+}
+
+.icon-compare{
+    background-image: url(../newuiimg/icn-compare.png);
+    height: 24px;
+    width: 32px;
+}
+
+.icon-bookings{
+    background-image: url(../newuiimg/icon-bookings.png);
+    height: 24px;
+    width: 32px;
+}
+
+.icon-payment{
+    background-image: url(../newuiimg/icon-payment.png);
+    height: 24px;
+    width: 32px;
+}
+
+.icon-tim-chuyen-bay{
+    background-image: url(../newuiimg/icon-tim-chuyen-bay.png);
+    height: 27px;
+    width: 33px;
+}
+
+.icon-search{
+    background-image: url(../newuiimg/icon-search.png);
+    height: 40px;
+    width: 40px;
+}
+
+.tour-nav [class*="icon-"] {
+    margin: 0 5px 0 0;
+}
+
+.bg-type-red{
+    background: #ff0000 url(../newuiimg/background-red.jpg) repeat-x;
+    color: #fff;
+}
+
+.bg-type-1{
+    background: #f7f7f7;
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+}
+
+.bg-type-2{
+    background: #fff url(../newuiimg/bg-type-2.png) repeat-x;
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.region-type-1{
+    font-weight: bold;
+    height: 50px;
+    line-height: 50px;
+}
+
+.region-type-2,
+.region-type-3{
+    min-height: 50px;
+}
+
+.region-type-2 > .title,
+.region-type-3 > .title{
+    line-height: 40px;
+}
+
+.region-type-3{
+    height: 350px;
+}
+
+.region-type-3 ul{
+    margin: 10px;
+}
+
+label.control-label{
+    font-weight: normal;
+}
+
+.control-input, .control-input{
+    color: #666;
+    border: 0 solid #fff;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+.control-row {
+    min-height: 30px;
+}
+
+.form-background-white .control-input{
+    border: 1px solid #e5e5e5;
+}
+
+.tour-tree-circle{
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+
+.tour-tree-circle li{
+    background: url(../newuiimg/arrow-circle.png) 0 5px no-repeat;
+    padding: 0 0 0 15px;
+}
+
+.tour-tree-circle li > a{
+    color: #666;
+    font-weight: bold;
+}
+
+.tour-tree-marker{
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+
+.tour-tree-marker li{
+    background: url(../newuiimg/arrow-marker.png) 0 5px no-repeat;
+    padding-left: 15px;
+}
+
+.tour-tree-marker li > a{
+    color: #666;
+}
+
+.tree-two-cols{
+    overflow: hidden;
+}
+
+.tree-two-cols li {
+    width: 50%;
+    float: left;
+}
+
+.tour-button{
+    background: url(../../images/newuiimg/button-1.png) repeat-x;
+    border: 0 solid transparent;
+    border-radius: 5px;
+    color: #fff;
+    line-height: 28px;
+    height: 28px;
+    width: 100%;
+    padding: 0 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tour-button span{
+    padding: 5px;
+    line-height: 22px;
+}
+
+.box-dotted{
+    border: 1px dotted #ccc;
+}
+
+.box-dashed{
+    border: 1px dashed #ccc;
+}
+
+.box-solid{
+    border: 1px solid #ccc;
+}
+
+table.box-solid tr{
+    border-top: 1px solid #ccc;
+}
+
+table.box-solid tr:first-child{
+    border-top-width: 0;
+}
+
+.box-padding-5{
+    padding: 5px;
+}
+
+.box-padding-10{
+    padding: 10px;
+}
+
+.box-padding-20{
+    padding: 20px;
+}
+
+.box-margin-10{
+    margin: 10px;
+}
+
+.box-margin-20{
+    margin: 20px;
+}
+
+
+.box-margin-left-10{
+    margin-left: 10px;
+}
+
+.box-margin-left-120{
+    margin-left: 120px;
+}
+
+.box-margin-left-250{
+    margin-left: 250px;
+}
+
+.box-border-radius-5{
+    border-radius: 5px;
+}
+
+.box-border-radius-10{
+    border-radius: 10px;
+}
+
+.line{
+    border: 0 solid #ccc;
+}
+
+.line-horizontal{
+    border-top-width: 1px;
+    margin-top: 0; margin-bottom: 0;
+}
+
+.line-vertical{
+    border-left-width: 1px;
+    margin-left: 0; margin-right: 0;
+}
+
+.space-5{
+    margin: 5px 0;
+}
+
+.space-10{
+    margin: 10px 0;
+}
+
+.space-20{
+    margin: 20px 0;
+}
+
+.space-40{
+    margin: 40px 0;
+}
+
+.space-50{
+    margin: 50px 0;
+}
+
+.space-80{
+    margin: 80px 0;
+}
+
+#tour-page .tour-top{
+    height: 115px;
+}
+
+#tour-page .tour-top .row1{
+    height: 38px;
+}
+
+#tour-page .tour-top .row1 h1{
+    color: #666;
+    line-height: 34px;
+    font-size: 16px;
+    margin: 0;
+    font-weight: bold;
+}
+
+#tour-page .tour-top .row1 .contact{
+    margin-top: -4px;
+}
+
+#tour-page .tour-top .row1 .hotline-label {
+    color: #666;
+    font-weight: bold;
+    line-height: 38px;
+}
+
+#tour-page .tour-top .row1 .hotline-phone{
+    color: #d22121;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 38px;
+}
+
+#tour-page .tour-top .row2{
+    height: 132px;
+}
+
+#tour-page .tour-top #tour-services{
+    height: 70px;
+}
+
+#tour-page .tour-top #tour-services ul{
+    list-style: none;
+    margin: 50px 0 0 100px;
+}
+
+#tour-page .tour-top #tour-services ul li{
+    float: left;
+    margin: 0 0 0 20px;
+    padding: 0;
+}
+
+#tour-page .tour-top #tour-services ul li span{
+    float: left;
+    margin-top: 7px;
+}
+
+#tour-page .tour-top #tour-services ul li div{
+    float: left;
+    color: #505050;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+#menu{
+    background: red url(../newuiimg/bakground-menu.png) repeat-x;
+    height: 35px;
+}
+
+#menu #date-time{
+    line-height: 35px;
+    color: #fff;
+    text-shadow: 2px 2px 2px #180C0C;
+}
+
+.tour-nav{
+    list-style: none;
+    height: 35px;
+}
+
+.tour-nav > li{
+    float: left;
+    position: relative;
+}
+
+.tour-nav li a,
+.tour-nav li > span{
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    line-height: 35px;
+    text-decoration: none;
+    padding: 0 8px;
+    display: block;
+    cursor: pointer;
+}
+
+.tour-nav li li{
+    border-top: 1px solid #e0e0e0;
+}
+
+.tour-nav li li a,
+.tour-nav li li > span{
+    color: #777;
+}
+
+.tour-nav li li:hover a,
+.tour-nav li li:focus a,
+.tour-nav li li:active a,
+.tour-nav li li:hover > span,
+.tour-nav li li:focus > span,
+.tour-nav li li:active > span{
+    background-color: #f5f5f5;
+}
+
+.tour-nav > li > a,
+.tour-nav > li > span{
+    text-shadow: 1px 1px 1px #2C2C0D;
+}
+
+.tour-nav > li:first-child > a,
+.tour-nav > li:first-child > span{
+    padding-left: 0;
+}
+
+.tour-nav > li:last-child > a,
+.tour-nav > li:last-child > span{
+    padding-right: 0;
+}
+
+.tour-nav > li.active > a,
+.tour-nav > li:hover > a,
+.tour-nav > li:focus > a,
+.tour-nav > li:active > a,
+.tour-nav > li.active > span,
+.tour-nav > li:hover > span,
+.tour-nav > li:focus > span,
+.tour-nav > li:active > span{
+    color: #ffff00;
+}
+
+.tour-nav li ul{
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-top: none;
+    left: -1px;
+    z-index: 999;
+    border-radius: 0 0 2px 2px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+    width: 200px;
+    display: none;
+}
+
+.tour-nav li:hover ul{
+    display: block;
+}
+
+footer{
+    height: 168px;
+}
+
+footer .container .row{
+}
+
+#tour-footer{
+    background: url(../newuiimg/background-footer.png) repeat-x;
+    border-radius: 5px 5px 0 0;
+    height: 168px;
+}
+
+#tour-footer .logo{
+    margin-top: 20px;
+}
+
+#tour-footer-center {
+    margin: 35px 0;
+    margin-top: 50px;
+}
+
+#tour-footer-right {
+    margin: 35px 0;
+}
+
+#tour-footer-right *{
+    color: #666;
+}
+
+#tour-section{
+    position: relative;
+}
+
+#tim-chuyen-bay .tour-box{
+    background: #ff0000 url(../newuiimg/background-red.jpg) repeat-x;
+    border-radius: 5px;
+    color: #fff;
+    height: 350px;
+}
+
+#tim-chuyen-bay .tour-box div.title{
+    padding: 10px 20px 0;
+}
+
+#tim-chuyen-bay .tour-box div.title img{
+    margin-bottom: 5px;
+}
+
+#tim-chuyen-bay .tour-box div.title span{
+    line-height: 27px;
+}
+
+#tim-chuyen-bay .tour-box div.control-collection{
+    padding: 0 20px 20px;
+}
+
+#tim-chuyen-bay .tour-box div.control-collection .title{
+    line-height: 30px;
+}
+
+#tim-chuyen-bay #diem-di-input,
+#tim-chuyen-bay #diem-den-input{
+    width: 100%;
+}
+
+#tim-chuyen-bay #ngay-di-input,
+#tim-chuyen-bay #ngay-ve-input{
+    text-align: center;
+}
+
+#tim-chuyen-bay.box-large .month-input{
+    margin-left: 10px;
+}
+
+#tim-chuyen-bay.box-small .month-input{
+    margin-left: 17px;
+}
+
+#tim-chuyen-bay.box-large #so-luong-nguoi-lon,
+#tim-chuyen-bay.box-large #so-luong-tre-em,
+#tim-chuyen-bay.box-large #so-luong-em-be{
+    width: 65px;
+}
+
+#tim-chuyen-bay.box-small #so-luong-nguoi-lon,
+#tim-chuyen-bay.box-small #so-luong-tre-em,
+#tim-chuyen-bay.box-small #so-luong-em-be{
+    width: 53px;
+}
+
+#tim-chuyen-bay.box-small label{
+    min-width: 65px;
+}
+
+#tim-chuyen-bay.box-small .description{
+    min-width: 71px;
+}
+
+#tim-chuyen-bay .control-collection .row > div{
+    padding-top: 5px;
+}
+
+#tim-chuyen-bay.box-large .day-input{
+    width: 30px;
+}
+
+#tim-chuyen-bay.box-small .day-input{
+    width: 45px;
+}
+
+#shop-top-3{
+    height: 257px;
+}
+
+#shop-top-3 li{
+    float: left;
+    height: 250px;
+    width: 200px;
+}
+
+#hinh-thuc-thanh-toan li {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#giao-dich .description{
+    margin: 10px;
+}
+
+#giao-dich #banks{
+    height: 210px;
+    overflow-y: auto;
+}
+
+#giao-dich #banks .bank-logo {
+    float: left;
+    width: 70px;
+}
+
+#giao-dich #banks .bank-detail {
+    margin-top: 10px;
+    padding-left: 80px;
+}
+
+#giao-dich #banks .bank-detail .title{
+    line-height: 100%;
+}
+
+.img-news{
+    float: left;
+}
+
+.tree-img-32 .img-news{
+    width: 32px;
+    height: 32px;
+}
+
+.tree-img-60 .img-news{
+    width: 60px;
+    height: 60px;
+}
+
+.tree-img-130 .img-news{
+    width: 130px;
+}
+
+.tour-tree-img{
+    margin: 10px;
+}
+
+.tour-tree-img .img-news{
+    min-width: 16px;
+    min-height: 16px;
+}
+
+.tour-tree-img .detail-news{
+    padding-left: 18px;
+}
+
+.tree-img-32 .detail-news{
+    padding-left: 35px;
+}
+
+.tree-img-60 .detail-news{
+    padding-left: 60px;
+}
+
+.tree-img-130 .detail-news{
+    padding-left: 140px;
+}
+
+.tour-tree-img .detail-news .title{
+    color: #000;
+}
+
+ul.separate-line li{
+    border-top: 1px dotted #ccc;
+    padding-bottom: 5px;
+}
+
+ul.separate-line li:first-child{
+    border-top-width: 0;
+}
+
+ul.separate-box li{
+    border: 1px dotted #ccc;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.location{
+    color: #0065c2;
+    font-weight: bold;
+}
+
+.more{
+    background: url("../newuiimg/arrow-more.jpg") 79px 5px no-repeat;
+    color: #faa61a;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+#ve-may-bay > div,
+#ve-may-bay-da-dat > div,
+#tin-tuc-khuyen-mai > div{
+    height: 395px;
+}
+
+#tour-socials{
+    text-align: right;
+}
+#tour-socials  img:hover{width: 90px}
+
+#tour-cate-details ul{
+    margin: 10px;
+}
+
+#tour-cate-details ul li{
+    margin-top: 10px;
+}
+
+#tour-cate-details > div > img {
+    margin-left: 10px;
+}
+
+#tour-cate-details .detail-news .title{
+    color: #000;
+}
+
+.tour-price,
+.tour-phone{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.menu-cate > li{
+    background: red url(../newuiimg/bakground-menu.png) repeat-x;
+    min-height: 35px;
+}
+
+.menu-cate > li .title{
+    color: #fff; font-weight: bold;
+    line-height: 35px;
+    padding: 10px;
+}
+
+.menu-cate > li ul{
+    background: #eee;
+    padding-left: 20px;
+}
+
+.menu-cate > li li a{
+    color: #666;
+    font-weight: bold;
+    line-height: 28px;
+}
+
+#list-brands{
+    text-align: center;
+}
+
+#list-brands li{
+    float: left;
+    padding-left: 10px;
+}
+
+#list-brands li:first-child{
+    padding-left: 0;
+}
+
+#break-crumb{
+    height: 40px;
+}
+
+#break-crumb img{
+    margin-top: -10px;
+}
+
+#break-crumb a, #break-crumb span{
+    color: #000;
+    text-decoration: none;
+    line-height: 40px;
+}
+
+#break-crumb a.current{
+    color: #ff9900;
+}
+
+#tour-details .adv .title{
+    line-height: 40px;
+}
+
+#tour-details .tour-box{
+    border: 1px dotted #ccc;
+    margin: 0 10px 10px;
+    padding: 10px;
+}
+
+#tour-details #tour-details-content{
+    padding: 10px;
+}
+.adv-left{
+    border: 1px solid #e3e3e3;
+    text-align: center;
+}
+
+.adv-left img{
+    margin-top: 2px;
+}
+
+#gui-phan-hoi{
+    direction: rtl;
+}
+
+#y-kien-khach-hang .command{
+    direction: rtl;
+    padding-top: 10px;
+    border-top: 1px dotted #ccc;
+    margin: 10px;
+}
+
+#dich-vu-bay .line{
+    margin-left: 0;
+}
+
+#thong-tin-hanh-khach label{
+    float: left;
+    width: 150px;
+}
+
+#thong-tin-hanh-khach .control-input{
+    width: 255px;
+}
+
+#thong-tin-hanh-khach .command #next-button{
+    margin-left: 338px;
+}
+
+#dang-ky-email{
+    position: fixed;
+    top: 480px;
+    left: 0;
+    width: 155px;
+}
+
+#dang-ky-email > div{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#dang-ky-email input{
+    background: #ebebeb;
+    width: 133px;
+}
+
+
+#tim-kiem-hoa-don{
+    position: fixed;
+    top: 215px;
+    left: 0;
+    width: 155px;
+}
+
+#tim-kiem-hoa-don > div{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#tim-kiem-hoa-don input{
+    background: #ebebeb;
+    width: 133px;
+}
+
+#adv-right{
+    position: fixed;
+    top: 215px;
+    right: 0;
+    width: 155px;
+}
+
+
+#tour-contacts{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#tim-kiem-hoa-don .title,
+#tour-contacts .title{
+    line-height: 30px;
+}
+
+#tour-tree-contacts li{
+    background: url(../newuiimg/separate-contacts.jpg) 35px 0px repeat-y;
+    border-top: 1px dotted #ccc;
+}
+
+#tour-tree-contacts li:first-child{
+    border-top-width: 0;
+}
+
+#tour-tree-contacts li img{
+    margin: 5px 0 5px 5px;
+}
+
+#tour-tree-contacts li img.img-contact{
+    margin-left: 10px;
+}
+
+#tim-kiem-don-hang .control-row > span{
+    float: left;
+    min-height: 1px;
+    width: 150px;
+}
+
+#tim-kiem-don-hang .control-row .control-input{
+    background: #ebebeb;
+    width: 620px;
+    border: 1px solid #ccc;
+}
+
+.slider{ width:535px; float:left; overflow:hidden; height:350px;
+-webkit-border-radius:5px;border-radius:5px;-webkit-box-shadow: 1px 2px 3px rgba(50, 50, 50, 0.56);-moz-box-shadow: 1px 2px 3px rgba(50, 50, 50, 0.56);box-shadow: 1px 2px 3px rgba(50, 50, 50, 0.56);}
+
+/*index- ticket*/
+#tim-chuyen-bay .tour-box .control-collection .ticketone{ position:absolute; background:#FCFBBB;-webkit-border-radius:4px;border-radius:4px;display: none;height: auto;left: 30px;outline: 0 none;top: 105px;width: 580px;z-index: 1005; border:1px solid #f0f0f0;}
+.tour-box .control-collection .ticketone .titla{ background:#F7B64A; margin:5px; padding:8px 10px; border:1px solid #F93; color:#FFFFFF; font-size:14px; font-weight:bold;-webkit-border-radius:4px;border-radius:4px; text-align:left}
+.tour-box .control-collection .ticketone .titla .close { float:right; font-weight:bold; color:#fff; font-size:16px; padding:0 5px}
+.tour-box .control-collection .ticketone .titla .close:hover{background:#ccc}
+.tour-box .control-collection .ticketone .se-ticket{ float:left; text-align:left; margin:8px 15px}
+.tour-box .control-collection .ticketone .se-ticket ul{ margin-bottom:10px}
+.tour-box .control-collection .ticketone .se-ticket ul li{ line-height:24px; padding:0 30px 0 5px}
+.tour-box .control-collection .ticketone .se-ticket ul .se-title{padding:0}
+.tour-box .control-collection .ticketone .se-ticket ul .se-title a{ color:16px; font-weight:bold; color:#FF7B0F; }
+.tour-box .control-collection .ticketone .se-ticket ul li:hover{ background:#FF7B0F}
+.tour-box .control-collection .ticketone .se-ticket ul li:hover a{ color:#fff}
+.tour-box .control-collection .ticketone .se-ticket ul .se-title:hover{ background:none}
+.tour-box .control-collection .ticketone .se-ticket ul .se-title:hover a{color:#FF7B0F; }
+.tour-box .control-collection .toen .word,.control-collection .ticketone .word{margin: 8px 8px !important;}
+.tour-box .control-collection .ticketone .word h6{color:16px; font-weight:bold; color:#FF7B0F; text-align:center; margin-bottom:10px}
+.tour-box .control-collection .ticketone .word span{ text-align:center;}
+.tour-box .control-collection .ticketone .word .auto-segg{ margin-top:10px ;}
+
+#tabs{ height:30px; width:260px; color:black}
+
+#gog,#tog{ height:28px}
+
+.tour-box .control-collection .toen{ left:221px}
+
+.tour-box .control-collection .toen{ position:absolute; background:#FCFBBB;-webkit-border-radius:4px;border-radius:4px;display: none;height: auto;left:210px;outline: 0 none;top: 105px;width: 580px;z-index: 10; border:1px solid #f0f0f0;}
+.tour-box .control-collection .toen .titla{ background:#F7B64A; margin:5px; padding:8px 10px; border:1px solid #F93; color:#FFFFFF; font-size:14px; font-weight:bold;-webkit-border-radius:4px;border-radius:4px; text-align:left}
+.tour-box .control-collection .toen .titla .close { float:right; font-weight:bold; color:#fff; font-size:16px; padding:0 5px}
+.tour-box .control-collection .toen .titla .close:hover{background:#ccc}
+.tour-box .control-collection .toen .se-ticket{ float:left; text-align:left; margin:8px 15px}
+.tour-box .control-collection .toen .se-ticket ul{ margin-bottom:10px}
+.tour-box .control-collection .toen .se-ticket ul li{ line-height:24px; padding:0 30px 0 5px}
+.tour-box .control-collection .toen .se-ticket ul .se-title{padding:0}
+.tour-box .control-collection .toen .se-ticket ul .se-title a{ color:16px; font-weight:bold; color:#FF7B0F; }
+.tour-box .control-collection .toen .se-ticket ul li:hover{ background:#FF7B0F}
+.tour-box .control-collection .toen .se-ticket ul li:hover a{ color:#fff}
+.tour-box .control-collection .toen .se-ticket ul .se-title:hover{ background:none}
+.tour-box .control-collection .toen .se-ticket ul .se-title:hover a{color:#FF7B0F; }
+.tour-box .control-collection .toen .word h6{color:16px; font-weight:bold; color:#FF7B0F; text-align:center; margin-bottom:10px}
+.tour-box .control-collection .toen .word span{ text-align:center;}
+.tour-box .control-collection .toen .word .auto-segg{ margin-top:10px ;}
+
+
+.control-collection .linehd tr td input[type="text"]{ width:165px; height:25px}
+.validate{ margin:10px 0; color:#F96; text-align:left}
+
+.gm-style-iw{ overflow: hidden !important;} 
+
+#tour-page #tour-section .left .debook p#ggmap {
+    line-height: 20px;
+    margin: 5px 0;
+}
+
+.se-ticket.word {
+    width: 270px;
+}
+
+.ui-helper-hidden-accessible {
+    display: none;
+}
+
+/*side- ticket*/
+
+#tour-page #tour-section .ticketone{ position:absolute; background:#FCFBBB;-webkit-border-radius:4px;border-radius:4px;display: none;height: auto;left: 30px;outline: 0 none;top: 105px;width: 580px;z-index: 1005; border:1px solid #f0f0f0;}
+#tour-page #tour-section .ticketone .titla{ background:#F7B64A; margin:5px; padding:8px 10px; border:1px solid #F93; color:#FFFFFF; font-size:14px; font-weight:bold;-webkit-border-radius:4px;border-radius:4px; text-align:left}
+#tour-page #tour-section .ticketone .titla .close { float:right; font-weight:bold; color:#fff; font-size:16px; padding:0 5px}
+#tour-page #tour-section .ticketone .titla .close:hover{background:#ccc}
+#tour-page #tour-section .ticketone .se-ticket{ float:left; text-align:left; margin:8px 15px}
+#tour-page #tour-section .ticketone .se-ticket ul{ margin-bottom:10px}
+#tour-page #tour-section .ticketone .se-ticket ul li{ line-height:24px; padding:0 30px 0 5px}
+#tour-page #tour-section .ticketone .se-ticket ul .se-title{padding:0}
+#tour-page #tour-section .ticketone .se-ticket ul .se-title a{ color:16px; font-weight:bold; color:#FF7B0F; }
+#tour-page #tour-section .ticketone .se-ticket ul li:hover{ background:#FF7B0F}
+#tour-page #tour-section .ticketone .se-ticket ul li:hover a{ color:#fff}
+#tour-page #tour-section .ticketone .se-ticket ul .se-title:hover{ background:none}
+#tour-page #tour-section .ticketone .se-ticket ul .se-title:hover a{color:#FF7B0F; }
+#tour-page #tour-section .toen .word,.control-collection .ticketone .word{margin: 8px 8px !important;}
+#tour-page #tour-section .ticketone .word h6{color:16px; font-weight:bold; color:#FF7B0F; text-align:center; margin-bottom:10px}
+#tour-page #tour-section .ticketone .word span{ text-align:center;}
+#tour-page #tour-section .ticketone .word .auto-segg{ margin-top:10px ;}
+
+#tabs{ height:30px; width:260px; color:black}
+
+#gog,#tog{ height:28px}
+
+#tour-page #tour-section .toen{ left:221px}
+
+#tour-page #tour-section .toen{ position:absolute; background:#FCFBBB;-webkit-border-radius:4px;border-radius:4px;display: none;height: auto;left:210px;outline: 0 none;top: 105px;width: 580px;z-index: 10; border:1px solid #f0f0f0;}
+#tour-page #tour-section .toen .titla{ background:#F7B64A; margin:5px; padding:8px 10px; border:1px solid #F93; color:#FFFFFF; font-size:14px; font-weight:bold;-webkit-border-radius:4px;border-radius:4px; text-align:left}
+#tour-page #tour-section .toen .titla .close { float:right; font-weight:bold; color:#fff; font-size:16px; padding:0 5px}
+#tour-page #tour-section .toen .titla .close:hover{background:#ccc}
+#tour-page #tour-section .toen .se-ticket{ float:left; text-align:left; margin:8px 15px}
+#tour-page #tour-section .toen .se-ticket ul{ margin-bottom:10px}
+#tour-page #tour-section .toen .se-ticket ul li{ line-height:24px; padding:0 30px 0 5px}
+#tour-page #tour-section .toen .se-ticket ul .se-title{padding:0}
+#tour-page #tour-section .toen .se-ticket ul .se-title a{ color:16px; font-weight:bold; color:#FF7B0F; }
+#tour-page #tour-section .toen .se-ticket ul li:hover{ background:#FF7B0F}
+#tour-page #tour-section .toen .se-ticket ul li:hover a{ color:#fff}
+#tour-page #tour-section .toen .se-ticket ul .se-title:hover{ background:none}
+#tour-page #tour-section .toen .se-ticket ul .se-title:hover a{color:#FF7B0F; }
+#tour-page #tour-section .toen .word h6{color:16px; font-weight:bold; color:#FF7B0F; text-align:center; margin-bottom:10px}
+#tour-page #tour-section .toen .word span{ text-align:center;}
+#tour-page #tour-section .toen .word .auto-segg{ margin-top:10px ;}
+
+#tour-section .linehd tr td input[type="text"]{ width:165px; height:25px}
+.validate{ margin:10px 0; color:#F96; text-align:left}
+
+.gm-style-iw{ overflow: hidden !important;} 
+
+#tour-page #tour-section .left .debook p#ggmap {
+    line-height: 20px;
+    margin: 10px 0;
+}
+
+.se-ticket.word {
+    width: 270px;
+}
+
+/*booking ticket*/
+#tour-page #tour-section .det{ float:none; margin:auto;  width: 640px; height: 440px;}
+#tour-page #tour-section .hone{ margin:20px 0}
+#tour-page #tour-section #chon-chuyen-bay-1{min-height: 622px;background-color: #FFFFFF;border: 1px solid #CCCCCC;text-align: left; margin-bottom:20px}
+#tour-page #tour-section #chon-chuyen-bay-1 h1{ height:36px; line-height: 36px; padding-left: 10px; color:#f0f0f0; background:#DB7820; font-size:16px; font-weight:bold;}
+#tour-page #tour-section #chon-chuyen-bay-1 h1 p{ background:url(../images/Plane1.png) no-repeat 0 -8px;
+    padding-left: 56px; line-height:36px}
+#tour-page #tour-section #chon-chuyen-bay-1 .debook{ margin:5px;}
+#tour-page #tour-section #chon-chuyen-bay-1 .debook h2{ font-size:20px; font-weight:bold;color:#007CC3; margin-top:8px}
+#tour-page #tour-section #chon-chuyen-bay-1 .debook p{ margin:10px 0; line-height:25px}
+#tour-page #tour-section #chon-chuyen-bay-1 .debook h6{ font-size:14px; font-weight:bold; color:#333; margin-bottom:20px; margin-top:20px}
+#tour-page #tour-section #chon-chuyen-bay-1 .debook img{ width:100% !important; height: 100% !important;}
+
+#tour-page #tour-section .right{float: right;width: 330px;}
+#tour-page #tour-section .book .linehd{padding-bottom:10px}
+#tour-page #tour-section .right .hdd{ margin-top:0;width: 330px;height:auto;}
+#tour-page #tour-section .book a.deta{ margin-left:0}
+
+/*Select Fly*/
+#tour-page #tour-section .nav{ position:relative}
+#tour-page #tour-section .nav h1.listpage{ text-align:left; font-size:14px;color:#333; margin-bottom:10px; margin-top:15px;font-weight:bold}
+#tour-page #tour-section .nav h1.listpage a{color:#333;font-weight: normal}
+#tour-page #tour-section .nav h1.listpage a.selected{ color:#DB7820; font-weight:bold}
+#tour-page #tour-section .nav h1.listpage a:hover{ text-decoration:underline}
+#tour-page #tour-section #chon-chuyen-bay-1 h6.lt{ padding:25px 15px 10px 15px; font-size:14px; font-weight:bold; float:left;width:295px}
+#tour-page #tour-section #chon-chuyen-bay-1 h6.lt a{ color:#DB7820; font-size:17px}
+#tour-page #tour-section #chon-chuyen-bay-1 ul.hdb{
+	float:right;-webkit-border-radius:3px;
+	border-radius:3px;
+	-webkit-box-shadow: 1px 2px 3px rgba(50, 50, 50, 0.56);
+	-moz-box-shadow:    1px 2px 3px rgba(50, 50, 50, 0.56);
+	box-shadow:         1px 2px 3px rgba(50, 50, 50, 0.56);
+	padding:8px;
+	margin:25px 6px 10px 6px;
+	}
+#tour-page #tour-section #chon-chuyen-bay-1 .ule{ overflow:hidden; padding-bottom:15px}
+#tour-page #tour-section #chon-chuyen-bay-1 ul.hdb li{ color:#f0f0f0; font-size:14px; line-height:26px}
+#tour-page #tour-section #chon-chuyen-bay-1 ul.hdb li a{color:#fff;font-weight:bold; font-size:14px; text-decoration:underline;cursor: text;}
+#tour-page #tour-section #chon-chuyen-bay-1 .qt-select .heasd{ margin:0;width:100%}
+#tour-page #tour-section #chon-chuyen-bay-1 .select{width:98%}
+#tour-page #tour-section #chon-chuyen-bay-1 .select .date-m{
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(238,238,238,1)), color-stop(100%,rgba(204,204,204,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-8 */
+	overflow:hidden;
+	width:609px;border-bottom: 1px solid #999999;
+}
+#tour-page #tour-section #chon-chuyen-bay-1 .select{ margin:0 5px}
+#tour-page #tour-section #chon-chuyen-bay-1 .select .date-m li{ float:left;padding:5px 0; border-right:1px solid #f0f0f0; width:87px; text-align:center; border-bottom:1px solid #ccc;}
+#tour-page #tour-section #chon-chuyen-bay-1 .select .list-h td{ border:none}
+#tour-page #tour-section #chon-chuyen-bay-1 .select .list-h:hover{ background:none}
+#tour-page #tour-section #chon-chuyen-bay-1 .select .date-m li.atv-v{ background:#ccc; font-weight:bold}
+#tour-page #tour-section #chon-chuyen-bay-1 .select .date-m li a{ color:#333;}
+#tour-page #tour-section #chon-chuyen-bay-1 .select tr td{ text-align:center; border-bottom:1px solid #ccc; padding:5px 0;}
+#tour-page #tour-section #chon-chuyen-bay-1 .select tr:hover{ background:#e8e8e8}
+#tour-page #tour-section #chon-chuyen-bay-1 .select tr td.mb{width:80px}
+#tour-page #tour-section #chon-chuyen-bay-1 .select tr td.time{width:100px}
+#tour-page #tour-section #chon-chuyen-bay-1 .select tr td.price{width:140px}
+#tour-page #tour-section #chon-chuyen-bay-1 .select tr td.ct-list{ width:90px}
+#tour-page #tour-section #chon-chuyen-bay-1 .select tr td.mb a{ color:#036; font-weight:bold}
+#tour-page #tour-section #chon-chuyen-bay-1 .select tr td.time a{ color:red; font-weight:bold}
+#tour-page #tour-section #chon-chuyen-bay-1 .select tr td.price a{ color:#00F; font-weight:bold}
+#tour-page #tour-section #chon-chuyen-bay-1 .select tr td.ct-list:before{content: ""; background:url(../images/collaspe.png) right top no-repeat; margin: 0 3px 0 0;padding: 1px 2px 0 13px;}
+#tour-page #tour-section #chon-chuyen-bay-1 .select tr .active:before{content: ""; background:url(../images/collaspe.png) right -16px no-repeat !important; margin: 0 3px 0 0;padding: 1px 2px 0 13px;}
+#tour-page #tour-section #chon-chuyen-bay-1 .select tr td.ct-list a{ color:#F60; cursor:pointer; background:none}
+#tour-page #tour-section #chon-chuyen-bay-1 .select tr td span{padding: 5px;}
+#tour-page #tour-section #chon-chuyen-bay-1 .select tr td span a{padding: 5px;}
+#tour-page #tour-section #chon-chuyen-bay-1 .select tr.seclect-one td input{ margin-right:3px}
+#tour-page #tour-section #chon-chuyen-bay-1 .select tr.seclect-two{ display:none}
+#tour-page #tour-section #chon-chuyen-bay-1 .select tr.seclect-two{ background:#f0f0f0}
+#tour-page #tour-section #chon-chuyen-bay-1 .select tr.seclect-two table{ width:95%; margin:0 20px}
+#tour-page #tour-section #chon-chuyen-bay-1 .select tr.seclect-two table td{ text-align:left; font-weight:normal; padding:5px 0; border:none;}
+#tour-page #tour-section #chon-chuyen-bay-1 .select tr.seclect-two table tr:hover{ background:none}
+#tour-page #tour-section #chon-chuyen-bay-1 .select tr.seclect-two table td p{ line-height:28px}
+#tour-page #tour-section #chon-chuyen-bay-1 .select tr.seclect-two table.price-break{ border-top:1px dotted #ccc; margin:10px 20px; border-bottom:1px dotted #ccc}
+#tour-page #tour-section #chon-chuyen-bay-1 .select tr.seclect-two table.price-break td span{ background:none; color:#999999; font-weight:bold}
+#tour-page #tour-section #chon-chuyen-bay-1 .select tr.seclect-two table.price-break td{ text-align:center}
+#tour-page #tour-section #chon-chuyen-bay-1 .select tr.seclect-two table.price-break td a{ color:#333; font-weight:bold;}
+#tour-page #tour-section #chon-chuyen-bay-1 .select tr.seclect-two table.dk{ margin:5px 20px 0 20px;}
+#tour-page #tour-section #chon-chuyen-bay-1 .select tr.seclect-two table.dk td label{ font-size:16px; font-weight:bold}
+#tour-page #tour-section #chon-chuyen-bay-1 .select tr.seclect-two table.dk td span{ background:none; color:#333}
+#tour-page #tour-section #chon-chuyen-bay-1 .select tr.seclect-two table td table tr td{width:auto}
+#tour-page #tour-section .book h1.cl{ background:none}
+#tour-page #tour-section .book h1.cl a{ padding-left:0}
+#tour-page #tour-section .book .line ul{ margin:10px}
+#tour-page #tour-section .book .line ul li{ text-align:left; color:#f0f0f0; padding:3px 0; font-weight:bold}
+#tour-page #tour-section .book .line ul li.atv-b{ color:#DB7820}
+#tour-page #tour-section .book .line h1{ background:none; color:#f0f0f0; font-weight:bold; font-size:18px; padding:10px 0;border-bottom:1px solid #fff}
+
+#tour-page #tour-section .ss ul li.vnair{ padding:0px 0}
+#tour-page #tour-section .ss ul li.vnair img{float:right;width:50px; height:30px;}
+#tour-page #tour-section .ss ul li.jet{ background:url(../images/smBL.gif) no-repeat center right;margin-bottom:5px;padding:10px 0}
+#tour-page #tour-section .ss ul li.vietjet{ background:url(../images/smVJ.gif) no-repeat center right;padding:10px 0}
+#tour-page #tour-section #chon-chuyen-bay-1 input[type="submit"]{padding:10px 30px; font-size:16px; background:#DB7820; color:#fff; font-weight:bold;-webkit-border-radius:10px;border-radius:10px;-webkit-box-shadow: 1px 2px 3px rgba(50, 50, 50, 0.56);-moz-box-shadow:    1px 2px 3px rgba(50, 50, 50, 0.56);box-shadow:         1px 2px 3px rgba(50, 50, 50, 0.56); margin:10px; float:right}
+/*infor fly*/
+#tour-page #tour-section #chon-chuyen-bay-1 .infor-t{ margin:5px;}
+#tour-page #tour-section #chon-chuyen-bay-1 .infor-t h6{ font-size:16px; font-weight:bold; margin-top:15px}
+#tour-page #tour-section #chon-chuyen-bay-1 .infor-t table tr td{ padding:10px}
+#tour-page #tour-section #chon-chuyen-bay-1 .infor-t .find tr.from{ background:#D3D3D3}
+#tour-page #tour-section #chon-chuyen-bay-1 .infor-t .find tr.from td{ color:#F36520}
+#tour-page #tour-section #chon-chuyen-bay-1 .infor-t .find tr.from .go{ background: url("../images/From.png") no-repeat scroll 0 5px transparent;padding-left: 35px;}
+#tour-page #tour-section #chon-chuyen-bay-1 .infor-t .find tr.from .to{ background: url("../images/To.png") no-repeat scroll 0 5px transparent;padding-left: 35px;}
+#tour-page #tour-section #chon-chuyen-bay-1 .infor-t table tr td input,#tour-page #tour-section #chon-chuyen-bay-1 .infor-t table tr td select{ padding:5px 0}
+#tour-page #tour-section #chon-chuyen-bay-1 .infor-t textarea{ width:600px; margin-top:6px; min-height:150px;resize: none;}
+#tour-page #tour-section .ss table{width:100%}
+#tour-page #tour-section .ss table tr td{ padding:0 3px}
+#tour-page #tour-section .ss table tr td span{ color:#f0f0f0}
+#tour-page #tour-section .ss table tr td a{ color:#f0f0f0; text-align:center}
+#tour-page #tour-section .ss table tr.dow td{ padding-bottom:10px}
+#tour-page #tour-section .ss table tr.up td{ padding-top:10px}
+
+/*International-Ticket*/
+#tour-page #tour-section #chon-chuyen-bay-1 .qt-list{ margin-left:15px; width:97%;}
+#tour-page #tour-section #chon-chuyen-bay-1 .qt-list tr td{ padding:5px 8px 5px 0 }
+#tour-page #tour-section #chon-chuyen-bay-1 .qt-list tr td a{ font-weight:bold}
+#tour-page #tour-section #chon-chuyen-bay-1 .select tr.seclect-two .qt-stop{ background:#FEF4EB ; border-top: 1px solid #FCDABF;border-bottom: 1px solid #FCDABF; text-align:center; padding:8px 0}
+#tour-page #tour-section #chon-chuyen-bay-1 .infor-t .find tr .qt-stop{ background:#FEF4EB ; border-top: 1px solid #FCDABF;border-bottom: 1px solid #FCDABF; text-align:center; padding:8px 0}
+#tour-page #tour-section #chon-chuyen-bay-1 .ss ul li.cathay {
+    background: url("../images/smCX.gif") no-repeat scroll right center transparent;
+    padding: 10px 0;
+}
+#tour-page #tour-section .ss ul li.Dragon {
+    background: url("../images/smKA.gif") no-repeat scroll right center transparent;
+    padding: 10px 0;
+}
+#tour-page #tour-section .ss h6{ margin:10px 5px; color:#FFC942; font-size:17px}
+#tour-page #tour-section .left .select tr td .qt-sub{ padding:5px 15px; font-size:14px}
+#tour-page #tour-section #chon-chuyen-bay-1 .qt-select{ border:1px solid #ccc; margin:10px 5px 25px 5px}
+#tour-page #tour-section #chon-chuyen-bay-1 .select tr.qt-end td{ border:none}
+#tour-page #tour-section #chon-chuyen-bay-1 .select tr.qt-end td.big a{ font-size:18px}
+#tour-page #tour-section #chon-chuyen-bay-1 .select tr.qt-price td table tr td span{background: none repeat scroll 0 0 transparent;color: #999999;font-weight: bold; line-height:28px}
+#tour-page #tour-section #chon-chuyen-bay-1 .select tr.qt-price td table tr:hover{ background:none;}
+#tour-page #tour-section #chon-chuyen-bay-1 .select tr.qt-end:hover{ background:none}
+#tour-page #tour-section #chon-chuyen-bay-1 .select tr.qt-price{ display:none}
+#tour-page #tour-section #chon-chuyen-bay-1 .select tr.qt-price:hover{ background:none}
+#tour-page #tour-section #chon-chuyen-bay-1 .select tr.qt-price td table tr td{ border:none; border-top:1px dotted #ccc}
+#tour-page #tour-section #chon-chuyen-bay-1 .select tr.qt-price td table tr td a{ font-weight:bold}
+#tour-page #tour-section #chon-chuyen-bay-1 .select tr.qt-price td table{width:100%}
+
+/*Next*/
+#tour-page #next { position:fixed; bottom:0; height: 50px;left: 210px;width: 615px; padding-top:10px; text-align:right}
+#tour-page #next input[type="submit"]{ padding:10px 30px; font-size:16px; background:#DB7820; color:#fff; font-weight:bold;-webkit-border-radius:10px;border-radius:10px;-webkit-box-shadow: 1px 2px 3px rgba(50, 50, 50, 0.56);-moz-box-shadow:    1px 2px 3px rgba(50, 50, 50, 0.56);box-shadow:         1px 2px 3px rgba(50, 50, 50, 0.56); margin-right:10px}
+
+/*payment*/
+#tour-page #tour-section #chon-chuyen-bay-1 .pay{ margin:0 5px}
+#tour-page #tour-section #chon-chuyen-bay-1 .infor-t .pay-check{ padding:10px 0; overflow:hidden; position:relative; border-bottom:1px dotted #ccc}
+#tour-page #tour-section #chon-chuyen-bay-1 .infor-t .pay-check .icon{ float:left; height: auto;width: 50px;}
+#tour-page #tour-section #chon-chuyen-bay-1 .infor-t .pay-check .icon{ padding-left:5px}
+#tour-page #tour-section #chon-chuyen-bay-1 .infor-t .pay-check .info{ width:575px; float:left}
+#tour-page #tour-section #chon-chuyen-bay-1 .infor-t .pay-check .info .title{ font-size: 12px;font-weight: bold}
+#tour-page #tour-section #chon-chuyen-bay-1 .infor-t .pay-check .info span{ padding-right:10px; padding-bottom:15px; line-height:32px}
+#tour-page #tour-section #chon-chuyen-bay-1 .infor-t .pay-check .check-box{  overflow: hidden;padding:25px 11px 11px 11px;position: absolute;right: -4px;top: -4px;}
+#tour-page #tour-section #chon-chuyen-bay-1 .infor-t .pay-check .check-box:before{content: ""; background:url(../../images/check.jpg) no-repeat top right;padding:7px 11px 20px 20px;}
+#tour-page #tour-section #chon-chuyen-bay-1 .infor-t .pay-check .active-c:before{content: ""; background:url(../../images/checked.jpg) no-repeat top right;padding:7px 11px 20px 20px;}
+#tour-page #tour-section #chon-chuyen-bay-1 .infor-t .pay-checked{ display:none; overflow:hidden}
+#tour-page #tour-section #chon-chuyen-bay-1 .infor-t .pay-checked input[type="submit"]{ background:red;}
+#tour-page #tour-section #chon-chuyen-bay-1 .infor-t .pay-checked ul{ margin:20px 10px 20px 40px}
+#tour-page #tour-section #chon-chuyen-bay-1 .infor-t .pay-checked ul li ul{ margin:10px 10px 10px 40px}
+#tour-page #tour-section #chon-chuyen-bay-1 .infor-t .pay-checked ul li ul li{padding:3px 0}
+#tour-page #tour-section #chon-chuyen-bay-1 .infor-t .pay-checked .pay-list{ border-bottom:1px solid #ccc; overflow:hidden}
+#tour-page #tour-section #chon-chuyen-bay-1 .infor-t .pay-checked table tr span{ line-height:25px}
+#tour-page #tour-section #chon-chuyen-bay-1 .infor-t .pay-checked input.seclect-bank{ padding:5px 20px;box-shadow:0 0 0 0 rgba(0, 0, 0, 0)!important;;-webkit-box-shadow:0;-moz-box-shadow:0}
+#tour-page #tour-section #chon-chuyen-bay-1 .infor-t .pay-checked p{ margin:10px; background:#FC9; padding:20px; line-height:20px; color:#009}
+#tour-page #tour-section #chon-chuyen-bay-1 .infor-t .pay-checked .pay-add{ margin: 0 0 0 50px}
+#tour-page #tour-section #chon-chuyen-bay-1 .infor-t .pay-checked .pay-add tr td span i{ font-style:normal; color:red}
+#main .content .right .pay-right{ margin:5px 0; padding:5px 0}
+#main .content .right .pay-right tr td span{ font-weight:normal}
+#main .content .right .pay-right tr td{ padding-bottom:5px}
+#main .content .right .pay-ct{ color:#f0f0f0; float:right; padding:5px 10px 10px 5px; text-decoration:underline; font-weight:bold}
+
+#tour-page #tour-section #chon-chuyen-bay-1 .infor-t h3{ font-size:18px; color:#009; margin:20px 0 10px 0}
+#tour-page #tour-section #chon-chuyen-bay-1 .infor-t h4{ background:#FEF4EB; padding:6px 0; border-bottom:1px solid #FCD9BE; border-top:1px solid #FCD9BE; margin:10px 0; padding-left:5px}
+#tour-page #tour-section #chon-chuyen-bay-1 .infor-t h4 a,#tour-page #tour-section #chon-chuyen-bay-1 .infor-t p a{ font-weight:bold}
+#tour-page #tour-section #chon-chuyen-bay-1 .infor-t p{ line-height:24px}
+#tour-page #tour-section #chon-chuyen-bay-1 .infor-t p.tt-pay{ margin:10px 5px; border:1px solid #3463c3; padding:5px; background:#e6ebf5}
+#tour-page #tour-section #chon-chuyen-bay-1 .infor-t p.tt-pay a{ color:#007CC3}
+#tour-page #tour-section #chon-chuyen-bay-1 .infor-t .payment-a{ margin:10px 5px; background:#f7edd4; color:#f0f0f0;padding:5px; border:1px solid #b38e37}
+#tour-page #tour-section #chon-chuyen-bay-1 .infor-t .payment-a legend{ color:red; font-size:16px; font-weight:bold}
+#tour-page #tour-section #chon-chuyen-bay-1 .infor-t .payment-a span{color:#333; line-height:24px}
+#tour-page #tour-section #chon-chuyen-bay-1 .infor-t .payment-a label{color:#333; font-style:italic}
+#tour-page #tour-section #chon-chuyen-bay-1 .infor-t .payment-a span a{ font-weight:bold}
+#tour-page #tour-section #chon-chuyen-bay-1 .pay-out{ margin:10px 5px; display:none}
+#tour-page #tour-section #chon-chuyen-bay-1 .pay-out tr td{ padding-right:10px; padding-bottom:10px}
+#tour-page #tour-section #chon-chuyen-bay-1 .pay-out input{ margin:5px 0 0 0; height:28px;width:200px}
+.require { color: red !important;}
+
+/*feedback*/
+#tour-page #tour-section #chon-chuyen-bay-1 .debook .feedback{ margin:20px 5px; border-bottom:1px dotted #ccc}
+#tour-page #tour-section #chon-chuyen-bay-1 .debook .feedback table tr td a img{ width:60px; height:60px}
+#tour-page #tour-section #chon-chuyen-bay-1 .debook .feedback table tr td span.datepost{background: none repeat scroll 0 0 #EDEDED;color: #7A7A7A; display: inline-block;font-size: 12px;font-style: italic;margin: 5px 0;padding:4px}
+#tour-page #tour-section #chon-chuyen-bay-1 .debook .feedback table tr td span.nameKH{color: #8E8B8B;font-size: 12px;line-height: 18px;}
+#tour-page #tour-section .hdd .feedback span{ font-weight:normal}
+#tour-page #tour-section .hdd .feedback input{ padding:5px 0; width:275px !important}
+#tour-page #tour-section .hdd .feedback textarea{ width:275px; min-height:50px;  resize: none; height: 140px;}
+#tour-page #tour-section .hdd .send{ border: 0 solid transparent;border-radius: 5px;text-align: center; float:right; margin-right:12px;width:70px; margin-top:10px; background: url(../newuiimg/background-button-tim-lich-bay.png) repeat-x;}
+
+/*paging*/
+.paing{width:300px; margin:auto; padding:20px 0}
+.paing a{ background:#ccc; padding:10px}
+.paing a.active-ing{ background:#999; color:#fff; font-weight:bold}
+.paginateButtons{width:300px; margin:auto; padding:20px 0}
+.paginateButtons a{ background:#ccc; padding:10px; margin:0 4px 0 0 }
+.paginateButtons span.currentStep{ background:#999; padding:10px; color:#fff; font-weight:bold;margin: 0 4px 0 0;}
+
+/*Image*/
+.img-tours img{height:70px !important; width:130px !important; }
+.img-tours{
+    float: left;
+}
+
+.img-news{
+    float: left;
+}
+
+.img-news-margin-right-10 img{height:70px !important; width:130px !important; }
+.img-news-margin-right-10{
+    float: left;
+    margin-right: 10px;
+}

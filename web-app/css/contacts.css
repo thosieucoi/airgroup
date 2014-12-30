@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+/* Main content */
+#main-contact #mainContent{
+	overflow: hidden;
+	width: 997px;
+	margin-left: 20px;
+}
+
+#main-contact #leftContacts{
+	background: #FEFEFE;
+	border-radius: 5px 5px 5px 5px;
+	float: left;
+	margin-top: 20px;
+	height: 1500px;
+	width: 650px;
+	display: block;
+}
+
+/* Flight Booking Content*/
+#main-contact #contacts-book{
+	float: left !important;
+	margin: 20px 0px 0px 20px !important;
+	width: 325px !important;
+	height: 480px !important;
+}
+
+#main-contact #contactsBookingGuide{
+	margin: 22px 0 0 !important;
+}
+
+#main-contact #contacts-line{
+	height: 415px !important;
+	width: 311px !important;
+}
+
+#main-contact #contact-departure, #contact-arrive{
+	 float: right;
+	 margin-right: -8px;
+}
+
+/* Content */
+/* Banner and logo style */
+#main-contact #banner{
+	background: #DB7820 repeat-x;
+	text-align: left;
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+	height: 50px;
+}
+
+#main-contact #banner p{
+	float: left;
+	padding: 15px;
+}
+
+#main-contact #logo{
+	float: left;
+}
+
+/* Contact information */
+#main-contact #contactInfo{
+	margin: 10px;
+}
+
+#main-contact #contactInfo p{
+	font-size: 18px;
+	font-weight: bold;	
+	text-align: left;
+	color: #007CC3;
+}
+
+#main-contact #contactInfo #information{
+	margin: 15px 0 0 15px;
+	text-align: left !important;
+}
+
+#main-contact #contactInfo #information tr td{
+	padding-top: 12px;
+}
+
+#main-contact #contactInfo #information .address-info{
+	font-size: 15px;
+	font-weight: bold;
+	padding: 5px;
+}
+
+#main-contact .address-logo{
+	height: 16px;;
+}
+
+/* Google map */
+#main-contact #googleMap{
+	width: 600px;
+	height: 450;
+	margin: 15px 10px;
+	text-align: left;
+}
+
+#main-contact #googleMap p{
+	font-weight: bold;
+	font-size: 15px;
+}
+
+#main-contact .fix{
+	width: 1235px !important;
+}
+
+#main-contact .input{
+	float: right;
+	margin-right: -8px;
+	width: 160px;
+}
+
+/* Introduction */
+#main-contact #introduction span{
+	float: left;
+	text-align: left;
+	font-size: 15px;
+	line-height: 30px;
+}
+
+/* Custom CSS from main.css */
+#main-contact #contacts-book #contacts-line .nun{
+	margin: 0 0 10px 0 !important;
+}
