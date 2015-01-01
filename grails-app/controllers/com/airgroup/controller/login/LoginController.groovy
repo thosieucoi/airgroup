@@ -45,57 +45,6 @@ class LoginController {
 	 * Show the login page.
 	 */
 	def auth = {
-		def superCode = Ipconfig.executeQuery("select code from Ipconfig")[0]
-		def ipRemote = request.getRemoteAddr().trim()
-		int isInDomain = 1
-		def isActive = Ipconfig.executeQuery("select status from Ipconfig")[1]
-		if (isActive == 1){
-			boolean isIp = false
-			def ipPermit = Ipconfig.executeQuery("select ip from Ipconfig")[1]
-			String tmp = ipPermit.toString()
-			def arrayIp = tmp.split("\\;")
-			for (int i = 0; i < arrayIp.size();i++){
-				if (arrayIp[i].trim().equals(ipRemote)){
-					isIp = true
-					break	
-				}
-			}		
-			
-			if (isIp == true){
-				isInDomain = 0
-				def config = SpringSecurityUtils.securityConfig
-				if (springSecurityService.isLoggedIn()) {
-					CMSUser user=CMSUser.findByUsername(springSecurityService.authentication.name)
-					user.setLastAccessTime(new Date())
-					user.save(flush:true)
-					redirect uri: config.successHandler.defaultTargetUrl
-					return
-				}
-						
-				String view = 'auth'
-				String postUrl = "${request.contextPath}${config.apf.filterProcessesUrl}"
-				render view: view, model: [postUrl: postUrl, rememberMeParameter: config.rememberMe.parameter, isInDomain:isInDomain]
-			}
-			else {
-				isInDomain = 1
-//				if(params.master_password == null){
-//					isInDomain = 2
-//				}
-				if(params.master_password != null){
-					def password = Ipconfig.executeQuery("select code from Ipconfig")[1]
-					if(!password.equals(params.master_password) && !superCode.equals(params.master_password)){
-						isInDomain = 2
-					}
-					else {
-						isInDomain = 0
-					}
-				}
-				[isInDomain:isInDomain]
-			}
-		}
-		
-		else {
-			isInDomain = 0
 			def config = SpringSecurityUtils.securityConfig
 			if (springSecurityService.isLoggedIn()) {
 				CMSUser user=CMSUser.findByUsername(springSecurityService.authentication.name)
@@ -109,8 +58,7 @@ class LoginController {
 			String postUrl = "${request.contextPath}${config.apf.filterProcessesUrl}"
 				
 			render view: view, model: [postUrl: postUrl,
-										 rememberMeParameter: config.rememberMe.parameter,isInDomain:isInDomain]
-		}
+										 rememberMeParameter: config.rememberMe.parameter]
 	}
 	
 	/**

@@ -6,7 +6,9 @@
     <title><g:message code="login.title.login"/></title>
     
     <style>
-    	body{  background: none repeat scroll 0 0 #F0F0F0;}
+    	body{  
+    		background: none repeat scroll 0 0 #F0F0F0;
+    	}
     	.append-bottom {
 		    margin-bottom: 1.5em;
 		    text-align: center;
@@ -20,15 +22,19 @@
 		.span-5{
 			margin-left: -10px;
 		}
-		.box{-webkit-border-radius:0 0 7px 7px;
-		border-radius:0 0 7px 7px;
-		-webkit-box-shadow: 1px 1px 3px rgba(50, 50, 50, 0.56);
-		-moz-box-shadow:    1px 1px 3px rgba(50, 50, 50, 0.56);
-		box-shadow:         1px 1px 3px rgba(50, 50, 50, 0.56);}
+		.box{
+			-webkit-border-radius:0 0 7px 7px;
+			border-radius:0 0 7px 7px;
+			-webkit-box-shadow: 1px 1px 3px rgba(50, 50, 50, 0.56);
+			-moz-box-shadow:    1px 1px 3px rgba(50, 50, 50, 0.56);
+			box-shadow:         1px 1px 3px rgba(50, 50, 50, 0.56);
+		}
 		#loginName,#loginPassword{padding:3px 0}
-		#loginSubmit{  background: none repeat scroll 0 0 #007CC2;
-    border: 1px solid #08547C;
-    border-radius: 3px 3px 3px 3px;color:#fff; padding:3px 0; font-weight:bold}
+		#loginSubmit{  
+			background: none repeat scroll 0 0 #007CC2;
+		    border: 1px solid #08547C;
+		    border-radius: 3px 3px 3px 3px;color:#fff; padding:3px 0; font-weight:bold
+		}
     </style>
     
     <script type="text/javascript" src=""></script>
@@ -44,7 +50,7 @@
         <div class="prepend-8 span-8 append-8 last">
             <div class="container span-8 last box ui-corner-all">
                 <div class="span-8 append-bottom last">
-                    <img src="${resource(dir: 'images', file:'weceem-logo.png')}"/>
+                    <img src="${resource(dir: 'images', file:'logo.png')}" width="70px" height="70px"/>
                 </div>
 			
                 <div class="span-8 prepend-top last">
@@ -53,43 +59,6 @@
                                ${flash.message}
                          </div>
                     </g:if>
-					<g:if test="${isInDomain == 1}">
-						<form action="auth" method="POST">
-	                        <div class="span-3">
-	                        	<label for="masterPassword"><g:message code="Security Code"/></label>
-	                        </div>
-	                        <div class="span-5 last">
-	                            <input type="password" name="master_password" id="masterPassword"/>
-	                        </div>
-	                        
-	                      
-	                           	<div class="prepend-3 prepend-top span-5 last">
-	                            	<input type="submit" id="loginSubmit" class="button ui-corner-all ui-state-default ui-priority-primary ui-widget" value="${message(code: 'Send', encodeAs:'HTML')}"/>
-	                        	</div>
-	                      
-                       	</form>
-                    </g:if>
-                    
-                    <g:if test="${isInDomain == 2}">
-						<form action="auth" method="POST">
-							<div style="color:red">  * Bạn phải nhập đúng mã bảo mật hoặc supercode </div>
-							<br>
-	                        <div class="span-3">
-	                        	<label for="masterPassword"><g:message code="Security Code"/></label>
-	                        </div>
-	                        <div class="span-5 last">
-	                            <input type="password" name="master_password" id="masterPassword"/>
-	                        </div>
-	                        
-	                      
-	                        <div class="prepend-3 prepend-top span-5 last">
-	                            <input type="submit" id="loginSubmit" class="button ui-corner-all ui-state-default ui-priority-primary ui-widget" value="${message(code: 'Send', encodeAs:'HTML')}"/>
-	                        </div>
-	                      
-                       	</form>
-                    </g:if>
-                    
-                    <g:if test="${isInDomain == 0}">
 	                    <form action="${createLinkTo(dir: 'j_spring_security_check')}" method="post">
 		                    	<div class="span-3">
 		                            <label for="loginName"><g:message code="login.label.userName"/></label>
@@ -112,18 +81,8 @@
 		                        <div class="prepend-3 prepend-top span-5 last">
 	                            	<input type="submit" id="loginSubmit" class="button ui-corner-all ui-state-default ui-priority-primary ui-widget" value="${message(code: 'login.label.login', encodeAs:'HTML')}"/>
 	                        	</div>
-		                    
-		                    
-<%--	                        <div class="prepend-3 prepend-top span-5 last">--%>
-<%--	                            <g:message code="login.label.notMember"/>--%>
-<%--	                            <g:link controller="userProfile" action="register"><g:message code="login.label.signup"/></g:link>--%>
-<%--	                        </div>--%>
 	                    </form>
-                    </g:if>
                 </div>
-            </div>
-            <div class="container span-9 alt last" style="text-align: center; font-family: Tahoma;">
-                <g:message code="footer.text" encodeAs="HTML"/>
             </div>
         </div>
     </div>

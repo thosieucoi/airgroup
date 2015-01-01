@@ -36,9 +36,8 @@
 	<div class="tl">
 		<img src="${resource(dir:'images',file:'logo.png')}" />
 		<h6>
-			Copy right 2013 - CTY TNHH THƯƠNG MẠI VÀ DỊCH VỤ DU LỊCH HPV VIỆT NAM - Mã
-			số thuế: 0106197148
-			<br> Văn phòng Hà Nội: Số 17 ngõ 189, ngách 189/2 Giảng Võ, P.Cát Linh, Đống Đa, Hà Nội <br>
+			Copy right 2013 - CTY TNHH THƯƠNG MẠI VÀ DỊCH VỤ DU LỊCH IGO VIỆT NAM
+			<br> Văn phòng Hà Nội: <br>
 		</h6>
 	</div>
 </div>

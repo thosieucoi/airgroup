@@ -30,7 +30,7 @@
 						<div class="info">
 							<span class="title">Thanh toán trực tiếp tại văn phòng</span><br />
 							<span>Sau khi đặt hàng thành công, Quý khách vui lòng qua
-								văn phòng HPV để thanh toán và nhận vé.</span><br /> <span>Vui
+								văn phòng IGO để thanh toán và nhận vé.</span><br /> <span>Vui
 								lòng chọn đúng văn phòng gần địa chỉ nhà của Quý khách </span><br />
 						</div>
 						<div class="check-box" id="1"></div>
@@ -38,10 +38,10 @@
 					<div class="pay-checked">
 						<ul>
 							<li><input type="radio" name="vp" /><span> Văn phòng
-									HPV tại Hà Nội</span>
+									IGO tại Hà Nội</span>
 								<ul>
-									<li><span><b>Địa chỉ:</b> Số 19F Nguyễn Khang, Trung Hòa, Cầu Giấy, Hà Nội </span></li>
-									<li><span><b>Điện thoại :</b> 043 512 2266</span></li>
+									<li><span><b>Địa chỉ:</b>  </span></li>
+									<li><span><b>Điện thoại :</b> </span></li>
 								</ul></li>
 						</ul>
 						<input type="submit" value="Chọn thanh toán tại văn phòng >>">
@@ -69,7 +69,7 @@
 									<td><img
 										src="${resource(dir:'images',file:'bank-logo-VCB.gif')}" /></td>
 									<td><span><b>Ngân hàng TMCP Ngoại Thương Việt
-												Nam - Vietcombank</b> </span><br /> <span>Tên tài khoản : <b>Cty TNHH Thương Mại và Dịch Vụ Du lịch HPV Việt Nam</b>
+												Nam - Vietcombank</b> </span><br /> <span>Tên tài khoản : <b>Cty TNHH Thương Mại và Dịch Vụ Du lịch IGO Việt Nam</b>
 												</span><br /> <span>Số tài khoản :
 												<b>0021-0002-93700</b></span><br /> <span>Phòng giao dịch </span><br /> <span>Chi
 											Nhánh: <b>VCB chi nhánh Hoàn Kiếm </b>
@@ -85,7 +85,7 @@
 								<tr>
 									<td><img
 										src="${resource(dir:'images',file:'bank-techcom-logo.gif')}" /></td>
-									<td><span><b>Ngân hàng Techcombank</b> </span><br /> <span>Tên tài khoản : <b>Cty THNN Thương Mại và Dịch Vụ Du Lịch HPV Việt Nam</b>
+									<td><span><b>Ngân hàng Techcombank</b> </span><br /> <span>Tên tài khoản : <b>Cty THNN Thương Mại và Dịch Vụ Du Lịch IGO Việt Nam</b>
 												</span><br /> <span>Số tài khoản :
 												<b>19128392003883</b></span><br /> <span>Phòng giao dịch </span><br /> <span>Chi
 											Nhánh: <b>Hà Nội </b>
@@ -101,7 +101,7 @@
 								<tr>
 									<td><img
 										src="${resource(dir:'images',file:'bank-agri-logo.gif')}" /></td>
-									<td><span><b>Ngân hàng AGRIBANK</b> </span><br /> <span>Tên tài khoản : <b>Cty THNN Thương Mại và Dịch Vụ Du Lịch HPV Việt Nam</b>
+									<td><span><b>Ngân hàng AGRIBANK</b> </span><br /> <span>Tên tài khoản : <b>Cty THNN Thương Mại và Dịch Vụ Du Lịch IGO Việt Nam</b>
 												</span><br /> <span>Số tài khoản :
 												<b>1400206026412</b></span><br /> <span>Phòng giao dịch </span><br /> <span>Chi
 											Nhánh: <b>Láng Hạ </b>
@@ -117,7 +117,7 @@
 								<tr>
 									<td><img
 										src="${resource(dir:'images',file:'bank-bidv-logo.gif')}" /></td>
-									<td><span><b>Ngân hàng BIDV</b> </span><br /> <span>Tên tài khoản : <b>Cty THNN Thương Mại và Dịch Vụ Du Lịch HPV Việt Nam</b>
+									<td><span><b>Ngân hàng BIDV</b> </span><br /> <span>Tên tài khoản : <b>Cty THNN Thương Mại và Dịch Vụ Du Lịch IGO Việt Nam</b>
 												</span><br /> <span>Số tài khoản :
 												<b>12510000635331</b></span><br /> <span>Phòng giao dịch </span><br /> <span>Chi
 											Nhánh: <b>Hà Nội </b>
@@ -227,7 +227,7 @@
 						</div>
 						<div class="info">
 							<span class="title">Thanh toán tại nhà</span><br /> <span>Trong
-								thời gian từ thứ 2-7 ngày làm việc, nhân viên HPV sẽ đến tận
+								thời gian từ thứ 2-7 ngày làm việc, nhân viên IGO sẽ đến tận
 								nơi địa chỉ của quý khách để giao vé & thu tiền . Với hình thức
 								này, quý khách sẽ mất phí giao vé là 20,000 vnđ </span><br />
 
@@ -235,7 +235,7 @@
 						<div class="check-box" id="3"></div>
 					</div>
 					<div class="pay-checked">
-						<p>HPV.vn chỉ giao vé đối với các khu vực nội thành Hà Nội như
+						<p>IGO chỉ giao vé đối với các khu vực nội thành Hà Nội như
 							sau: Ba đình , Cầu giấy, Hoàn Kiếm, Hoàng Mai, Hai Bà Trưng ,
 							Đống Đa, Long Biên.</p>
 						<table class="pay-add">

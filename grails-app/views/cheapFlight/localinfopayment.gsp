@@ -32,7 +32,7 @@
 						<div class="info">
 							<span class="title">Thanh toán trực tiếp tại văn phòng</span><br />
 							<span>Sau khi đặt hàng thành công, Quý khách vui lòng qua
-								văn phòng HPV để thanh toán và nhận vé.</span><br /> <span>Vui
+								văn phòng IGO để thanh toán và nhận vé.</span><br /> <span>Vui
 								lòng chọn đúng văn phòng gần địa chỉ nhà của Quý khách </span><br />
 						</div>
 						<div class="check-box" id="1"></div>
@@ -40,10 +40,10 @@
 					<div class="pay-checked">
 						<ul>
 							<li><input type="radio" name="vp" /><span> Văn phòng
-									HPV tại Hà Nội</span>
+									IGO tại Hà Nội</span>
 								<ul>
-									<li><span><b>Địa chỉ:</b> Số 17 ngõ 189, ngách 189/2 Giảng Võ, P.Cát Linh, Đống Đa, Hà Nội </span></li>
-									<li><span><b>Điện thoại :</b> 043 512 2266</span></li>
+									<li><span><b>Địa chỉ:</b>  </span></li>
+									<li><span><b>Điện thoại :</b></span></li>
 								</ul></li>
 						</ul>
 						<input type="submit" value="Chọn thanh toán tại văn phòng >>">
@@ -152,7 +152,7 @@
 									<td><img
 										src="${resource(dir:'images',file:'bank-logo-VCB.gif')}" /></td>
 									<td><span><b>Ngân hàng TMCP Ngoại Thương Việt
-												Nam - Vietcombank</b> </span><br /> <span>Tên tài khoản : <b>Cty TNHH Thương Mại và Dịch Vụ Du lịch HPV Việt Nam</b>
+												Nam - Vietcombank</b> </span><br /> <span>Tên tài khoản : <b>Cty TNHH Thương Mại và Dịch Vụ Du lịch IGO Việt Nam</b>
 												</span><br /> <span>Số tài khoản :
 												<b>0021-0002-93700</b></span><br /> <span>Phòng giao dịch </span><br /> <span>Chi
 											Nhánh: <b>VCB chi nhánh Hoàn Kiếm </b>
@@ -192,7 +192,7 @@
 						<div class="check-box" id="3"></div>
 					</div>
 					<div class="pay-checked">
-						<p>HPV.vn chỉ giao vé đối với các khu vực nội thành Hà Nội như
+						<p>IGO chỉ giao vé đối với các khu vực nội thành Hà Nội như
 							sau: Ba đình , Cầu giấy, Hoàn Kiếm, Hoàng Mai, Hai Bà Trưng ,
 							Đống Đa, Long Biên.</p>
 							<table class="pay-add">

@@ -10,7 +10,7 @@ import org.springframework.beans.factory.InitializingBean
 
 import org.apache.commons.logging.LogFactory
 
-class HPVUserDetailsService implements GrailsUserDetailsService, InitializingBean {
+class IGUserDetailsService implements GrailsUserDetailsService, InitializingBean {
 
     //def log = LogFactory.getLog("grails.app.service.")
 
@@ -73,7 +73,7 @@ class HPVUserDetailsService implements GrailsUserDetailsService, InitializingBea
             if (log.debugEnabled) {
                 log.debug "Returning user details objecting with values: ${requiredDetails.dump()}"
             }
-            return new HPVUserDetails(details.username, details.password, details.status, authorities ?: NO_ROLES, details)
+            return new IGUserDetails(details.username, details.password, details.status, authorities ?: NO_ROLES, details)
         }
     }
 }

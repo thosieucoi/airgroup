@@ -3,7 +3,7 @@ package com.airgroup.securitycfg
 import org.springframework.security.core.GrantedAuthority
 import org.springframework.security.core.userdetails.UserDetails
 
-class HPVUserDetails implements UserDetails {
+class IGUserDetails implements UserDetails {
 	final Collection<GrantedAuthority> authorities
 	final String password
 	final String username
@@ -15,7 +15,7 @@ class HPVUserDetails implements UserDetails {
 
 	final def extraProperties
 
-	HPVUserDetails(username, password, status, authorities, otherProps) {
+	IGUserDetails(username, password, status, authorities, otherProps) {
 		this.username = username
 		this.password = password
 		this.authorities = authorities

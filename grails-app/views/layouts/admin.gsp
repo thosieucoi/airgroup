@@ -15,7 +15,7 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <title><g:layoutTitle default="HPV Administration"/></title>
+    <title><g:layoutTitle default="IGO Administration"/></title>
 
     <link rel="shortcut icon" href="${g.resource(plugin:'weceem', dir:'_weceem/images/favicon.ico')}"/>
     <nav:resources/>

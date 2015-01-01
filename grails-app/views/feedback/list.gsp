@@ -19,7 +19,7 @@
 		<g:form id="feedback-form" action="save">
 			<article id="chon-chuyen-bay-1" class="col-md-8 col-sm-8 col-xs-8">
 			<h1>
-				<p>${message(code: 'feedback.listform.caption', default:'HPV & Customer\'s thought')}</p>
+				<p>Khách hàng nói về chúng tôi</p>
 			</h1>
 				<div class="debook">
 					<g:each in="${feedbackInstanceList}" status="i"
