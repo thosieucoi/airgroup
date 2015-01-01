@@ -108,7 +108,7 @@
 						</div>
 						<div class="row">
 							<div class="col-md-12 col-sm-12 col-xs-12">
-								<div class="center-block" style="width: 110px;">
+								<div class="center-block">
 									<button id="tim-lich-bay" type="submit" class="tour-button">
 										<img
 											src="${resource(dir:'images/newuiimg',file:'icon-search.png') }"

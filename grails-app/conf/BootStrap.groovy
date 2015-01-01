@@ -10,7 +10,6 @@ import com.airgroup.domain.Airline
 import com.airgroup.domain.Category
 import com.airgroup.domain.Country
 import com.airgroup.domain.Fee
-import com.airgroup.domain.Ipconfig
 import com.airgroup.domain.Location
 import com.airgroup.domain.Rate
 
@@ -101,10 +100,6 @@ class BootStrap {
 			if(Country.count() == 0){
 				println "Initialize country"
 				countryService.saveCountry()
-			}
-
-			if (Ipconfig.list().size() <  1){
-				assert new Ipconfig(code:'supercode',ip:'192.168.1.1',status:'1').save(flush:true)
 			}
 
 			if(Category.list().size() < 1){

@@ -12,8 +12,6 @@ import org.springframework.security.web.authentication.AbstractAuthenticationPro
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter
 import org.weceem.auth.CMSUser;
 
-import com.airgroup.domain.Ipconfig;
-
 class LoginController {
 	
 	static allowedMethod = [checkMasterCode:"POST", auth: "POST"]

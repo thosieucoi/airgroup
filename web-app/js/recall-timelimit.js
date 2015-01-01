@@ -8,16 +8,12 @@ jQuery(document).ready(function(jQuery){
 			} else {
 				jQuery("#numberOfTimeLimit").html(msg.numbersOfTimeLimit);
 				var userTimeLimit = jQuery("body").find("#user-timelimit a")
-				blinkColor(userTimeLimit)
-				blinkColor("#numberOfTimeLimit")
 			}
 			if(msg.numbersOfRecall == null || msg.numbersOfRecall == 0){
 				jQuery("#numberOfRecall").html(0);
 			} else {
 				jQuery("#numberOfRecall").html(msg.numbersOfRecall);
 				var userRecall = jQuery("body").find("#user-recall a")
-				blinkColor(userRecall)
-				blinkColor("#numberOfRecall")
 			}
 		}
 	})

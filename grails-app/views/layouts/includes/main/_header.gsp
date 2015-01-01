@@ -19,7 +19,7 @@
 						<span id="numberOfRecall"></span> recall
 	    		</g:link>
 			</span>
-			</span> <span title="Current User"> Xin chào <g:message
+			</span> <span title="Current User"><g:message
 					code="admin.user.current"
 					args="${[wcm.loggedInUserName().encodeAsHTML(), wcm.loggedInUserEmail().encodeAsHTML()]}" />
 			</span>&nbsp|&nbsp
@@ -125,12 +125,6 @@
 					</g:link></li>
 			</sec:ifAnyGranted>
 
-			<sec:ifAnyGranted roles="ROLE_ADMIN">
-				<li><g:link controller="ipconfig">
-						<span><g:message code="navigation.admin.config" /></span>
-						<em></em>
-					</g:link></li>
-			</sec:ifAnyGranted>
 			<sec:ifAnyGranted roles="ROLE_ADMIN">
 				<li><g:link controller="fee">
 						<span><g:message code="navigation.admin.fee" /></span>
