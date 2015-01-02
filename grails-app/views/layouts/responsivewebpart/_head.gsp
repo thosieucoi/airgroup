@@ -78,9 +78,7 @@ height: 350px;
 .logo{
 	width: 100%;
 	max-width: 165px;
-	max-height: 65px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	max-height: 100px;
 	-moz-appearance: ;
 }
 .contact{

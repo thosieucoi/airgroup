@@ -4,8 +4,8 @@
 	<div class="container">
 		<div class="row col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1  col-xs-12">
 			<div id="tour-logo" class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-				<img src="${resource(dir:'images/newuiimg',file:'logo.png') }"
-					alt="logo"class="center-block logo"/>
+				<g:link controller="home"><img src="${resource(dir:'images/newuiimg',file:'logo.png') }"
+					class="center-block logo"/></g:link>
 			</div>
 			<div id="tour-services" class="col-lg-9 col-md-9 col-sm-9 hidden-xs">
 				<div class="row" style="font-size:9px">
@@ -37,7 +37,7 @@
 	</div>
 </header>
 
-<nav id="menu" class="hidden-xs" style="font-size: 12px !important">
+<nav id="menu" class="hidden-xs" style="font-size: 12.5px !important">
 	<div class="container">
 		<div class="row col-lg-10 col-lg-offset-1">
 			<div class="col-lg-5  col-md-3 col-xs-5" style="width: 4% !important;">
@@ -58,7 +58,7 @@
 								action="search">So sánh giá</g:link>
 					</g:if>
 					<g:else>
-						<li><g:link controller="flight" action="search">So sánh giá</g:link>
+						<li><g:link controller="flight" action="search">Đặt vé máy bay</g:link>
 					</g:else>
 					
 					<g:if test="${params['controller'].equals('radar')}">
@@ -69,17 +69,17 @@
 					</g:else>
 					
 					<g:if test="${params['controller'].equals('news')}">
+						<li class="active"><g:link controller="news">Tin tức</g:link>
+					</g:if>
+					<g:else>
+						<li><g:link controller="news">Tin tức</g:link>
+					</g:else>
+					
+					<g:if test="${params['controller'].equals('news')}">
 						<li class="active"><g:link controller="news">Khuyến mại</g:link>
 					</g:if>
 					<g:else>
 						<li><g:link controller="news">Khuyến Mại</g:link>
-					</g:else>
-					
-					<g:if test="${params['controller'].equals('affiate')}">
-						<li class="active"><g:link controller="affiate">Tích điểm</g:link>
-					</g:if>
-					<g:else>
-						<li><g:link controller="affiate">Tích điểm</g:link>
 					</g:else>
 					
 					<g:if test="${params['controller'].equals('infor')}">
@@ -112,7 +112,7 @@
 								action="infor">Liên hệ</g:link></li>
 					</g:if>
 					<g:else>
-						<li><g:link controller="contactUs" action="infor">Liên hệ</g:link></li>
+						<li><g:link controller="contactUs" action="infor">Liên hệ </g:link></li>
 					</g:else>
 				</ul>
 			</div>
