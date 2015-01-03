@@ -37,8 +37,9 @@
 			</div>
 			<div id="loaddata">
 				<img src="${resource(dir:'images',file:'ajax-loader.gif')}"
-					align="middle" /><span style="font-size: 20px">Quý khách
-					vui lòng chờ, giá đang sắp xếp từ thấp đến cao</span>
+					align="middle"/>
+				</br>
+				<span style="font-size: 14px">Đang tìm kết quả các chuyến bay...</span>
 			</div>
 
 			<div class="select">

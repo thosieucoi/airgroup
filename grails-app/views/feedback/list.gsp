@@ -17,7 +17,7 @@
             </section>
 	<section class="row">
 		<g:form id="feedback-form" action="save">
-			<article id="chon-chuyen-bay-1" class="col-md-8 col-sm-8 col-xs-8">
+			<article id="chon-chuyen-bay-1" class="col-md-8 col-sm-8 col-xs-12">
 			<h1>
 				<p>Khách hàng nói về chúng tôi</p>
 			</h1>
@@ -60,8 +60,8 @@
 				</div>
 			</article>
 
-			<article class="col-md-4 col-sm-4 col-xs-4">
-				<div style="height: 515px;" class="book hdd bg-type-red box-border-radius-5 region-type-2 box-padding-10">
+			<article class="col-md-4 col-sm-4 col-xs-12">
+				<div style="height: 380px;" class="book hdd bg-type-red box-border-radius-5 region-type-2 box-padding-10">
 					<div class="title title-b title-upper">
 						<span class="title"> ${message(code: 'feedback.sendform.caption', default: 'Send your comment')}</span>
 					</div>

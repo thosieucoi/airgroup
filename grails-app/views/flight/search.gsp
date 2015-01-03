@@ -21,14 +21,13 @@
 		</div>
 		
 		
-		<div class="row">
-			<div class="col-lg-5 col-md-6 col-sm-7 col-xs-12">
-				<article id="tim-chuyen-bay">
+		<section class="row">
+				<article id="tim-chuyen-bay" class="col-lg-5 col-md-6 col-sm-7 col-xs-12">
 					<div class="tour-box">
 						<g:form controller="flight" action="switchSearchPage"
 							method="POST">
 							<div class="title">
-								<img src="images/img/icon-tim-chuyen-bay.png" alt="" /> <span
+								<img src="${resource(dir:'images/img',file:'icon-tim-chuyen-bay.png')}" alt="" /> <span
 									class="title title-upper title-b">Tìm chuyến bay</span>
 
 								<div class="line line-horizontal"></div>
@@ -110,7 +109,7 @@
 									<div class="col-md-12 col-sm-12 col-xs-12">
 										<div class="center-block">
 											<button id="tim-lich-bay" class="tour-button" type="submit">
-												<img src="images/img/icon-search.png" alt="search"
+												<img src="${resource(dir:'images/img',file:'icon-search.png') }" alt="search"
 													width="16px" height="16px" /> <span>TÌM KIẾM</span>
 											</button>
 										</div>
@@ -122,52 +121,36 @@
 						</g:form>
 					</div>
 				</article>
-			</div>
 
-			<div class="row col-md-4 col-sm-4 col-xs-4">
-				<div>
-					<strong>Vé Nội địa</strong> <br />
-					<p class="description">
-						Để tìm chuyến bay Nội địa quý khách chỉ cần chon: <br /> Điểm đi,
-						Điểm đến, Ngày đi, Ngày về (khứ hồi). Chương trình sẽ tìm kiếm tất
-						cả các chuyến bay của 3 hãng hàng không đang hoạt động tại Việt
-						Nam: VietnamAirlines, JetStar, VietJet Air.
-					</p>
-					<strong>Vé Quốc Tế</strong> <br />
-					<p class="description">Quý khách nhập tên nước, tên thành phố
-						hoặc mã sân bay. Hệ thống sẽ tìm kiếm tất cả những chuyến bay bay
-						thẳng, bay chuyển chặng của tất cả các hãng hàng không trên thế
-						giới.</p>
-				</div>
-			</div>
-		</div>
+				<article class="col-lg-7 col-md-6 col-sm-5 col-xs-12">
+						<div class="tree-img-130 bg-type-2">
+							<div class="img-news">
+								<img
+									src="${resource(dir:'images/newuiimg',file:'tiep-vien.png') }"
+									alt="" />
+							</div>
+							<div class="detail-news region-type-2">
+								<span class="title title-upper title-b">Cách đặt vé máy bay</span>
+								<div class="line line-horizontal box-margin-10"></div>
+								<div class="space-10"></div>
+								<strong>01. Trực tiếp trên website, nhanh nhất - tiện nhất</strong> <br />
+									<p class="description">
+										Để đặt vé máy bay trên trang web: 
+										</br>
+										Tìm kiếm vé máy bay -> Chọn chuyến bay -> Điền thông tin -> Thanh toán -> Xác nhận.
+									</p>
+								<strong>02. Qua chat</strong> <br />
+								<strong>03. Gọi điện thoại cho Ahotua 0000.000.000</strong> <br />
+								<strong>04. Đến trực tiếp văn phòng Ahotua</strong> <br />
+									<p class="description">Cơ sở 1: Hoàng Quốc Việt, Cầu Giấy, Hà Nội.</p>
+							</div>
+							<div class="space-20"></div>
+							<div class="line line-horizontal box-margin-10"></div>
+						</div>
+				</article>
+		</section>
 
 		<div class="space-10 hidden-xs"></div>
-		<div class="row">
-			<div id="dich-vu-bay" class="col-md-5 col-sm-5 col-xs-5">
-				<div class="tree-img-130 bg-type-2">
-					<div class="img-news">
-						<img
-							src="${resource(dir:'images/newuiimg',file:'tiep-vien.png') }"
-							alt="" />
-					</div>
-					<div class="detail-news region-type-2">
-						<span class="title title-upper title-b">Dịch vụ bay</span>
-						<div class="line line-horizontal box-margin-10"></div>
-						<div class="space-10"></div>
-						<ul class="tour-tree-circle">
-							<li><a class="title-b" href="/policy/dieukien#C1">Đón
-									tiễn sân bay</a></li>
-							<li><a class="title-b" href="/policy/dieukien#C2">Taxi</a></li>
-							<li><a class="title-b" href="/policy/dieukien#C3">Hành
-									lý</a></li>
-							<li><a class="title-b" href="/policy/dieukien#C4">Visa,
-									Hộ chiếu</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
 	</div>
 </body>
 </html>

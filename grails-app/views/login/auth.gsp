@@ -35,6 +35,16 @@
 		    border: 1px solid #08547C;
 		    border-radius: 3px 3px 3px 3px;color:#fff; padding:3px 0; font-weight:bold
 		}
+		
+		.ui-state-highlight
+		{
+			color: red;
+		}
+		
+		.prepend-top
+		{
+			margin-top: 0px;
+		}
     </style>
     
     <script type="text/javascript" src=""></script>
@@ -50,7 +60,7 @@
         <div class="prepend-8 span-8 append-8 last">
             <div class="container span-8 last box ui-corner-all">
                 <div class="span-8 append-bottom last">
-                    <img src="${resource(dir: 'images', file:'logo.png')}" width="70px" height="70px"/>
+                    <img src="${resource(dir: 'images', file:'logo.png')}" width="120px" height="120px"/>
                 </div>
 			
                 <div class="span-8 prepend-top last">

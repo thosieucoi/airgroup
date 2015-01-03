@@ -58,7 +58,11 @@
 						</tr>
 					</table>
 			</div>
-			<div id="loaddata"><img src="${resource(dir:'images',file:'ajax-loader.gif')}" align="middle" /><span style="font-size: 20px">Quý khách vui lòng chờ, giá đang sắp xếp từ thấp đến cao</span></div>
+			<div id="loaddata">
+				<img src="${resource(dir:'images',file:'ajax-loader.gif')}" align="middle" />
+				</br>
+				<span style="font-size: 14px">Đang tìm kết quả các chuyến bay...</span>
+			</div>
 			<div id="departure"></div>
 		</article>
 		<article class="col-md-4 col-sm-4 col-xs-12" style="padding: 0">
@@ -101,7 +105,8 @@
 			</article>
 			<g:include view="layouts/responsivewebpart/_searchFlightForm.gsp" />
 			</section>
-			<script type="text/javascript">
+			
+		<script type="text/javascript">
 			function filterTransit(el){
 				if($(el).attr("id")=='one'){
 					if($(el).attr("checked")){

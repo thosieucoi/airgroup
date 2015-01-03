@@ -164,11 +164,7 @@
 										"${StringUtils.abbreviate(feedbackInstance.content, 45)}”
 									</strong>
 									<p class="description title-i">
-										${StringUtils.abbreviate(feedbackInstance.name, 25)} - 
-										<g:if
-											test="${feedbackInstance.phoneNumber}">
-											${feedbackInstance.phoneNumber}
-										</g:if>
+										${StringUtils.abbreviate(feedbackInstance.name, 25)}
 									</p>
 								</div>
 								<div class="clearfix"></div>

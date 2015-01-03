@@ -17,33 +17,70 @@
 	</section>
 
 	<section class="row">
-		<article class="col-md-9 col-sm-9 col-xs-9">
+		<article class="col-md-9 col-sm-9 col-xs-12">
 			<div class="bg-type-2 region-type-2 box-padding-20">
-				<div class="title title-b">
-					<span class="title">Thông tin liên hệ</span>
+				<div style="height: 380px;" class="book hdd bg-type-1 box-border-radius-5 region-type-2 box-padding-10">
+					<div class="title title-b title-upper" style="text-align: left;">
+						<span class="title">Liên hệ với chúng tôi</span>
+					</div>
+					
+					<div class="line linehd">
+						<table class="feedback">
+							<tr>
+								<td><g:if test="${flash.message}">
+										<div class="message">
+											<p class="validate">
+												${flash.message}
+											</p>
+										</div>
+									</g:if> <g:hasErrors bean="${feedbackInstance}">
+										<div class="errors">
+											<g:renderErrors bean="${feedbackInstance}" as="list" />
+										</div>
+									</g:hasErrors></td>
+							</tr>
+							<tr>
+								<td
+									class="value ${hasErrors(bean: feedbackInstance, field: 'name', 'errors')}"><span>
+										${message(code: 'feedback.name.label', default: 'Name')}
+								</span><br /> <g:textField class="control-input" name="name" maxlength="100"
+										value="${feedbackInstance?.name}" /></td>
+								<g:hiddenField name="feedbackTotal" value="${feedbackTotal}" />
+							</tr>
+							<tr>
+								<td
+									class="value ${hasErrors(bean: feedbackInstance, field: 'address', 'errors')}"><span>
+										${message(code: 'feedback.address.label', default: 'Address')}
+								</span><br /> <g:textField class="control-input" name="address" maxlength="45"
+										value="${feedbackInstance?.address}" /></td>
+							</tr>
+							<tr>
+								<td
+									class="value ${hasErrors(bean: feedbackInstance, field: 'phoneNumber', 'errors')}"><span>
+										${message(code: 'feedback.phoneNumber.label', default: 'Phone Number')}
+								</span><br /> <g:textField class="control-input" name="phoneNumber"
+										value="${feedbackInstance?.phoneNumber}" /></td>
+							</tr>
+							<tr>
+								<td
+									class="value ${hasErrors(bean: feedbackInstance, field: 'content', 'errors')}"><span>
+										${message(code: 'feedback.content.label', default: 'Content')}
+								</span><br /> <g:textArea class="control-input" name="content"
+										value="${feedbackInstance?.content}" rows="5" cols="40"/></td>
+							</tr>
+							
+							<tr>
+								<td>
+									<input type="submit"
+									value="${message(code: 'feedback.sendform.submitbutton.value', default: 'Send')}"
+									class="send" style="width: 100px !important; float: left;"/>
+								</td>
+							</tr>
+
+						</table>
+					</div>
 				</div>
-				<div class="line line-horizontal"></div>
-				<div class="space-10"></div>
-				<g:if test="${contact != null }">
-					<wcm:find id="${contact.id}" var="node">
-						<div>
-							<strong>Địa chỉ:</strong>
-							${node.address}
-							<br /> <strong>Hotline:</strong>
-							${node.hotline}
-							<br /> <strong>Skype:</strong><a href="skype:${node.skype}?chat">
-								${node.skype}
-							</a> <br /> <strong>Yahoo:</strong> <a
-								href="ymsgr:sendIM?${node.yahoo}"> ${node.yahoo}</a> <br /> <strong>Email:</strong>
-							<a href="mailto:${node.yahoo}"> ${node.email}</a> <br /> <br />
-							<br />
-						</div>
-					</wcm:find>
-				</g:if>
-				<div class="title title-b">
-					<span class="title">Thông tin</span>
-				</div>
-				<div class="line line-horizontal"></div>
+				<div class="space-40 hidden-xs"></div>
 				<g:if test="${contact != null }">
 					<wcm:find id="${contact.id}" var="node">
 						<div class="debook">

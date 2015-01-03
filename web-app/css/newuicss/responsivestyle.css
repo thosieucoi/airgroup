@@ -1326,8 +1326,8 @@ v#e-may-bay-gia-re > div,
 /*feedback*/
 #tour-page #tour-section #chon-chuyen-bay-1 .debook .feedback{ margin:20px 5px; border-bottom:1px dotted #ccc}
 #tour-page #tour-section #chon-chuyen-bay-1 .debook .feedback table tr td a img{ width:60px; height:60px}
-#tour-page #tour-section #chon-chuyen-bay-1 .debook .feedback table tr td span.datepost{background: none repeat scroll 0 0 #EDEDED;color: #7A7A7A; display: inline-block;font-size: 12px;font-style: italic;margin: 5px 0;padding:4px}
-#tour-page #tour-section #chon-chuyen-bay-1 .debook .feedback table tr td span.nameKH{color: #8E8B8B;font-size: 12px;line-height: 18px;}
+#tour-page #tour-section #chon-chuyen-bay-1 .debook .feedback table tr td span.datepost{background: none repeat scroll 0 0 #EDEDED;color: #7A7A7A; display: inline-block;font-size: 12px;font-style: italic;margin: 5px 0 0 10px;padding:4px}
+#tour-page #tour-section #chon-chuyen-bay-1 .debook .feedback table tr td span.nameKH{color: #8E8B8B;font-size: 12px;line-height: 18px; margin: 5px 0 0 10px;padding:4px}
 #tour-page #tour-section .hdd .feedback span{ font-weight:normal}
 #tour-page #tour-section .hdd .feedback input{ padding:5px 0; width:275px !important}
 #tour-page #tour-section .hdd .feedback textarea{ width:275px; min-height:50px;  resize: none; height: 140px;}
