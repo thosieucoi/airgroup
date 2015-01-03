@@ -12,29 +12,70 @@
 					src="${resource(dir:'images/img',file:'icon-home-black.png')}"
 					alt="home" />Trang chủ</g:link>
                     <span class="">&gt;</span>
-                    <a href="${createLink(action:'list', controller:'feedback') }" class="current">Phản hồi</a>
-                    <input type="text" id="uh"/>
-                    <input type="button" onclick="hello();"  title="aaaaaaaaaa" />
+                    <a href="${createLink(action:'index', controller:'radar') }" class="current">Theo dõi chuyến bay</a>
                 </article>
     </section>
             
             
 	<section class="row">
-		<g:form id="feedback-form" action="save">
-			<article id="chon-chuyen-bay-1" class="col-md-8 col-sm-8 col-xs-8">
-			</article>
+		<article class="col-md-9 col-sm-9 col-xs-12" style="width: 100% !important;height: 2000px !important;">
+			<div class="bg-type-2 region-type-2 box-padding-20" id="radarframe" style="width: 100% !important;height: 1000px !important;">
+				<div style="height: 150px;" class="book hdd bg-type-red box-border-radius-5 region-type-2 box-padding-10">
+					<div class="title title-b title-upper" style="text-align: left;">
+						<span class="title">Theo dõi chuyến bay</span>
+					</div>
+					
+					<div class="line linehd">
+						<table class="feedback">
+							<tr>
+								<td class="value">
+									<span>
+										Mã máy bay
+									</span>
+									<br /> 
+									<input class="control-input" name="mamaybay" id="mamaybay" maxlength="100" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="button"
+									value="Tìm"
+									class="send" style="width: 100px !important; float: left;"  onclick="radar();"/>
+								</td>
+							</tr>
 
-		</g:form>
+						</table>
+					</div>
+				</div>
+				<div class="space-10 hidden-xs"></div>
+			</div>
+		</article>
 	</section>
 	<script>
-	function hello()
-	{
-		var iframe = document.createElement("iframe");
-		iframe.src = "http://www.flightradar24.com/" + document.getElementById("uh").value;
-		iframe.width ="1000px";
-		iframe.height="1000px";
-		document.getElementById("chon-chuyen-bay-1").appendChild(iframe);
-	} 
+		var iframe;
+		jQuery(document).ready(function(){
+			iframe = document.createElement("iframe");
+			iframe.src = "http://www.flightradar24.com/";
+			iframe.width ="100%";
+			iframe.height="100%";
+			document.getElementById("radarframe").appendChild(iframe);
+			passer();
+		});
+		
+		function radar()
+		{
+			document.getElementById("radarframe").removeChild(iframe);
+			iframe = document.createElement("iframe");
+			iframe.src = "http://www.flightradar24.com/" + document.getElementById("mamaybay").value;
+			iframe.width ="100%";
+			iframe.height="100%";
+			document.getElementById("radarframe").appendChild(iframe);
+			passer();
+		} 
+
+		function passer()
+		{
+		}
 	
 	</script>
 </body>

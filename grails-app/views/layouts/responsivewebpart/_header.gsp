@@ -62,10 +62,10 @@
 					</g:else>
 					
 					<g:if test="${params['controller'].equals('radar')}">
-						<li class="active"><g:link controller="radar" >Hành trình bay</g:link>
+						<li class="active"><g:link controller="radar" >Theo dõi chuyến bay</g:link>
 					</g:if>
 					<g:else>
-						<li><g:link controller="radar">Hành trình bay</g:link>
+						<li><g:link controller="radar">Theo dõi chuyến bay</g:link>
 					</g:else>
 					
 					<g:if test="${params['controller'].equals('news') && params['action'].equals('index')}">
