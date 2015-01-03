@@ -15,60 +15,43 @@
 							src="${resource(dir:'images/img',file:'icon-home-black.png')}"
 							alt="home" />Trang chủ</g:link>
 					<span class="">&gt;</span>
-					<g:link controller="news">Tin tức khuyến mãi</g:link>
+					
+					<g:if test="${bigCategory.equals('Tin tức')}">
+						<g:link controller="news" action="index">Tin Tức</g:link>
+					</g:if>
+					<g:else>
+						<g:link controller="news" action="saleoff">Khuyến Mại</g:link>
+					</g:else>
+					
+					
 					<span class="">&gt;</span>
 					<a class="current" href="#">Chi tiết tin tức</a>
 				</article>
 			</section>
 
 			<section class="row">
-				<article id="tour-details" class="col-md-12 col-sm-12 col-xs-12">
+				<article id="tour-details" class="col-md-8 col-sm-8 col-xs-12">
 					<div class="bg-type-2">
 						<div class="adv">
-							<div class="title title-upper title-b">
+							<div class="title title-upper title-b" style="text-align: left; padding: 10px;">
 								<font color="black"> <b> ${bigCategory}
 								</b></font>
 							</div>
 
 							<div class="tour-box">
-								<a href="#" class="title title-b"> ${content.title }
-								</a>
+								<h1><a href="#" class="title title-b"> ${content.title }
+								</a></h1>
 							</div>
 						</div>
 						<div id="tour-details-content">
 							${content.content }
 						</div>
 					</div>
-
 				</article>
+				
+				<g:include view="layouts/responsivewebpart/_searchFlightForm.gsp" />
 			</section>
 			<p class="box-padding-10"></p>
-			<section class="row">
-				<article id="tour-details" class="col-md-12 col-sm-12 col-xs-12">
-					<div class="bg-type-2">
-						<div class="adv">
-							<div class="title title-upper title-b">
-								<font color="black"> <b>Các tin liên quan</b></font>
-							</div>
-
-
-							<g:each in="${newsList}" var="news" status="detailsInfo">
-								<li>
-									<div class="box-margin-left-10">
-										<g:link action="detailsInfo" controller="news"
-											params="[infoid:news.id]">
-											${news.title }
-											<g:formatDate format="(dd/MM)" date="${news.createdOn}" />
-										</g:link>
-									</div>
-
-									<div class="space-5"></div>
-								</li>
-							</g:each>
-						</div>
-					</div>
-				</article>
-			</section>
 		</div>
 	</div>
 </body>

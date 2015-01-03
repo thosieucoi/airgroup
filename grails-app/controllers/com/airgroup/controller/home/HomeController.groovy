@@ -24,7 +24,7 @@ import com.airgroup.domain.OrderDetail
 class HomeController {
 
 	def index = {
-		def lastThreeFeedback = Feedback.findAll("from Feedback where status=1 order by id desc",[max:3])
+		def lastFiveFeedback = Feedback.findAll("from Feedback where status=1 order by id desc",[max:5])
 
 		def advert = Advert.findAll("from Advert where status=0 order by activeTime desc")
 
@@ -32,8 +32,6 @@ class HomeController {
 
 		def different = WcmContent.findByTitle('Different')
 		def users = CMSUser.findAllByCallCenterStatusAndStatus((short)1,(short)1)
-
-		def lastTwoOrders = Order.findAllByStatus((Short)1, [max : 2, sort:"id", order:"desc"])
 
 		String linkDetails
 
@@ -43,78 +41,13 @@ class HomeController {
 
 		DateTimeFormatter dateTimeFormat = DateTimeFormat.forPattern("yyyy-MM-dd HH:mm:ss.S")
 
-		List<String> links = Lists.newArrayList()
-
-		lastTwoOrders.each { orderItem ->
-			if(orderItem.isDomestic == ("0").toShort()){
-				linkDetails="flight/getLocalList?isDomestic=true"
-			}else{
-				linkDetails="flight/getInternationalList?&isDomestic=false"
-			}
-
-			def outDetails = OrderDetail.findAllByOrderAndTripType(orderItem, 1)
-
-			DateTime outDate = dateTimeFormat.parseDateTime(outDetails[0].outboundDate.toString());
-
-			linkDetails += "&oday=" + dateFormat.print(outDate) + "&omonth=" + monthFormat.print(outDate)
-
-			if(OrderDetail.findByOrderAndTripType(orderItem, 2) != null){
-				def inDetails = OrderDetail.findAllByOrderAndTripType(orderItem, 2)
-				DateTime inDate = dateTimeFormat.parseDateTime(inDetails[0].outboundDate.toString());
-				linkDetails += "&iday=" + dateFormat.print(inDate) + "&imonth=" + monthFormat.print(inDate)
-			}else{
-				linkDetails += "&iday=0&imonth=00"
-			}
-
-			linkDetails += "&adults=" + orderItem.adultNumber.toString()
-			linkDetails += "&kids=" + orderItem.kidNumber.toString()
-			linkDetails += "&infants=" + orderItem.infantNumber.toString()
-			if(orderItem.departureLocation != null && orderItem.arrivalLocation != null){
-				linkDetails += "&departureCode=" + orderItem.departureLocation.replace(" ", "+")
-				linkDetails += "&arrivalCode=" + orderItem.arrivalLocation.replace(" ", "+")
-			}
-
-			links.add(linkDetails)
-		}
-
-
-		def confirmOrder = Order.findByStatus((Short)2, [sort:"id", order:"desc"])
-
-		String linkConfirm = ""
-
-		if(confirmOrder.isDomestic == (Short)1){
-			linkConfirm="flight/getLocalList?isDomestic=true"
-		}else{
-			linkConfirm="flight/getInternationalList?&isDomestic=false"
-		}
-
-		def outConfirmDetails = OrderDetail.findAllByOrderAndTripType(confirmOrder, 1)
-
-		DateTime outDate = dateTimeFormat.parseDateTime(outConfirmDetails[0].outboundDate.toString());
-
-		linkConfirm += "&oday=" + dateFormat.print(outDate) + "&omonth=" + monthFormat.print(outDate)
-
-		if(OrderDetail.findByOrderAndTripType(confirmOrder, 2) != null){
-			def inConfirmDetails = OrderDetail.findAllByOrderAndTripType(confirmOrder, 2)
-			DateTime inDate = dateTimeFormat.parseDateTime(inConfirmDetails[0].outboundDate.toString());
-			linkConfirm += "&iday=" + dateFormat.print(inDate) + "&imonth=" + monthFormat.print(inDate)
-		}else{
-			linkConfirm += "&iday=0&imonth=00"
-		}
-
-		linkConfirm += "&adults=" + confirmOrder.adultNumber.toString()
-		linkConfirm += "&kids=" + confirmOrder.kidNumber.toString()
-		linkConfirm += "&infants=" + confirmOrder.infantNumber.toString()
-		if(confirmOrder.departureLocation!=null && confirmOrder.arrivalLocation != null){
-			linkConfirm += "&departureCode=" + confirmOrder.departureLocation.replace(" ", "+")
-			linkConfirm += "&arrivalCode=" + confirmOrder.arrivalLocation.replace(" ", "+")
-		}
-
-		def news = NewsContent.listOrderByCreatedOn(max:5, order:"desc")
-
-		render view: "index", model: [lastThreeFeedback: lastThreeFeedback, policy:policy, different:different, advert:advert ,
-					users: users, lastTwoOrders:lastTwoOrders, confirmOrder:confirmOrder, news: news, links : links, linkConfirm : linkConfirm]
+		def lastThreeNewsKM = NewsContent.findAllByActiveAndCategory("Active","${message(code:'navigation.admin.promotion')}",[max:3, offset:0, sort:"createdOn", order:"desc"])
+		def lastThreeNews = NewsContent.findAllByActiveAndCategory("Active","${message(code:'navigation.admin.news')}",[max:3, offset: 0, sort:"createdOn", order:"desc"])
+		
+		render view: "index", model: [lastFiveFeedback: lastFiveFeedback, policy:policy, different:different, advert:advert ,
+					users: users, lastThreeNews:lastThreeNews, lastThreeNewsKM: lastThreeNewsKM]
 	}
+	
 	def listUsers={
 		def users = CMSUser.findAllByCallCenterStatusAndStatus((short)1,(short)1)
 		List<CMSUser> list_user= new ArrayList<CMSUser>()

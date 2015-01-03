@@ -55,7 +55,7 @@
 					</g:else>
 					<g:if test="${params['controller'].equals('flight')}">
 						<li class="active"><g:link controller="flight"
-								action="search">So sánh giá</g:link>
+								action="search">Đặt vé máy bay</g:link>
 					</g:if>
 					<g:else>
 						<li><g:link controller="flight" action="search">Đặt vé máy bay</g:link>
@@ -68,18 +68,18 @@
 						<li><g:link controller="radar">Hành trình bay</g:link>
 					</g:else>
 					
-					<g:if test="${params['controller'].equals('news')}">
-						<li class="active"><g:link controller="news">Tin tức</g:link>
+					<g:if test="${params['controller'].equals('news') && params['action'].equals('index')}">
+						<li class="active"><g:link controller="news" action="index">Tin tức</g:link>
 					</g:if>
 					<g:else>
-						<li><g:link controller="news">Tin tức</g:link>
+						<li><g:link controller="news" action="index">Tin tức</g:link>
 					</g:else>
 					
-					<g:if test="${params['controller'].equals('news')}">
-						<li class="active"><g:link controller="news">Khuyến mại</g:link>
+					<g:if test="${params['controller'].equals('news') && params['action'].equals('saleoff')}">
+						<li class="active"><g:link controller="news" action="saleoff">Khuyến mại</g:link>
 					</g:if>
 					<g:else>
-						<li><g:link controller="news">Khuyến Mại</g:link>
+						<li><g:link controller="news" action="saleoff">Khuyến Mại</g:link>
 					</g:else>
 					
 					<g:if test="${params['controller'].equals('infor')}">

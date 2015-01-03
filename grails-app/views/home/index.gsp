@@ -3,7 +3,6 @@
 <html>
 <head>
 <meta name="layout" content="responsivemasterpage" />
-
 <title><g:message code="title.homepage" args="[entityName]" /></title>
 </head>
 <body>
@@ -146,119 +145,107 @@
 		<div class="space-10 hidden-xs"></div>
 
 		<section class="row hidden-xs">
-			<article id="ve-may-bay-gia-re" class="col-md-4 col-sm-4 col-xs-4">
+			<article id="y-kien-khach-hang" class="col-md-4 col-sm-4 col-xs-4">
 				<div class="bg-type-2 region-type-2">
 					<div class="title title-upper title-b">
-						<g:link controller="flight" action="search">
-	                        	Vé máy bay giá rẻ
-	                        </g:link>
+						<g:link controller="feedback" action="list">Ý KIẾN KHÁCH HÀNG</g:link>
 					</div>
-					<div class="line line-horizontal"></div>
-					<ul class="tour-tree-img tree-img-60 separate-line">
-						<li id="ve-may-bay-gia-re-noi-dia"><span
-							class="cheap-flight-header">Nội địa</span>
-							<div class="clearfix"></div></li>
-						<li id="ve-may-bay-gia-re-quoc-te"><span
-							class="cheap-flight-header">Quốc tế</span>
-							<div class="clearfix"></div></li>
+					<div class="line line-horizontal box-margin-10"></div>
+					<ul class="tour-tree-img tree-img-32 separate-line">
+						<g:each var="feedbackInstance" in="${lastFiveFeedback}">
+							<li>
+								<div class="img-feedback">
+									<img
+										src="${resource(dir:'images/newuiimg',file:'icon-message.jpg') }"
+										width="32" height="32" alt="">
+								</div>
+								<div class="detail-news">
+									<strong>
+										"${StringUtils.abbreviate(feedbackInstance.content, 45)}”
+									</strong>
+									<p class="description title-i">
+										${StringUtils.abbreviate(feedbackInstance.name, 25)} - 
+										<g:if
+											test="${feedbackInstance.phoneNumber}">
+											${feedbackInstance.phoneNumber}
+										</g:if>
+									</p>
+								</div>
+								<div class="clearfix"></div>
+							</li>
+						</g:each>
 					</ul>
+
+					<div class="command">
+						<a style="text-decoration: none"
+							href="${createLink(action: 'list', controller:'feedback') }">
+							<input type="button" class="feedback-button" value="Xem thêm" />
+						</a>
+					</div>
 				</div>
 			</article>
 			<article id="ve-may-bay-da-dat" class="col-md-4 col-sm-4 col-xs-4">
 				<div class="bg-type-2 region-type-2">
 					<div class="title title-upper title-b">
-						<g:link controller="flight" action="search">
-                        		Vé máy bay đã được đặt
+						<g:link controller="news" action="index">
+                        		Tin Tức
                         	</g:link>
 					</div>
 					<div class="line line-horizontal"></div>
 					<ul class="tour-tree-img tree-img-60 separate-box">
-						<g:each var="orderInstance" status="i" in="${lastTwoOrders}">
+						<g:each var="news" status="i" in="${lastThreeNews}">
 							<li>
 								<div class="img-news">
-									<img
-										src="/images/sm${orderInstance?.orderDetails.toArray()[0].airline}.gif"
-										width="60" height="35" alt="" />
+									<g:link action="detailsInfo" controller="news"
+										params="[infoid:news.id]">
+										${StringUtils.substringBetween(news.image, '<p>', '</p>')}
+									</g:link>
 								</div>
 								<div class="detail-news">
-									<g:if test="${orderInstance?.orderDetails.size() > 1}">
-										<span>Khách đặt ${orderInstance?.adultNumber + orderInstance?.kidNumber}
-											vé máy bay Khứ hồi
-										</span>
-									</g:if>
-									<g:else>
-										<span>Khách đặt ${orderInstance?.adultNumber + orderInstance?.kidNumber}
-											vé máy bay Một chiều
-										</span>
-									</g:else>
-									<a class="location"> ${orderInstance?.departureLocation} - ${orderInstance?.arrivalLocation}
-									</a> <br /> <span>Ngày <strong><g:formatDate
-												formatName="date.time.format.short"
-												date="${orderInstance?.orderDetails.toArray()[0]?.outboundDate}" /></strong></span>
-									<br /> <span>Giá <strong><g:formatNumber
-												number="${orderInstance?.price / (orderInstance?.adultNumber + orderInstance?.kidNumber)}"
-												formatName="price.number.format" /></strong></span> <a href="${links[i]}"
-										class="more">Xem chi tiết</a>
+									<g:link
+											action="detailsInfo" controller="news"
+											params="[infoid:news.id]">
+										<span class="location">${StringUtils.abbreviate(news.title,100)}</span>
+									</g:link>
+									 <br /> 
+									
+									<span class="more">
+										<g:link
+											action="detailsInfo" controller="news"
+											params="[infoid:news.id]">Xem chi tiết</g:link>
+									</span>
 								</div>
 								<div class="clearfix"></div>
 							</li>
 						</g:each>
-						<li>
-							<div class="img-news">
-								<img
-									src="/images/sm${confirmOrder?.orderDetails.toArray()[0].airline}.gif"
-									width="60" height="35" alt="" />
-							</div>
-							<div class="detail-news">
-								<g:if test="${confirmOrder?.orderDetails.size() > 1}">
-									<span>Khách đã mua ${confirmOrder?.adultNumber + confirmOrder?.kidNumber}
-										vé máy bay Khứ hồi
-									</span>
-								</g:if>
-								<g:else>
-									<span>Khách đã mua ${confirmOrder?.adultNumber + confirmOrder?.kidNumber}
-										vé máy bay Một chiều
-									</span>
-								</g:else>
-								<a class="location"> ${confirmOrder?.departureLocation} - ${confirmOrder?.arrivalLocation}
-								</a> <br /> <span>Ngày <strong><g:formatDate
-											formatName="date.time.format.short"
-											date="${confirmOrder?.orderDetails.toArray()[0]?.outboundDate}" /></strong></span>
-								<br /> <span>Giá <strong><g:formatNumber
-											number="${confirmOrder?.price / (confirmOrder?.adultNumber + confirmOrder?.kidNumber)}"
-											formatName="price.number.format" /></strong></span> <a href="${linkConfirm}"
-									class="more">Xem chi tiết</a>
-							</div>
-							<div class="clearfix"></div>
-						</li>
 					</ul>
 				</div>
 			</article>
 			<article id="tin-tuc-khuyen-mai" class="col-md-4 col-sm-4 col-xs-4">
 				<div class="bg-type-2 region-type-3">
 					<div class="title title-upper title-b">
-						<g:link controller="news" action="index">
-	                        	Tin tức khuyến mại
+						<g:link controller="news" action="saleoff">
+	                        	Khuyến mại
 	                        </g:link>
 					</div>
 					<div class="line line-horizontal"></div>
 					<ul>
-						<g:each in="${news}" var="news">
-							<li><g:if test="${news.category=='Tin tức'}">
-									<span><img
-										src="${resource(dir:'images/newuiimg',file:'news.png') }"
-										width="20" /></span>
-								</g:if> <g:else>
-									<span><img
-										src="${resource(dir:'images/newuiimg',file:'sale.png') }"
-										width="20" /></span>
-								</g:else> <g:link controller="news" action="detailsInfo"
-									params="[infoid:news.id]">
-									${news?.title}
+						<g:each in="${lastThreeNewsKM}" var="newsaleoff">
+							<li>
+								<span>
+									<g:link action="detailsInfo" controller="news"
+											params="[infoid:newsaleoff.id]">
+											<img src="${resource(dir:'images/newuiimg',file:'sale.png') }" width="20" />
+									</g:link>
+								</span>
+								<g:link controller="news" action="detailsInfo"
+									params="[infoid:newsaleoff.id]">
+									<span class="location">${StringUtils.abbreviate(newsaleoff.title,45)}</span>
 								</g:link>
 								<div class="description">
-									${news?.introduction}
-								</div></li>
+									${StringUtils.abbreviate(newsaleoff.introduction,250)}
+								</div>
+							</li>
 						</g:each>
 					</ul>
 				</div>
@@ -289,16 +276,13 @@
 
 					</div>
 
-					<div class="title title-upper title-b">Du lịch</div>
+					<div class="title title-upper title-b">Đối Tác</div>
 					<div class="line line-horizontal box-margin-10"></div>
 					<ul class="tour-tree-circle">
-						<li><a href="/tour/list?category=Special">Các tour đặc
-								biệt</a></li>
-						<li><a href="/tour/list?category=North">Các tour trong
-								nước</a></li>
-						<li><a href="/tour/list?category=Asean">Các tour quốc tế</a>
-						</li>
-						<li><a>Tổ chức tour theo yêu cầu</a></li>
+						<li><a href="/tour/list?category=Special">Hành Trình Phương Dông</a></li>
+						<li><a href="/tour/list?category=North">Gia Phạm Phạm Thành Long</a></li>
+						<li><a href="/tour/list?category=Asean">Vietjestair</a></li>
+						<li><a href="/tour/list?category=Asean">VietNamairline</a></li>
 					</ul>
 				</div>
 			</article>

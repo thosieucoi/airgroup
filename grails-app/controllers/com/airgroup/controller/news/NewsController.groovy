@@ -12,12 +12,25 @@ class NewsController {
 			session.promotionPagination = promotionPagination
 		}
 		def totalTT = NewsContent.findAllByActiveAndCategory("Active","${message(code:'navigation.admin.news')}").size();
-		def totalKM = NewsContent.findAllByActiveAndCategory("Active","${message(code:'navigation.admin.promotion')}").size();
-		def newsListKM = NewsContent.findAllByActiveAndCategory("Active","${message(code:'navigation.admin.promotion')}",session.promotionPagination ?:[max:8, offset:0, sort:"createdOn", order:"desc"])
 		def newsListTT = NewsContent.findAllByActiveAndCategory("Active","${message(code:'navigation.admin.news')}",session.newsPagination ?:[max:8, offset: 0, sort:"createdOn", order:"desc"])
 		params.offset = null
 		params.max = null
-		[newsListKM:newsListKM,newsListTT:newsListTT, totalTT:totalTT,totalKM:totalKM]
+		[newsListTT:newsListTT, totalTT:totalTT]
+	}
+	
+	def saleoff = {
+		if(params.type=='0'){
+			def newsPagination = [max: params.max, offset: params.offset]
+			session.newsPagination = newsPagination
+		}else if(params.type=='1'){
+			def promotionPagination = [max: params.max, offset: params.offset]
+			session.promotionPagination = promotionPagination
+		}
+		def totalKM = NewsContent.findAllByActiveAndCategory("Active","${message(code:'navigation.admin.promotion')}").size();
+		def newsListKM = NewsContent.findAllByActiveAndCategory("Active","${message(code:'navigation.admin.promotion')}",session.promotionPagination ?:[max:8, offset:0, sort:"createdOn", order:"desc"])
+		params.offset = null
+		params.max = null
+		[newsListKM:newsListKM,totalKM:totalKM]
 	}
 
 	def list = {

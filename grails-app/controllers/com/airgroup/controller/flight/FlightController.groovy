@@ -39,9 +39,7 @@ class FlightController {
 	def search={
 		def users = CMSUser.findAllByCallCenterStatusAndStatus((short)1,(short)1)
 
-		def lastThreeFeedback = Feedback.findAll("from Feedback where status=1 order by id desc",[max:3])
-
-		render view:"search", model : [users: users, lastThreeFeedback: lastThreeFeedback]
+		render view:"search", model : [users: users]
 	}
 	
 	def flyInfoFromCalendar = {

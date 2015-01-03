@@ -249,6 +249,23 @@ label.control-label{
     font-weight: bold;
 }
 
+.feedback-button{
+    background: url(../../images/newuiimg/button-1.png) repeat-x;
+    border: 0 solid transparent;
+    border-radius: 5px;
+    color: #fff;
+    line-height: 28px;
+    height: 28px;
+    width: 100%;
+    padding: 0 5px;
+    text-align: center;
+    font-weight: bold;
+    float: right;
+	width: 100px;
+	margin: 0 0 5px 0;
+}
+
+
 .tour-button span{
     padding: 5px;
     line-height: 22px;
@@ -668,14 +685,32 @@ footer .container .row{
     float: left;
 }
 
+.img-feedback{
+    float: left;
+}
+
+.tree-img-32 .img-feedback{
+    width: 32px;
+    height: 32px;
+}
+
 .tree-img-32 .img-news{
     width: 32px;
     height: 32px;
 }
 
+.tree-img-60 .img-feedback{
+    width: 60px;
+    height: 60px;
+}
+
 .tree-img-60 .img-news{
     width: 60px;
     height: 60px;
+}
+
+.tree-img-130 .img-feedback{
+    width: 130px;
 }
 
 .tree-img-130 .img-news{
@@ -686,7 +721,12 @@ footer .container .row{
     margin: 10px;
 }
 
-.tour-tree-img .img-news{
+.tour-tree-img .img-news > a > img{
+    width: 60px !important;
+    height: 60px !important;
+}
+
+.tour-tree-img .img-feedback{
     min-width: 16px;
     min-height: 16px;
 }
@@ -700,7 +740,7 @@ footer .container .row{
 }
 
 .tree-img-60 .detail-news{
-    padding-left: 60px;
+    padding-left: 70px;
 }
 
 .tree-img-130 .detail-news{
@@ -1307,11 +1347,7 @@ v#e-may-bay-gia-re > div,
     float: left;
 }
 
-.img-news{
-    float: left;
-}
-
-.img-news-margin-right-10 img{height:70px !important; width:130px !important; }
+.img-news-margin-right-10 img{height:240px !important; width:300px !important; }
 .img-news-margin-right-10{
     float: left;
     margin-right: 10px;

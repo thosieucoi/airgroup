@@ -15,8 +15,7 @@
 				<g:link controller="home" action="index">
 					<img src="${resource(dir:'images/img',file:'icon-home-black.png')}"
 						alt="home" />Trang chủ</g:link>
-				<span class="">&gt;</span> <a href="#" class="current">Tin
-					tức</a>
+				<span class="">&gt;</span> <a href="#" class="current">Khyến Mại</a>
 			</article>
 		</section>
 		<section class="row">
@@ -24,15 +23,15 @@
 				<div class="bg-type-2 region-type-2 box-padding-20">
 					<div class="title title-upper title-b" style="text-align: left">
 						<span><img
-							src="${resource(dir:'images/newuiimg',file:'news.png') }"
+							src="${resource(dir:'images/newuiimg',file:'sale.png') }"
 							width="20" heigh="16" /></span> <span><font color="black">
-								<b>Tin Tức</b>
+								<b>Khuyến Mãi</b>
 						</font></span>
 					</div>
 					<div class="line line-horizontal "></div>
 					<div class="space-10"></div>
 					<ul class="list-news">
-						<g:each in="${newsListTT}" var="news" status="index">
+						<g:each in="${newsListKM}" var="news" status="index">
 							<li>
 								<div class="img-news-margin-right-10">
 									<g:link action="detailsInfo" controller="news"
@@ -51,8 +50,9 @@
 									</p>
 								</div>
 
-								<div class="space-5"></div>
+								<div class="space-10"></div>
 								<div class="line line-horizontal "></div>
+								<div class="space-10"></div>
 							</li>
 						</g:each>
 					</ul>
@@ -64,7 +64,7 @@
 						value="${offset}" />
 					<g:hiddenField controller="news" action="index" name="max"
 						value="${max}" />
-					<g:paginate total="${totalTT}" max="8"
+					<g:paginate total="${totalKM}" max="8"
 						offset="${session.newsPagination?.offset}" params="[type:0]" />
 				</div>
 			</article>
