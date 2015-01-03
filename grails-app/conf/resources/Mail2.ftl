@@ -22,7 +22,7 @@
             </tr>
 			</#list>
         </table>
-    	<img src="http://timebay.vn/static/images/newuiimg/logo.png" style="float:right; margin:5px"/>
+    	<img src="http://ahotua.vn/static/images/newuiimg/logo.png" style="float:right; margin:5px"/>
         <div style=" clear:both"></div>
     
             <div class="mail-list" style=" padding:0 5px 0 5px">
