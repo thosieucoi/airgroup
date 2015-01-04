@@ -74,6 +74,9 @@ class HomeController {
 		response.outputStream << advert.pagePic // write the image to the outputstream
 		response.outputStream.flush()
 	}
+	
+	def orderinfor = { render view: "/home/searchOrder" }
+	
 	def searchOrder={
 		if(params.orderCode!=null&&!params.orderCode.toString().equals("")&&params.phoneNumber!=null&&!params.phoneNumber.toString().equals("")){
 			def c = Order.createCriteria()
@@ -148,7 +151,7 @@ class HomeController {
 				}
 				[order:results,inboundItem:inboundItem,outboundItem:outboundItem,price:price,inboundDuration:inboundDuration,outboundDuration:outboundDuration,outboundOverStopDuration:outboundOverStopDuration,inboundOverStopDuration:inboundOverStopDuration];
 			}else{
-				[message:"KhÃ´ng tÃ¬m tháº¥y hÃ³a Ä‘Æ¡n"]
+				[message:"Không tìm thấy hóa đơn"]
 			}
 		}
 	}

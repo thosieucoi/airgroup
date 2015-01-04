@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 <meta name="layout" content="responsivemasterpage" />
-<title>Insert title here</title>
+<title>Xem lại thông tin vé đã đặt trên ahotua</title>
 </head>
 <body>
 	<div class="body">
@@ -16,8 +16,7 @@
 							alt="home" />
                         Trang chủ
                     </g:link>
-					<span class="">&gt;</span> <a href="tour-cate.html" class="current">Tìm
-						kiếm hóa đơn</a>
+					<span class="">&gt;</span> <a href="tour-cate.html" class="current">Xem lại thông tin vé</a>
 				</article>
 			</section>
 			<section class="row">
@@ -346,7 +345,7 @@
 							</div>
 						</g:if>
 						<g:else>
-						<center><span style="color:red;font-size: 20px;margin: 20px 0">Không tìm thấy hóa đơn</span></center>
+						<center><span style="color:red;font-size: 20px;margin: 20px 0">${message}</span></center>
 						</g:else>
 					</div>
 				</article>

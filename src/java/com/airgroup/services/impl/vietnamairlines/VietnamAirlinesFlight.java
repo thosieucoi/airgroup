@@ -7,6 +7,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
+import java.util.logging.FileHandler;
+import java.util.logging.Logger;
+import java.util.logging.SimpleFormatter;
 
 import org.apache.commons.lang3.StringUtils;
 import org.joda.time.DateTime;
@@ -490,11 +493,11 @@ public class VietnamAirlinesFlight extends SearchFlights {
 					}
 					obId = StringUtils.substringsBetween(
 							obPriceData.get(obIndex).toString(),
-							"id=\"outbounds",
+							"id=\"flight_outbounds_",
 							"\"")[0];
 					String ibId = StringUtils.substringsBetween(
 							ibPriceData.get(ibIndex).toString(),
-							"id=\"inbounds",
+							"id=\"flight_inbounds_",
 							"\"")[0];
 					search.createParam("VNObId", obId);
 					search.createParam("VNIbId", ibId);
@@ -503,9 +506,10 @@ public class VietnamAirlinesFlight extends SearchFlights {
 				}
 			}
 			else{
+				System.out.println(obPriceData.get(obIndex).toString());
 				obId = StringUtils.substringsBetween(
 						obPriceData.get(obIndex).toString(),
-						"id=\"both",
+						"id=\"flight_both_",
 						"\"")[0];
 				search.createParam("VNObId", obId);
 				getAllPrice.add(getPriceList(content,search));
