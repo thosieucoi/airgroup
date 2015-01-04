@@ -1298,7 +1298,7 @@ v#e-may-bay-gia-re > div,
 #tour-page #tour-section #chon-chuyen-bay-1 .select tr.qt-price td table{width:100%}
 
 /*Next*/
-#tour-page #next { position:fixed; bottom:0; height: 50px;left: 210px;width: 615px; padding-top:10px; text-align:right}
+#tour-page #next { position:fixed; bottom:0; height: 50px;left: 210px;width: 615px; padding-top:10px; text-align:right;margin-bottom: 20px;}
 #tour-page #next input[type="submit"]{ padding:10px 30px; font-size:16px; background:#DB7820; color:#fff; font-weight:bold;-webkit-border-radius:10px;border-radius:10px;-webkit-box-shadow: 1px 2px 3px rgba(50, 50, 50, 0.56);-moz-box-shadow:    1px 2px 3px rgba(50, 50, 50, 0.56);box-shadow:         1px 2px 3px rgba(50, 50, 50, 0.56); margin-right:10px}
 
 /*payment*/

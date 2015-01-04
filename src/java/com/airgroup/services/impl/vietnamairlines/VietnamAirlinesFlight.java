@@ -506,7 +506,6 @@ public class VietnamAirlinesFlight extends SearchFlights {
 				}
 			}
 			else{
-				System.out.println(obPriceData.get(obIndex).toString());
 				obId = StringUtils.substringsBetween(
 						obPriceData.get(obIndex).toString(),
 						"id=\"flight_both_",

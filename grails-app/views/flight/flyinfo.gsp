@@ -618,7 +618,7 @@
 						</tr>
 					</table>
 					<br /> <br /> <input class="tour-button" type="submit"
-						value="<< Quay về trang kết quả" style="margin-left: 10px"
+						value="<< Quay về trang kết quả" 
 						onClick="javascript:history.back()"><br /> <br />
 						<script type="text/javascript">
 							jQuery(document).ready(function(){
