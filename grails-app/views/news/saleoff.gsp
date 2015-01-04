@@ -6,7 +6,7 @@
 <meta name="layout" content="responsivemasterpage" />
 <g:set var="entityName"
 	value="${message(code: 'News', default: 'News')}" />
-<title><g:message code="title.homepage" args="[entityName]" /></title>
+<title>Khuyến mại Vé máy bay, đại lý máy bay ahotua</title>
 </head>
 <body class="">
 	<div id="tour-section" class="row">

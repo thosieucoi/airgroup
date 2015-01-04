@@ -3,7 +3,7 @@
 <meta name="layout" content="responsivemasterpage" />
 <g:set var="entityName"
 	value="${message(code: 'feedback.label', default: 'Feedback')}" />
-<title><g:message code="title.homepage" args="[entityName]" /></title>
+<title>Theo dõi chuyến bay Vé máy bay, đại lý máy bay ahotua</title>
 </head>
 <body>
 	<section id="break-crumb" class="row title-b">

@@ -2,13 +2,12 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
 <title><g:layoutTitle default="AHOTUA" /></title>
-
+<link rel="icon" href="${resource(dir:'images/newuiimg',file:'logo.png')}" type="image/x-icon">
+<link rel="shortcut icon" href="${resource(dir:'images/newuiimg',file:'logo.png')}" type="image/x-icon">
 <g:javascript library="application" />
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="keywords" content="">
 <meta name="description" content="{TITLE}">
-
-<!-- Css nang cap lan 2 -->	
 <link rel="stylesheet" type="text/css"
 	href="${resource(dir:'css/newuicss',file:'bootstrap.css') }">
 <link rel="stylesheet" type="text/css"
@@ -17,28 +16,20 @@
 	href="${resource(dir:'css',file:'jquery-ui.css')}" />
 <link rel="stylesheet" type="text/css"
 	href="${resource(dir:'css/newuicss',file:'bootstrap-theme.min.css') }">
-
-<!-- Css nang cap lan 3 -->
 <link rel="stylesheet" type="text/css"
 	href="${resource(dir:'css',file:'customresponsive.css') }">
-
-<!-- End -->	
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="${resource(dir:'js',file:'jquery-1.7.1.min.js')}"></script>
 <script src="${resource(dir:'js',file:'bootstrap.min.js')}"></script>
 
 <script src="${resource(dir:'js/newuijs',file:'tour.js')}"></script>
-<!-- JavaScript trong lan nang cap lan 2 -->
 <script src="${resource(dir:'js',file:'jquery-ui-1.8.24.min.js')}"></script>
-
 
 <script
 	src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
 <script src="${resource(dir:'js',file:'location.js')}"></script>
 <script src="${resource(dir:'js',file:'flight-search-validation.js')}"></script>
 <script src="${resource(dir:'js',file:'calendar-link.js')}"></script>
-<!-- End -->
 <style type="text/css">
 iframe[name=google_conversion_frame] {
 	display: none

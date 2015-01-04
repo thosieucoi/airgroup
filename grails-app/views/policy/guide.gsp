@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta name="layout" content="responsivemasterpage" />
-<title><g:message code="title.homepage" args="[entityName]" /></title>
+<title>Vé máy bay, đại lý máy bay ahotua</title>
 </head>
 <body>
 	<div id="tour-section" class="row">

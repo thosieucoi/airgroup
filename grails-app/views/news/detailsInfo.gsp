@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 <meta name="layout" content="responsivemasterpage" />
-<title><g:message code="title.homepage" args="[entityName]" /></title>
+<title>${content.title } Vé máy bay, đại lý máy bay ahotua</title>
 </head>
 <body>
 	<div id="tour-page">

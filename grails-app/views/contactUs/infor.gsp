@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta name="layout" content="responsivemasterpage" />
-<title><g:message code="title.homepage" args="[entityName]" /></title>
+<title>Liên hệ để được phục vụ Vé máy bay, đại lý máy bay ahotua</title>
 </head>
 <body>
 	<section id="break-crumb" class="row title-b">

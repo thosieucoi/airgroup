@@ -1,11 +1,10 @@
 <%@ page import="org.apache.commons.lang.StringUtils"%>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="layout" content="responsivemasterpage" />
 <g:set var="entityName"
 	value="${message(code: 'localList.label', default: 'Chuyen Bay Noi Dia')}" />
-<title><g:message code="title.homepage" args="[entityName]" /></title>
+<title>Đặt mua vé máy bay Vé máy bay, đại lý máy bay ahotua</title>
 </head>
 <body>
 
