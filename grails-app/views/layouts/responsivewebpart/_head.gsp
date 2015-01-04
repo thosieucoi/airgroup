@@ -2,8 +2,8 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
 <title><g:layoutTitle default="AHOTUA" /></title>
-<link rel="icon" href="${resource(dir:'images/newuiimg',file:'logo.png')}" type="image/x-icon">
-<link rel="shortcut icon" href="${resource(dir:'images/newuiimg',file:'logo.png')}" type="image/x-icon">
+<link rel="icon" href="${resource(dir:'images/newuiimg',file:'icon-logo.png')}" type="image/x-icon">
+<link rel="shortcut icon" href="${resource(dir:'images/newuiimg',file:'icon-logo.png')}" type="image/x-icon">
 <g:javascript library="application" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="keywords" content="">
