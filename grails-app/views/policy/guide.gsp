@@ -12,18 +12,13 @@
 				<g:link controller="home" action="index"><img
 					src="${resource(dir:'images/img',file:'icon-home-black.png')}"
 					alt="home" />Trang chủ</g:link>
-				<span class="">&gt;</span> <a href="#" class="current">Dịch vụ</a>
+				<span class="">&gt;</span> <a href="#" class="current">Hướng dẫn</a>
 			</article>
 		</section>
 		<section class="row">
-			<article class="col-md-9 col-sm-9 col-xs-9">
+			<article class="col-md-8 col-sm-8 col-xs-12">
 				<div class="bg-type-2 region-type-2 box-padding-20">
-					<div class="title title-b">
-						<span class="title">Điều kiện, thủ tục cần thiết khi bay</span>
-					</div>
-					<div class="line line-horizontal"></div>
 					<div class="space-10"></div>
-
 					<div class="debook">
 						<g:if test="${policy != null }">
 							<wcm:find id="${policy.id}" var="node">

@@ -19,7 +19,7 @@
 	<section class="row">
 		<article class="col-md-9 col-sm-9 col-xs-12">
 			<div class="bg-type-2 region-type-2 box-padding-20">
-				<div style="height: 380px;" class="book hdd bg-type-1 box-border-radius-5 region-type-2 box-padding-10">
+				<div style="height: 380px; background-color: #f6c922;" class="book hdd bg-type-1 box-border-radius-5 region-type-2 box-padding-10">
 					<div class="title title-b title-upper" style="text-align: left;">
 						<span class="title">Liên hệ với chúng tôi</span>
 					</div>

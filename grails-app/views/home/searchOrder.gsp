@@ -86,22 +86,17 @@
 										style="height: 32px; background: #007CC3; padding: 0; margin: 0">
 										<li
 											style="list-style: none; float: left; padding: 0 5px; width: 150px"><a
-											href="http://igo.vn/flight/search"
+											href="http://ahotua.com/flight/search"
 											style="color: #f0f0f0; text-decoration: none; display: block; line-height: 32px">Tìm
 												và đặt vé</a></li>
 										<li
 											style="list-style: none; float: left; padding: 0 5px; width: 150px"><a
-											href="http://igo.vn/guide/searchGuide"
-											style="color: #f0f0f0; text-decoration: none; display: block; line-height: 32px">Hướng
-												dẫn đặt vé</a></li>
-										<li
-											style="list-style: none; float: left; padding: 0 5px; width: 150px"><a
-											href="http://igo.vn/feedback/list"
+											href="http://ahotua.com/feedback/list"
 											style="color: #f0f0f0; text-decoration: none; display: block; line-height: 32px">Ý
 												kiến khách hàng</a></li>
 										<li
 											style="list-style: none; float: left; padding: 0 5px; width: 150px"><a
-											href="http://igo.vn/contactUs/lienhe"
+											href="http://ahotua.com/contactUs/infor"
 											style="color: #f0f0f0; text-decoration: none; display: block; line-height: 32px">Liên
 												hệ</a></li>
 									</ul>
@@ -113,7 +108,7 @@
 									</p>
 									<p style="padding: 0 5px">
 										Xin cảm ơn Quý khách hàng đã sử dụng dịch vụ của<a href=""
-											style="text-decoration: none; color: #0E70A5;"> igo.vn</a>
+											style="text-decoration: none; color: #0E70A5;"> ahotua.com</a>
 									</p>
 									<div class="mail-list" style="padding: 0 5px 0 5px">
 										<h2
@@ -220,7 +215,7 @@
 												</g:if>
 												<tr>
 													<td style="padding: 5px" rowspan="2" width="70px"><img
-														src="http://igo.vn/images/sm${item.airline}.gif" /></td>
+														src="http://ahotua.com/images/sm${item.airline}.gif" /></td>
 													<td style="padding: 5px" width="170px">Từ<a href=""
 														style="text-decoration: none; color: #333"> <b> ${item.departure}
 														</b></a></td>
@@ -277,7 +272,7 @@
 													</g:if>
 													<tr>
 														<td style="padding: 5px" rowspan="2" width="70px"><img
-															src="http://igo.vn/images/sm${item.airline}.gif" /></td>
+															src="http://ahotua.com/images/sm${item.airline}.gif" /></td>
 														<td style="padding: 5px" width="170px">Từ<a href=""
 															style="text-decoration: none; color: #333"> <b>
 																	${item.departure}
@@ -332,22 +327,17 @@
 										style="height: 32px; background: #007CC3; padding: 0; margin: 0">
 										<li
 											style="list-style: none; float: left; padding: 0 5px; width: 150px"><a
-											href="http://igo.vn/flight/search"
+											href="http://ahotua.com/flight/search"
 											style="color: #f0f0f0; text-decoration: none; display: block; line-height: 32px">Tìm
 												và đặt vé</a></li>
 										<li
 											style="list-style: none; float: left; padding: 0 5px; width: 150px"><a
-											href="http://igo.vn/guide/searchGuide"
-											style="color: #f0f0f0; text-decoration: none; display: block; line-height: 32px">Hướng
-												dẫn đặt vé</a></li>
-										<li
-											style="list-style: none; float: left; padding: 0 5px; width: 150px"><a
-											href="http://igo.vn/feedback/list"
+											href="http://ahotua.com/feedback/list"
 											style="color: #f0f0f0; text-decoration: none; display: block; line-height: 32px">Ý
 												kiến khách hàng</a></li>
 										<li
 											style="list-style: none; float: left; padding: 0 5px; width: 150px"><a
-											href="http://igo.vn/contactUs/lienhe"
+											href="http://ahotua.com/contactUs/infor"
 											style="color: #f0f0f0; text-decoration: none; display: block; line-height: 32px">Liên
 												hệ</a></li>
 									</ul>

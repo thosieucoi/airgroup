@@ -81,20 +81,20 @@
 							<strong>Bước 4:Chọn phương thức thanh toán</strong>
 							<p>Khách hàng có thể chọn các phương thức thanh toán khác
 								nhau từ Thanh toán chuyển khoản , Thanh toán trức tuyến qua các
-								cổng thanh toán , hoặc thanh toán tại văn phòng của IGO</p>
+								cổng thanh toán , hoặc thanh toán tại văn phòng của Ahotua</p>
 
 						</div>
 						<div class="debook">
-						<strong>Bước 5: Nhận thông báo Hoàn tất đơn hàng từ IGO và Email
+						<strong>Bước 5: Nhận thông báo Hoàn tất đơn hàng từ Ahotua và Email
 								thông báo gửi cho khách hàng.</strong>
-							<p>Sau khi khách hàng hoàn tất đơn hàng , nhân viên IGO sẽ
+							<p>Sau khi khách hàng hoàn tất đơn hàng , nhân viên Ahotua sẽ
 								liên lạc lại với quý khách hàng để hỗ trợ khách hàng trong thời
 								gian sớm nhất.</p>
 							<p>
 								<b>Trong quá trình đặt vé nếu có gì thắc mắc hoặc gặp khó
-									khăn , hãy liên hệ với nhân viên của IGO . Chúng tôi sẽ hỗ trợ
+									khăn , hãy liên hệ với nhân viên của Ahotua . Chúng tôi sẽ hỗ trợ
 									khách hàng tận tình và chu đáo . Chúc Quý khách hàng đặt vé
-									thành công và có những trải nghiệm thú vị với IGO.</b>
+									thành công và có những trải nghiệm thú vị với Ahotua.</b>
 							</p>
 
 						</div>

@@ -35,7 +35,7 @@
 							${email }
 					</a>
 					</span><br /> <span>Trong thời gian sớm nhất (trong vòng 12h tới)
-						nhân viên IGO sẽ liên hệ với Quý khách theo số điện thoại <a
+						nhân viên Ahotua sẽ liên hệ với Quý khách theo số điện thoại <a
 						 style="color: red">${phoneNumber}</a> để thông báo kết quả đặt
 						vé và hướng dẫn Quý khách cách thức thanh toán.
 					</span><br /> <label>(<span class="require">*</span>Quý khách vui

@@ -36,7 +36,7 @@
 	<div class="tl">
 		<img src="${resource(dir:'images',file:'logo.png')}" />
 		<h6>
-			Copy right 2013 - CTY TNHH THƯƠNG MẠI VÀ DỊCH VỤ DU LỊCH IGO VIỆT NAM
+			Copy right 2013 - CTY TNHH THƯƠNG MẠI VÀ DỊCH VỤ DU LỊCH AHOTUA VIỆT NAM
 			<br> Văn phòng Hà Nội: <br>
 		</h6>
 	</div>

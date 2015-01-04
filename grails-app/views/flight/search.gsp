@@ -138,6 +138,8 @@
 										Để đặt vé máy bay trên trang web: 
 										</br>
 										Tìm kiếm vé máy bay -> Chọn chuyến bay -> Điền thông tin -> Thanh toán -> Xác nhận.
+										</br>
+										<g:link controller="policy" action="guide"><span class="location">Xem hướng dẫn chi tiết</span></g:link>
 									</p>
 								<strong>02. Qua chat</strong> <br />
 								<strong>03. Gọi điện thoại cho Ahotua 0000.000.000</strong> <br />

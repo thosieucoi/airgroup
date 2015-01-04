@@ -15,7 +15,7 @@ class PolicyController {
 		}
 	}
 
-	def dieukien = {
+	def guide = {
 		def policy = Policy.findByTitle('Policy')
 		[policy: policy]
 	}
