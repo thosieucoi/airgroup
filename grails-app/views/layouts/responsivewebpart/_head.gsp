@@ -1,6 +1,5 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-
 <title><g:layoutTitle default="AHOTUA" /></title>
 <link rel="icon" href="${resource(dir:'images/newuiimg',file:'icon-logo.png')}" type="image/x-icon">
 <link rel="shortcut icon" href="${resource(dir:'images/newuiimg',file:'icon-logo.png')}" type="image/x-icon">
@@ -18,7 +17,6 @@
 	href="${resource(dir:'css/newuicss',file:'bootstrap-theme.min.css') }">
 <link rel="stylesheet" type="text/css"
 	href="${resource(dir:'css',file:'customresponsive.css') }">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="${resource(dir:'js',file:'jquery-1.7.1.min.js')}"></script>
 <script src="${resource(dir:'js',file:'bootstrap.min.js')}"></script>
 

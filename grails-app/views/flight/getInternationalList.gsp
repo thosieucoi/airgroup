@@ -15,9 +15,7 @@
 		</section>
 		<section class="row">
 			<article id="chon-chuyen-bay-1" class="col-md-8 col-sm-8 col-xs-12">
-				<h1>
-					<p>CHỌN CHUYẾN BAY</p>
-				</h1>
+				<h1>GIÁ ĐÃ BAO GỒM TOÀN BỘ THUẾ VÀ PHÍ, CAM KẾT ĐÚNG GIÁ HÃNG</h1>
 			<div class="ule">
 				<div style="float: left; width:330px">
 					<h6 class="lt">
@@ -619,42 +617,42 @@
 				
 				$(document).ready(function() {
 									initArray()
-									var urlEdreamFares = "/flight/getEdreamFares"
-									var urlQatarFares = "/flight/getQatarFares"
-									var urlVietnamairlinesFares = "/flight/getVietnamairlinesFares"
-									var urlUnitedFares = "/flight/getUnitedFares"
-									var urlVietjetFares = "/flight/getVietjetFares"
-									var urlAeroflotFares= "/flight/getAeroflotFares"
-									var urlJetstarFares= "/flight/getJetstarFares"
-									var urlCebupacificFares= "/flight/getCebupacificFares"
-									var urlMalaysiaairlinesFares= "/flight/getMalaysiaairlinesFares"
-									var urlPhilippineairlinesFares= "/flight/getPhilippineairlinesFares"
-									var urlSouthafricanairwaysFares= "/flight/getSouthafricanairwaysFares"
+									var urlEdreamFares = "${createLink(controller:'flight', action:'getEdreamFares')}";
+									var urlQatarFares = "${createLink(controller:'flight', action:'getQatarFares')}";
+									var urlVietnamairlinesFares = "${createLink(controller:'flight', action:'getVietnamairlinesFares')}";
+									var urlUnitedFares = "${createLink(controller:'flight', action:'getUnitedFares')}";
+									var urlVietjetFares = "${createLink(controller:'flight', action:'getVietjetFares')}";
+									var urlAeroflotFares= "${createLink(controller:'flight', action:'getAeroflotFares')}";
+									var urlJetstarFares= "${createLink(controller:'flight', action:'getJetstarFares')}";
+									var urlCebupacificFares= "${createLink(controller:'flight', action:'getCebupacificFares')}";
+									var urlMalaysiaairlinesFares= "${createLink(controller:'flight', action:'getMalaysiaairlinesFares')}";
+									var urlPhilippineairlinesFares= "${createLink(controller:'flight', action:'getPhilippineairlinesFares')}";
+									var urlSouthafricanairwaysFares= "${createLink(controller:'flight', action:'getSouthafricanairwaysFares')}";
 									//I 2
-									var urlBritishairwaysFares= "/flight/getBritishairwaysFares"
-									var urlCathaypacificFares= "/flight/getCathaypacificFares"
-									var urlTransasiaairwaysFares= "/flight/getTransasiaairwaysFares"
-									var urlEvaFares= "/flight/getEvaFares"
-									var urlLufthansaFares= "/flight/getLufthansaFares"
-									var urlChinaeasternairlineFares= "/flight/getChinaeasternairlineFares"
-									var urlChinaairlineFares="/flight/getChinaairlineFares"
-									var urlAllnipponairwaysFares="/flight/getAllnipponairwaysFares"
-									var urlChinasouthernFares="/flight/getChinasouthernFares"
-									var urlEmiratesFares="/flight/getEmiratesFares"
-									var urlHongkongFares="/flight/getHongkongFares"
-									var urlKoreanFares="/flight/getKoreanFares"
-									var urlJapanFares="/flight/getJapanFares"
-									var urlAirchinaFares="/flight/getAirchinaFares"
+									var urlBritishairwaysFares= "${createLink(controller:'flight', action:'getBritishairwaysFares')}";
+									var urlCathaypacificFares= "${createLink(controller:'flight', action:'getCathaypacificFares')}";
+									var urlTransasiaairwaysFares= "${createLink(controller:'flight', action:'getTransasiaairwaysFares')}";
+									var urlEvaFares= "${createLink(controller:'flight', action:'getEvaFares')}";
+									var urlLufthansaFares= "${createLink(controller:'flight', action:'getLufthansaFares')}";
+									var urlChinaeasternairlineFares= "${createLink(controller:'flight', action:'getChinaeasternairlineFares')}";
+									var urlChinaairlineFares="${createLink(controller:'flight', action:'getChinaairlineFares')}";
+									var urlAllnipponairwaysFares="${createLink(controller:'flight', action:'getAllnipponairwaysFares')}";
+									var urlChinasouthernFares="${createLink(controller:'flight', action:'getChinasouthernFares')}";
+									var urlEmiratesFares="${createLink(controller:'flight', action:'getEmiratesFares')}";
+									var urlHongkongFares="${createLink(controller:'flight', action:'getHongkongFares')}";
+									var urlKoreanFares="${createLink(controller:'flight', action:'getKoreanFares')}";
+									var urlJapanFares="${createLink(controller:'flight', action:'getJapanFares')}";
+									var urlAirchinaFares="${createLink(controller:'flight', action:'getAirchinaFares')}";
 									// I3
-									var urlEthiopianFares="/flight/getEthiopiaFares"
-									var urlSingaporeFares="/flight/getSingaporeFares"
-									var urlThaiFares="/flight/getThaiFares"
-								    var urlAmericanFares="/flight/getAmericanFares"
-								    var urlAirfranceFares="/flight/getAirfranceFares"
-								    var urlKenyaFares="/flight/getKenyaFares"    
-									var urlDeltaFares="/flight/getDeltaFares"
-									var urlAirAsiaFares = "/flight/getAirAsiaFares"									
-									var urlAbacusFares="/flight/getAbacusFares"  
+									var urlEthiopianFares="${createLink(controller:'flight', action:'getEthiopiaFares')}";
+									var urlSingaporeFares="${createLink(controller:'flight', action:'getSingaporeFares')}";
+									var urlThaiFares="${createLink(controller:'flight', action:'getThaiFares')}";
+								    var urlAmericanFares="${createLink(controller:'flight', action:'getAmericanFares')}";
+								    var urlAirfranceFares="${createLink(controller:'flight', action:'getAirfranceFares')}";
+								    var urlKenyaFares="${createLink(controller:'flight', action:'getKenyaFares')}"; 
+									var urlDeltaFares="${createLink(controller:'flight', action:'getDeltaFares')}";
+									var urlAirAsiaFares = "${createLink(controller:'flight', action:'getAirAsiaFares')}";								
+									var urlAbacusFares="${createLink(controller:'flight', action:'getAbacusFares')}";
 					    getFares(1,urlVietnamairlinesFares)
 						getFares(2,urlVietjetFares)
 						getFares(3,urlJetstarFares)

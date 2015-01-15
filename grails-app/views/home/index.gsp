@@ -2,13 +2,12 @@
 <%@ page import="com.airgroup.domain.Location"%>
 <html>
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="layout" content="responsivemasterpage" />
 <title>Vé máy bay, đại lý máy bay ahotua</title>
 </head>
 <body>
-	<div class="row">
-		<div class="space-10 hidden-xs"></div>
-
+<div class="row">
 		<div class="row">
 			<div class="col-lg-5 col-md-6 col-sm-7 col-xs-12">
 				<article id="tim-chuyen-bay">
@@ -114,8 +113,12 @@
 
 			<div id="myCarousel"
 				class="carousel slide col-lg-7 col-md-6 col-sm-5 col-xs-12"
-				data-ride="carousel">
-				<div class="carousel-inner">
+				data-ride="carousel" >
+				<ol class="carousel-indicators">
+				    <li id="firstIndi" data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				    <li data-target="#myCarousel" data-slide-to="1"></li>
+				 </ol>
+				<div class="carousel-inner" role="listbox">
 					<g:each var="advertInstance" in="${advert}" status="st">
 						<g:if test="${st==0}">
 							<div class="item active">
@@ -136,15 +139,24 @@
 							</div>
 						</g:else>
 					</g:each>
-
 				</div>
-
+				
+				<!-- Left and right controls -->
+				  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next" style="width: 90px;">
+				    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+			
 			</div>
 		</div>
 
 		<div class="space-10 hidden-xs"></div>
 
-		<section class="row hidden-xs">
+		<div class="row hidden-xs">
 			<article id="y-kien-khach-hang" class="col-md-4 col-sm-4 col-xs-4">
 				<div class="bg-type-2 region-type-2">
 					<div class="title title-upper title-b">
@@ -180,7 +192,7 @@
 					</div>
 				</div>
 			</article>
-			<article id="ve-may-bay-da-dat" class="col-md-4 col-sm-4 col-xs-4">
+			<article id="tin-tuc" class="col-md-4 col-sm-4 col-xs-4">
 				<div class="bg-type-2 region-type-2">
 					<div class="title title-upper title-b">
 						<g:link controller="news" action="index">
@@ -246,11 +258,11 @@
 					</ul>
 				</div>
 			</article>
-		</section>
+		</div>
 
 		<div class="space-10 hidden-xs"></div>
 
-		<section class="row hidden-xs">
+		<div class="row hidden-xs">
 			<article class="col-md-4 col-sm-4 col-xs-4">
 				<div class="bg-type-2 region-type-3">
 					<div id="myCarousel1" class="carousel slide" data-ride="carousel">
@@ -261,13 +273,11 @@
 							</div>
 							<div class="item">
 								<img class="tour_slide" src="images/img/du-lich.jpg" alt="" />
-
 							</div>
 							<div class="item">
 								<img class="tour_slide" src="images/img/du-lich.jpg" alt="" />
 
 							</div>
-
 						</div>
 
 					</div>
@@ -275,10 +285,9 @@
 					<div class="title title-upper title-b">Đối Tác</div>
 					<div class="line line-horizontal box-margin-10"></div>
 					<ul class="tour-tree-circle">
-						<li><a href="/tour/list?category=Special">Hành Trình Phương Dông</a></li>
-						<li><a href="/tour/list?category=North">Gia Phạm Phạm Thành Long</a></li>
-						<li><a href="/tour/list?category=Asean">Vietjestair</a></li>
-						<li><a href="/tour/list?category=Asean">VietNamairline</a></li>
+						<li><a href="http://www.hanhtrinh-phuongdong.com/">Hành Trình Phương Dông</a></li>
+						<li><a href="http://www.agoda.com/">Agoda</a></li>
+						<li><a href="http://vemaybaytructuyen.com/">Én Việt</a></li>
 					</ul>
 				</div>
 			</article>
@@ -456,9 +465,12 @@
 					</div>
 				</div>
 			</article>
-		</section>
+		</div>
 
 		<div class="space-10 hidden-xs"></div>
 	</div>
+	<script>
+		$("#firstIndi").trigger("click");
+	</script>
 </body>
 </html>

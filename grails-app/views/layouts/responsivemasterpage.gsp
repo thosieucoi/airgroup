@@ -1,18 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <g:render template="/layouts/responsivewebpart/head" />
 <body>
-	<script type="text/javascript">
-		/* <![CDATA[ */
-		var google_conversion_id = 1000656472;
-		var google_custom_params = window.google_tag_params;
-		var google_remarketing_only = true;
-		/* ]]> */
-	</script>
-	<script type="text/javascript"
-		src="//www.googleadservices.com/pagead/conversion.js">
-		
-	</script>
 	<noscript>
 		<div style="display: inline;">
 			<img height="1" width="1" style="border-style: none;" alt=""

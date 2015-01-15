@@ -19,9 +19,10 @@
 	<section class="row">
 		<article id="chon-chuyen-bay-1" class="col-md-8 col-sm-8 col-xs-12">
 			<p>
-			<h1>CHỌN CHUYẾN BAY</h1>
+			<h1>GIÁ ĐÃ BAO GỒM TOÀN BỘ THUẾ VÀ PHÍ, CAM KẾT ĐÚNG GIÁ HÃNG</h1>
 			</p>
 			<div class="ule">
+				
 				<h6 class="lt">
 					<a> ${session.parameters.departureCode}
 					</a> đi <a> ${session.parameters.arrivalCode}
@@ -401,7 +402,7 @@
 					var infants=${session.parameters.infants}
 					var adults=${session.parameters.adults}
 					var kids=${session.parameters.kids}
-					var infantPrice = (totalPrice - (pricePerAdult * adults) - (pricePerChild * kids))/infants
+					var infantPrice = (totalPrice - (pricePerAdult * adults) - (pricePerChild * kids))/infants;
 					 str+='<table class="price-break">'
 		                        	str+='<tr>'
 	                                str+='<td><span>Loại hành khách</span></td>'
@@ -764,17 +765,9 @@
 				});
 				
 				$(document).ready(function() {
-						var urlEdreamFares = "/flight/getEdreamFares"
-						var urlQatarFares = "/flight/getQatarFares"
-						var urlVietnamairlinesFares = "/flight/getVietnamairlinesFares"
-						var urlUnitedFares = "/flight/getUnitedFares"
-						var urlVietjetFares = "/flight/getVietjetFares"
-						var urlAeroflotFares= "/flight/getAeroflotFares"
-						var urlJetstarFares= "/flight/getJetstarFares"
-						var urlCebupacificFares= "/flight/getCebupacificFares"
-						var urlMalaysiaairlinesFares= "/flight/getMalaysiaairlinesFares"
-						var urlPhilippineairlinesFares= "/flight/getPhilippineairlinesFares"
-						var urlSouthafricanairwaysFares= "/flight/getSouthafricanairwaysFares"
+						var urlVietnamairlinesFares = "${createLink(controller:'flight', action:'getVietnamairlinesFares')}";
+						var urlVietjetFares = "${createLink(controller:'flight', action:'getVietjetFares')}";
+						var urlJetstarFares= "${createLink(controller:'flight', action:'getJetstarFares')}";
 						getFares(1,urlVietnamairlinesFares)
 						getFares(2,urlVietjetFares)
 						getFares(3,urlJetstarFares)

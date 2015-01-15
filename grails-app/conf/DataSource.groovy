@@ -23,8 +23,10 @@ environments {
 	}
 	test {
 		dataSource {
-			dbCreate = "update"
-			url = "jdbc:mysql://localhost:3306/airgroup_test?useUnicode=yes&characterEncoding=UTF-8"
+			username = "root"
+			password = "123456"
+			dbCreate = "update" // one of 'create', 'create-drop','update'
+			url = "jdbc:mysql://localhost:3306/airgroup?useUnicode=yes&characterEncoding=UTF-8"
 		}
 	}
 	production {
@@ -33,7 +35,7 @@ environments {
 			url = "jdbc:mysql://localhost:3306/airgroup?useUnicode=yes&characterEncoding=UTF-8"
 			pooled = true
 			username = "root"
-			password = "airgroup"
+			password = "123456"
 		}
 	}
 }
