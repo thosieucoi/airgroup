@@ -8,7 +8,7 @@
 				<div class="title">
 					<img
 						src="${resource(dir:'images/img',file:'icon-tim-chuyen-bay.png') }"
-						alt="" /> <span class="title title-upper title-b">Tìm
+						alt="Tìm chuyến bay" /> <span class="title title-upper title-b">Tìm
 						chuyến bay</span>
 
 					<div class="line line-horizontal"></div>
@@ -112,7 +112,7 @@
 									<button id="tim-lich-bay" type="submit" class="tour-button">
 										<img
 											src="${resource(dir:'images/newuiimg',file:'icon-search.png') }"
-											alt="search" width="px" height="16px" /> <span>Tìm kiếm</span>
+											alt="search" width="px" height="16px" alt="Tìm chuyến bay"/> <span>Tìm kiếm</span>
 									</button>
 								</div>
 							</div>
