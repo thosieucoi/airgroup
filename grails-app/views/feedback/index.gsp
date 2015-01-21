@@ -120,6 +120,15 @@
 					</div>
 
 				</div>
+				<script type="text/javascript">
+				   agoda_ad_client = "1717071_5026";
+				   agoda_ad_width = 300;
+				   agoda_ad_height = 600;
+				   agoda_ad_language = 1;
+				   agoda_ad_country = 38;
+				   agoda_ad_city = 2758;
+				</script>
+				<script type="text/javascript" src="//banner.agoda.com/js/show_ads.js"></script>
 			</article>
 		</g:form>
 	</section>

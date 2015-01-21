@@ -24,7 +24,7 @@ import com.airgroup.domain.OrderDetail
 class HomeController {
 
 	def index = {
-		def lastFiveFeedback = Feedback.findAll("from Feedback where status=1 order by id desc",[max:5])
+		def lastFiveFeedback = Feedback.findAll("from Feedback where status=1 order by id desc",[max:4])
 
 		def advert = Advert.findAll("from Advert where status=0 order by activeTime desc")
 

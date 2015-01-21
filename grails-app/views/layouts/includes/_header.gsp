@@ -43,7 +43,7 @@
 		<g:else>
 			<li>
 		</g:else>
-		<g:link controller="tour">
+		<g:link controller="information">
 			<span><g:message code="navigation.tour" /></span>
 			<em></em>
 		</g:link>

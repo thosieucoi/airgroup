@@ -20,7 +20,7 @@
 			</g:link>
 		</li>
 		<li>
-			<g:link controller="tour">
+			<g:link controller="information">
 				<span><g:message code="navigation.tour" /></span>
 				<em></em>
 			</g:link>

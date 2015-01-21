@@ -8,7 +8,7 @@
 </head>
 <body>
 	<div class="nav">
-		<g:link controller="tour" action="listBackEnd" class="menuButton">Quản lý Tour</g:link>
+		<g:link controller="information" action="listBackEnd" class="menuButton">Quản lý Tour</g:link>
 	</div>
 	<div class="body">
 		<div class="list">
@@ -68,11 +68,11 @@
 									<g:link action="show" id="${tourInstance.id}" class="button ui-corner-all">
 										<g:message code="common.command.view" encodeAs="HTML" />
 									</g:link>
-									<g:link id="${tourInstance.id}" controller="tour" action="delete" class="button ui-corner-all"
+									<g:link id="${tourInstance.id}" controller="information" action="delete" class="button ui-corner-all"
 										onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')} [${tourInstance.name.encodeAsJavaScript()}]?');">
 										<g:message code="command.delete" encodeAs="HTML"/>
 									</g:link>
-									<g:link id="${tourInstance.id}" controller="tour" action="edit" class="button ui-corner-all">
+									<g:link id="${tourInstance.id}" controller="information" action="edit" class="button ui-corner-all">
 										<g:message code="command.edit" encodeAs="HTML"/>
 									</g:link>
 								</td>

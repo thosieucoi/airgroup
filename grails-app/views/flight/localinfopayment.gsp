@@ -42,8 +42,8 @@
 							<li><input type="radio" name="vp" /><span> Văn phòng
 									Ahotua tại Hà Nội</span>
 								<ul>
-									<li><span><b>Địa chỉ:</b> Số 19F Nguyễn Khang, Trung Hòa, Cầu Giấy, Hà Nội </span></li>
-									<li><span><b>Điện thoại :</b> 043 512 2266</span></li>
+									<li><span><b>Địa chỉ:</b> Hoàng Quốc Viết, Cầu Giấy, Hà Nội </span></li>
+									<li><span><b>Điện thoại :</b> 043 000 0000</span></li>
 								</ul></li>
 						</ul>
 						<input type="submit" value="Chọn thanh toán tại văn phòng >>">
@@ -135,7 +135,7 @@
 								<tr>
 									<td><img
 										src="${resource(dir:'images',file:'bank-mb-logo.gif')}" /></td>
-									<td><span><b>Ngân hàng Quân đội - MBBank</b> </span><br /> <span>Tên tài khoản : <b>Vũ Thị Hồng Vân</b>
+									<td><span><b>Ngân hàng Quân đội - MBBank</b> </span><br /> <span>Tên tài khoản : <b>Ahotua</b>
 												</span><br /> <span>Số tài khoản :
 												<b>0580107012008</b></span><br /> <span>Phòng giao dịch </span><br /> <span>Chi
 											Nhánh: <b>Đống Đa - Hà Nội </b>
@@ -151,7 +151,7 @@
 								<tr>
 									<td><img
 										src="${resource(dir:'images',file:'bank-donga-logo.gif')}" /></td>
-									<td><span><b>Ngân Hàng Đông Á</b> </span><br /> <span>Tên tài khoản : <b>Vũ Thị Hồng Vân</b>
+									<td><span><b>Ngân Hàng Đông Á</b> </span><br /> <span>Tên tài khoản : <b>Ahotua</b>
 												</span><br /> <span>Số tài khoản :
 												<b>0108817986</b></span><br /> <span>Phòng giao dịch </span><br /> <span>Chi
 											Nhánh: <b>Ba Đình </b>
@@ -167,7 +167,7 @@
 								<tr>
 									<td><img
 										src="${resource(dir:'images',file:'bank-acb-logo.gif')}" /></td>
-									<td><span><b>Ngân Hàng ACB</b> </span><br /> <span>Tên tài khoản : <b>Vũ Thị Hồng Vân</b>
+									<td><span><b>Ngân Hàng ACB</b> </span><br /> <span>Tên tài khoản : <b>Ahotua</b>
 												</span><br /> <span>Số tài khoản :
 												<b>183916659</b></span><br /> <span>Phòng giao dịch </span><br /> <span>Chi
 											Nhánh: <b>Hà Nội </b>
@@ -183,7 +183,7 @@
 								<tr>
 									<td><img
 										src="${resource(dir:'images',file:'bank-sacom-logo.gif')}" /></td>
-									<td><span><b>Ngân Hàng SACOMBANK</b> </span><br /> <span>Tên tài khoản : <b>Vũ Thị Hồng Vân</b>
+									<td><span><b>Ngân Hàng SACOMBANK</b> </span><br /> <span>Tên tài khoản : <b>Ahotua</b>
 												</span><br /> <span>Số tài khoản :
 												<b>020029014176</b></span><br /> <span>Phòng giao dịch </span><br /> <span>Chi
 											Nhánh: <b>Hà Nội </b>
@@ -199,7 +199,7 @@
 								<tr>
 									<td><img
 										src="${resource(dir:'images',file:'bank-vietin-logo.gif')}" /></td>
-									<td><span><b>Ngân Hàng VIETINBANK</b> </span><br /> <span>Tên tài khoản : <b>Vũ Thị Hồng Vân</b>
+									<td><span><b>Ngân Hàng VIETINBANK</b> </span><br /> <span>Tên tài khoản : <b>Ahotua</b>
 												</span><br /> <span>Số tài khoản :
 												<b>711AB2309335</b></span><br /> <span>Phòng giao dịch </span><br /> <span>Chi
 											Nhánh: <b>Chương Dương </b>
@@ -219,46 +219,6 @@
 							</table>
 							<input type="submit" value="Chọn" name="NH" class="seclect-bank" />
 						</div>
-					</div>
-				</div>
-				<div style="clear: both"></div>
-				<div class="infor-t pay">
-					<div class="pay-check">
-						<div class="icon">
-							<img src="${resource(dir:'images',file:'home.png')}" />
-						</div>
-						<div class="info">
-							<span class="title">Thanh toán tại nhà</span><br /> <span>Trong
-								thời gian từ thứ 2-7 ngày làm việc, nhân viên Ahotua sẽ đến tận
-								nơi địa chỉ của quý khách để giao vé & thu tiền . Với hình thức
-								này, quý khách sẽ mất phí giao vé là 20,000 vnđ </span><br />
-
-						</div>
-						<div class="check-box" id="3"></div>
-					</div>
-					<div class="pay-checked">
-						<p>Ahotua chỉ giao vé đối với các khu vực nội thành Hà Nội như
-							sau: Ba đình , Cầu giấy, Hoàn Kiếm, Hoàng Mai, Hai Bà Trưng ,
-							Đống Đa, Long Biên.</p>
-							<table class="pay-add">
-								<tr>
-									<td><span>Người nhận <i>( * )</i></span></td>
-									<td><input type="text" name="revperson" /></td>
-								</tr>
-								<tr>
-									<td><span>Địa chỉ <i>( * )</i></span></td>
-									<td><input type="text" name="revaddress" /></td>
-								</tr>
-								<tr>
-									<td><span>Số điện thoại <i>( * )</i></span></td>
-									<td><input type="text" name="revphone" value="${session.parameters.phoneNumber}" /></td>
-								</tr>
-								<tr>
-									<td><span>Thành phố <i>( * )</i></span></td>
-									<td><input type="text" name="revcity" /></td>
-								</tr>
-							</table>
-							<input type="submit" value="Chọn thanh toán tại nhà >>">
 					</div>
 				</div>
 				<div style="clear: both"></div>

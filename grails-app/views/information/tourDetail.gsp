@@ -15,7 +15,7 @@
 					src="${resource(dir:'images/img',file:'icon-home-black.png')}"
 					alt="home" />Trang chủ</g:link>
 					<span class="">&gt;</span>
-						<g:link controller="tour" action="index"  class="current">Du lịch</g:link>
+						<g:link controller="information" action="index"  class="current">Du lịch</g:link>
 				</article>
 			</section>
 

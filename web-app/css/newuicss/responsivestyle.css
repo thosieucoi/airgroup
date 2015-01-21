@@ -14,7 +14,7 @@ body{
 }
 
 #footer {
-	background: red url(../newuiimg/bakground-menu.png) repeat-x;
+	background: #D80000 url(../newuiimg/bakground-menu.png) repeat-x;
 	position: fixed;
 	z-index: 9999;
 	bottom: 0;
@@ -159,7 +159,7 @@ div.title .title{
 }
 
 .bg-type-red{
-    background: #ff0000 url(../newuiimg/background-red.jpg) repeat-x;
+    background: #D80000 url(../newuiimg/background-red.jpg) repeat-x;
     color: #fff;
 }
 
@@ -457,7 +457,7 @@ table.box-solid tr:first-child{
 }
 
 #menu{
-    background: red url(../newuiimg/bakground-menu.png) repeat-x;
+    background: #D80000 url(../newuiimg/bakground-menu.png) repeat-x;
     height: 35px;
 }
 
@@ -587,7 +587,7 @@ footer .container .row{
 }
 
 #tim-chuyen-bay .tour-box{
-    background: #ff0000 url(../newuiimg/background-red.jpg) repeat-x;
+    background: #D80000 url(../newuiimg/background-red.jpg) repeat-x;
     border-radius: 5px;
     color: #fff;
     height: 350px;
@@ -1144,7 +1144,7 @@ v#e-may-bay-gia-re > div,
 #tour-page #tour-section .det{ float:none; margin:auto;  width: 640px; height: 440px;}
 #tour-page #tour-section .hone{ margin:20px 0}
 #tour-page #tour-section #chon-chuyen-bay-1{min-height: 622px;background-color: #FFFFFF;border: 1px solid #CCCCCC;text-align: left; margin-bottom:20px}
-#tour-page #tour-section #chon-chuyen-bay-1 h1{ height:36px; line-height: 36px; padding-left: 10px; color:#f0f0f0; background: url("../newuiimg/background-red.jpg") repeat-x scroll 0% 0% #F00; font-size:16px; font-weight:bold; margin-top: 10px;}
+#tour-page #tour-section #chon-chuyen-bay-1 h1{ height:36px; line-height: 36px; padding-left: 10px; color:#f0f0f0; background:#D80000 url("../newuiimg/background-red.jpg") repeat-x scroll 0% 0%; font-size:16px; font-weight:bold; margin-top: 10px;}
 #tour-page #tour-section #chon-chuyen-bay-1 h1 p{ background:url(../images/Plane1.png) no-repeat 0 -8px;
     padding-left: 10px; line-height:36px}
 #tour-page #tour-section #chon-chuyen-bay-1 .debook{ margin:5px;}

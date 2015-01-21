@@ -136,7 +136,7 @@
 								code="navigation.admin.tour" /></span><em></em></a>
 					<div class="sublist">
 						<ul>
-							<li><g:link controller="tour" action="listBackEnd">
+							<li><g:link controller="information" action="listBackEnd">
 									<span><g:message code="navigation.admin.list.tour" /></span>
 									<em></em>
 								</g:link> <g:link controller="tourIntro">

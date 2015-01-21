@@ -20,23 +20,11 @@ class FeedbackController {
 
 	/**
 	 *<p>
-	 *Redirect index page to list feedback page
-	 *</p>
-	 *@author nghiaTT 
-	 *
-	 */
-	def index = {
-		redirect(action: "list", params: params)
-	}
-
-	/**
-	 *<p>
 	 *Return list of feedback to front end
 	 *</p>
 	 *@author nghiaTT
 	 */
-	def list = {
-		//println "Offset is list : ${offset}"
+	def index = {
 		listFeedback(params)
 	}
 
@@ -78,59 +66,59 @@ class FeedbackController {
 		feedbackInstance.status = 0
 		def offset = params.int('offset') ?: 0
 		def max = params.int('max') ?: 5
-		def feedbackInstanceList = list(params).feedbackInstanceList
+		def feedbackInstanceList = index(params).feedbackInstanceList
 		def feedbackTotal = feedbackInstanceList.totalCount
 		
 		String phoneReg = /\d{6,15}/
 		String nameReg = "^[\\p{L}0-9 .'-]+"
 		if (!feedbackInstance.name) {
 			flash.message = "${message(code: 'feedback.error.name.blank')}"
-			render(view: "list", model:[feedbackInstance: feedbackInstance, feedbackInstanceList: feedbackInstanceList,
+			render(view: "index", model:[feedbackInstance: feedbackInstance, feedbackInstanceList: feedbackInstanceList,
 										 feedbackTotal: feedbackTotal, offset: offset, max: max])
 			return
 		}  else if (!feedbackInstance.name.matches(nameReg)) {
 			flash.message = "${message(code: 'feedback.error.name.special.characters')}"
-			render(view: "list", model:[feedbackInstance: feedbackInstance, feedbackInstanceList: feedbackInstanceList,
+			render(view: "index", model:[feedbackInstance: feedbackInstance, feedbackInstanceList: feedbackInstanceList,
 										 feedbackTotal: feedbackTotal, offset: offset, max: max])
 			return
 		}  else if (feedbackInstance.name.length() > 100) {
 			flash.message = "${message(code: 'feedback.error.name.max.length')}"
-			render(view: "list", model:[feedbackInstance: feedbackInstance, feedbackInstanceList: feedbackInstanceList,
+			render(view: "index", model:[feedbackInstance: feedbackInstance, feedbackInstanceList: feedbackInstanceList,
 										 feedbackTotal: feedbackTotal, offset: offset, max: max])
 			return
 		}
 		if (!feedbackInstance.address) {
 			flash.message = "${message(code: 'feedback.error.address.blank')}"
-			render(view: "list", model:[feedbackInstance: feedbackInstance, feedbackInstanceList: feedbackInstanceList,
+			render(view: "index", model:[feedbackInstance: feedbackInstance, feedbackInstanceList: feedbackInstanceList,
 										 feedbackTotal: feedbackTotal, offset: offset, max: max])
 			return
 		} else if (feedbackInstance.address.length() > 100) {
 			flash.message = "${message(code: 'feedback.error.address.max.length')}"
-			render(view: "list", model:[feedbackInstance: feedbackInstance, feedbackInstanceList: feedbackInstanceList,
+			render(view: "index", model:[feedbackInstance: feedbackInstance, feedbackInstanceList: feedbackInstanceList,
 										 feedbackTotal: feedbackTotal, offset: offset, max: max])
 			return
 		}
 		if (feedbackInstance.phoneNumber?.length() > 0 && !feedbackInstance.phoneNumber.matches(phoneReg)) {
 			flash.message = "${message(code: 'not.phoneNumber')}"
-			render(view: "list", model:[feedbackInstance: feedbackInstance, feedbackInstanceList: feedbackInstanceList,
+			render(view: "index", model:[feedbackInstance: feedbackInstance, feedbackInstanceList: feedbackInstanceList,
 										 feedbackTotal: feedbackTotal, offset: offset, max: max])
 			return
 		}
 		if (!feedbackInstance.content) {
 			flash.message = "${message(code: 'feedback.error.content.blank')}"
-			render(view: "list", model:[feedbackInstance: feedbackInstance, feedbackInstanceList: feedbackInstanceList,
+			render(view: "index", model:[feedbackInstance: feedbackInstance, feedbackInstanceList: feedbackInstanceList,
 										 feedbackTotal: feedbackTotal, offset: offset, max: max])
 			return
 		} else if (feedbackInstance.content.length() > 500) {
 			flash.message = "${message(code: 'feedback.error.content.max.length')}"
-			render(view: "list", model:[feedbackInstance: feedbackInstance, feedbackInstanceList: feedbackInstanceList,
+			render(view: "index", model:[feedbackInstance: feedbackInstance, feedbackInstanceList: feedbackInstanceList,
 										 feedbackTotal: feedbackTotal, offset: offset, max: max])
 			return
 		}
 
 		if (feedbackService.save(params)?.id) {
 			flash.message = "${message(code: 'feedback.send.sucess','Success!')}"
-			redirect(action: "list")
+			redirect(action: "index")
 		}
 	}
 		

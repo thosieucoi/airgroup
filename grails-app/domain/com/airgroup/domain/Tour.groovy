@@ -45,7 +45,7 @@ class Tour extends WcmContent {
 		startLocation()
 		price()
 		phoneNumber(minSize:8)
-		category(inList:["Special","North","Middle", "South", "Asean", "Asia", "Euro", "America", "Africa", "Domestic news", "International"])
+		category(inList:["Hotel","Taxi","Destination", "PreprareForFly", "Guide", "MapOfAirport"])
 		content(maxSize: WcmContent.MAX_CONTENT_SIZE)
 		tourStatus(inList:[(Short)1,(Short)0])
 	}

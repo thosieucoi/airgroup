@@ -1,44 +1,36 @@
-<article id="tour-cate" class="col-md-3 col-sm-3 col-xs-3">
+<article id="tour-cate" class="col-md-3 col-sm-3 col-xs-12">
 	<ul id="list-tour" class="menu-cate">
-		<li><span class="title">Trong nước</span>
+		<li><span class="title">Thông Tin</span>
 			<ul class="sub-list">
-				<li><g:link controller="tour" action="list"
-						params="[category:'Special']">Các tour đặc biệt</g:link></li>
-				<li><g:link controller="tour" action="list"
-						params="[category:'North']">Miền Bắc</g:link></li>
-				<li><g:link controller="tour" action="list"
-						params="[category:'Middle']">Miền Trung</g:link></li>
-				<li><g:link controller="tour" action="list"
-						params="[category:'South']">Miền Nam</g:link></li>
+				<li><g:link controller="information" action="list"
+						params="[category:'Hotel']">Khách sạn</g:link></li>
+				<li><g:link controller="information" action="list"
+						params="[category:'Taxi']">Hãng Xe Taxi</g:link></li>
+				<li><g:link controller="information" action="list"
+						params="[category:'Destination']">Các Điểm Đến Hàng Đầu</g:link></li>
 			</ul></li>
-		<li><span class="title">Quốc tế</span>
+		<li><span class="title">Tiện Ích</span>
 			<ul class="sub-list">
-				<li><g:link controller="tour" action="list"
-						params="[category:'Asean']">Đông Nam Á</g:link></li>
-				<li><g:link controller="tour" action="list"
-						params="[category:'Asia']">Châu Á</g:link></li>
-				<li><g:link controller="tour" action="list"
-						params="[category:'Euro']">Châu Âu</g:link></li>
-				<li><g:link controller="tour" action="list"
-						params="[category:'America']">Châu Mỹ</g:link></li>
-				<li><g:link controller="tour" action="list"
-						params="[category:'Africa']">Châu Phi</g:link></li>
-			</ul></li>
-		<li><span class="title">Tin du lịch</span>
+				<li><a href="http://www.agoda.com/">Đặt khách sạn</a></li>
+				<li><g:link controller="information" action="list" params="[category:'PreprareForFly']">Chuẩn bị trước khi bay</g:link></li>
+				<li><g:link controller="information" action="list" params="[category:'Guide']" >Hướng dẫn làm thủ tục bay</g:link></li>
+				<li><g:link controller="information" action="list" params="[category:'MapOfAirport']">Sơ đồ Sân Bay</g:link></li>
+			</ul>
+		</li>
+		
+		<li><span class="title">Du Lịch</span>
 			<ul class="sub-list">
-				<li><g:link controller="tour" action="list"
-						params="[category:'Domestic news']">Tin trong nước</g:link></li>
-				<li><g:link controller="tour" action="list"
-						params="[category:'International']">Tin quốc tế</g:link></li>
-			</ul></li>
+				<li><a href="http://www.hanhtrinh-phuongdong.com/">Du lịch trong nước và quốc tế</a></li>
+			</ul>
+		</li>
 	</ul>
 
 	<div class="space-10"></div>
 
-	<div class="adv-left">
+	<!-- <div class="adv-left">
 		<a href="http://agoda.com"> <img
 			src="${resource(dir:'images/newuiimg',file:'agoda.com.jpg') }" alt=""
 			title="agoda.com" />
 		</a>
-	</div>
+	</div> -->
 </article>

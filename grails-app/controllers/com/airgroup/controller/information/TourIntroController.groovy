@@ -1,4 +1,4 @@
-package com.airgroup.controller.tour
+package com.airgroup.controller.information
 
 import com.airgroup.domain.TourIntro;
 import org.weceem.content.WcmContent

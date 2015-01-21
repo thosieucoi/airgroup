@@ -73,6 +73,13 @@
 						<li><g:link controller="news" action="index">Tin tức</g:link>
 					</g:else>
 					
+					<g:if test="${params['controller'].equals('information') && params['action'].equals('index')}">
+						<li class="active"><g:link controller="information" action="index">Thông tin & Tiện ích</g:link>
+					</g:if>
+					<g:else>
+						<li><g:link controller="information" action="index">Thông tin & Tiện ích</g:link>
+					</g:else>
+					
 					<g:if test="${params['controller'].equals('news') && params['action'].equals('saleoff')}">
 						<li class="active"><g:link controller="news" action="saleoff">Khuyến mại</g:link>
 					</g:if>
@@ -82,10 +89,10 @@
 					
 					<g:if test="${params['controller'].equals('feedback')}">
 						<li class="active"><g:link controller="feedback"
-								action="list">Ý kiến khách hàng</g:link></li>
+								action="index">Ý kiến khách hàng</g:link></li>
 					</g:if>
 					<g:else>
-						<li><g:link controller="feedback" action="list">Ý kiến khách hàng</g:link></li>
+						<li><g:link controller="feedback" action="index">Ý kiến khách hàng</g:link></li>
 					</g:else>
 					
 					<g:if test="${params['controller'].equals('contactUs')}">

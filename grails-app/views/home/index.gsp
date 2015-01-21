@@ -60,7 +60,7 @@
 			<article id="y-kien-khach-hang" class="col-md-4 col-sm-4 col-xs-4">
 				<div class="bg-type-2 region-type-2">
 					<div class="title title-upper title-b">
-						<g:link controller="feedback" action="list">Ý KIẾN KHÁCH HÀNG</g:link>
+						<g:link controller="feedback" action="index">Ý KIẾN KHÁCH HÀNG</g:link>
 					</div>
 					<div class="line line-horizontal box-margin-10"></div>
 					<ul class="tour-tree-img tree-img-32 separate-line">
@@ -168,26 +168,25 @@
 					<div id="myCarousel1" class="carousel slide" data-ride="carousel">
 						<div class="carousel-inner">
 							<div class="item active">
-								<img class="tour_slide" src="images/img/du-lich.jpg" alt="" />
-
-							</div>
-							<div class="item">
-								<img class="tour_slide" src="images/img/du-lich.jpg" alt="" />
-							</div>
-							<div class="item">
-								<img class="tour_slide" src="images/img/du-lich.jpg" alt="" />
-
+								<!-- <img class="tour_slide" src="images/img/du-lich.jpg" alt="Ahotua" /> -->
+								<script type="text/javascript">
+								   agoda_ad_client = "1717071_5025";
+								   agoda_ad_width = 300;
+								   agoda_ad_height = 250;
+								   agoda_ad_language = 1;
+								   agoda_ad_country = 38;
+								   agoda_ad_city = 2758;
+								</script>
+								<script type="text/javascript" src="//banner.agoda.com/js/show_ads.js"></script>
 							</div>
 						</div>
-
 					</div>
 
 					<div class="title title-upper title-b">Đối Tác</div>
 					<div class="line line-horizontal box-margin-10"></div>
 					<ul class="tour-tree-circle">
 						<li><a href="http://www.hanhtrinh-phuongdong.com/">Hành Trình Phương Dông</a></li>
-						<li><a href="http://www.agoda.com/">Agoda</a></li>
-						<li><a href="http://vemaybaytructuyen.com/">Én Việt</a></li>
+						<li><a href="http://www.agoda.com/vi-vn?cid=1717071" rel='nofollow'>Đặt khách sạn và resort rẻ nhất toàn cầu Agoda</a></li>
 					</ul>
 				</div>
 			</article>
@@ -201,20 +200,20 @@
 								<g:link controller="contactUs" action="infor">
 									<span><img
 										src="${resource(dir:'images/newuiimg',file:'office.png') }"
-										height="15" /></span> Thanh toán tại văn phòng airgroup Việt Nam
+										height="15" /></span> Thanh toán tại văn phòng ahotua Việt Nam
                                 	</g:link>
 							</div>
 							<div class="description">Nhận hàng và thanh toán tại văn
-								phòng airgroup Việt Nam</div>
+								phòng ahotua Việt Nam</div>
 						</li>
 						<li>
 							<div class="title-b">
 								<g:link controller="contactUs" action="infor">
 									<img src="${resource(dir:'images/newuiimg',file:'home.png') }"
-										height="15" /> Thanh toán tại nhà
+										height="15" /> Thanh toán qua Paypal, thẻ Visa
 	                                </g:link>
 							</div>
-							<div class="description">Giao hàng và thanh toán tại nhà</div>
+							<div class="description">Giao dịch bằng paypal, thẻ tín dụng</div>
 						</li>
 						<li>
 							<div class="title-b">
@@ -253,7 +252,7 @@
 							</div>
 							<div class="bank-detail">
 								<span class="title title-b">Ngân hàng Vietcombank </span> <br />
-								<span>Tên TK: Cty TNHH Thương Mại và Dịch Vụ Du lịch airgroup
+								<span>Tên TK: Cty TNHH Thương Mại và Dịch Vụ Du lịch ahotua
 									Việt Nam</span> <br /> <span>Số TK: 0021-0002-93700</span><br /> <span>Địa
 									chỉ: Hà Nội</span>
 							</div>
@@ -266,7 +265,7 @@
 							</div>
 							<div class="bank-detail">
 								<span class="title title-b">Ngân hàng Techcombank </span> <br />
-								<span>Tên TK: Cty THNN Thương Mại và Dịch Vụ Du Lịch airgroup
+								<span>Tên TK: Cty THNN Thương Mại và Dịch Vụ Du Lịch ahotua
 									Việt Nam</span> <br /> <span>Số TK: 19128392003883</span><br /> <span>Địa
 									chỉ: Hà Nội</span>
 							</div>
@@ -279,7 +278,7 @@
 							</div>
 							<div class="bank-detail">
 								<span class="title title-b">Ngân Hàng AGRIBANK</span> <br /> <span>Tên
-									TK: Cty TNHH Thương Mại và Dịch Vụ Du lịch airgroup Việt Nam</span> <br />
+									TK: Cty TNHH Thương Mại và Dịch Vụ Du lịch ahotua Việt Nam</span> <br />
 								<span>Số TK: 1400206026412</span><br /> <span>Địa chỉ:
 									Hà Nội</span>
 							</div>
@@ -291,7 +290,7 @@
 							</div>
 							<div class="bank-detail">
 								<span class="title title-b">Ngân hàng BIDV</span> <br /> <span>Tên
-									TK: Cty TNHH Thương Mại và Dịch Vụ Du lịch airgroup Việt Nam</span> <br />
+									TK: Cty TNHH Thương Mại và Dịch Vụ Du lịch ahotua Việt Nam</span> <br />
 								<span>Số TK: 12510000635331</span><br /> <span>Địa chỉ:
 									Hà Nội</span>
 							</div>
@@ -304,7 +303,7 @@
 							</div>
 							<div class="bank-detail">
 								<span class="title title-b">Ngân hàng Quân đội</span> <br /> <span>Tên
-									TK: airgroup</span> <br /> <span>Số TK: 0580107012008</span><br />
+									TK: ahotua</span> <br /> <span>Số TK: 0580107012008</span><br />
 								<span>Địa chỉ: Hà Nội - Chi nhánh: Đống Đa</span>
 							</div>
 							<div class="clearfix"></div>
@@ -316,7 +315,7 @@
 							</div>
 							<div class="bank-detail">
 								<span class="title title-b">Ngân hàng Đông Á</span> <br /> <span>Tên
-									TK: airgroup</span> <br /> <span>Số TK: 0108817986</span><br />
+									TK: ahotua</span> <br /> <span>Số TK: 0108817986</span><br />
 								<span>Địa chỉ: Hà Nội - Chi Nhánh: Ba Đình</span>
 							</div>
 							<div class="clearfix"></div>
@@ -328,7 +327,7 @@
 							</div>
 							<div class="bank-detail">
 								<span class="title title-b">Ngân Hàng ACB</span> <br /> <span>Tên
-									TK: airgroup</span> <br /> <span>Số TK: 183916659</span><br />
+									TK: ahotua</span> <br /> <span>Số TK: 183916659</span><br />
 								<span>Địa chỉ: Hà Nội</span>
 							</div>
 							<div class="clearfix"></div>
@@ -340,7 +339,7 @@
 							</div>
 							<div class="bank-detail">
 								<span class="title title-b">Ngân Hàng Sacombank</span> <br /> <span>Tên
-									TK: airgroup</span> <br /> <span>Số TK: 020029014176</span><br />
+									TK: ahotua</span> <br /> <span>Số TK: 020029014176</span><br />
 								<span>Địa chỉ: Hà Nội</span>
 							</div>
 							<div class="clearfix"></div>
@@ -352,7 +351,7 @@
 							</div>
 							<div class="bank-detail">
 								<span class="title title-b">Ngân Hàng Vietinbank</span> <br /> <span>Tên
-									TK: airgroup</span> <br /> <span>Số TK: 711AB2309335</span><br />
+									TK: ahotua</span> <br /> <span>Số TK: 711AB2309335</span><br />
 								<span>Địa chỉ: Chương Dương</span>
 							</div>
 							<div class="clearfix"></div>

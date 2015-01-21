@@ -1,10 +1,10 @@
-package com.airgroup.controller.tour
+package com.airgroup.controller.information
 
 import org.weceem.content.WcmSpace
 
 import com.airgroup.domain.Tour
 
-class TourController{
+class InformationController{
 	def tourService
 	static allowedMethods = [delete: ["POST","GET"]]
 
@@ -42,27 +42,22 @@ class TourController{
 		if(cat.equals("DomesticNews")){
 			tourList = Tour.findAllByCategoryInListAndTourStatus(["Domestic news"],(short) 1, [max:params.max, offset: params.offset, sort:"createdOn", order:"desc"])
 			total = Tour.findAllByCategoryInListAndTourStatus(["Domestic news"],(short) 1).size()
-			bigCategory = "${message(code:'tour.category.domesticnews')}"
 		}else if(cat.equals("InternationalNews")){
 			tourList = Tour.findAllByCategoryInListAndTourStatus(["International"],(short) 1, [max:params.max, offset: params.offset, sort:"createdOn", order:"desc"])
 			total = Tour.findAllByCategoryInListAndTourStatus(["International"],(short) 1).size()
-			bigCategory = "${message(code:'tour.category.internationalnews')}"
 		}else if(cat.equals("Special")){
 //			tourList = Tour.findAllByCategoryInListAndTourStatus(["Special"],(short) 1, [max:4, offset: params.offset, sort:"createdOn", order:"desc"])
 			tourList = Tour.executeQuery("from Tour t where t.category in ('Special') and t.tourStatus=1 order by createdOn desc",[max:params.max, offset: params.offset])
 			total = Tour.findAllByCategoryInListAndTourStatus(["Special"],(short) 1).size()
 			print("totalx=" + tourList )
-			bigCategory = "${message(code:'tour.category.special')}"
 		}else if(cat.equals("TourList")){
-//			tourList = Tour.findAllByCategoryInListAndTourStatus(["North","Middle", "South","Asean", "Asian", "Euro", "America", "Africa"],(short) 1, [max:params.max, offset: params.offset, sort:"createdOn", order:"desc"])
 			tourList = Tour.executeQuery("from Tour t where t.category in ('North','Middle', 'South','Asean', 'Asia', 'Euro', 'America', 'Africa') and t.tourStatus=1 order by createdOn desc",[max:params.max, offset: params.offset])
 			total = Tour.executeQuery("from Tour t where t.category in ('North','Middle', 'South','Asean', 'Asia', 'Euro', 'America', 'Africa') and t.tourStatus=1 order by createdOn desc").size()
-			bigCategory = "${message(code:'tour.category.tourlist')}"
 		}else{
 			tourList = Tour.findAllByCategoryInListAndTourStatus([cat],(short) 1, [max:params.max, offset: params.offset, sort:"createdOn", order:"desc"])
 			total = Tour.findAllByCategoryInListAndTourStatus([cat],(short) 1).size()
-			bigCategory = cat
 		}
+		
 		bigCategory = transCategory(bigCategory)
 		[listCategory:tourList,total:total,bigCategory:bigCategory, offset: params.offset, max: params.max, cat:cat]
 	}
@@ -128,38 +123,30 @@ class TourController{
 		}
 		redirect(action:"listBackEnd")
 	}
+	
 	def transCategory(def category){
-		if(category.equals("Special")){
-			category = "${message(code:'tour.category.Special')}"
-		}else if(category.equals("North")){
-			category = "${message(code:'tour.category.North')}"
+		if(category.equals("Hotel")){
+			category = "${message(code:'tour.category.Hotel')}"
+		}else if(category.equals("Taxi")){
+			category = "${message(code:'tour.category.Taxi')}"
 		}
-		else if(category.equals("Middle")){
-			category = "${message(code:'tour.category.Middle')}"
+		else if(category.equals("Destination")){
+			category = "${message(code:'tour.category.Destination')}"
 		}
-		else if(category.equals("South")){
-			category = "${message(code:'tour.category.South')}"
+		else if(category.equals("Preprareforfly")){
+			category = "${message(code:'tour.category.Preprareforfly')}"
 		}
-		else if(category.equals("Asean")){
-			category = "${message(code:'tour.category.Asean')}"
+		else if(category.equals("Guide")){
+			category = "${message(code:'tour.category.Guide')}"
 		}
-		else if(category.equals("Asia")){
-			category = "${message(code:'tour.category.Asia')}"
+		else if(category.equals("MapOfAirport")){
+			category = "${message(code:'tour.category.MapOfAirport')}"
 		}
-		else if(category.equals("Euro")){
-			category = "${message(code:'tour.category.Euro')}"
+		else
+		{
+			category = "${message(code:'tour.category.None')}"
 		}
-		else if(category.equals("America")){
-			category = "${message(code:'tour.category.America')}"
-		}
-		else if(category.equals("Africa")){
-			category = "${message(code:'tour.category.Africa')}"
-		}
-		else if(category.equals("Domestic news")){
-			category = "${message(code:'tour.category.domesticnews')}"
-		}else if(category.equals("International")){
-			category = "${message(code:'tour.category.internationalnews')}"
-		}
+	
 		return category
 	}
 }

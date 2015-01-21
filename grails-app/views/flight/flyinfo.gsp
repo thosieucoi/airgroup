@@ -157,41 +157,10 @@
 								<td><span> Được phép - Thu phí: 275.000 VND.</span></td>
 							</tr>
 						</table>
-						<!-- <table class="fare-condition">
-							<tr>
-								<td><b>Thay đổi chuyến bay</b></td>
-								<td><span> Được phép thay đổi trước giờ mở quầy làm
-										thủ tục check-in, thu phí đổi + chênh lệch giá(nếu có).</span></td>
-							</tr>
-							<tr>
-								<td><b>Nâng Hạng</b></td>
-								<td><span> Được phép thay đổi trước giờ mở quầy làm
-										thủ tục check-in, thu phí đổi + chênh lệch giá.</span></td>
-							</tr>
-							<tr>
-								<td><b>Đổi Hành Trình</b></td>
-								<td><span> Không được phép.</span></td>
-							</tr>
-							<tr>
-								<td><b>Đổi Tên Hành Khách</b></td>
-								<td><span> Được phép thay đổi trước giờ mở quầy làm
-										thủ tục check-in, thu phí đổi + chênh lệch giá(nếu có).</span></td>
-							</tr>
-							<tr>
-								<td><b>Bảo lưu</b></td>
-								<td><span> Không được phép.</span></td>
-							</tr>
-							<tr>
-								<td><b>Thời hạn thay đổi (bao gồm thay
-										đổi tên, ngày/chuyến bay, hành trình)</b></td>
-								<td><span> Trước giờ mở quầy làm thủ tục check-in.</span></td>
-							</tr>
-						</table> -->
 					</div>
 				</g:elseif>
 			</g:if>
-			<g:form method="POST" onSubmit="return validate()"
-				action="localinfopayment">
+			<g:form method="POST" onSubmit="return validate()" action="localinfopayment">
 				<div class="infor-t">
 					<h6>Thông tin hành lý</h6>
 					<table class="luggage-information">
@@ -214,20 +183,6 @@
 										<div style="margin-bottom: 3px;">
 											<span> Hành khách ${i}</span> <select name="outboundLuggable"
 												class="outboundLuggable">
-												<%--<option selected="selected" value="0">Không mang
-													theo hành lý</option>
-												<option value="130000">Thêm 15Kg hành lý (130,000
-													VND)</option>
-												<option value="160000">Thêm 20Kg hành lý (160,000
-													VND)</option>
-												<option value="220000">Thêm 25Kg hành lý (220,000
-													VND)</option>
-												<option value="270000">Thêm 30Kg hành lý (270,000
-													VND)</option>
-												<option value="320000">Thêm 35Kg hành lý (320,000
-													VND)</option>
-												<option value="370000">Thêm 40Kg hành lý (370,000
-													VND)</option>--%>
 													<option selected="selected" value="0">Không mang theo
 															hành lý</option>
 														<option value="132000">Thêm 15Kg hành lý (132,000 VND)</option>
@@ -300,15 +255,6 @@
 											<div style="margin-bottom: 3px;">
 												<span> Hành khách ${i}</span> <select
 													name="inboundLuggable" class="inboundLuggable">
-														<%--<option selected="selected" value="0">Không mang theo
-															hành lý</option>
-														<option value="130000">Thêm 15Kg hành lý (130,000 VND)</option>
-														<option value="160000">Thêm 20Kg hành lý (160,000 VND)</option>
-														<option value="220000">Thêm 25Kg hành lý (220,000 VND)</option>
-														<option value="270000">Thêm 30Kg hành lý (270,000 VND)</option>
-														<option value="320000">Thêm 35Kg hành lý (320,000 VND)</option>
-														<option value="370000">Thêm 40Kg hành lý (370,000 VND)</option>
-												--%>
 												<option selected="selected" value="0">Không mang theo
 															hành lý</option>
 														<option value="132000">Thêm 15Kg hành lý (132,000 VND)</option>

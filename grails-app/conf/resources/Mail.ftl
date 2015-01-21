@@ -11,67 +11,67 @@
 
 <body>
 	<div id="mail" style="width:680px; margin:auto; padding:0">
-    	<h1 style="color:#023557; font-size:18px; font-weight:bold; margin:10px 0; text-align:right">Ä�áº¶T VÃ‰ Má»ŒI LÃšC Má»ŒI NÆ I<br /><label style="color:#F00; font-size:25px; padding:10px">04-3512-2266</label></h1>
+    	<h1 style="color:#023557; font-size:18px; font-weight:bold; margin:10px 0; text-align:right">ĐẶT VÉ MỌI LÚC MỌI NƠI<br /><label style="color:#F00; font-size:25px; padding:10px">04-3512-2266</label></h1>
         <div class="maildetail" style="margin:5px 0; border:1px solid #ccc">
         	<ul class="mail-one" style="height:32px; background:#007CC3; padding:0; margin:0">
-            	<li style=" list-style:none; float:left; padding:0 5px;width:150px"><a href="http://ahotua.com/flight/search" style="color:#f0f0f0; text-decoration:none; display:block; line-height:32px">TÃ¬m vÃ  Ä‘áº·t vÃ©</a></li>
-                <li style=" list-style:none; float:left; padding:0 5px;width:150px"><a href="http://ahotua.com/feedback/list" style="color:#f0f0f0; text-decoration:none; display:block; line-height:32px">Ã� kiáº¿n khÃ¡ch hÃ ng</a></li>
-                <li style=" list-style:none; float:left; padding:0 5px;width:150px"><a href="http://ahotua.com/contactUs/infor" style="color:#f0f0f0; text-decoration:none; display:block; line-height:32px">LiÃªn há»‡</a></li>
+            	<li style=" list-style:none; float:left; padding:0 5px;width:150px"><a href="http://ahotua.vn/flight/search" style="color:#f0f0f0; text-decoration:none; display:block; line-height:32px">Tìm và đặt vé</a></li>
+                <li style=" list-style:none; float:left; padding:0 5px;width:150px"><a href="http://ahotua.vn/feedback/list" style="color:#f0f0f0; text-decoration:none; display:block; line-height:32px">Ý kiến khách hàng</a></li>
+                <li style=" list-style:none; float:left; padding:0 5px;width:150px"><a href="http://ahotua.vn/contactUs/infor" style="color:#f0f0f0; text-decoration:none; display:block; line-height:32px">Liên hệ</a></li>
             </ul><br />
-            <p style="padding:0 5px">KÃ­nh chÃ o Ã´ng <a href="" style="text-decoration:none; color:#0E70A5">${customerName}</a></p>
-            <p style="padding:0 5px">Xin cáº£m Æ¡n QuÃ½ khÃ¡ch hÃ ng Ä‘Ã£ sá»­ dá»¥ng dá»‹ch vá»¥ cá»§a<a href="" style="text-decoration:none ; color: #0E70A5;"> ahotua</a></p>
+            <p style="padding:0 5px">Kính chào ông <a href="" style="text-decoration:none; color:#0E70A5">${customerName}</a></p>
+            <p style="padding:0 5px">Xin cảm ơn Quý khách hàng đã sử dụng dịch vụ của<a href="" style="text-decoration:none ; color: #0E70A5;"> ahotua.vn</a></p>
             <div class="mail-list" style=" padding:0 5px 0 5px">
-            	<h2 style="color:#007CC3; font-size:22px; font-weight:bold; border-bottom:2px solid #007CC3">Chi tiáº¿t Ä‘Æ¡n hÃ ng</h2>
+            	<h2 style="color:#007CC3; font-size:22px; font-weight:bold; border-bottom:2px solid #007CC3">Chi tiết đơn hàng</h2>
                 <table style="width:100%">
                 	<tr>
-                    	<td style="padding:5px 0"><label style=" font-weight:bold">MÃ£ Ä‘Æ¡n hÃ ng: </label></td>
+                    	<td style="padding:5px 0"><label style=" font-weight:bold">Mã đơn hàng: </label></td>
                         <td class="mdh" style="padding:5px 0"><a href="" style="text-decoration:none; font-size: 20px;
     font-weight: bold; color:#0E70A5">${orderCode}</a></td>
                         <td style="padding:5px 0"></td style="padding:5px 0"><td></td>
                     </tr>
                     <tr>
-                    	<td style="padding:5px 0"><label  style=" font-weight:bold">Tráº¡ng thÃ¡i: </label></td>
+                    	<td style="padding:5px 0"><label  style=" font-weight:bold">Trạng thái: </label></td>
                         <td style="padding:5px 0"><a href="" style="text-decoration:none;font-style:italic;color:#333">${orderStatus}</a></td>
-                        <td style="padding:5px 0"><label  style=" font-weight:bold">Tá»•ng giÃ¡: </label></td>
+                        <td style="padding:5px 0"><label  style=" font-weight:bold">Tổng giá: </label></td>
                         <td  class="mdh" style="padding:5px 0"><a href="" style="text-decoration:none; font-size: 20px;
     font-weight: bold; color:#0E70A5">${totalPrice}</a></td>
                     </tr>
                     <tr>
-                    	<td style="padding:5px 0"><label  style=" font-weight:bold">Loáº¡i vÃ©: </label></td>
+                    	<td style="padding:5px 0"><label  style=" font-weight:bold">Loại vé: </label></td>
                         <td style="padding:5px 0"><a href="" style="text-decoration:none;color:#333">${fareType}</a></td>
                         <td style="padding:5px 0"></td style="padding:5px 0"><td></td>
                     </tr>
                 </table>
-                <p class="note" style="padding:5px 0;color:red; background:#F7E496">Ä�Ã¢y lÃ  email thÃ´ng bÃ¡o vá»� yÃªu cáº§u Ä‘áº·t vÃ© cá»§a quÃ½ khÃ¡ch chá»© chÆ°a pháº£i xÃ¡c nháº­n vá»� giÃ¡ vÃ  chá»—. ChÃºng tÃ´i sáº½ xá»­ lÃ½ yÃªu cáº§u nÃ y vÃ  xÃ¡c nháº­n láº¡i vá»›i quÃ½ khÃ¡ch trong thá»�i gian sá»›m nháº¥t.</p>
+                <p class="note" style="padding:5px 0;color:red; background:#F7E496">Đây là email thông báo về yêu cầu đặt vé của quý khách chứ chưa phải xác nhận về giá và chỗ. Chúng tôi sẽ xử lý yêu cầu này và xác nhận lại với quý khách trong thời gian sớm nhất.</p>
             </div>
              <div class="mail-list" style=" padding:0 5px 0 5px">
-            	<h2 style="color:#007CC3; font-size:22px; font-weight:bold; border-bottom:2px solid #007CC3">ThÃ´ng tin hÃ nh khÃ¡ch</h2>
+            	<h2 style="color:#007CC3; font-size:22px; font-weight:bold; border-bottom:2px solid #007CC3">Thông tin hành khách</h2>
 				 ${passengers}
             </div>
              <div class="mail-list" style=" padding: 0 5px 0;">
-            	<h2 style="color:#007CC3; font-size:22px; font-weight:bold; border-bottom:2px solid #007CC3">Chi tiáº¿t hÃ nh trÃ¬nh</h2>
+            	<h2 style="color:#007CC3; font-size:22px; font-weight:bold; border-bottom:2px solid #007CC3">Chi tiết hành trình</h2>
                     <table class="find" style=" margin:15px 0">
                     	<tr class="from" style="background:#D3D3D3;">
-                        	<td colspan="3" class="go" style="padding:5px">Ä�iá»ƒm xuáº¥t phÃ¡t <a href="" style="text-decoration:none;color: #0E70A5;"><b>${outboundFromLocation}</b></a> </td>
-                            <td style="padding:5px">Thá»�i gian bay:<a href="" style="text-decoration:none;color:#333"><b>${outboundDuration}</b></a> </td>
+                        	<td colspan="3" class="go" style="padding:5px">Điểm xuất phát <a href="" style="text-decoration:none;color: #0E70A5;"><b>${outboundFromLocation}</b></a> </td>
+                            <td style="padding:5px">Thời gian bay:<a href="" style="text-decoration:none;color:#333"><b>${outboundDuration}</b></a> </td>
                         </tr>
 						<#list outboundFlights as item>
 						<#if item_index &gt; 0>
 						<tr>
                                 	<td colspan="4" class="qt-stop" style="background: none repeat scroll 0 0 #FEF4EB; border-bottom: 1px solid #FCDABF;border-top: 1px solid #FCDABF;padding: 8px 0;text-align: center;">
-                                    	 Ä�á»•i mÃ¡y bay táº¡i<b class="change-address"> ${outboundFlights[item_index-1].arrivalAirport} </b>Thá»�i gian chá»�:
+                                    	 Đổi máy bay tại<b class="change-address"> ${outboundFlights[item_index-1].arrivalAirport} </b>Thời gian chờ:
                                          <b class="change-time"> ${outbound.outboundStopoverDurations[item_index-1]} </b>
                                     	
                                     </td>
                          </tr>
 						</#if>
                     	<tr>
-                        	<td  style="padding:5px" rowspan="2" width="70px"><img src="http://ahotua.com/images/sm${item.airlineCode}.gif" /></td>
-                            <td style="padding:5px" width="170px">Tá»«<a href="" style="text-decoration:none;color:#333"> <b>${item.departureAirport}</b></a></td>
-                            <td style="padding:5px" width="170px">Tá»›i<a href="" style="text-decoration:none;color:#333"> <b>${item.arrivalAirport}</b></a></td>
+                        	<td  style="padding:5px" rowspan="2" width="70px"><img src="http://ahotua.vn/images/sm${item.airlineCode}.gif" /></td>
+                            <td style="padding:5px" width="170px">Từ<a href="" style="text-decoration:none;color:#333"> <b>${item.departureAirport}</b></a></td>
+                            <td style="padding:5px" width="170px">Tới<a href="" style="text-decoration:none;color:#333"> <b>${item.arrivalAirport}</b></a></td>
                             <td style="padding:5px" rowspan="2" width="180px" >${item.carrier}<br>(<b>${item.airlineCode}
 									${item.flightNumber}</b>)<br>
-                            	<span>Háº¡ng VÃ© :<b>Háº¡ng phá»• thÃ´ng</b></span>
+                            	<span>Hạng Vé :<b>Hạng phổ thông</b></span>
                             </td>
                             
                         </tr>
@@ -84,26 +84,26 @@
 					<#if hasInbound>
                      <table class="find" style=" margin:15px 0">
                     	<tr class="from" style="background:#D3D3D3;">
-                        	<td style="padding:5px" colspan="3" class="to">Ä�iá»ƒm xuáº¥t phÃ¡t <a href="" style="text-decoration:none;color:#333"><b>${inboundFromLocation}</b></a> </td>
-                            <td style="padding:5px">Thá»�i gian bay:<a href="" style="text-decoration:none;color:#333"><b> ${inboundDuration}</b></a> </td>
+                        	<td style="padding:5px" colspan="3" class="to">Điểm xuất phát <a href="" style="text-decoration:none;color:#333"><b>${inboundFromLocation}</b></a> </td>
+                            <td style="padding:5px">Thời gian bay:<a href="" style="text-decoration:none;color:#333"><b> ${inboundDuration}</b></a> </td>
                         </tr>
 						<#list inboundFlights as item>
 						<#if item_index &gt; 0>
 						<tr>
                                 	<td colspan="4" class="qt-stop" style="background: none repeat scroll 0 0 #FEF4EB; border-bottom: 1px solid #FCDABF;border-top: 1px solid #FCDABF;padding: 8px 0;text-align: center;">
-                                    	 Ä�á»•i mÃ¡y bay táº¡i<b class="change-address"> ${inboundFlights[item_index-1].arrivalAirport} </b>Thá»�i gian chá»�:
+                                    	 Đổi máy bay tại<b class="change-address"> ${inboundFlights[item_index-1].arrivalAirport} </b>Thời gian chờ:
                                          <b class="change-time"> ${inbound.inboundStopoverDurations[item_index-1]} </b>
                                     	
                                     </td>
                          </tr>
 						</#if>
                     	<tr>
-                        	<td style="padding:5px" rowspan="2" width="70px"><img src="http://ahotua.com/images/sm${item.airlineCode}.gif" /></td>
-                            <td style="padding:5px" width="170px">Tá»«<a href="" style="text-decoration:none;color:#333"> <b>${item.departureAirport}</b></a></td>
-                            <td style="padding:5px" width="170px">Tá»›i<a href="" style="text-decoration:none;color:#333"> <b>${item.arrivalAirport}</b></a></td>
+                        	<td style="padding:5px" rowspan="2" width="70px"><img src="http://ahotua.vn/images/sm${item.airlineCode}.gif" /></td>
+                            <td style="padding:5px" width="170px">Từ<a href="" style="text-decoration:none;color:#333"> <b>${item.departureAirport}</b></a></td>
+                            <td style="padding:5px" width="170px">Tới<a href="" style="text-decoration:none;color:#333"> <b>${item.arrivalAirport}</b></a></td>
                             <td style="padding:5px" rowspan="2" width="180px" >${item.carrier}<br>(<b>${item.airlineCode}
 									${item.flightNumber}</b>)<br>
-                            	<span>Háº¡ng VÃ© :<b>Háº¡ng phá»• thÃ´ng</b></span>
+                            	<span>Hạng Vé :<b>Hạng phổ thông</b></span>
                             </td>
                             
                         </tr>
@@ -116,55 +116,55 @@
 					</#if>
             </div>
             <div class="mail-list" style=" padding: 0 5px 0;">
-            	<h2 style="color:#007CC3; font-size:22px; font-weight:bold; border-bottom:2px solid #007CC3">HÃ¬nh thá»©c thanh toÃ¡n</h2>
-                <p style="padding:5px 0">HÃ¬nh thá»©c thanh toÃ¡n cá»§a quÃ½ khÃ¡ch Ä‘Ã£ lá»±a chá»�n : <a href="" style="text-decoration:none; color: #0E70A5;">${paymentType}</a></p>
+            	<h2 style="color:#007CC3; font-size:22px; font-weight:bold; border-bottom:2px solid #007CC3">Hình thức thanh toán</h2>
+                <p style="padding:5px 0">Hình thức thanh toán của quý khách đã lựa chọn : <a href="" style="text-decoration:none; color: #0E70A5;">${paymentType}</a></p>
                 <p style="padding:5px 0">
-                	<a href="" style="text-decoration:none; color: #0E70A5;"><b>VÄƒn phÃ²ng HÃ  Ná»™i</b></a><br />
-                    <a href="" style="text-decoration:none; color: #0E70A5;"><b> Ä�á»‹a chá»‰:</b> Sá»‘ 19F Nguyá»…n Khang-Trung HÃ²a- Cáº§u Giáº¥y- HÃ  Ná»™i</a><br />
-   					 <a href="" style="text-decoration:none; color: #0E70A5;"><b>Ä�iá»‡n thoáº¡i : </b>04-3512-2266</a><br />
+                	<a href="" style="text-decoration:none; color: #0E70A5;"><b>Văn phòng Hà Nội</b></a><br />
+                    <a href="" style="text-decoration:none; color: #0E70A5;"><b> Địa chỉ:</b> Số 19F Nguyễn Khang-Trung Hòa- Cầu Giấy- Hà Nội</a><br />
+   					 <a href="" style="text-decoration:none; color: #0E70A5;"><b>Điện thoại : </b>04-3512-2266</a><br />
 
                 </p>
                 <fieldset style="border: 1px solid #ccc; background: #FFEDED">
-                <legend style="text-align: center;color: #007CC3;font-size: 18px;font-weight: bold;">ThÃ´ng tin giao dá»‹ch</legend>
+                <legend style="text-align: center;color: #007CC3;font-size: 18px;font-weight: bold;">Thông tin giao dịch</legend>
                 <table style="width: 100%;table-layout: fixed; font-family: arial; font-size: 13px;">
 			   <tr>
 			     <td valign="top">
 				 <div class="bank-logo">
-                                    <img src="http://ahotua.com/images/img/VietcomBank.png" width="90" height="50" alt="TechcomBank" />
+                                    <img src="http://ahotua.vn/images/img/VietcomBank.png" width="90" height="50" alt="TechcomBank" />
                                 </div>
                                 <div class="bank-detail">
-                                    <span class="title title-b" style="font-weight: bold; line-height: 30px;">NgÃ¢n hÃ ng Vietcombank </span>
+                                    <span class="title title-b" style="font-weight: bold; line-height: 30px;">Ngân hàng Vietcombank </span>
                                     <br />
-                                    <span>TÃªn TK: Cty TNHH ThÆ°Æ¡ng Máº¡i vÃ  Dá»‹ch Vá»¥ Du lá»‹ch Ahotua Viá»‡t Nam</span>
+                                    <span>Tên TK: Công Ty Cổ Phần Ahotua</span>
                                     <br />
-                                    <span>Sá»‘ TK: 0021-0002-93700</span>
+                                    <span>Số TK: 0021-0002-93700</span>
                                 </div>
                                 <div class="clearfix"></div>
 								
 				 </td>
 				 <td valign="top">
 				 <div class="bank-logo">
-                                    <img src="http://ahotua.com/images/img/TechcomBank.png" width="90" height="50" alt="VietcomBank" />
+                                    <img src="http://ahotua.vn/images/img/TechcomBank.png" width="90" height="50" alt="VietcomBank" />
                                 </div>
                                 <div class="bank-detail">
-                                    <span class="title title-b" style="font-weight: bold; line-height: 30px;">NgÃ¢n hÃ ng Techcombank</span>
+                                    <span class="title title-b" style="font-weight: bold; line-height: 30px;">Ngân hàng Techcombank</span>
                                     <br />
-                                    <span>TÃªn TK: Cty THNN ThÆ°Æ¡ng Máº¡i vÃ  Dá»‹ch Vá»¥ Du Lá»‹ch Ahotua Viá»‡t Nam</span>
+                                    <span>Tên TK: Công Ty Cổ Phần Ahotua</span>
                                     <br />
-                                    <span>Sá»‘ TK: 19128392003883</span>
+                                    <span>Số TK: 19128392003883</span>
                                 </div>
                                 <div class="clearfix"></div>
 				 </td>
 				 <td valign="top">
 				 <div class="bank-logo">
-                                    <img src="http://ahotua.com/images/img/MBBank.png" width="90" height="50" alt="MBBank" />
+                                    <img src="http://ahotua.vn/images/img/MBBank.png" width="90" height="50" alt="MBBank" />
                                 </div>
                                 <div class="bank-detail">
-                                    <span class="title title-b" style="font-weight: bold; line-height: 30px;">NgÃ¢n hÃ ng QUÃ‚N Ä�á»˜I</span>
+                                    <span class="title title-b" style="font-weight: bold; line-height: 30px;">Ngân hàng QUÂN ĐỘI</span>
                                     <br />
-                                    <span>TÃªn TK: VÅ© Thá»‹ Há»“ng VÃ¢n</span>
+                                    <span>Tên TK: Đoàn Quang Thắng</span>
                                     <br />
-                                    <span>Sá»‘ TK: 0580107012008</span>
+                                    <span>Số TK: 0580107012008</span>
                                 </div>
                                 <div class="clearfix"></div>
 				 
@@ -173,63 +173,63 @@
 			   <tr>
 				<td valign="top">
 				<div class="bank-logo" style="margin-top: 27px;">
-                                    <img src="http://ahotua.com/images/img/BIDV.jpg" width="90" height="50" alt="BIDV" />
+                                    <img src="http://ahotua.vn/images/img/BIDV.jpg" width="90" height="50" alt="BIDV" />
                                 </div>
                                 <div class="bank-detail">
-                                    <span class="title title-b" style="font-weight: bold; line-height: 30px;">NgÃ¢n hÃ ng BIDV</span>
+                                    <span class="title title-b" style="font-weight: bold; line-height: 30px;">Ngân hàng BIDV</span>
                                     <br />
-                                    <span>TÃªn TK: Cty THNN ThÆ°Æ¡ng Máº¡i vÃ  Dá»‹ch Vá»¥ Du Lá»‹ch Ahotua Viá»‡t Nam</span>
+                                    <span>Tên TK: Công Ty Cổ Phần Ahotua</span>
                                     <br />
-                                    <span>Sá»‘ TK: 12510000635331</span>
+                                    <span>Số TK: 12510000635331</span>
                                 </div>
                                 <div class="clearfix"></div>
 				</td>
 				<td valign="top">
 				<div class="bank-logo" style="margin-top: 27px;">
-                                    <img src="http://ahotua.com/images/img/AgriBank.jpg" width="90" height="50" alt="AgriBank" />
+                                    <img src="http://ahotua.vn/images/img/AgriBank.jpg" width="90" height="50" alt="AgriBank" />
                                 </div>
                                 <div class="bank-detail">
-                                    <span class="title title-b" style="font-weight: bold; line-height: 30px;">NgÃ¢n hÃ ng nÃ´ng nghiá»‡p</span>
+                                    <span class="title title-b" style="font-weight: bold; line-height: 30px;">Ngân hàng nông nghiệp</span>
                                     <br />
-                                    <span>TÃªn TK:  Cty THNN ThÆ°Æ¡ng Máº¡i vÃ  Dá»‹ch Vá»¥ Du Lá»‹ch Ahotua Viá»‡t Nam</span>
+                                    <span>Tên TK:  Công Ty Cổ Phần Ahotua</span>
                                     <br />
-                                    <span>Sá»‘ TK:  1400206026412</span>
+                                    <span>Số TK:  1400206026412</span>
                                 </div>
                                 <div class="clearfix"></div>
 				</td>
 				<td valign="top">
 				
 				<div class="bank-logo" style="margin-top: 27px;">
-                                    <img src="http://ahotua.com/images/img/VietcomBank.png" width="90" height="50" alt="MBBank" />
+                                    <img src="http://ahotua.vn/images/img/VietcomBank.png" width="90" height="50" alt="MBBank" />
                                 </div>
                                 <div class="bank-detail">
-                                    <span class="title title-b" style="font-weight: bold; line-height: 30px;">NgÃ¢n hÃ ng Vietcombank </span>
+                                    <span class="title title-b" style="font-weight: bold; line-height: 30px;">Ngân hàng Vietcombank </span>
                                     <br />
-                                    <span>TÃªn TK:  Cty TNHH ThÆ°Æ¡ng Máº¡i vÃ  Dá»‹ch Vá»¥ Du lá»‹ch Ahotua Viá»‡t Nam</span>
+                                    <span>Tên TK:  Cty TNHH Thương Mại và Dịch Vụ Du lịch HPV Việt Nam</span>
                                     <br />
-                                    <span>Sá»‘ TK:  	0021-0002-93700</span>
+                                    <span>Số TK:  	0021-0002-93700</span>
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="bank-logo" style="margin-top: 27px;">
-                                    <img src="http://ahotua.com/images/bank-donga-logo.gif" width="90" height="50" alt="MBBank" />
+                                    <img src="http://ahotua.vn/images/bank-donga-logo.gif" width="90" height="50" alt="MBBank" />
                                 </div>
                                 <div class="bank-detail">
-                                    <span class="title title-b" style="font-weight: bold; line-height: 30px;">NgÃ¢n HÃ ng Ä�Ã´ng Ã� </span>
+                                    <span class="title title-b" style="font-weight: bold; line-height: 30px;">Ngân Hàng Đông Á </span>
                                     <br />
-                                    <span>TÃªn TK:  VÅ© Thá»‹ Há»“ng VÃ¢n </span>
+                                    <span>Tên TK:  Đoàn Quang Thắng </span>
                                     <br />
-                                    <span>Sá»‘ TK:  	0108817986</span>
+                                    <span>Số TK:  	0108817986</span>
                                 </div>
                                 <div class="clearfix"></div>
                          <div class="bank-logo" style="margin-top: 27px;">
-                                    <img src="http://ahotua.com/images/bank-acb-logo.gif" width="90" height="50" alt="MBBank" />
+                                    <img src="http://ahotua.vn/images/bank-acb-logo.gif" width="90" height="50" alt="MBBank" />
                                 </div>
                                 <div class="bank-detail">
-                                    <span class="title title-b" style="font-weight: bold; line-height: 30px;">NgÃ¢n HÃ ng ACB </span>
+                                    <span class="title title-b" style="font-weight: bold; line-height: 30px;">Ngân Hàng ACB </span>
                                     <br />
-                                    <span>TÃªn TK:  VÅ© Thá»‹ Há»“ng VÃ¢n </span>
+                                    <span>Tên TK:  Đoàn Quang Thắng </span>
                                     <br />
-                                    <span>Sá»‘ TK:  	183916659</span>
+                                    <span>Số TK:  	183916659</span>
                                 </div>
                                 <div class="clearfix"></div>       
 								
@@ -237,13 +237,13 @@
 			   </tr>
 			</table>
                 </fieldset>
-                 <p class="note" style=" color:red; background:#F7E496;padding:5px 0"><b>ChÃº Ã½:</b><br /> Email nÃ y Ä‘Æ°á»£c gá»­i tá»± Ä‘á»™ng bá»Ÿi há»‡ thá»‘ng cá»§a Ahotua. Vui lÃ²ng khÃ´ng tráº£ lá»�i email nÃ y.</p><br />
+                 <p class="note" style=" color:red; background:#F7E496;padding:5px 0"><b>Chú ý:</b><br /> Email này được gửi tự động bởi hệ thống của Ahotua. Vui lòng không trả lời email này.</p><br />
             </div>
 			
             <ul class="mail-one" style=" height:32px; background:#007CC3; padding:0; margin:0">
-            	<li style=" list-style:none; float:left; padding:0 5px;width:150px"><a href="http://ahotua.com/flight/search" style="color:#f0f0f0; text-decoration:none; display:block; line-height:32px">TÃ¬m vÃ  Ä‘áº·t vÃ©</a></li>
-                <li style=" list-style:none; float:left; padding:0 5px;width:150px"><a href="http://ahotua.com/feedback/list" style="color:#f0f0f0; text-decoration:none; display:block; line-height:32px">Ã� kiáº¿n khÃ¡ch hÃ ng</a></li>
-                <li style=" list-style:none; float:left; padding:0 5px;width:150px"><a href="http://ahotua.com/contactUs/infor" style="color:#f0f0f0; text-decoration:none; display:block; line-height:32px">LiÃªn há»‡</a></li>
+            	<li style=" list-style:none; float:left; padding:0 5px;width:150px"><a href="http://ahotua.vn/flight/search" style="color:#f0f0f0; text-decoration:none; display:block; line-height:32px">Tìm và đặt vé</a></li>
+                <li style=" list-style:none; float:left; padding:0 5px;width:150px"><a href="http://ahotua.vn/feedback/list" style="color:#f0f0f0; text-decoration:none; display:block; line-height:32px">Ý kiến khách hàng</a></li>
+                <li style=" list-style:none; float:left; padding:0 5px;width:150px"><a href="http://ahotua.vn/contactUs/infor" style="color:#f0f0f0; text-decoration:none; display:block; line-height:32px">Liên hệ</a></li>
             </ul>
         </div>
         

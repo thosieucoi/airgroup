@@ -19,7 +19,7 @@
 	<section class="row">
 		<article id="chon-chuyen-bay-1" class="col-md-8 col-sm-8 col-xs-12">
 			<p>
-			<h1>GIÁ ĐÃ BAO GỒM TOÀN BỘ THUẾ VÀ PHÍ, CAM KẾT ĐÚNG GIÁ HÃNG</h1>
+			<h1>GIÁ ĐÃ BAO GỒM TOÀN BỘ THUẾ VÀ PHÍ</h1>
 			</p>
 			<div class="ule">
 				

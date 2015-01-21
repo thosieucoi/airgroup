@@ -25,7 +25,7 @@
 
     	<div class="nav hone">
     		<h1 class="listpage">
-	    		<g:link controller="tour"><g:message code="tour.label.nav"/></g:link>
+	    		<g:link controller="information"><g:message code="tour.label.nav"/></g:link>
 	    		<b>></b>
 	    		<g:link url="javascript:void(0)" class="selected">
 	    			<g:message code="tour.label.header"/>
