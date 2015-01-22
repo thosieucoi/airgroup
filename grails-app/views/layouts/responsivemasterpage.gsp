@@ -18,8 +18,11 @@
 		</div>
 		<g:render template="/layouts/responsivewebpart/footer" />
 		</div>
-</div>
 	</div>
+	
+	<g:include view="layouts/responsivewebpart/_advertLeft.gsp" />
+
+</div>
 
 	
 	

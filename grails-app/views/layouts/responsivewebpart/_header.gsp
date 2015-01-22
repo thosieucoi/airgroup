@@ -73,12 +73,12 @@
 						<li><g:link controller="news" action="index">Tin tức</g:link>
 					</g:else>
 					
-					<g:if test="${params['controller'].equals('information') && params['action'].equals('index')}">
+					<!--<g:if test="${params['controller'].equals('information') && params['action'].equals('index')}">
 						<li class="active"><g:link controller="information" action="index">Thông tin & Tiện ích</g:link>
 					</g:if>
 					<g:else>
 						<li><g:link controller="information" action="index">Thông tin & Tiện ích</g:link>
-					</g:else>
+					</g:else>-->
 					
 					<g:if test="${params['controller'].equals('news') && params['action'].equals('saleoff')}">
 						<li class="active"><g:link controller="news" action="saleoff">Khuyến mại</g:link>
