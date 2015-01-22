@@ -14,34 +14,40 @@
 			<div id="myCarousel"
 				class="carousel slide col-lg-7 col-md-6 col-sm-5 col-xs-12"
 				data-ride="carousel" >
-				<ol class="carousel-indicators">
-				    <li id="firstIndi" data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				    <li data-target="#myCarousel" data-slide-to="1"></li>
-				 </ol>
+				<g:if test="${advert.size > 1}">
+					<ol class="carousel-indicators">
+						<g:each var="advertInstance" in="${advert}" status="st">
+							<g:if test="${st==0}">
+								<li id="firstIndi" data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							</g:if>
+							<g:else>
+								<li data-target="#myCarousel" data-slide-to="${st}"></li>
+							</g:else>
+						</g:each>
+					 </ol>
+				 </g:if>
 				<div class="carousel-inner" role="listbox">
 					<g:each var="advertInstance" in="${advert}" status="st">
 						<g:if test="${st==0}">
 							<div class="item active">
-								<g:link controller="home" action="showAdvertPage"
-									params="[advertId: advertInstance?.id]">
+								<a href="#">
 									<img
-										src="${createLink(controller:'home', action:'slideImage', id:advertInstance.id)}" />
-								</g:link>
+										src="${createLink(controller:'home', action:'slideImage', id:advertInstance.id)}" alt="ahotua"/>
+								</a>
 							</div>
 						</g:if>
 						<g:else>
 							<div class="item">
-								<g:link controller="home" action="showAdvertPage"
-									params="[advertId: advertInstance?.id]">
+								<a href="#">
 									<img
-										src="${createLink(controller:'home', action:'slideImage', id:advertInstance.id)}" />
-								</g:link>
+										src="${createLink(controller:'home', action:'slideImage', id:advertInstance.id)}" alt="ahotua"/>
+								</a>
 							</div>
 						</g:else>
 					</g:each>
 				</div>
-				
-				<!-- Left and right controls -->
+				<g:if test="${advert.size > 1}">
+					<!-- Left and right controls -->
 				  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
 				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 				    <span class="sr-only">Previous</span>
@@ -50,7 +56,7 @@
 				    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 				    <span class="sr-only">Next</span>
 				  </a>
-			
+				</g:if>
 			</div>
 		</div>
 
