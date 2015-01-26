@@ -47,7 +47,7 @@ class Email {
 	Session session
 	MimeMessage msg
 	def send(String subject,
-	String from,
+	String from = "admin@ahotua.com.vn",
 	String to,
 	String customerName,
 	String orderCode,

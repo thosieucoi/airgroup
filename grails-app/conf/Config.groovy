@@ -95,12 +95,12 @@ grails {
 			successHandler.defaultTargetUrl  = '/CMSFeedback'
 			successHandler.alwaysUseDefault = true
 			//Redirect to login page after logout
-			logout.afterLogoutUrl = '/admin'
+			logout.afterLogoutUrl = '/adminAuthentication'
 			//registerLoggerListener = true
 			password.algorithm = "MD5"
 			//use Base64 text ( true or false )
 			password.encodeHashAsBase64 = false
-			adh.errorPage = "/login/denied"
+			adh.errorPage = "/adminAuthentication/denied"
 
 			// Turn of user caching, acegi plugin requires diskstore cache by default, which we don't want.
 			cacheUsers = false
@@ -152,7 +152,7 @@ grails {
 			   '/userProfile/**':       	 ['IS_AUTHENTICATED_REMEMBERED'],
 			   '/ck/**':                	 ['IS_AUTHENTICATED_REMEMBERED'],
 			   '/**':                    	 ['IS_AUTHENTICATED_ANONYMOUSLY'],
-			   '/login/**':             	 ['IS_AUTHENTICATED_ANONYMOUSLY'],
+			   '/adminAuthentication/**':             	 ['IS_AUTHENTICATED_ANONYMOUSLY'],
 			   '/logout/**':            	 ['IS_AUTHENTICATED_ANONYMOUSLY'],
 			   '/home/**':              	 ['IS_AUTHENTICATED_ANONYMOUSLY'],
 			   '/tour/**':              	 ['IS_AUTHENTICATED_ANONYMOUSLY'],

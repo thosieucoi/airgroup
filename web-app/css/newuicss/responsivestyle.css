@@ -13,6 +13,65 @@ body{
     font-size: 12px;
 }
 
+.hotlineRight .contentHotline {
+background: #fff;
+border: solid 2px #f36a01;
+border-radius: 5px;
+color: #d51317;
+padding: 5px 0px;
+}
+
+.hotlineRight .contentHotline h5{
+font-size: 17px;
+line-height: 20px;
+text-align: center;
+font-weight: bold;
+}
+
+.hotlineRight .contentHotline .hotlineNumber {
+font-size: 14px;
+font-weight: bold;
+margin: 6px;
+padding-left: 35px;
+padding-bottom: 3px;
+}
+
+.hotlineRight .contentHotline .hotlineNumber a {
+text-decoration: none;
+color: #d51317;
+line-height: 20px;
+}
+
+.hotlineRight .contentHotline .callCenter {
+	background: url(../newuiimg/callCenter.png) no-repeat top left;
+	border-bottom: dotted 1px #dfdfdf;
+	min-height: 33px;
+}
+
+.hotlineRight .contentHotline .skypeCenter {
+	background: url(../newuiimg/ChatIcon.png) no-repeat top left;
+	border-bottom: dotted 1px #dfdfdf;
+	min-height: 32px;
+}
+
+#adv-right{
+    position: fixed;
+    top: 185px;
+    right: 12px !important;
+    width: 155px;
+}
+
+.hotlineRight .contentHotline .hotlineNumber span {
+	line-height: 20px;
+}
+
+.FB {
+	border-top: dotted 1px #d9d9d9;
+	margin: 8px 5px 0px 5px;
+	text-align: center;
+	padding: 5px 0px;
+}
+
 #customercareclose {
 	left: 150px !important;
 	z-index: 10000;
@@ -998,18 +1057,6 @@ v#e-may-bay-gia-re > div,
     width: 133px;
 }
 
-#adv-right{
-    position: fixed;
-    top: 215px;
-    right: 0;
-    width: 155px;
-}
-
-
-#tour-contacts{
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-}
 
 #tim-kiem-hoa-don .title,
 #tour-contacts .title{

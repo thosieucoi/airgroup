@@ -43,9 +43,9 @@
 										<g:link controller="policy" action="guide"><span class="location">Xem hướng dẫn chi tiết</span></g:link>
 									</p>
 								<strong>02. Qua chat</strong> <br />
-								<strong>03. Gọi điện thoại cho Ahotua 0000.000.000</strong> <br />
+								<strong>03. Gọi điện thoại cho Ahotua: 04 66813026</strong> <br />
 								<strong>04. Đến trực tiếp văn phòng Ahotua</strong> <br />
-									<p class="description">Cơ sở 1: Hoàng Quốc Việt, Cầu Giấy, Hà Nội.</p>
+									<p class="description">Cơ sở 1: Số nhà 21, ngách 100/24, ngõ 100, đường Hoàng Quốc Việt, phường Nghĩa Đô, quận Cầu Giấy, Thành phố Hà Nội.</p>
 							</div>
 							<div class="space-20"></div>
 							<div class="line line-horizontal box-margin-10"></div>

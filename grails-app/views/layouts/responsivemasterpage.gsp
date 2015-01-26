@@ -22,9 +22,8 @@
 	
 	<g:include view="layouts/responsivewebpart/_advertLeft.gsp" />
 
+	<g:include view="layouts/responsivewebpart/_advertRight.gsp" />
 </div>
-
-	
 	
 	<script>
 		jQuery(document)
