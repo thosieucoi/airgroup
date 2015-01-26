@@ -92,7 +92,7 @@
 
 					<div class="command">
 						<a style="text-decoration: none"
-							href="${createLink(action: 'list', controller:'feedback') }">
+							href="${createLink(action: 'index', controller:'feedback') }">
 							<input type="button" class="feedback-button" value="Xem thêm" />
 						</a>
 					</div>

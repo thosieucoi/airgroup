@@ -30,23 +30,18 @@
 				</p>
 				<fieldset class="payment-a">
 					<legend>Qúy Khách Lưu Ý</legend>
-					<span>Thông tin đơn hàng của quý khách sẽ được gửi tới địa
-						chỉ email <a>
-							${email }
-					</a>
+					<span>Thông tin đơn hàng của quý khách sẽ được gửi tới địa chỉ email: <a> ${email }</a>
 					</span><br /> <span>Trong thời gian sớm nhất (trong vòng 12h tới)
 						nhân viên Ahotua sẽ liên hệ với Quý khách theo số điện thoại <a
 						 style="color: red">${phoneNumber}</a> để thông báo kết quả đặt
 						vé và hướng dẫn Quý khách cách thức thanh toán.
 					</span><br /> <label>(<span class="require">*</span>Quý khách vui
-						lòng kiểm tra lại thông tin email và số điện thoại để tránh xảy ra
-						sai sót.)
+						lòng kiểm tra lại thông tin email và số điện thoại để tránh xảy ra sai sót.)
 					</label><br /> <span>Hãy để chúng tôi phục vụ Quý khách ! </span>
 				</fieldset>
 
 				<p>
-					<b>Chúc quý khách thượng lộ bình an & có những chuyến bay thật
-						thoải mái!</b>
+					<b>Chúc quý khách thượng lộ bình an & có những chuyến bay thật thoải mái!</b>
 				</p>
 			</div>
 

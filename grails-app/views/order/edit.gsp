@@ -386,14 +386,14 @@
 									<td><g:message code="passenger.outboundluggage.title" default="Outbound Luggage"/></td>
 									<g:if test="${p.luggage.sort{it.id}.airlineCode.get(0) == 'VJ'}">
 										<td>
-											<g:select name="passenger.${i}.outboundluggage" valueMessagePrefix="vietjet.luggage" value="${p.luggage.sort{it.id}.baggage.get(0)}" from="${['0', '132000', '165000', '220000', '330000']}"/>
+											<g:select name="passenger.${i}.outboundluggage" valueMessagePrefix="vietjet.luggage" value="${p.luggage.sort{it.id}.baggage.get(0)}" from="${['0', '143000', '165000', '220000', '330000', '385000', '440000']}"/>
 											<g:hiddenField name="passenger.${i}.obairline" value="VJ" />
 											<g:hiddenField name="passenger.${i}.isDeparture" value="1" />
 										</td>
 									</g:if>
 									<g:elseif test="${p.luggage.sort{it.id}.airlineCode.get(0) == 'BL'}">
 										<td>
-											<g:select name="passenger.${i}.outboundluggage" valueMessagePrefix="jetstar.luggage" value="${p.luggage.sort{it.id}.baggage.get(0)}" from="${['0', '132000', '165000', '220000', '330000']}"/>
+											<g:select name="passenger.${i}.outboundluggage" valueMessagePrefix="jetstar.luggage" value="${p.luggage.sort{it.id}.baggage.get(0)}" from="${['0', '143000', '165000', '220000', '270000', '320000', '370000']}"/>
 											<g:hiddenField name="passenger.${i}.obairline" value="BL" />
 											<g:hiddenField name="passenger.${i}.isDeparture" value="1" />
 										</td>
@@ -403,14 +403,14 @@
 										<td><g:message code="passenger.inboundluggage.title" default="Inbound Luggage"/></td>
 										<g:if test="${p.luggage.sort{it.id}.airlineCode.get(0) == 'VJ'}">
 										<td>
-											<g:select name="passenger.${i}.inboundluggage" valueMessagePrefix="vietjet.luggage" value="${p.luggage.sort{it.id}.baggage.get(0)}" from="${['0', '132000', '165000', '220000', '330000']}"/>
+											<g:select name="passenger.${i}.inboundluggage" valueMessagePrefix="vietjet.luggage" value="${p.luggage.sort{it.id}.baggage.get(0)}" from="${['0', '143000', '165000', '220000', '330000', '385000', '440000']}"/>
 											<g:hiddenField name="passenger.${i}.ibairline" value="VJ" />
 											<g:hiddenField name="passenger.${i}.isDeparture" value="0" />
 										</td>
 										</g:if>
 										<g:elseif test="${p.luggage.sort{it.id}.airlineCode.get(0) == 'BL'}">
 										<td>
-											<g:select name="passenger.${i}.inboundluggage" valueMessagePrefix="jetstar.luggage" value="${p.luggage.sort{it.id}.baggage.get(0)}" from="${['0', '132000', '165000', '220000', '330000']}"/>
+											<g:select name="passenger.${i}.inboundluggage" valueMessagePrefix="jetstar.luggage" value="${p.luggage.sort{it.id}.baggage.get(0)}" from="${['0', '143000', '165000', '220000', '270000', '320000', '370000']}"/>
 											<g:hiddenField name="passenger.${i}.ibairline" value="BL" />
 											<g:hiddenField name="passenger.${i}.isDeparture" value="0" />
 										</td>
@@ -421,14 +421,14 @@
 									<td><g:message code="passenger.inboundluggage.title" default="Inbound Luggage"/></td>
 									<g:if test="${p.luggage.sort{it.id}.airlineCode.get(1) == 'VJ'}">
 										<td>
-											<g:select name="passenger.${i}.inboundluggage" valueMessagePrefix="vietjet.luggage" value="${p.luggage.sort{it.id}.baggage.get(1)}" from="${['0', '132000', '165000', '220000', '330000']}"/>
+											<g:select name="passenger.${i}.inboundluggage" valueMessagePrefix="vietjet.luggage" value="${p.luggage.sort{it.id}.baggage.get(1)}" from="${['0', '143000', '165000', '220000', '330000', '385000', '440000']}"/>
 											<g:hiddenField name="passenger.${i}.ibairline" value="VJ" />
 											<g:hiddenField name="passenger.${i}.isDeparture" value="0" />
 										</td>
 									</g:if>
 									<g:elseif test="${p.luggage.sort{it.id}.airlineCode.get(1) == 'BL'}">
 										<td>
-											<g:select name="passenger.${i}.inboundluggage" valueMessagePrefix="jetstar.luggage" value="${p.luggage.sort{it.id}.baggage.get(1)}" from="${['0', '132000', '165000', '220000', '330000']}"/>
+											<g:select name="passenger.${i}.inboundluggage" valueMessagePrefix="jetstar.luggage" value="${p.luggage.sort{it.id}.baggage.get(1)}" from="${['0', '143000', '165000', '220000', '270000', '320000', '370000']}"/>
 											<g:hiddenField name="passenger.${i}.ibairline" value="BL" />
 											<g:hiddenField name="passenger.${i}.isDeparture" value="0" />
 										</td>
@@ -453,14 +453,14 @@
 									<td><g:message code="passenger.outboundluggage.title" default="Outbound Luggage"/></td>
 									<g:if test="${p.luggage.sort{it.id}.airlineCode.get(0) == 'VJ'}">
 										<td>
-											<g:select name="passenger.${i}.outboundluggage" valueMessagePrefix="vietjet.luggage" value="${p.luggage.sort{it.id}.baggage.get(0)}" from="${['0', '132000', '165000', '220000', '330000']}"/>
+											<g:select name="passenger.${i}.outboundluggage" valueMessagePrefix="vietjet.luggage" value="${p.luggage.sort{it.id}.baggage.get(0)}" from="${['0', '143000', '165000', '220000', '330000', '385000', '440000']}"/>
 											<g:hiddenField name="passenger.${i}.obairline" value="VJ" />
 											<g:hiddenField name="passenger.${i}.isDeparture" value="1" />
 										</td>
 									</g:if>
 									<g:elseif test="${p.luggage.sort{it.id}.airlineCode.get(0) == 'BL'}">
 										<td>
-											<g:select name="passenger.${i}.outboundluggage" valueMessagePrefix="jetstar.luggage" value="${p.luggage.sort{it.id}.baggage.get(0)}" from="${['0', '132000', '165000', '220000', '330000']}"/>
+											<g:select name="passenger.${i}.outboundluggage" valueMessagePrefix="jetstar.luggage" value="${p.luggage.sort{it.id}.baggage.get(0)}" from="${['0', '143000', '165000', '220000', '270000', '320000', '370000']}"/>
 											<g:hiddenField name="passenger.${i}.obairline" value="BL" />
 											<g:hiddenField name="passenger.${i}.isDeparture" value="1" />
 										</td>
@@ -470,14 +470,14 @@
 										<td><g:message code="passenger.inboundluggage.title" default="Inbound Luggage"/></td>
 										<g:if test="${p.luggage.sort{it.id}.airlineCode.get(0) == 'VJ'}">
 										<td>
-											<g:select name="passenger.${i}.inboundluggage" valueMessagePrefix="vietjet.luggage" value="${p.luggage.sort{it.id}.baggage.get(0)}" from="${['0', '132000', '165000', '220000', '330000']}"/>
+											<g:select name="passenger.${i}.inboundluggage" valueMessagePrefix="vietjet.luggage" value="${p.luggage.sort{it.id}.baggage.get(0)}" from="${['0', '143000', '165000', '220000', '330000', '385000', '440000']}"/>
 											<g:hiddenField name="passenger.${i}.ibairline" value="VJ" />
 											<g:hiddenField name="passenger.${i}.isDeparture" value="0" />
 										</td>
 										</g:if>
 										<g:elseif test="${p.luggage.sort{it.id}.airlineCode.get(0) == 'BL'}">
 										<td>
-											<g:select name="passenger.${i}.inboundluggage" valueMessagePrefix="jetstar.luggage" value="${p.luggage.sort{it.id}.baggage.get(0)}" from="${['0', '132000', '165000', '220000', '330000']}"/>
+											<g:select name="passenger.${i}.inboundluggage" valueMessagePrefix="jetstar.luggage" value="${p.luggage.sort{it.id}.baggage.get(0)}" from="${['0', '143000', '165000', '220000', '270000', '320000', '370000']}"/>
 											<g:hiddenField name="passenger.${i}.ibairline" value="BL" />
 											<g:hiddenField name="passenger.${i}.isDeparture" value="0" />
 										</td>
@@ -488,14 +488,14 @@
 									<td><g:message code="passenger.inboundluggage.title" default="Inbound Luggage"/></td>
 									<g:if test="${p.luggage.sort{it.id}.airlineCode.get(1) == 'VJ'}">
 										<td>
-											<g:select name="passenger.${i}.inboundluggage" valueMessagePrefix="vietjet.luggage" value="${p.luggage.sort{it.id}.baggage.get(1)}" from="${['0', '132000', '165000', '220000', '330000']}"/>
+											<g:select name="passenger.${i}.inboundluggage" valueMessagePrefix="vietjet.luggage" value="${p.luggage.sort{it.id}.baggage.get(1)}" from="${['0', '143000', '165000', '220000', '330000', '385000', '440000']}"/>
 											<g:hiddenField name="passenger.${i}.ibairline" value="VJ" />
 											<g:hiddenField name="passenger.${i}.isDeparture" value="0" />
 										</td>
 									</g:if>
 									<g:elseif test="${p.luggage.sort{it.id}.airlineCode.get(1) == 'BL'}">
 										<td>
-											<g:select name="passenger.${i}.inboundluggage" valueMessagePrefix="jetstar.luggage" value="${p.luggage.sort{it.id}.baggage.get(1)}" from="${['0', '132000', '165000', '220000', '330000']}"/>
+											<g:select name="passenger.${i}.inboundluggage" valueMessagePrefix="jetstar.luggage" value="${p.luggage.sort{it.id}.baggage.get(1)}" from="${['0', '143000', '165000', '220000', '270000', '320000', '370000']}"/>
 											<g:hiddenField name="passenger.${i}.ibairline" value="BL" />
 											<g:hiddenField name="passenger.${i}.isDeparture" value="0" />
 										</td>

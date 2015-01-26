@@ -68,7 +68,7 @@ var counter = 0;
 																	+ (counter + 1)
 																	+ '.id" value=""/>'
 																	+ '<td valign="top" class="name"><label for="name">'
-																	+ 'Há»� vÃ  tÃªn'
+																	+ 'Họ và tên'
 																	+ ' '
 																	+ (counter + 1)
 																	+ '</label>'
@@ -86,21 +86,21 @@ var counter = 0;
 																	+ '.gender" id="passenger.'
 																	+ (counter + 1)
 																	+ '.gender" onchange="showHideDOB(this); return false;">'
-																	+ '<option value="0" >Ã”ng</option>'
-																	+ '<option value="1" >BÃ </option>'
-																	+ '<option value="2" >Tráº» em trai</option>'
-																	+ '<option value="3" >Tráº» em gÃ¡i</option>'
-																	+ '<option value="4" >Em bÃ© trai</option>'
-																	+ '<option value="5" >Em bÃ© gÃ¡i</option>'
+																	+ '<option value="0" >Ông</option>'
+																	+ '<option value="1" >Bà</option>'
+																	+ '<option value="2" >Trẻ em trai</option>'
+																	+ '<option value="3" >Trẻ em gái</option>'
+																	+ '<option value="4" >Em bé trai</option>'
+																	+ '<option value="5" >Em bé gái</option>'
 																	+ '</select>'
 																	+ '</td>'
 																	+ '<td>'
-																	+ '<input type="button" class="hideOrder" id="deletePassenger" value="XÃ³a" onclick="removePassenger(this); return false;"/>'
-																	+ '<input type="button" class="hideOrder" id="savePassenger" value="LÆ°u" onclick="savePassengers(this); return false;"/>'
+																	+ '<input type="button" class="hideOrder" id="deletePassenger" value="Xóa" onclick="removePassenger(this); return false;"/>'
+																	+ '<input type="button" class="hideOrder" id="savePassenger" value="Lưu" onclick="savePassengers(this); return false;"/>'
 																	+ '</td>'
 																	+ '</tr>'
 																	+ "<tr class='prop' style='display:none'>"
-																	+ "<td valign='top' class='name'>NgÃ y sinh"
+																	+ "<td valign='top' class='name'>Ngày sinh"
 																	+ "</td>"
 																	+ "<td valign='top' class='value'>"
 																	+ "<input type='text' name='passenger."
@@ -118,20 +118,20 @@ var counter = 0;
 													$("#tbl_container tr:last")
 													.after(
 														'<tr>'
-															+ '<td>HÃ nh lÃ½ chiá»�u Ä‘i</td>'
+															+ '<td>Hành lý chiều đi</td>'
 															+ '<td>'
 															+ '<select name="passenger.'
 															+ (counter + 1)
 															+ '.outboundluggage" id="passenger.'
 															+ (counter + 1)
 															+ '.outboundluggage">'
-															+ '<option value="0">KhÃ´ng mang theo hÃ nh lÃ½</option>'
-															+ '<option value="130000">ThÃªm 15Kg hÃ nh lÃ½ (130,000 VND)</option>'
-															+ '<option value="160000">ThÃªm 20Kg hÃ nh lÃ½ (160,000 VND)</option>'
-															+ '<option value="220000">ThÃªm 25Kg hÃ nh lÃ½ (220,000 VND)</option>'
-															+ '<option value="270000">ThÃªm 30Kg hÃ nh lÃ½ (270,000 VND)</option>'
-															+ '<option value="320000">ThÃªm 35Kg hÃ nh lÃ½ (320,000 VND)</option>'
-															+ '<option value="370000">ThÃªm 40Kg hÃ nh lÃ½ (370,000 VND)</option>'
+															+ '<option value="0">Không mang theo hành lý</option>'
+															+ '<option value="143000">Thêm 15Kg hành lý (143,000 VND)</option>'
+															+ '<option value="165000">Thêm 20Kg hành lý (165,000 VND)</option>'
+															+ '<option value="220000">Thêm 25Kg hành lý (220,000 VND)</option>'
+															+ '<option value="270000">Thêm 30Kg hành lý (270,000 VND)</option>'
+															+ '<option value="320000">Thêm 35Kg hành lý (320,000 VND)</option>'
+															+ '<option value="370000">Thêm 40Kg hành lý (370,000 VND)</option>'
 															+ '</select>'
 															+ '<input type="hidden" id="passenger.' 
 															+ (counter + 1)
@@ -151,18 +151,20 @@ var counter = 0;
 													$("#tbl_container tr:last")
 													.after(
 														'<tr>'
-															+ '<td>HÃ nh lÃ½ chiá»�u Ä‘i</td>'
+															+ '<td>Hành lý chiều đi</td>'
 															+ '<td>'
 															+ '<select name="passenger.'
 															+ (counter + 1)
 															+ '.outboundluggage" id="passenger.'
 															+ (counter + 1)
 															+ '.outboundluggage">'
-															+ '<option value="0">KhÃ´ng mang theo hÃ nh lÃ½</option>'
-															+ '<option value="132000">ThÃªm 15Kg hÃ nh lÃ½ (132,000 VND)</option>'
-															+ '<option value="165000">ThÃªm 20Kg hÃ nh lÃ½ (165,000 VND)</option>'
-															+ '<option value="220000">ThÃªm 25Kg hÃ nh lÃ½ (220,000 VND)</option>'
-															+ '<option value="330000">ThÃªm 30Kg hÃ nh lÃ½ (330,000 VND)</option>'
+															+ '<option value="0">Không mang theo hành lý</option>'
+															+ '<option value="143000">Thêm 15Kg hành lý (143,000 VND)</option>'
+															+ '<option value="165000">Thêm 20Kg hành lý (165,000 VND)</option>'
+															+ '<option value="220000">Thêm 25Kg hành lý (220,000 VND)</option>'
+															+ '<option value="330000">Thêm 30Kg hành lý (330,000 VND)</option>'
+															+ '<option value="385000">Thêm 35Kg hành lý (385,000 VND)</option>'
+															+ '<option value="440000">Thêm 40Kg hành lý (440,000 VND)</option>'
 															+ '</select>'
 															+ '<input type="hidden" id="passenger.' 
 															+ (counter + 1)
@@ -183,20 +185,20 @@ var counter = 0;
 													$("#tbl_container tr:last")
 													.after(
 														'<tr>'
-															+ '<td>HÃ nh lÃ½ chiá»�u vá»�</td>'
+															+ '<td>Hành lý chiều về</td>'
 															+ '<td>'
 															+ '<select name="passenger.'
 															+ (counter + 1)
 															+ '.inboundluggage" id="passenger.'
 															+ (counter + 1)
 															+ '.inboundluggage">'
-															+ '<option value="0">KhÃ´ng mang theo hÃ nh lÃ½</option>'
-															+ '<option value="130000">ThÃªm 15Kg hÃ nh lÃ½ (130,000 VND)</option>'
-															+ '<option value="160000">ThÃªm 20Kg hÃ nh lÃ½ (160,000 VND)</option>'
-															+ '<option value="220000">ThÃªm 25Kg hÃ nh lÃ½ (220,000 VND)</option>'
-															+ '<option value="270000">ThÃªm 30Kg hÃ nh lÃ½ (270,000 VND)</option>'
-															+ '<option value="320000">ThÃªm 35Kg hÃ nh lÃ½ (320,000 VND)</option>'
-															+ '<option value="370000">ThÃªm 40Kg hÃ nh lÃ½ (370,000 VND)</option>'
+															+ '<option value="0">Không mang theo hành lý</option>'
+															+ '<option value="143000">Thêm 15Kg hành lý (143,000 VND)</option>'
+															+ '<option value="165000">Thêm 20Kg hành lý (165,000 VND)</option>'
+															+ '<option value="220000">Thêm 25Kg hành lý (220,000 VND)</option>'
+															+ '<option value="270000">Thêm 30Kg hành lý (270,000 VND)</option>'
+															+ '<option value="320000">Thêm 35Kg hành lý (320,000 VND)</option>'
+															+ '<option value="370000">Thêm 40Kg hành lý (370,000 VND)</option>'
 															+ '</select>'
 															+ '<input type="hidden" id="passenger.' 
 															+ (counter + 1)
@@ -216,18 +218,20 @@ var counter = 0;
 													$("#tbl_container tr:last")
 													.after(
 														'<tr>'
-															+ '<td>HÃ nh lÃ½ chiá»�u vá»�</td>'
+															+ '<td>Hành lý chiều về</td>'
 															+ '<td>'
 															+ '<select name="passenger.'
 															+ (counter + 1)
 															+ '.inboundluggage" id="passenger.'
 															+ (counter + 1)
 															+ '.inboundluggage">'
-															+ '<option value="0">KhÃ´ng mang theo hÃ nh lÃ½</option>'
-															+ '<option value="132000">ThÃªm 15Kg hÃ nh lÃ½ (132,000 VND)</option>'
-															+ '<option value="165000">ThÃªm 20Kg hÃ nh lÃ½ (165,000 VND)</option>'
-															+ '<option value="220000">ThÃªm 25Kg hÃ nh lÃ½ (220,000 VND)</option>'
-															+ '<option value="330000">ThÃªm 30Kg hÃ nh lÃ½ (330,000 VND)</option>'
+															+ '<option value="0">Không mang theo hành lý</option>'
+															+ '<option value="143000">Thêm 15Kg hành lý (143,000 VND)</option>'
+															+ '<option value="165000">Thêm 20Kg hành lý (165,000 VND)</option>'
+															+ '<option value="220000">Thêm 25Kg hành lý (220,000 VND)</option>'
+															+ '<option value="330000">Thêm 30Kg hành lý (330,000 VND)</option>'
+															+ '<option value="385000">Thêm 35Kg hành lý (385,000 VND)</option>'
+															+ '<option value="440000">Thêm 40Kg hành lý (440,000 VND)</option>'
 															+ '</select>'
 															+ '<input type="hidden" id="passenger.' 
 															+ (counter + 1)
@@ -331,32 +335,32 @@ var counter = 0;
 											var outboundIds = [];
 											$(".message").hide();
 //											if (customerName.val() == '' || !stringReg.test(customerName.val())) {
-//												errormsg.html('TÃªn khÃ¡ch hÃ ng khÃ´ng há»£p lá»‡!');
+//												errormsg.html('Tên khách hàng không hợp lệ!');
 //												errormsg.show();
 //												return false;
 //											}
 											if (!emailReg.test(customerEmail.val()) && $.trim(customerEmail.val()) != '') {
-												errormsg.html('Email khÃ¡ch hÃ ng khÃ´ng há»£p lá»‡!');
+												errormsg.html('Email khách hàng không hợp lệ!');
 												errormsg.show();
 												return false;
 											}
 //											if (customerPhoneNumber.val() == '' || !digitReg.test(customerPhoneNumber.val())) {
-//												errormsg.html('Ä�iá»‡n thoáº¡i khÃ¡ch hÃ ng khÃ´ng há»£p lá»‡!');
+//												errormsg.html('Điện thoại khách hàng không hợp lệ!');
 //												errormsg.show();
 //												return false;
 //											}
 											/*if ($.trim(customerAddress.val()) == '') {
-												errormsg.html('Ä�á»‹a chá»‰ khÃ¡ch hÃ ng khÃ´ng há»£p lá»‡!');
+												errormsg.html('Địa chỉ khách hàng không hợp lệ!');
 												errormsg.show();
 												return false;
 											}
 											if ($.trim(customerCity.val()) == '') {
-												errormsg.html('ThÃ nh phá»‘ khÃ¡ch hÃ ng khÃ´ng há»£p lá»‡!');
+												errormsg.html('Thành phố khách hàng không hợp lệ!');
 												errormsg.show();
 												return false;
 											}*/
 //											if (companyName.val() != '' && !stringReg.test(companyName.val())) {
-//												errormsg.html('TÃªn cÃ´ng ty khÃ´ng há»£p lá»‡!');
+//												errormsg.html('Tên công ty không hợp lệ!');
 //												errormsg.show();
 //												return false;
 //											}
@@ -366,30 +370,30 @@ var counter = 0;
 												var paymentAddress = $("#paymentAddress");
 												var paymentCity = $("#paymentCity");
 												if (paymentPerson.val() == '') {
-													errormsg.html('TÃªn ngÆ°á»�i nháº­n khÃ´ng Ä‘Æ°á»£c Ä‘á»ƒ trá»‘ng!');
+													errormsg.html('Tên người nhận không được để trống!');
 													errormsg.show();
 													return false;
 												}
 												if (paymentAddress.val() == '') {
-													errormsg.html('Ä�á»‹a chá»‰ ngÆ°á»�i nháº­n khÃ´ng Ä‘Æ°á»£c Ä‘á»ƒ trá»‘ng!');
+													errormsg.html('Địa chỉ người nhận không được để trống!');
 													errormsg.show();
 													return false;
 												}
 												if (paymentPhoneNumber.val() == '' || !digitReg.test(paymentPhoneNumber.val())) {
-													errormsg.html('Ä�iá»‡n thoáº¡i ngÆ°á»�i nháº­n khÃ´ng há»£p lá»‡!');
+													errormsg.html('Điện thoại người nhận không hợp lệ!');
 													errormsg.show();
 													return false;
 												}
 											}
 											/*
 											if (companyAddress != '' && !addressReg.test(companyAddress)) {
-												errormsg.html('Ã„ï¿½Ã¡Â»â€¹a chÃ¡Â»â€° cÃƒÂ´ng ty khÃƒÂ´ng hÃ¡Â»Â£p lÃ¡Â»â€¡!');
+												errormsg.html('Ä�á»‹a chá»‰ cÃ´ng ty khÃ´ng há»£p lá»‡!');
 												errormsg.show();
 												return false;
 											}*/
 											/*
 											if (billAddress != '' && !addressReg.test(billAddress)) {
-												errormsg.html('Ã„ï¿½Ã¡Â»â€¹a chÃ¡Â»â€° nhÃ¡ÂºÂ­n hÃƒÂ³a Ã„â€˜Ã†Â¡n khÃƒÂ´ng hÃ¡Â»Â£p lÃ¡Â»â€¡!');
+												errormsg.html('Ä�á»‹a chá»‰ nháº­n hÃ³a Ä‘Æ¡n khÃ´ng há»£p lá»‡!');
 												errormsg.show();
 												return false;
 											}
@@ -410,7 +414,7 @@ var counter = 0;
 												}
 											});
 //											if (status) {
-//												errormsg.html('TÃªn hÃ nh khÃ¡ch khÃ´ng há»£p lá»‡!');
+//												errormsg.html('Tên hành khách không hợp lệ!');
 //												errormsg.show();
 //												return false;
 //											}
@@ -433,7 +437,7 @@ var counter = 0;
 												}
 											});
 											if (status) {
-												errormsg.html('MÃ£ chuyáº¿n bay khÃ´ng há»£p lá»‡!');
+												errormsg.html('Mã chuyến bay không hợp lệ!');
 												errormsg.show();
 												return false;
 											}*/
@@ -453,7 +457,7 @@ var counter = 0;
 												}
 											});
 											if (status) {
-												errormsg.html('Sá»‘ hiá»‡u chuyáº¿n bay khÃ´ng há»£p lá»‡!');
+												errormsg.html('Số hiệu chuyến bay không hợp lệ!');
 												errormsg.show();
 												return false;
 											}
@@ -473,7 +477,7 @@ var counter = 0;
 												}
 											});
 											if (status) {
-												errormsg.html('Ä�iá»ƒm khá»Ÿi hÃ nh khÃ´ng há»£p lá»‡!');
+												errormsg.html('Điểm khởi hành không hợp lệ!');
 												errormsg.show();
 												return false;
 											}
@@ -493,19 +497,19 @@ var counter = 0;
 												}
 											});
 											if (status) {
-												errormsg.html('Ä�iá»ƒm Ä‘áº¿n khÃ´ng há»£p lá»‡!');
+												errormsg.html('Điểm đến không hợp lệ!');
 												errormsg.show();
 												return false;
 											}*/
 											
 											if (price.val() == '' || !moneyReg.test(price.val())) {
-												errormsg.html('Sá»‘ tiá»�n khÃ´ng há»£p lá»‡');
+												errormsg.html('Số tiền không hợp lệ');
 												errormsg.show();
 												return false;
 											}
 											
 											/*if (moneyCode.val() == '' || !iataReg.test(moneyCode.val())) {
-												errormsg.html('MÃƒÂ£ tiÃ¡Â»ï¿½n khÃƒÂ´ng hÃ¡Â»Â£p lÃ¡Â»â€¡!');
+												errormsg.html('MÃ£ tiá»�n khÃ´ng há»£p lá»‡!');
 												errormsg.show();
 												return false;
 											}*/
@@ -527,7 +531,7 @@ var counter = 0;
 														} else {
 															status = true;
 															alert(outboundDateVal
-																	+ ' sai Ä‘á»‹nh dáº¡ng(dd/mm/yyyy hh:mm)');
+																	+ ' sai định dạng(dd/mm/yyyy hh:mm)');
 														}
 
 													});
@@ -551,7 +555,7 @@ var counter = 0;
 														} else {
 															status = true;
 															alert(inboundDateVal
-																	+ ' sai Ä‘á»‹nh dáº¡ng(dd/mm/yyyy hh:mm)');
+																	+ ' sai định dạng(dd/mm/yyyy hh:mm)');
 														}
 													});
 											if (status) {
@@ -568,28 +572,28 @@ var counter = 0;
 												//alert(testDate2 - testDate1);
 												//alert("date1 :"+testDate1.val()+", date2 : "+testDate2.val());
 												if (testDate1 > testDate2) {
-													alert('NgÃ y Ä‘i '
+													alert('Ngày đi '
 															+ date1.datetimepicker({dateFormat:'dd/mm/yy'}).val()
-															+ ' pháº£i nhá»� hÆ¡n '
+															+ ' phải nhỏ hơn '
 															+ date2.datetimepicker({dateFormat:'dd/mm/yy'}).val());
 													return false;
 													break;
 												}
 											}
 											//alert($("#savePassenger").val());
-											if ($("#savePassenger").val() == 'LÆ°u') {
-												errormsg.html('Báº¡n pháº£i lÆ°u thÃ´ng tin hÃ nh khÃ¡ch trÆ°á»›c khi cáº­p nháº­t!');
+											if ($("#savePassenger").val() == 'Lưu') {
+												errormsg.html('Bạn phải lưu thông tin hành khách trước khi cập nhật!');
 												errormsg.show();
 												return false;
 											}
 
 											if (statusValue.val() == 2 && !($("#completeStatus").is(":checked"))) {
-												errormsg.html("Báº¡n pháº£i Ä‘Ã¡nh dáº¥u vÃ o 'Ä‘Ã£ xá»­ lÃ½ xong' trÆ°á»›c khi hoÃ n thÃ nh Ä‘Æ¡n hÃ ng!");
+												errormsg.html("Bạn phải đánh dấu vào 'đã xử lý xong' trước khi hoàn thành đơn hàng!");
 												errormsg.show();
 												return false;
 											}
 											if (statusValue.val() == 3) {
-												var cancelConfirm = confirm('Báº¡n cÃ³ muá»‘n há»§y Ä‘Æ¡n hÃ ng?');
+												var cancelConfirm = confirm('Bạn có muốn hủy đơn hàng?');
 											}
 											$("#doAdd").submit();
 										});
@@ -669,13 +673,13 @@ var counter = 0;
 										function() {
 											if ($email.val() == ''
 													|| !emailReg.test($email.val())) {
-												errormsg.html('Báº¡n pháº£i nháº­p Ä‘Ãºng Ä‘á»‹a chá»‰ email.');
+												errormsg.html('Bạn phải nhập đúng địa chỉ email.');
 												errormsg.show();
 												jQuery("html, body").animate({ scrollTop: 0 }, "slow");
 												return false;
 											}
 											if ((statusValue.val() != 2 || !($("#completeStatus").is(":checked"))) && $("#paidStatus").val() != 2) {
-												errormsg.html("Báº¡n pháº£i chá»�n confirm vÃ  Ä‘Ã¡nh dáº¥u vÃ o 'Ä‘Ã£ xá»­ lÃ½ xong' trÆ°á»›c khi gá»­i mail!");
+												errormsg.html("Bạn phải chọn confirm và đánh dấu vào 'đã xử lý xong' trước khi gửi mail!");
 												errormsg.show();
 												jQuery("html, body").animate({ scrollTop: 0 }, "slow");
 												return false;
@@ -803,7 +807,7 @@ function removePassenger(element) {
 	var passengerId = jQuery(element).parent().parent().find(':hidden').val();
 	// alert(passengerId);
 	var passenger = '{"id":"' + passengerId + '"}';
-	if (confirm('Báº¡n cÃ³ muá»‘n cháº¯c xÃ³a hÃ nh khÃ¡ch nÃ y?')) {
+	if (confirm('Bạn có muốn chắc xóa hành khách này?')) {
 		jQuery.ajax({
 			type : "POST",
 			contentType : "application/json",
@@ -881,16 +885,16 @@ function savePassengers(el) {
 			+ orderId + '",' + '"outboundLuggage": "' + outboundLuggage + '",' + '"inboundLuggage": "' + inboundLuggage + '",'
 			+ '"obairline": "' + obairline + '",' + '"ibairline": "' + ibairline + '"' + '}';
 	if (passengerName == '') {
-		jQuery(".errors").html('TÃªn hÃ nh khÃ¡ch khÃ´ng Ä‘Æ°á»£c Ä‘á»ƒ trá»‘ng');
+		jQuery(".errors").html('Tên hành khách không được để trống');
 		jQuery(".errors").show();
 		return false;
 	} else if (/[a-zA-Z0-9- ]*$/.test(passengerName) == false) {
-		jQuery(".errors").html('TÃªn hÃ nh khÃ¡ch khÃ´ng Ä‘Æ°á»£c chá»©a cÃ¡c kÃ½ tá»± Ä‘áº·c biá»‡t');
+		jQuery(".errors").html('Tên hành khách không được chứa các ký tự đặc biệt');
 		jQuery(".errors").show();
 		return false;
 	}
 	if (dob == '' && gender > 1) {
-		jQuery(".errors").html('NgÃ y sinh khÃ´ng Ä‘Æ°á»£c Ä‘á»ƒ trá»‘ng');
+		jQuery(".errors").html('Ngày sinh không được để trống');
 		jQuery(".errors").show();
 		return false;
 	} else {

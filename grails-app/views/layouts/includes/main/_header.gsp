@@ -131,7 +131,7 @@
 						<em></em>
 					</g:link></li>
 			</sec:ifAnyGranted>
-			<sec:ifAnyGranted roles="ROLE_ADMIN, ROLE_USER">
+			<sec:ifAnyGranted roles="ROLE_ADMIN">
 				<li class="mainlist"><a href="javascript:void(0)"><span><g:message
 								code="navigation.admin.tour" /></span><em></em></a>
 					<div class="sublist">
@@ -156,12 +156,13 @@
 					</g:link></li>
 			</sec:ifAnyGranted>
 
-
+			<sec:ifAnyGranted roles="ROLE_ADMIN">
 			<li><g:link controller="moneycode">
 					<span><g:message code="navigation.admin.moneycodemgr"
 							default="Quản lý mã tiền" /></span>
 					<em></em>
 				</g:link></li>
+			</sec:ifAnyGranted>
 			<sec:ifAnyGranted roles="ROLE_ADMIN, ROLE_ACCOUNTING">
 				<li><g:link controller="income">
 						<span><g:message code="navigation.admin.totalincome" /></span>

@@ -96,15 +96,11 @@
 							</tr>
 							<tr>
 								<td><strong>Đổi Tên Hành Khách</strong></td>
-								<td><span> Được phép - Thu phí: 330.000 VND.</span></td>
-							</tr>
-							<tr>
-								<td><strong>Đổi Hành Trình</strong></td>
-								<td><span> Được phép - Thu phí 330,000 cộng chênh lệch giá vé.</span></td>
+								<td><span> Đổi tên cho cả hành trình - Thu phí: 352,000 VND/lần đổi.</span></td>
 							</tr>
 							<tr>
 								<td><strong>Đổi Ngày Giờ Chuyến Bay</strong></td>
-								<td><span> Được phép - Thu phí: 330.000 VND cộng chênh lệch giá vé</span></td>
+								<td><span> Miễn phí thay đổi - Thu chênh lệch giá vé (nếu có)</span></td>
 							</tr>
 							<tr>
 								<td><strong>Bảo lưu</strong></td>
@@ -113,11 +109,7 @@
 							<tr>
 								<td><strong>Thời hạn thay đổi (bao gồm thay đổi
 										tên, ngày/chuyến bay, hành trình)</strong></td>
-								<td><span> Trước  6 giờ so với giờ khởi hành.</span></td>
-							</tr>
-							<tr>
-								<td><strong>Thay đổi chuyến bay</strong></td>
-								<td><span> Được phép - Thu phí: 275.000 VND.</span></td>
+								<td><span> Trước giờ khởi hành 24h.</span></td>
 							</tr>
 						</table>
 					</div>
@@ -133,15 +125,11 @@
 							</tr>
 							<tr>
 								<td><strong>Đổi Tên Hành Khách</strong></td>
-								<td><span> Được phép - Thu phí: 330.000 VND.</span></td>
-							</tr>
-							<tr>
-								<td><strong>Đổi Hành Trình</strong></td>
-								<td><span> Được phép - Thu phí 330,000 cộng chênh lệch giá vé.</span></td>
+								<td><span> Đổi tên cho cả hành trình - Thu phí thay Đổi 352.000VND/lần đổi.</span></td>
 							</tr>
 							<tr>
 								<td><strong>Đổi Ngày Giờ Chuyến Bay</strong></td>
-								<td><span> Được phép - Thu phí: 330.000 VND cộng chênh lệch giá vé</span></td>
+								<td><span> Thu phí thay đổi 352.000VND - Thu chênh lệch giá vé (nếu có).</span></td>
 							</tr>
 							<tr>
 								<td><strong>Bảo lưu</strong></td>
@@ -150,11 +138,7 @@
 							<tr>
 								<td><strong>Thời hạn thay đổi (bao gồm thay đổi
 										tên, ngày/chuyến bay, hành trình)</strong></td>
-								<td><span> Trước  6 giờ so với giờ khởi hành.</span></td>
-							</tr>
-							<tr>
-								<td><strong>Thay đổi chuyến bay</strong></td>
-								<td><span> Được phép - Thu phí: 275.000 VND.</span></td>
+								<td><span> Trước giờ mở quầy làm thủ tục dự kiến ban đầu của chuyến bay.</span></td>
 							</tr>
 						</table>
 					</div>
@@ -169,8 +153,7 @@
 						</tr>
 						<tr>
 							<td><span>Hành lý xách tay </span></td>
-							<td><span> Mỗi hành khách được mang theo tối đa 7kg
-									hành lý xách tay. </span></td>
+							<td><span> Mỗi hành khách được mang theo tối đa 7kg hành lý xách tay. </span></td>
 						</tr>
 						<g:if
 							test="${(airlineNameOutbound.equals('Jetstar') || airlineCodeOutbound.equals('BL')) && session.parameters.isDomestic.equals('true')}">
@@ -185,10 +168,12 @@
 												class="outboundLuggable">
 													<option selected="selected" value="0">Không mang theo
 															hành lý</option>
-														<option value="132000">Thêm 15Kg hành lý (132,000 VND)</option>
+														<option value="143000">Thêm 15Kg hành lý (143,000 VND)</option>
 														<option value="165000">Thêm 20Kg hành lý (165,000 VND)</option>
 														<option value="220000">Thêm 25Kg hành lý (220,000 VND)</option>
-														<option value="330000">Thêm 30Kg hành lý (330,000 VND)</option>
+														<option value="270000">Thêm 30Kg hành lý (270,000 VND)</option>
+														<option value="320000">Thêm 35Kg hành lý (320,000 VND)</option>
+														<option value="370000">Thêm 40Kg hành lý (370,000 VND)</option>
 											</select>
 										</div>
 									</g:while></td>
@@ -208,10 +193,12 @@
 													name="outboundLuggable" class="outboundLuggable">
 														<option selected="selected" value="0">Không mang theo
 															hành lý</option>
-														<option value="132000">Thêm 15Kg hành lý (132,000 VND)</option>
+														<option value="143000">Thêm 15Kg hành lý (143,000 VND)</option>
 														<option value="165000">Thêm 20Kg hành lý (165,000 VND)</option>
 														<option value="220000">Thêm 25Kg hành lý (220,000 VND)</option>
 														<option value="330000">Thêm 30Kg hành lý (330,000 VND)</option>
+														<option value="385000">Thêm 35Kg hành lý (385,000 VND)</option>
+														<option value="440000">Thêm 40Kg hành lý (440,000 VND)</option>
 												</select>
 											</div>
 										</g:while>
@@ -257,10 +244,12 @@
 													name="inboundLuggable" class="inboundLuggable">
 												<option selected="selected" value="0">Không mang theo
 															hành lý</option>
-														<option value="132000">Thêm 15Kg hành lý (132,000 VND)</option>
+														<option value="143000">Thêm 15Kg hành lý (143,000 VND)</option>
 														<option value="165000">Thêm 20Kg hành lý (165,000 VND)</option>
 														<option value="220000">Thêm 25Kg hành lý (220,000 VND)</option>
-														<option value="330000">Thêm 30Kg hành lý (330,000 VND)</option>
+														<option value="270000">Thêm 30Kg hành lý (270,000 VND)</option>
+														<option value="320000">Thêm 35Kg hành lý (320,000 VND)</option>
+														<option value="370000">Thêm 40Kg hành lý (370,000 VND)</option>
 												</select>
 											</div>
 										</g:while>
@@ -279,10 +268,12 @@
 													name="inboundLuggable" class="inboundLuggable">
 														<option selected="selected" value="0">Không mang theo
 															hành lý</option>
-														<option value="132000">Thêm 15Kg hành lý (132,000 VND)</option>
+														<option value="143000">Thêm 15Kg hành lý (143,000 VND)</option>
 														<option value="165000">Thêm 20Kg hành lý (165,000 VND)</option>
 														<option value="220000">Thêm 25Kg hành lý (220,000 VND)</option>
 														<option value="330000">Thêm 30Kg hành lý (330,000 VND)</option>
+														<option value="385000">Thêm 35Kg hành lý (385,000 VND)</option>
+														<option value="440000">Thêm 40Kg hành lý (440,000 VND)</option>
 												</select>
 											</div>
 										</g:while>

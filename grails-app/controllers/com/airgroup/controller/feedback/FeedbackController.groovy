@@ -22,9 +22,12 @@ class FeedbackController {
 	 *<p>
 	 *Return list of feedback to front end
 	 *</p>
-	 *@author nghiaTT
 	 */
 	def index = {
+		listFeedback(params)
+	}
+	
+	def list = {
 		listFeedback(params)
 	}
 
@@ -32,7 +35,6 @@ class FeedbackController {
 	 *<p>
 	 *Return list of feedback to front end
 	 *</p> 
-	 *@author nghiaTT
 	 */
 	def listFeedback(def params) {
 		params.status = (short)1
