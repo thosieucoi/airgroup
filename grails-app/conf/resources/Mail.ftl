@@ -11,7 +11,7 @@
 
 <body>
 	<div id="mail" style="width:680px; margin:auto; padding:0">
-    	<h1 style="color:#023557; font-size:18px; font-weight:bold; margin:10px 0; text-align:right">ĐẶT VÉ MỌI LÚC MỌI NƠI<br /><label style="color:#F00; font-size:25px; padding:10px">04-3512-2266</label></h1>
+    	<h1 style="color:#023557; font-size:18px; font-weight:bold; margin:10px 0; text-align:right">ĐẶT VÉ MỌI LÚC MỌI NƠI<br /><label style="color:#F00; font-size:25px; padding:10px">04 66813026</label></h1>
         <div class="maildetail" style="margin:5px 0; border:1px solid #ccc">
         	<ul class="mail-one" style="height:32px; background:#007CC3; padding:0; margin:0">
             	<li style=" list-style:none; float:left; padding:0 5px;width:150px"><a href="http://ahotua.vn/flight/search" style="color:#f0f0f0; text-decoration:none; display:block; line-height:32px">Tìm và đặt vé</a></li>
@@ -42,7 +42,7 @@
                         <td style="padding:5px 0"></td style="padding:5px 0"><td></td>
                     </tr>
                 </table>
-                <p class="note" style="padding:5px 0;color:red; background:#F7E496">Đây là email thông báo về yêu cầu đặt vé của quý khách chứ chưa phải xác nhận về giá và chỗ. Chúng tôi sẽ xử lý yêu cầu này và xác nhận lại với quý khách trong thời gian sớm nhất.</p>
+                <p class="note" style="padding:5px 0;color:red; background:#F7E496">Đây là email thông báo về yêu cầu đặt vé của quý khách. Chúng tôi sẽ xử lý yêu cầu này và xác nhận lại với quý khách trong thời gian sớm nhất. Xin chân thành cảm ơn quý khách đã sử dụng dịch vụ</p>
             </div>
              <div class="mail-list" style=" padding:0 5px 0 5px">
             	<h2 style="color:#007CC3; font-size:22px; font-weight:bold; border-bottom:2px solid #007CC3">Thông tin hành khách</h2>
@@ -120,8 +120,8 @@
                 <p style="padding:5px 0">Hình thức thanh toán của quý khách đã lựa chọn : <a href="" style="text-decoration:none; color: #0E70A5;">${paymentType}</a></p>
                 <p style="padding:5px 0">
                 	<a href="" style="text-decoration:none; color: #0E70A5;"><b>Văn phòng Hà Nội</b></a><br />
-                    <a href="" style="text-decoration:none; color: #0E70A5;"><b> Địa chỉ:</b> Số 19F Nguyễn Khang-Trung Hòa- Cầu Giấy- Hà Nội</a><br />
-   					 <a href="" style="text-decoration:none; color: #0E70A5;"><b>Điện thoại : </b>04-3512-2266</a><br />
+                    <a href="" style="text-decoration:none; color: #0E70A5;"><b> Địa chỉ:</b> Số nhà 21, ngách 100/24, ngõ 100, đường Hoàng Quốc Việt, phường Nghĩa Đô, quận Cầu Giấy, Thành phố Hà Nội, Việt Nam</a><br />
+   					 <a href="" style="text-decoration:none; color: #0E70A5;"><b>Điện thoại : </b>04 66813026</a><br />
 
                 </p>
                 <fieldset style="border: 1px solid #ccc; background: #FFEDED">
@@ -135,105 +135,13 @@
                                 <div class="bank-detail">
                                     <span class="title title-b" style="font-weight: bold; line-height: 30px;">Ngân hàng Vietcombank </span>
                                     <br />
-                                    <span>Tên TK: Công Ty Cổ Phần Ahotua</span>
+                                    <span>Tên tài khoản: Đoàn Quang Thắng</span>
                                     <br />
-                                    <span>Số TK: 0021-0002-93700</span>
+                                    <span>Số tài khoản: 0611001719111</span>
                                 </div>
                                 <div class="clearfix"></div>
 								
 				 </td>
-				 <td valign="top">
-				 <div class="bank-logo">
-                                    <img src="http://ahotua.vn/images/img/TechcomBank.png" width="90" height="50" alt="VietcomBank" />
-                                </div>
-                                <div class="bank-detail">
-                                    <span class="title title-b" style="font-weight: bold; line-height: 30px;">Ngân hàng Techcombank</span>
-                                    <br />
-                                    <span>Tên TK: Công Ty Cổ Phần Ahotua</span>
-                                    <br />
-                                    <span>Số TK: 19128392003883</span>
-                                </div>
-                                <div class="clearfix"></div>
-				 </td>
-				 <td valign="top">
-				 <div class="bank-logo">
-                                    <img src="http://ahotua.vn/images/img/MBBank.png" width="90" height="50" alt="MBBank" />
-                                </div>
-                                <div class="bank-detail">
-                                    <span class="title title-b" style="font-weight: bold; line-height: 30px;">Ngân hàng QUÂN ĐỘI</span>
-                                    <br />
-                                    <span>Tên TK: Đoàn Quang Thắng</span>
-                                    <br />
-                                    <span>Số TK: 0580107012008</span>
-                                </div>
-                                <div class="clearfix"></div>
-				 
-				 </td>
-			   </tr>
-			   <tr>
-				<td valign="top">
-				<div class="bank-logo" style="margin-top: 27px;">
-                                    <img src="http://ahotua.vn/images/img/BIDV.jpg" width="90" height="50" alt="BIDV" />
-                                </div>
-                                <div class="bank-detail">
-                                    <span class="title title-b" style="font-weight: bold; line-height: 30px;">Ngân hàng BIDV</span>
-                                    <br />
-                                    <span>Tên TK: Công Ty Cổ Phần Ahotua</span>
-                                    <br />
-                                    <span>Số TK: 12510000635331</span>
-                                </div>
-                                <div class="clearfix"></div>
-				</td>
-				<td valign="top">
-				<div class="bank-logo" style="margin-top: 27px;">
-                                    <img src="http://ahotua.vn/images/img/AgriBank.jpg" width="90" height="50" alt="AgriBank" />
-                                </div>
-                                <div class="bank-detail">
-                                    <span class="title title-b" style="font-weight: bold; line-height: 30px;">Ngân hàng nông nghiệp</span>
-                                    <br />
-                                    <span>Tên TK:  Công Ty Cổ Phần Ahotua</span>
-                                    <br />
-                                    <span>Số TK:  1400206026412</span>
-                                </div>
-                                <div class="clearfix"></div>
-				</td>
-				<td valign="top">
-				
-				<div class="bank-logo" style="margin-top: 27px;">
-                                    <img src="http://ahotua.vn/images/img/VietcomBank.png" width="90" height="50" alt="MBBank" />
-                                </div>
-                                <div class="bank-detail">
-                                    <span class="title title-b" style="font-weight: bold; line-height: 30px;">Ngân hàng Vietcombank </span>
-                                    <br />
-                                    <span>Tên TK:  Cty TNHH Thương Mại và Dịch Vụ Du lịch HPV Việt Nam</span>
-                                    <br />
-                                    <span>Số TK:  	0021-0002-93700</span>
-                                </div>
-                                <div class="clearfix"></div>
-                                <div class="bank-logo" style="margin-top: 27px;">
-                                    <img src="http://ahotua.vn/images/bank-donga-logo.gif" width="90" height="50" alt="MBBank" />
-                                </div>
-                                <div class="bank-detail">
-                                    <span class="title title-b" style="font-weight: bold; line-height: 30px;">Ngân Hàng Đông Á </span>
-                                    <br />
-                                    <span>Tên TK:  Đoàn Quang Thắng </span>
-                                    <br />
-                                    <span>Số TK:  	0108817986</span>
-                                </div>
-                                <div class="clearfix"></div>
-                         <div class="bank-logo" style="margin-top: 27px;">
-                                    <img src="http://ahotua.vn/images/bank-acb-logo.gif" width="90" height="50" alt="MBBank" />
-                                </div>
-                                <div class="bank-detail">
-                                    <span class="title title-b" style="font-weight: bold; line-height: 30px;">Ngân Hàng ACB </span>
-                                    <br />
-                                    <span>Tên TK:  Đoàn Quang Thắng </span>
-                                    <br />
-                                    <span>Số TK:  	183916659</span>
-                                </div>
-                                <div class="clearfix"></div>       
-								
-				</td>
 			   </tr>
 			</table>
                 </fieldset>
@@ -242,7 +150,7 @@
 			
             <ul class="mail-one" style=" height:32px; background:#007CC3; padding:0; margin:0">
             	<li style=" list-style:none; float:left; padding:0 5px;width:150px"><a href="http://ahotua.vn/flight/search" style="color:#f0f0f0; text-decoration:none; display:block; line-height:32px">Tìm và đặt vé</a></li>
-                <li style=" list-style:none; float:left; padding:0 5px;width:150px"><a href="http://ahotua.vn/feedback/list" style="color:#f0f0f0; text-decoration:none; display:block; line-height:32px">Ý kiến khách hàng</a></li>
+                <li style=" list-style:none; float:left; padding:0 5px;width:150px"><a href="http://ahotua.vn/feedback/index" style="color:#f0f0f0; text-decoration:none; display:block; line-height:32px">Ý kiến khách hàng</a></li>
                 <li style=" list-style:none; float:left; padding:0 5px;width:150px"><a href="http://ahotua.vn/contactUs/infor" style="color:#f0f0f0; text-decoration:none; display:block; line-height:32px">Liên hệ</a></li>
             </ul>
         </div>

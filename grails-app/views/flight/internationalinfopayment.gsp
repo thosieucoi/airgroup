@@ -40,8 +40,8 @@
 							<li><input type="radio" name="vp" /><span> Văn phòng
 									Ahotua tại Hà Nội</span>
 								<ul>
-									<li><span><b>Địa chỉ:</b>  </span></li>
-									<li><span><b>Điện thoại :</b> </span></li>
+									<li><span><b>Địa chỉ:</b> Số nhà 21, ngách 100/24, ngõ 100, đường Hoàng Quốc Việt, phường Nghĩa Đô, quận Cầu Giấy </span></li>
+									<li><span><b>Điện thoại :</b> 04 66813026 </span></li>
 								</ul></li>
 						</ul>
 						<input type="submit" value="Chọn thanh toán tại văn phòng >>">
@@ -69,138 +69,12 @@
 									<td><img
 										src="${resource(dir:'images',file:'bank-logo-VCB.gif')}" /></td>
 									<td><span><b>Ngân hàng TMCP Ngoại Thương Việt
-												Nam - Vietcombank</b> </span><br /> <span>Tên tài khoản : <b>Cty TNHH Thương Mại và Dịch Vụ Du lịch Ahotua Việt Nam</b>
-												</span><br /> <span>Số tài khoản :
-												<b>0021-0002-93700</b></span><br /> <span>Phòng giao dịch </span><br /> <span>Chi
-											Nhánh: <b>VCB chi nhánh Hoàn Kiếm </b>
-									</span><br /></td>
-								</tr>
-							</table>
-							<input type="submit" value="Chọn Ngân Hàng" name="NH"
-								class="seclect-bank" />
-						</div>
-						<div style="clear: both"></div>
-						<div class="pay-list">
-							<table>
-								<tr>
-									<td><img
-										src="${resource(dir:'images',file:'bank-techcom-logo.gif')}" /></td>
-									<td><span><b>Ngân hàng Techcombank</b> </span><br /> <span>Tên tài khoản : <b>Cty THNN Thương Mại và Dịch Vụ Du Lịch Ahotua Việt Nam</b>
-												</span><br /> <span>Số tài khoản :
-												<b>19128392003883</b></span><br /> <span>Phòng giao dịch </span><br /> <span>Chi
-											Nhánh: <b>Hà Nội </b>
-									</span><br /></td>
-								</tr>
-							</table>
-							<input type="submit" value="Chọn Ngân Hàng" name="NH"
-								class="seclect-bank" />
-						</div>
-						<div style="clear: both"></div>
-						<div class="pay-list">
-							<table>
-								<tr>
-									<td><img
-										src="${resource(dir:'images',file:'bank-agri-logo.gif')}" /></td>
-									<td><span><b>Ngân hàng AGRIBANK</b> </span><br /> <span>Tên tài khoản : <b>Cty THNN Thương Mại và Dịch Vụ Du Lịch Ahotua Việt Nam</b>
-												</span><br /> <span>Số tài khoản :
-												<b>1400206026412</b></span><br /> <span>Phòng giao dịch </span><br /> <span>Chi
-											Nhánh: <b>Láng Hạ </b>
-									</span><br /></td>
-								</tr>
-							</table>
-							<input type="submit" value="Chọn Ngân Hàng" name="NH"
-								class="seclect-bank" />
-						</div>
-						<div style="clear: both"></div>
-						<div class="pay-list">
-							<table>
-								<tr>
-									<td><img
-										src="${resource(dir:'images',file:'bank-bidv-logo.gif')}" /></td>
-									<td><span><b>Ngân hàng BIDV</b> </span><br /> <span>Tên tài khoản : <b>Cty THNN Thương Mại và Dịch Vụ Du Lịch Ahotua Việt Nam</b>
-												</span><br /> <span>Số tài khoản :
-												<b>12510000635331</b></span><br /> <span>Phòng giao dịch </span><br /> <span>Chi
-											Nhánh: <b>Hà Nội </b>
-									</span><br /></td>
-								</tr>
-							</table>
-							<input type="submit" value="Chọn Ngân Hàng" name="NH"
-								class="seclect-bank" />
-						</div>
-						<div style="clear: both"></div>
-						<div class="pay-list">
-							<table>
-								<tr>
-									<td><img
-										src="${resource(dir:'images',file:'bank-mb-logo.gif')}" /></td>
-									<td><span><b>Ngân hàng Quân đội - MBBank</b> </span><br /> <span>Tên tài khoản : <b>Vũ Thị Hồng Vân</b>
-												</span><br /> <span>Số tài khoản :
-												<b>0580107012008</b></span><br /> <span>Phòng giao dịch </span><br /> <span>Chi
-											Nhánh: <b>Đống Đa - Hà Nội </b>
-									</span><br /></td>
-								</tr>
-							</table>
-							<input type="submit" value="Chọn Ngân Hàng" name="NH"
-								class="seclect-bank" />
-						</div>
-						<div style="clear: both"></div>
-						<div class="pay-list">
-							<table>
-								<tr>
-									<td><img
-										src="${resource(dir:'images',file:'bank-donga-logo.gif')}" /></td>
-									<td><span><b>Ngân Hàng Đông Á</b> </span><br /> <span>Tên tài khoản : <b>Vũ Thị Hồng Vân</b>
-												</span><br /> <span>Số tài khoản :
-												<b>0108817986</b></span><br /> <span>Phòng giao dịch </span><br /> <span>Chi
-											Nhánh: <b>Ba Đình </b>
-									</span><br /></td>
-								</tr>
-							</table>
-							<input type="submit" value="Chọn Ngân Hàng" name="NH"
-								class="seclect-bank" />
-						</div>
-						<div style="clear: both"></div>
-						<div class="pay-list">
-							<table>
-								<tr>
-									<td><img
-										src="${resource(dir:'images',file:'bank-acb-logo.gif')}" /></td>
-									<td><span><b>Ngân Hàng ACB</b> </span><br /> <span>Tên tài khoản : <b>Vũ Thị Hồng Vân</b>
-												</span><br /> <span>Số tài khoản :
-												<b>183916659</b></span><br /> <span>Phòng giao dịch </span><br /> <span>Chi
-											Nhánh: <b>Hà Nội </b>
-									</span><br /></td>
-								</tr>
-							</table>
-							<input type="submit" value="Chọn Ngân Hàng" name="NH"
-								class="seclect-bank" />
-						</div>
-						<div style="clear: both"></div>
-						<div class="pay-list">
-							<table>
-								<tr>
-									<td><img
-										src="${resource(dir:'images',file:'bank-sacom-logo.gif')}" /></td>
-									<td><span><b>Ngân Hàng SACOMBANK</b> </span><br /> <span>Tên tài khoản : <b>Vũ Thị Hồng Vân</b>
-												</span><br /> <span>Số tài khoản :
-												<b>020029014176</b></span><br /> <span>Phòng giao dịch </span><br /> <span>Chi
-											Nhánh: <b>Hà Nội </b>
-									</span><br /></td>
-								</tr>
-							</table>
-							<input type="submit" value="Chọn Ngân Hàng" name="NH"
-								class="seclect-bank" />
-						</div>
-						<div style="clear: both"></div>
-						<div class="pay-list">
-							<table>
-								<tr>
-									<td><img
-										src="${resource(dir:'images',file:'bank-vietin-logo.gif')}" /></td>
-									<td><span><b>Ngân Hàng VIETINBANK</b> </span><br /> <span>Tên tài khoản : <b>Vũ Thị Hồng Vân</b>
-												</span><br /> <span>Số tài khoản :
-												<b>711AB2309335</b></span><br /> <span>Phòng giao dịch </span><br /> <span>Chi
-											Nhánh: <b>Chương Dương </b>
+												Nam - Vietcombank</b> </span><br /> 
+												<span>Tên tài khoản : <b>Đoàn Quang Thắng</b></span>
+												<br /> 
+												<span>Số tài khoản :<b>0611001719111</b></span>
+												<br /> 
+												<span>Phòng giao dịch </span><br /> <span>Chi Nhánh: <b>VCB chi nhánh Ba Đình </b>
 									</span><br /></td>
 								</tr>
 							</table>
@@ -220,45 +94,7 @@
 					</div>
 				</div>
 				<div style="clear: both"></div>
-				<div class="infor-t pay">
-					<div class="pay-check">
-						<div class="icon">
-							<img src="${resource(dir:'images',file:'home.png')}" />
-						</div>
-						<div class="info">
-							<span class="title">Thanh toán tại nhà</span><br /> <span>Trong
-								thời gian từ thứ 2-7 ngày làm việc, nhân viên Ahotua sẽ đến tận
-								nơi địa chỉ của quý khách để giao vé & thu tiền . Với hình thức
-								này, quý khách sẽ mất phí giao vé là 20,000 vnđ </span><br />
-
-						</div>
-						<div class="check-box" id="3"></div>
-					</div>
-					<div class="pay-checked">
-						<p>Ahotua chỉ giao vé đối với các khu vực nội thành Hà Nội như
-							sau: Ba đình , Cầu giấy, Hoàn Kiếm, Hoàng Mai, Hai Bà Trưng ,
-							Đống Đa, Long Biên.</p>
-						<table class="pay-add">
-							<tr>
-								<td><span>Người nhận <i>( * )</i></span></td>
-								<td><input name="revperson" type="text"/></td>
-							</tr>
-							<tr>
-								<td><span>Địa chỉ <i>( * )</i></span></td>
-								<td><input name="revaddress" type="text"/></td>
-							</tr>
-							<tr>
-								<td><span>Số điện thoại <i>( * )</i></span></td>
-								<td><input name="revphone" type="text" value="${session.parameters.phoneNumber}" /></td>
-							</tr>
-							<tr>
-								<td><span>Thành phố <i>( * )</i></span></td>
-								<td><input name="revcity" type="text" /></td>
-							</tr>
-						</table>
-						<input type="submit" value="Chọn thanh toán tại nhà >>">
-					</div>
-				</div>
+				
 				<input type="checkbox" id="taxcheckbox"  value="hd" style="margin: 0 5px"
 					class="hd-check" /><b> Tôi muốn xuất hóa đơn</b>
 				<div class="pay-out">
