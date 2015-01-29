@@ -7,6 +7,9 @@
 				<img src="${resource(dir:'images/newuiimg',file:'Facebook-icon.png')}">
 			</a>
 		</li>
+		<br/>
+		<li class="item8"><g:link controller="login"><span style="color: #fff;">Đăng nhập</span></g:link></li>
+		<li class="item8"><g:link controller="register"><span style="color: #fff;">Đăng ký</span></g:link></li>
 	</ul>
 </div>
 </footer>

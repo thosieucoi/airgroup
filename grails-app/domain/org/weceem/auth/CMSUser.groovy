@@ -51,9 +51,9 @@ class CMSUser {
     }
 
     static constraints = {
-		code(blank:false, unique:true, maxSize:25, matches:/[a-zA-Z0-9]+/)
+		code(nullable: true, maxSize:25, matches:/[a-zA-Z0-9]+/)
 		name blank:false, maxSize:100, matches:"^[\\p{L}0-9 .'-]+"
-		phoneNumber nullable: true, blank:true, matches:/\d{8,15}/
+		phoneNumber nullable: true, unique: true, blank:true, matches:/\d{8,15}/
         username(blank: false, unique: true, minSize:3, maxSize:45, matches:/[a-zA-Z0-9\-_.]+/)
         password(blank: false, minSize:6, maxSize:100, matches:/[a-zA-Z0-9\-_.!@#$%^&*(){},;]+/)
         pass(blank: false, nullable: false, size: 6..45)
@@ -61,7 +61,7 @@ class CMSUser {
 		callCenterStatus nullable: true
 		yahoo nullable: true, maxSize: 50, unique: true, matches:/[a-zA-Z0-9\-_.]+/
 		skype nullable: true, maxSize: 50, unique: true, matches:/[a-zA-Z0-9\-_.]+/
-		email email: true,nullable:true,maxSize:50
+		email email: true, unique: true, blank: false,maxSize:50
 		lastAccessTime nullable: true
     }
 

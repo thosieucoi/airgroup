@@ -163,7 +163,7 @@ class HomeController {
 			redirect(action: "index")
 		}
 		else {
-			flash.error = "Email nÃ y Ä‘Ã£ tá»“n táº¡i"
+			flash.error = "Email này đã tồn tại"
 			redirect(action: "index")
 		}
 	}

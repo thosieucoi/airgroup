@@ -109,7 +109,7 @@ body{
 
 #footer ul li {
 	display: inline;
-	padding-left: 0;
+	padding: 5px;
 }
 
 a{
@@ -1473,6 +1473,7 @@ v#e-may-bay-gia-re > div,
 }
 
 <!--customercare-->
+
     #WFItem9272103 html {
         color:#000 !important;
         background:#FFF !important;
