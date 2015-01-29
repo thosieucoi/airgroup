@@ -38,7 +38,6 @@
 											var list = new Array();
 											var j = 0;
 											for (i in jsonData) {
-												j++;
 												if (!((jsonData[i].skype == null && jsonData[i].phoneNumber == null) || (jsonData[i].yahoo == ''
 														&& jsonData[i].skype == '' && jsonData[i].phoneNumber == ''))) {
 													if (jsonData[i].phoneNumber != null) {
@@ -48,9 +47,10 @@
 													}
 													if (jsonData[i].skype != null
 															&& jsonData[i].skype != '') {
+														j++;
 														strSkype += "<a href='skype: "
 																+ jsonData[i].skype
-																+ "?chat' title='Gọi skype'>Hỗ trợ " + j + "</a> <br/>";
+																+ "?chat' title='Gọi skype'>Chat qua skype " + j + "</a> <br/>";
 													}
 												}
 											}

@@ -14,32 +14,33 @@ body{
 }
 
 .hotlineRight .contentHotline {
-background: #fff;
-border: solid 2px #f36a01;
-border-radius: 5px;
-color: #d51317;
-padding: 5px 0px;
+	background: #fff;
+	border: solid 2px #f36a01;
+	border-radius: 5px;
+	color: #d51317;
+	padding: 5px 0px;
 }
 
 .hotlineRight .contentHotline h5{
-font-size: 17px;
-line-height: 20px;
-text-align: center;
-font-weight: bold;
+	font-size: 17px;
+	line-height: 20px;
+	text-align: center;
+	font-weight: bold;
 }
 
 .hotlineRight .contentHotline .hotlineNumber {
-font-size: 14px;
-font-weight: bold;
-margin: 6px;
-padding-left: 35px;
-padding-bottom: 3px;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 6px;
+	padding-left: 35px;
+	padding-bottom: 3px;
 }
 
 .hotlineRight .contentHotline .hotlineNumber a {
-text-decoration: none;
-color: #d51317;
-line-height: 20px;
+	text-decoration: none;
+	color: #143a83;
+	line-height: 20px;
+	font-size: 12px;
 }
 
 .hotlineRight .contentHotline .callCenter {
@@ -56,7 +57,7 @@ line-height: 20px;
 
 #adv-right{
     position: fixed;
-    top: 185px;
+    top: 181px;
     right: 12px !important;
     width: 155px;
 }
@@ -469,8 +470,10 @@ table.box-solid tr:first-child{
 }
 
 #tour-page .tour-top{
-    /**height: 115px;**/
+	background: url(../newuiimg/bg-header.png) repeat-x;
+	background-size: 1300px 350px;
 }
+
 
 #tour-page .tour-top .row1{
     height: 38px;
@@ -511,13 +514,13 @@ table.box-solid tr:first-child{
 
 #tour-page .tour-top #tour-services ul{
     list-style: none;
-    margin: 50px 0 0 100px;
+    margin: 20px 0 0 100px;
+    float: right;
 }
 
 #tour-page .tour-top #tour-services ul li{
     float: left;
-    margin: 0 0 0 20px;
-    padding: 0;
+    margin: 0 0 0 5px;
 }
 
 #tour-page .tour-top #tour-services ul li span{
@@ -527,10 +530,32 @@ table.box-solid tr:first-child{
 
 #tour-page .tour-top #tour-services ul li div{
     float: left;
-    color: #505050;
-    text-transform: uppercase;
+    color: #fff;
     font-weight: bold;
     font-size: 11px;
+}
+
+#tour-page .tour-top #tour-services ul li div a{
+	top:2px;
+    color: #fff;
+}
+
+#tour-page .tour-top #tour-services ul li div .inputtext, .inputpassword {
+	margin: 0;
+	width: 142px;
+	color: #141823;
+}
+
+#tour-page .tour-top #tour-services ul li div .login{
+    background: none;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 13px;
+	margin: 0;
+	padding: 3px 3px 3px;
+	white-space: nowrap;
 }
 
 #menu{
@@ -1034,7 +1059,7 @@ v#e-may-bay-gia-re > div,
 #customercareform{
 	left: 12px !important;
     position: fixed;
-    top: 185px;
+    top: 181px;
     left: 0;
     width: 155px;
 }

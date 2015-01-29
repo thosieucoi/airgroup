@@ -86,6 +86,16 @@
 										value="${CMSUserInstance?.skype}" />
 								</td>
 							</tr>
+							
+							<tr class="prop">
+								<td valign="top" class="name"><label for="email"><g:message
+											code="user.header.email" default="Email" /></label></td>
+								<td valign="top"
+									class="value ${hasErrors(bean: CMSUserInstance, field: 'email', 'errors')}">
+									<g:textField name="email" maxlength="45"
+										value="${CMSUserInstance?.email}" />
+								</td>
+							</tr>
 
 							<tr class="prop">
 								<td valign="top" class="name"><label for="callCenter"><g:message

@@ -5,31 +5,15 @@
 				<g:link controller="home"><img src="${resource(dir:'images/newuiimg',file:'logo.png') }"
 					class="center-block logo"/></g:link>
 			</div>
-			<div id="tour-services" class="col-lg-9 col-md-9 col-sm-9 hidden-xs">
-				<div class="row" style="font-size:9px">
-					<div
-						class="col-md-11 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-11 col-xs-offset-1">
-						<ul>
-							<li><a href="#"> <span class="icon-bookings"></span>
-									<div class="content">
-										Đặt vé <br /> máy bay điện tử
-									</div>
-							</a></li>
-							<li><a href="#"> <span class="icon-compare"></span>
-									<div class="content">
-										Theo dõi<br /> hành trình bay
-									</div>
-							</a></li>
-							<li><a href="#"> <span class="icon-payment"></span>
-									<div class="content">
-										Thanh toán <br /> Đơn giản, an toàn
-									</div>
-							</a></li>
-						</ul>
-					</div>
-					
-				</div>
-			</div>
+			<sec:ifLoggedIn>
+				<g:include view="layouts/responsivewebpart/_userInforHeader.gsp" />
+			</sec:ifLoggedIn>
+			
+			<sec:ifNotLoggedIn>
+				<g:if test="${!params['controller'].equals('login')}">
+						<g:include view="layouts/responsivewebpart/_loginFormHeader.gsp" />
+				</g:if>
+			</sec:ifNotLoggedIn>
 			
 		</div>
 	</div>

@@ -41,6 +41,7 @@ class CMSUser {
 	Short callCenterStatus	//Trang thai nhan vien truc tong dai
 	String yahoo
 	String skype
+	String email
     /** plain password to create a MD5 password */
     String pass = "secret"
 
@@ -60,6 +61,7 @@ class CMSUser {
 		callCenterStatus nullable: true
 		yahoo nullable: true, maxSize: 50, unique: true, matches:/[a-zA-Z0-9\-_.]+/
 		skype nullable: true, maxSize: 50, unique: true, matches:/[a-zA-Z0-9\-_.]+/
+		email email: true,nullable:true,maxSize:50
 		lastAccessTime nullable: true
     }
 

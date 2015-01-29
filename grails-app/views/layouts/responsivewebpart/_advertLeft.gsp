@@ -1,4 +1,6 @@
-	<aside id="customercareform">
+<sec:ifNotLoggedIn>
+	<g:if test="${!params['controller'].equals('login')}">
+	<div id="customercareform">
 		<div id ="customercareclose" data-close="x"></div>
 		<div id="WFItem9272103" class="wf-formTpl">
 		    <form accept-charset="utf-8" action="https://app.getresponse.com/add_contact_webform.html?u=pCKl"
@@ -17,8 +19,7 @@
 		                    <li class="wf-privacy" rel="undefined" style="display:  block !important; text-align: center;">
 		                        <div class="wf-contbox">
 		                            <div>
-		                                <a class="wf-privacy wf-privacyico" href="http://www.getresponse.com/permission-seal?lang=en"
-		                                target="_blank" style="height: 61px !important; display: inline !important;">Ahotua mang giá trị tốt nhất cho khách hàng, đăng ký tham gia để nhận những món quà ý nghĩa của chúng tôi</a>
+		                                <a class="wf-privacy wf-privacyico" href="#">Ahotua mang giá trị tốt nhất cho khách hàng, đăng ký tham gia để nhận những món quà ý nghĩa của chúng tôi</a>
 		                            </div>
 		                            <em class="clearfix clearer"></em>
 		                        </div>
@@ -107,7 +108,9 @@
 		</div>
 		<script type="text/javascript" src="http://app.getresponse.com/view_webform.js?wid=9272103&mg_param1=1&u=pCKl"></script>
 		<p class="box-padding-10"></p>
-	</aside>
+	</div>
+	</g:if>
+</sec:ifNotLoggedIn>
 <script>
 	$("#customercareclose").click(function(){$("#customercareform").hide();});
 </script>

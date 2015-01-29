@@ -41,13 +41,13 @@ class Email {
 	def fromAddress
 	def host="smtp.gmail.com"
 	def port='465'
-	def username="changthejung@gmail.com"
-	def password="giadinhlaso1"
+	def username="service.ahotua@gmail.com"
+	def password="ahotua2015"
 	Properties mprops
 	Session session
 	MimeMessage msg
 	def send(String subject,
-	String from = "admin@ahotua.com.vn",
+	String from,
 	String to,
 	String customerName,
 	String orderCode,
@@ -247,7 +247,7 @@ class Email {
 			String oarrivalCityName= Location.findByCode(oorderDetails.get(0).arrival).name
 			String oflightNumber=oorderDetails.get(0).airline+oorderDetails.get(0).flightNumber
 			sendEmailAfterConfirm(title,
-					username,
+					"service@ahotua.vn",
 					email,
 					order.reservationCode,
 					 dtf1.print(oorderDetails.get(0).outboundDate.getTime()),
@@ -290,7 +290,7 @@ class Email {
 			}
 			sendEmailAfterConfirm(
 				title,
-				username,
+				"service@ahotua.vn",
 				email,
 				order.reservationCode,
 				dtf1.print(oorderDetails.get(0).outboundDate.getTime()),

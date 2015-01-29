@@ -92,7 +92,7 @@ grails {
 		springsecurity {
 			active = true
 			//Force redirect to default custom page after lo
-			successHandler.defaultTargetUrl  = '/CMSFeedback'
+			successHandler.defaultTargetUrl  = '/order'
 			successHandler.alwaysUseDefault = true
 			//Redirect to login page after logout
 			logout.afterLogoutUrl = '/adminAuthentication'
@@ -148,7 +148,7 @@ grails {
 			   '/ipconfig/**':    	    	 ['ROLE_ADMIN', 'IS_AUTHENTICATED_FULLY'],
 			   '/fee/**':    	  			 ['ROLE_ADMIN', 'IS_AUTHENTICATED_FULLY'],
 			   '/payment/**':    	    	 ['ROLE_ADMIN', 'IS_AUTHENTICATED_FULLY'],
-			   '/admin/**':             	 ['IS_AUTHENTICATED_REMEMBERED'],
+			   '/admin/**':             	 ['ROLE_ADMIN', 'IS_AUTHENTICATED_FULLY'],
 			   '/userProfile/**':       	 ['IS_AUTHENTICATED_REMEMBERED'],
 			   '/ck/**':                	 ['IS_AUTHENTICATED_REMEMBERED'],
 			   '/**':                    	 ['IS_AUTHENTICATED_ANONYMOUSLY'],
@@ -177,7 +177,7 @@ grails {
 			   '/order/list':  ['ROLE_ACCOUNTING'],
 			   '/news/list':  ['ROLE_ADMIN'],
 			   '/news/index':  ['IS_AUTHENTICATED_ANONYMOUSLY'],
-			   
+			   '/login/index':  ['IS_AUTHENTICATED_ANONYMOUSLY'],
 			]
 
 			/** AJAX request header */

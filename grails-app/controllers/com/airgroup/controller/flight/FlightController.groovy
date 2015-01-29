@@ -475,7 +475,7 @@ class FlightController {
 		}
 		if(params.email.toString()!=""){
 			email.send("${message(code: 'email.mail1.title')}",
-					"nghiata87@gmail.com",
+					"service@ahotua.vn",
 					params.email.toString(),
 					customerName,
 					orderCode,
@@ -645,7 +645,7 @@ class FlightController {
 			}
 			if(params.email.toString()!=""){
 				email.send("${message(code: 'email.mail1.title')}",
-						"nghiata87@gmail.com",
+						"service@ahotua.vn",
 						params.email.toString(),
 						customerName,
 						orderCode,
