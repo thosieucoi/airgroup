@@ -52,7 +52,7 @@
 									</div>
 									<div id="loginform">
 										<div class="form_row clearfix">
-											<label for="email" class="login_form_label">Tên đăng nhập</label>
+											<label for="username" class="login_form_label">Email</label>
 											<input type="text" class="inputtext" name='j_username' id='username' value="" tabindex="1">
 										</div>
 										<div class="form_row clearfix">

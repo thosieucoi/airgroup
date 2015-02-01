@@ -13,7 +13,7 @@
 				<img src="${resource(dir:'images/img',file:'icon-home-black.png')}"
 					alt="home" />Trang chủ</g:link>
 			<span class="">&gt;</span> <a
-				href="${createLink(action:'login', controller:'auth') }"
+				href="javascript(0)"
 				class="current">Đăng ký thành công</a>
 		</article>
 	</section>
@@ -31,10 +31,11 @@
 								<div>
 									<h2 class="uiHeaderTitle" aria-hidden="true">Cảm ơn quý khách đã đăng ký thành công tài khoản với công ty cổ phần Ahotua!</h2>
 									<h2>Ahotua luôn cam kết mang giá trị tốt nhất cho khách hàng</h2>
+									<h2>Link nhanh đến <a href="https://accounts.google.com" style="color: #ff9900">Gmail</a> | <a href="https://login.yahoo.com" style="color: #ff9900">Yahoo mail</a></h2>
 								</div>
 							</div>
 						</div>
-						<div class="phl ptm uiInterstitialContent" style="display:none;">
+						<!-- <div class="phl ptm uiInterstitialContent" style="display:none;">
 							<div class="login_form_container">
 								<div id="WFItem9272103" class="wf-formTpl">
 										    <form accept-charset="utf-8" action="https://app.getresponse.com/add_contact_webform.html?u=pCKl"
@@ -77,7 +78,7 @@
 										                                <label class="wf-label">Email:</label>
 										                            </div>
 										                            <div class="wf-inputpos">
-										                                <input class="wf-input wf-req wf-valid__email" type="text" name="email" value="${CMSUserInstance?.email}"></input>
+										                                <input class="wf-input wf-req wf-valid__email" type="text" name="email" value="${CMSUserInstance?.username}"></input>
 										                            </div>
 										                            <em class="clearfix clearer"></em>
 										                        </div>
@@ -144,6 +145,9 @@
 										<script type="text/javascript" src="http://app.getresponse.com/view_webform.js?wid=9272103&mg_param1=1&u=pCKl"></script>							
 							</div>
 						</div>
+				
+				 -->
+				
 					</div>
 				</div>
 			</div>
@@ -152,7 +156,7 @@
 	</section>
 
 	<script type='text/javascript'>
-		$("#submitGetResponse").trigger("click");
+		//$("#submitGetResponse").trigger("click");
 	</script>
 		
 <style type="text/css">

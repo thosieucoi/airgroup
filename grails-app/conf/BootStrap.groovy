@@ -39,8 +39,8 @@ class BootStrap {
 			if (!CMSRole.findByAuthority('ROLE_ACCOUNTING')) {
 				assert new CMSRole(authority: 'ROLE_ACCOUNTING', description: 'Accounting Role').save(flush:true)
 			}
-            if (!CMSUser.findByUsername('admin')) {
-                assert new CMSUser(username: 'admin',name:'admin',code:'admin',regDate: new Date(),lastAccessTime: new Date(),
+            if (!CMSUser.findByUsername('admin@gmail.com')) {
+                assert new CMSUser(username: 'admin@gmail.com',name:'admin',code:'admin',regDate: new Date(),lastAccessTime: new Date(),
                         password: '21232f297a57a5a743894a0e4a801fc3',phoneNumber:'0915273033',
                         status: new Short("1"), callCenterStatus: new Short("0"), yahoo: 'admin', skype:'admin')
                         .addToAuthorities(CMSRole.findWhere(authority: 'ROLE_ADMIN'))

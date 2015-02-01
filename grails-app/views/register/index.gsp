@@ -52,20 +52,16 @@
 									</div>
 									<div id="loginform">
 										<div class="form_row clearfix">
-											<label for="email" class="login_form_label">Họ và tên</label>
+											<label for="email" class="login_form_label">Họ và tên <span class="require">(*)</span></label>
 											<g:textField name="name" class="inputtext ${hasErrors(bean: CMSUserInstance, field: 'name', 'errors')}" maxlength="100" value="${CMSUserInstance?.name}" tabindex="1"/>
 										</div>
 										<div class="form_row clearfix">
-											<label for="email" class="login_form_label">Tên đăng nhập</label>
+											<label for="email" class="login_form_label">Email <span class="require">(*)</span></label>
 											<g:textField name="username" class="inputtext ${hasErrors(bean: CMSUserInstance, field: 'username', 'errors')}" maxlength="100" value="${CMSUserInstance?.username}" tabindex="1"/>
 										</div>
 										<div class="form_row clearfix">
-											<label for="pass" class="login_form_label">Mật khẩu</label>
+											<label for="pass" class="login_form_label">Mật khẩu <span class="require">(*)</span></label>
 											<g:passwordField name="password" class="inputpassword ${hasErrors(bean: CMSUserInstance, field: 'password', 'errors')}" maxlength="30" tabindex="1"/>
-										</div>
-										<div class="form_row clearfix">
-											<label for="pass" class="login_form_label">Email</label>
-											<g:textField name="email" value="${CMSUserInstance?.email}" class="inputtext ${hasErrors(bean: CMSUserInstance, field: 'email', 'errors')}" maxlength="45" tabindex="1"/>
 										</div>
 										<div class="form_row clearfix">
 											<label for="pass" class="login_form_label">Số điện thoại</label>
@@ -383,6 +379,12 @@ div.login_page_interstitial {
 {
 	border: 1px solid #f55e5e
 }
+
+.require
+{
+	color: red;
+}
+
 
 </style>
 </body>

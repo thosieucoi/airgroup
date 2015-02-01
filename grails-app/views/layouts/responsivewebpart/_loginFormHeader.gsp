@@ -6,7 +6,7 @@
 						<ul>
 							<li>
 									<div class="content">
-										Tên đăng nhập <br />
+										Email <br />
 										 <input type="text" name='j_username' id='username' class="inputtext"/> <br />
 										 <input type='checkbox' value="1" checked="1" id='remember_me' name='_spring_security_remember_me' /> Duy trì đăng nhập
 									</div>

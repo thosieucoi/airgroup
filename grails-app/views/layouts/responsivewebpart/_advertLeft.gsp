@@ -7,7 +7,7 @@
 					<a href="javascript:void(0)"><h5 style="color: #d51317;" id="arrowLeft"> << </h5></a>
 				</div>
 				<h5 id="messageAhotua">Đăng ký để được giảm giá ngay trên mỗi chuyến bay</h5>
-				<g:link controller="login"><input type="button" id="registerFacebook" class="_6wh _6j _3ma mvm _58mi"  value="Đăng ký qua facebook"/></g:link>
+				<!--<g:link controller="login"><input type="button" id="registerFacebook" class="_6wh _6j _3ma mvm _58mi"  value="Đăng ký qua facebook"/></g:link>-->
 				<g:link controller="register"><input type="button" id="registerAhotua" class="_6wl _6j _3ma mvm _58mi" value="Đăng ký ngay"/></g:link>
 			</div>
 		</aside>
@@ -30,7 +30,7 @@
 
 	function hideRegisterLeft() {
 		$("#registerclose").css('margin-left', '10px');
-		$("#registerFacebook").css('display','none');
+		//$("#registerFacebook").css('display','none');
 		$("#registerAhotua").css('display','none');
 		$("#messageAhotua").css('display','none');
 		$("#registerLeftPane").css('width','50px');
@@ -39,7 +39,7 @@
 
 	function showRegisterLeft() {
 		$("#registerclose").css('margin-left', '122px');
-		$("#registerFacebook").css('display','block');
+		//$("#registerFacebook").css('display','block');
 		$("#registerAhotua").css('display','block');
 		$("#messageAhotua").css('display','block');
 		$("#registerLeftPane").css('width','155px');
