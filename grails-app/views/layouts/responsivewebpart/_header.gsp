@@ -21,7 +21,7 @@
 
 <nav id="menu" class="hidden-xs" style="font-size: 12.5px !important">
 	<div class="container">
-		<div class="row col-lg-10 col-lg-offset-1">
+		<div class="row col-lg-10 col-lg-offset-1" style ="margin-left: 12% !important">
 			<div class="col-lg-5  col-md-3 col-xs-5" style="width: 4% !important;">
 				<div id="date-time">
 					<g:link controller="home"><span class="icon-home"></span></g:link>

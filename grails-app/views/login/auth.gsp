@@ -13,7 +13,7 @@
 				<img src="${resource(dir:'images/img',file:'icon-home-black.png')}"
 					alt="home" />Trang chủ</g:link>
 			<span class="">&gt;</span> <a
-				href="${createLink(action:'login', controller:'auth') }"
+				href="${createLink(action:'auth', controller:'login') }"
 				class="current">Đăng nhập</a>
 		</article>
 	</section>

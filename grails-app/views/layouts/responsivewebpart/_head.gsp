@@ -66,8 +66,8 @@ height: 350px;
 }
 .logo{
 	width: 100%;
-	max-width: 165px;
-	max-height: 100px;
+	max-width: 115px;
+	max-height: 70px;
 	-moz-appearance: ;
 }
 .contact{
