@@ -12,11 +12,13 @@ import com.airgroup.domain.Order
 import com.airgroup.domain.OrderDetail
 import com.airgroup.domain.Passenger
 import com.airgroup.domain.Payment
-
+import org.weceem.auth.CMSUser;
 
 class FlightInfoService {
 
 	static transactional = true
+	
+	def springSecurityService
 
 	def insertCustomer(String name,String email,String phoneNumber,String address,Short gender,Short status,String city){
 		def customerInstance=new Customer()
@@ -30,8 +32,9 @@ class FlightInfoService {
 		customerInstance.save(flush:true)
 		return customerInstance
 	}
-	def insertOrder(Customer customer,BigDecimal price,Date orderTime,Short kidNumber,Short adultNumber,Short infantNumber,Short billStatus,Short status,String goingDescription,String returnDescription,String specialRequirement,Payment payment, Short isDomestic, String departureLocation,String arrivalLocation){
+	def insertOrder(CMSUser userCreated, Customer customer,BigDecimal price,Date orderTime,Short kidNumber,Short adultNumber,Short infantNumber,Short billStatus,Short status,String goingDescription,String returnDescription,String specialRequirement,Payment payment, Short isDomestic, String departureLocation,String arrivalLocation){
 		def order=new Order()
+		order.userCreated = userCreated;
 		order.customer=customer
 		order.price=price
 		order.orderTime=orderTime
@@ -202,7 +205,14 @@ class FlightInfoService {
 		
 		def customer=insertCustomer(params.fullname.toString(), params.email.toString(),params.phoneNumber.toString(),params.address.toString(), (short)1,(short)1,params.city.toString())
 		Payment payment=Payment.findById(params.paymentId.toLong())
-		def order=insertOrder(customer, new BigDecimal(session.totalPrice.toString()),new Date(),session.parameters.kids.toShort(), session.parameters.adults.toShort(),session.parameters.infants.toShort() , params.billStatus, (short)1,session.parameters.departureCode.toString(),session.parameters.arrivalCode.toString(),params.specialRequirement.toString(),payment,isDomestic?(short)0:(short)1,session.parameters.departureCode.toString(),session.parameters.arrivalCode.toString())
+		
+		CMSUser user= null;
+		if (springSecurityService.isLoggedIn()) {
+			user=CMSUser.findByUsername(springSecurityService.authentication.name)
+		}
+		
+		
+		def order=insertOrder(user, customer, new BigDecimal(session.totalPrice.toString()),new Date(),session.parameters.kids.toShort(), session.parameters.adults.toShort(),session.parameters.infants.toShort() , params.billStatus, (short)1,session.parameters.departureCode.toString(),session.parameters.arrivalCode.toString(),params.specialRequirement.toString(),payment,isDomestic?(short)0:(short)1,session.parameters.departureCode.toString(),session.parameters.arrivalCode.toString())
 		passengers.eachWithIndex {pass,i-> 
 			pass.order=order
 		    pass.save(flush:true)
@@ -319,8 +329,15 @@ class FlightInfoService {
 			passengers << p
 		}
 		def customer=insertCustomer(params.fullname.toString(), params.email.toString(),params.phoneNumber.toString(),params.address.toString(), (short)1,(short)1,params.city.toString())
+		
+		CMSUser user= null;
+		if (springSecurityService.isLoggedIn()) {
+			user=CMSUser.findByUsername(springSecurityService.authentication.name)
+		}
+		
+		
 		Payment payment=Payment.findById(params.paymentId.toLong())
-		def order=insertOrder(customer, new BigDecimal(session.totalPrice.toString()),new Date(),session.parameters.kids.toShort(), session.parameters.adults.toShort(),session.parameters.infants.toShort() , params.billStatus, (short)1,session.parameters.departureCode.toString(),session.parameters.arrivalCode.toString(),params.specialRequirement.toString(),payment,isDomestic?(short)0:(short)1,session.parameters.departureCode.toString(),session.parameters.arrivalCode.toString())
+		def order=insertOrder(user, customer, new BigDecimal(session.totalPrice.toString()),new Date(),session.parameters.kids.toShort(), session.parameters.adults.toShort(),session.parameters.infants.toShort() , params.billStatus, (short)1,session.parameters.departureCode.toString(),session.parameters.arrivalCode.toString(),params.specialRequirement.toString(),payment,isDomestic?(short)0:(short)1,session.parameters.departureCode.toString(),session.parameters.arrivalCode.toString())
 		passengers.eachWithIndex {pass,i->
 			pass.order=order
 			pass.save(flush:true)

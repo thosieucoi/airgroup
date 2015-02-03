@@ -29,8 +29,8 @@ class FlightController {
 	def flightInfoService
 	def notFound = new JSONObject().put("JSON", "Not Found")
 	def searchParams;
-	def getLocalList={ session.parameters=params }
-	def getInternationalList={ session.parameters=params }
+	def domestic={ session.parameters=params }
+	def international={ session.parameters=params }
 	def outboundFare=null
 	def inboundFare=null
 	BigDecimal price=new BigDecimal(0)
@@ -744,19 +744,19 @@ class FlightController {
 		if(departure!=null&&arrival!=null){
 			if(departure.country_code!='VN'||arrival.country_code!='VN') {
 				params.isDomestic=false
-				redirect(action: "getInternationalList", params: params)
+				redirect(action: "international", params: params)
 			}else{
 				params.isDomestic=true
-				redirect(action: "getLocalList", params: params)
+				redirect(action: "domestic", params: params)
 			}
 		}else if(departure==null && arrival!=null){
 			if(arrival!=null&&arrival.country_code=='VN'){
 				params.isDomestic=true
-				redirect(action: "getLocalList", params: params)
+				redirect(action: "domestic", params: params)
 			}else
 			{
 				params.isDomestic=false
-				redirect(action: "getInternationalList", params: params)
+				redirect(action: "international", params: params)
 			}
 
 		}

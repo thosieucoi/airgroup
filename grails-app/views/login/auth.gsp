@@ -30,6 +30,9 @@
 							<div class="clearfix uiHeaderTop">
 								<div>
 									<h2 class="uiHeaderTitle" aria-hidden="true">Đăng nhập</h2>
+									<ul class="social">
+										<li class="facebook" id="facebookButton" onclick="fbLoginClick()">Đăng nhập qua Facebook</li>
+									</ul>
 								</div>
 							</div>
 						</div>
@@ -53,7 +56,7 @@
 									<div id="loginform">
 										<div class="form_row clearfix">
 											<label for="username" class="login_form_label">Email</label>
-											<input type="text" class="inputtext" name='j_username' id='username' value="" tabindex="1">
+											<input type="text" class="inputtext" name='j_username' id='username' value="${params['email']}" tabindex="1">
 										</div>
 										<div class="form_row clearfix">
 											<label for="pass" class="login_form_label">Mật khẩu</label>

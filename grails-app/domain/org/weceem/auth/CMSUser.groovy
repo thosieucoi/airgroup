@@ -43,6 +43,8 @@ class CMSUser {
 	String skype
     /** plain password to create a MD5 password */
     String pass = "secret"
+	String facebookid
+	String gender
 
     static mappingRole = {
         cache usage: 'read-write'
@@ -61,6 +63,8 @@ class CMSUser {
 		yahoo nullable: true, maxSize: 50, unique: true, matches:/[a-zA-Z0-9\-_.]+/
 		skype nullable: true, maxSize: 50, unique: true, matches:/[a-zA-Z0-9\-_.]+/
 		lastAccessTime nullable: true
+		gender(nullable: true, inList:["male","female", "Other"])
+		facebookid (nullable: true)
     }
 
     def getRoleAuthorities() {

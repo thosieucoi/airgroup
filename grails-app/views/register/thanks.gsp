@@ -3,7 +3,7 @@
 <head>
 <meta name="description" content="login">
 <meta name="layout" content="responsivemasterpage" />
-<title><g:message code="login.title.login" /> Ahotua</title>
+<title>Cảm ơn quý khách - Ahotua</title>
 </head>
 <body>
 
@@ -13,8 +13,8 @@
 				<img src="${resource(dir:'images/img',file:'icon-home-black.png')}"
 					alt="home" />Trang chủ</g:link>
 			<span class="">&gt;</span> <a
-				href="javascript(0)"
-				class="current">Đăng ký thành công</a>
+				href="javascript:void(0)"
+				class="current">Cảm ơn quý khách</a>
 		</article>
 	</section>
 
@@ -29,9 +29,8 @@
 							class="uiHeader uiHeaderBottomBorder mhl mts uiHeaderPage interstitialHeader">
 							<div class="clearfix uiHeaderTop">
 								<div>
-									<h2 class="uiHeaderTitle" aria-hidden="true">Cảm ơn quý khách đã đăng ký thành công tài khoản với công ty cổ phần Ahotua!</h2>
+									<h2 class="uiHeaderTitle" aria-hidden="true">Cảm ơn quý khách đã đăng ký tài khoản với công ty cổ phần Ahotua!</h2>
 									<h2>Ahotua luôn cam kết mang giá trị tốt nhất cho khách hàng</h2>
-									<h2>Link nhanh đến <a href="https://accounts.google.com" style="color: #ff9900">Gmail</a> | <a href="https://login.yahoo.com" style="color: #ff9900">Yahoo mail</a></h2>
 								</div>
 							</div>
 						</div>

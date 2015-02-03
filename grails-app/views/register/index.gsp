@@ -6,7 +6,6 @@
 <title>Đăng ký Ahotua</title>
 </head>
 <body>
-
 	<section id="break-crumb" class="row title-b">
 		<article class="col-md-12 col-sm-12 col-xs-12">
 			<g:link controller="home" action="index">
@@ -30,6 +29,9 @@
 							<div class="clearfix uiHeaderTop">
 								<div>
 									<h2 class="uiHeaderTitle" aria-hidden="true">Đăng Ký</h2>
+									<ul class="social">
+										<li class="facebook" id="facebookButton" onclick="fbLoginClick()">Đăng ký qua Facebook</li>
+									</ul>
 								</div>
 							</div>
 						</div>
@@ -75,6 +77,7 @@
 													<g:submitButton name="register" value="Đăng ký" />
 												</label>
 											</div>
+											<div id="status"></div>
 										</div>
 									</div>
 								</g:form>
@@ -86,7 +89,6 @@
 		</div>
 		</article>
 	</section>
-
 <style type="text/css">
 
 .fbx #globalContainer {

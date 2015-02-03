@@ -1,7 +1,9 @@
 package com.airgroup.domain
 
+import org.weceem.auth.CMSUser
+
 class Order {
-	static belongsTo=[customer:Customer,payment:Payment]
+	static belongsTo=[customer:Customer,payment:Payment,userCreated: CMSUser]
 	static hasOne=[bill:Bill,orderEmployee:OrderEmployee]
 	static hasMany = [passengers:Passenger,orderDetails:OrderDetail,remarks:Remark]
 	static fetchMode=[passengers:'lazy',orderDetails:'lazy']
@@ -41,6 +43,7 @@ class Order {
 		showStatus nullable:false
 		isDomestic nullnable:false
 		reservationCode nullable: true
+		userCreated nullable:true
 	}
 	static mapping ={
 		table 'tbl_order'

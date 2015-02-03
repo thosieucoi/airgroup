@@ -13,8 +13,12 @@
 							</li>
 							<li>
 									<div class="content">
-										Mật khẩu<br /> 
+										Mật khẩu <!-- (<a href="/forgotpassword" style="text-decoration: underline;">Quên mật khẩu?</a>) -->
+										<br /> 
 										<input type='password' name='j_password' id='password' class="inputpassword"/> <br />
+										<ul class="social">
+											<li class="faceloginheader" id="facebookButton" onclick="fbLoginClick()">Đăng nhập qua Facebook</li>
+										</ul>
 									</div>
 							</li>
 							<li>
