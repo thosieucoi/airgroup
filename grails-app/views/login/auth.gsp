@@ -6,7 +6,6 @@
 <title><g:message code="login.title.login" /> Ahotua</title>
 </head>
 <body>
-
 	<section id="break-crumb" class="row title-b">
 		<article class="col-md-12 col-sm-12 col-xs-12">
 			<g:link controller="home" action="index">

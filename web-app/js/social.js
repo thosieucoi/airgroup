@@ -1,7 +1,7 @@
 var fbBtnLoginClicked = false;
 	window.fbAsyncInit = function () {
 		FB.init({
-		appId : '1535352726726454',
+		appId : '795469940527393', //ahotua :1535352726726454 localhost 795469940527393
 		xfbml : true,
 		version : 'v2.2'
 	});
@@ -68,7 +68,8 @@ var fbBtnLoginClicked = false;
 			{
 			   	if(response.success)
 			   	{
-			   		autoLogin(response.username, response.password);
+			   		var redirectUrl="/home";
+			        window.location.assign(redirectUrl);
 			   	}
 			   	else
 			   	{
@@ -82,36 +83,6 @@ var fbBtnLoginClicked = false;
 				   		var redirectUrl="/login/auth";
 				        window.location.assign(redirectUrl);
 				   	}
-			   	}
-			},
-			error : function(
-			XMLHttpRequest,
-			textStatus,
-			errorThrown) {
-				
-			}
-		});
-	}
-
-	function autoLogin(username, password)
-	{
-		var dataUrl = "/j_spring_security_check"      
-		jQuery.ajax({
-			type : 'POST',
-			url :  dataUrl ,
-			data : {j_username: username, j_password: password, _spring_security_remember_me: 1},
-			dataType : "json",
-			success : function(response,textStatus)
-			{
-			   	if(response.success)
-			   	{
-			   		var redirectUrl="/home";
-			        window.location.assign(redirectUrl);
-			   	}
-			   	else
-			   	{
-			   		var redirectUrl="/login/auth";
-			        window.location.assign(redirectUrl);
 			   	}
 			},
 			error : function(

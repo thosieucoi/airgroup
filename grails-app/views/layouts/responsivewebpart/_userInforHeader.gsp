@@ -1,23 +1,12 @@
 <div class="rfloat _ohf">
 	<ul class="_2exj clearfix" role="navigation">
-		<li class="_4fn6 _3zm-">
+		<li class="_3tmp openToggler" id="u_0_k">
 			<a class="_2dpe _1ayn"
-				href="javascript:void(0)" title="Profile" accesskey="2">
+				href="javascript:void(0)" title="Profile" accesskey="2" id="userNavigationLabel">
 				<img class="_s0 _2dpc _rw img"
 					src="${resource(dir:'images/newuiimg',file:'icon-account.png')}" alt="Profile">
 				<span class="_2dpb"><sec:loggedInUserInfo field="username" /></span>
 			</a>
-		</li>
-		<li class="_2pdh _3zm- _55bi _3zm- _55bh" id="u_0_f">
-			<g:link controller="home" class="_1ayn" >Trang chủ
-					<div class="_5ah- _5ahy">
-						<div class="_5ahz"></div>
-					</div>
-			</g:link>
-		</li>
-		<li class="_3tmp openToggler" id="u_0_k">
-			<a class="_1ayn" href="javascript:void(0)" id="userNavigationLabel">Settings</a>
-					
 			<div class="navigation" id="userNavigation" role="menu navigation"
 					aria-label="Account Menu">
 					<div class="jewelBeeperHeader">

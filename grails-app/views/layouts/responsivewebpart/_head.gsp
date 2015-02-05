@@ -21,6 +21,7 @@
 <script src="${resource(dir:'js',file:'bootstrap.min.js')}"></script>
 
 <script src="https://connect.facebook.net/en_US/all.js#xfbml=1&status=0&appId=1535352726726454&version=v2.2"></script>
+
 <script src="${resource(dir:'js',file:'social.js')}"></script>
 
 <script src="${resource(dir:'js/newuijs',file:'tour.js')}"></script>
