@@ -3,7 +3,7 @@
 <head>
 <meta name="description" content="login">
 <meta name="layout" content="responsivemasterpage" />
-<title>Đăng ký Ahotua</title>
+<title>Thay đổi mật khẩu - Ahotua</title>
 </head>
 <body>
 	<section id="break-crumb" class="row title-b">
@@ -12,8 +12,8 @@
 				<img src="${resource(dir:'images/img',file:'icon-home-black.png')}"
 					alt="home" />Trang chủ</g:link>
 			<span class="">&gt;</span> <a
-				href="${createLink(action:'index', controller:'register') }"
-				class="current">Đăng ký</a>
+				href="${createLink(controller:'profile', action:'changepassword') }"
+				class="current">Thay đổi mật khẩu</a>
 		</article>
 	</section>
 
@@ -28,53 +28,48 @@
 							class="uiHeader uiHeaderBottomBorder mhl mts uiHeaderPage interstitialHeader">
 							<div class="clearfix uiHeaderTop">
 								<div>
-									<h2 class="uiHeaderTitle" aria-hidden="true">Đăng Ký</h2>
-									<ul class="social">
-										<li class="facebook" id="facebookButton" onclick="fbLoginClick()">Đăng ký qua Facebook</li>
-									</ul>
+									<h2 class="uiHeaderTitle" aria-hidden="true">Thay đổi mật khẩu</h2>
 								</div>
 							</div>
 						</div>
+						
 						<div class="phl ptm uiInterstitialContent">
 							<div class="login_form_container">
-							<g:form controller="register" action="save" method="POST"> 
+							<g:form controller="profile" action="savepassword" method="POST"> 
 									<input type="hidden" name="lsd" value="AVptONLn"
 										autocomplete="off">
 									<div class="hidden_elem"></div>
-									<div class="pam login_error_box uiBoxRed" role="alert"
-										tabindex="0" id="errorLoginMsg" style="display: none;">
-										<g:hasErrors bean="${CMSUserInstance}">
-											<div class="fsl fwb fcb">
-												<g:renderErrors bean="${CMSUserInstance}" as="list" />
-											</div>
-											<script>
+									<g:if test="${flash.message}">
+										<div class="pam login_error_box uiBoxRed" role="alert"
+											tabindex="0" id="errorLoginMsg" style="display: none;">
+												<div class="message">
+													${flash.message}
+												</div>
+												<script>
 													$('#errorLoginMsg').show();
 												</script>
-										</g:hasErrors>
-									</div>
+										</div>
+									</g:if>
 									<div id="loginform">
 										<div class="form_row clearfix">
-											<label for="email" class="login_form_label">Họ và tên*</span></label>
-											<g:textField name="name" class="inputtext ${hasErrors(bean: CMSUserInstance, field: 'name', 'errors')}" maxlength="100" value="${CMSUserInstance?.name}" tabindex="1"/>
+											<label for="email" class="login_form_label">Mật khẩu hiện tại</label>
+											<g:passwordField name="current_password" class="inputpassword ${hasErrors(bean: CMSUserInstance, field: 'name', 'errors')}" maxlength="100" tabindex="1"/>
 										</div>
 										<div class="form_row clearfix">
-											<label for="email" class="login_form_label">Email*</span></label>
-											<g:textField name="username" class="inputtext ${hasErrors(bean: CMSUserInstance, field: 'username', 'errors')}" maxlength="100" value="${CMSUserInstance?.username}" tabindex="1"/>
+											<label for="email" class="login_form_label">Mật khẩu mới</label>
+											<g:passwordField name="new_password" class="inputpassword ${hasErrors(bean: CMSUserInstance, field: 'username', 'errors')}" maxlength="100"  tabindex="1"/>
 										</div>
+										
 										<div class="form_row clearfix">
-											<label for="pass" class="login_form_label">Mật khẩu*</span></label>
-											<g:passwordField name="password" class="inputpassword ${hasErrors(bean: CMSUserInstance, field: 'password', 'errors')}" maxlength="30" tabindex="1"/>
-										</div>
-										<div class="form_row clearfix">
-											<label for="pass" class="login_form_label">Số điện thoại</label>
-											<g:textField name="phoneNumber" value="${CMSUserInstance?.phoneNumber}" class="inputtext ${hasErrors(bean: CMSUserInstance, field: 'phoneNumber', 'errors')}" maxlength="30" tabindex="1"/>
+											<label for="pass" class="login_form_label">Xác nhận mật khẩu</label>
+											<g:passwordField name="confirm_new_password" class="inputpassword ${hasErrors(bean: CMSUserInstance, field: 'phoneNumber', 'errors')}" maxlength="30" tabindex="1"/>
 										</div>
 										<div id="buttons" class="form_row clearfix">
 											<label class="login_form_label"></label>
 											<div id="login_button_inline">
 												<label class="uiButton uiButtonConfirm uiButtonLarge"
 													id="loginbutton" for="u_0_1">
-													<g:submitButton name="register" value="Đăng ký" />
+													<g:submitButton name="update" value="Cập nhật" />
 												</label>
 											</div>
 											<div id="status"></div>
@@ -220,9 +215,9 @@ div.login_page_interstitial {
 	padding: 10px;
 }
 
-.uiBoxRed {
-	background-color: #ffebe8;
-	border: 1px solid #dd3c10;
+.uiBoxBlue {
+	background-color: #428bca;
+	border: 1px solid #428bca;
 }
 
 .fcb {
@@ -322,7 +317,7 @@ div.login_page_interstitial {
 .uiButtonConfirm {
 	background-size: auto;
 	background-position: 0 -49px;
-	background-color: #D80000;
+	background-color: #1a356e;
 	border-color: #2f477a #29447e #1a356e;
 }
 
@@ -387,7 +382,10 @@ div.login_page_interstitial {
 	color: red;
 }
 
-
+.uiBoxRed {
+	background-color: #ffebe8;
+	border: 1px solid #dd3c10;
+}
 </style>
 </body>
 </html>

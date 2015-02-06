@@ -52,7 +52,7 @@ class CMSUser {
     }
 
     static constraints = {
-		code(nullable: true, maxSize:25, matches:/[a-zA-Z0-9]+/)
+		code(nullable: true, maxSize:200)
 		name blank:false, maxSize:100, matches:"^[\\p{L}0-9 .'-]+"
 		phoneNumber nullable: true, unique: true, blank:true, matches:/\d{8,15}/
         username(email: true, unique: true, blank: false,maxSize:50)

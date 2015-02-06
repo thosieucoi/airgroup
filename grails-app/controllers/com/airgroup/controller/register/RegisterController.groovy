@@ -36,6 +36,7 @@ class RegisterController {
 		CMSUserInstance.status = (short)1
 		CMSUserInstance.callCenterStatus = (short)1
 		CMSUserInstance.callCenterStatus = params.callCenter.equals("on") ? '1'.toShort() : '0'.toShort()
+		CMSUserInstance.code = UUID.randomUUID().toString();
 
 		if (CMSUserInstance.save(flush: true)) {
 			if (params.password)
@@ -80,6 +81,7 @@ class RegisterController {
 					CMSUserInstance.lastAccessTime = null
 					CMSUserInstance.status = (short)1
 					CMSUserInstance.callCenterStatus = '0'.toShort()
+					CMSUserInstance.code = UUID.randomUUID().toString();
 					if (CMSUserInstance.save(flush: true)) {
 						autoLogin(CMSUserInstance.username, password);
 						render([success: true] as JSON)

@@ -18,6 +18,7 @@
 						<ul>
 							<li id="u_0_37"><div class="pagesNavMenuTitle fsm fwn fcg">Ahotua:</div></li>
 							<li class="menuDivider"></li>
+							<li><g:link controller="profile" action="index" class="navSubmenu" >Hồ sơ của bạn</g:link></li>
 							<li><a class="navSubmenu" href="javascript:void(0)" id="logoutLink">Đăng xuất</a></li>
 							<li class="menuDivider"></li>
 						</ul>

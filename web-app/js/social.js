@@ -1,7 +1,7 @@
 var fbBtnLoginClicked = false;
 	window.fbAsyncInit = function () {
 		FB.init({
-		appId : '795469940527393', //ahotua :1535352726726454 localhost 795469940527393
+		appId : '1535352726726454', //ahotua :1535352726726454 localhost 795469940527393
 		xfbml : true,
 		version : 'v2.2'
 	});

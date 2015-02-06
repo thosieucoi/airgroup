@@ -304,7 +304,7 @@
 						<tr class="hidden-xs">
 							<td></td>
 							<td></td>
-							<td><b>Họ và tên <label style="color: red"> *</label></b><br> <i
+							<td><b>Họ và tên*</b><br> <i
 								style="font-size: 11px; color: #999; font-style: normal">(ví
 									dụ: Nguyen Van A)</i></td>
 							<td><b>Ngày sinh</b><br> <i
@@ -379,13 +379,12 @@
 					<h6>Thông tin liên hệ</h6>
 					<p>
 						Xin vui lòng điền vào tất cả các thông tin. Chúng tôi sẽ liên hệ
-						với bạn <label style="color: red"> *</label> Thông tin bắt buộc
+						với bạn * Thông tin bắt buộc
 					</p>
 					
 					<table class="contact-v">
 						<tr>
-							<td colspan="2"><span class="hidden-xs">Họ và tên<label
-									style="color: red"> *</label></span> <input name="fullname"
+							<td colspan="2"><span class="hidden-xs">Họ và tên*</span> <input name="fullname"
 								type="text" placeholder="Họ và tên" value ='<sec:loggedInUserInfo field="name" />' /></td>
 						</tr>
 						<tr>
@@ -393,8 +392,7 @@
 									style="font-size: 11px; color: #999; font-style: normal">Ví
 										dụ: booking@elines.vn </i></span><br class="hidden-xs" /> <input name="email" type="text" placeholder="Email" value ='<sec:loggedInUserInfo field="username" />'
 								 /></td>
-							<td><span class="hidden-xs">Điện thoại<label style="color: red">
-										*</label></span><br class="hidden-xs"/> 
+							<td><span class="hidden-xs">Điện thoại*</span><br class="hidden-xs"/> 
 								<g:if test="${session.parameters.phoneNumber}" >	
 									<input name="phoneNumber" type="text" value="${session.parameters.phoneNumber}" placeholder="Điện thoại"/>
 								</g:if>
