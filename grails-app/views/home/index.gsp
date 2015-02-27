@@ -188,7 +188,6 @@
 						</div>
 					</div>
 
-					<div class="title title-upper title-b">Đối Tác</div>
 					<div class="line line-horizontal box-margin-10"></div>
 					<ul class="tour-tree-circle">
 						<li><a href="http://www.hanhtrinh-phuongdong.com/">Hành Trình Phương Dông</a></li>
@@ -258,9 +257,9 @@
 							</div>
 							<div class="bank-detail">
 								<span class="title title-b">Ngân hàng Vietcombank </span> <br />
-								<span>Tên tài khoản: Đoàn Quang Thắng</span> <br /> 
-								<span>Số tài khoản: 0611001719111</span><br /> 
-								<span>Địa chỉ: Ngân hàng TMCP Ngoại Thương Việt Nam- CN Ba Đình</span>
+								<span>Tên tài khoản: Công ty cổ phần Ahotua Việt Nam</span> <br /> 
+								<span>Số tài khoản: 0491000056160</span><br /> 
+								<span>Địa chỉ: Ngân hàng TMCP Ngoại thương Việt Nam -  chi nhánh Thăng Long</span>
 							</div>
 							<div class="clearfix"></div>
 						</li>

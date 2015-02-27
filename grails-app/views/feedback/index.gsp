@@ -86,8 +86,17 @@
 								<td
 									class="value ${hasErrors(bean: feedbackInstance, field: 'name', 'errors')}"><span>
 										${message(code: 'feedback.name.label', default: 'Name')}
-								</span><br /> <g:textField class="control-input" name="name" maxlength="100"
-										value="${feedbackInstance?.name}" /></td>
+									</span><br />
+									<g:if test="${feedbackInstance?.name}">
+										<input class="control-input" name="name" maxlength="100"
+										value="${feedbackInstance?.name}" />
+									</g:if> 
+									<g:else>
+										<input class="control-input" name="name" maxlength="100"
+											value='<sec:loggedInUserInfo field="name" />' />
+									</g:else>
+										
+								</td>
 								<g:hiddenField name="feedbackTotal" value="${feedbackTotal}" />
 							</tr>
 							<tr>
@@ -101,8 +110,16 @@
 								<td
 									class="value ${hasErrors(bean: feedbackInstance, field: 'phoneNumber', 'errors')}"><span>
 										${message(code: 'feedback.phoneNumber.label', default: 'Phone Number')}
-								</span><br /> <g:textField class="control-input" name="phoneNumber"
-										value="${feedbackInstance?.phoneNumber}" /></td>
+								</span><br /> 
+								
+									<g:if test="${feedbackInstance?.phoneNumber}">
+										<input class="control-input" name="phoneNumber"
+										value="${feedbackInstance?.phoneNumber}" />
+									</g:if> 
+									<g:else>
+										<input class="control-input" name="phoneNumber"
+											value='<sec:loggedInUserInfo field="phoneNumber" />' />
+									</g:else>
 							</tr>
 							<tr>
 								<td

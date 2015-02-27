@@ -130,14 +130,16 @@
 			   <tr>
 			     <td valign="top">
 				 <div class="bank-logo">
-                                    <img src="http://ahotua.vn/images/img/VietcomBank.png" width="90" height="50" alt="TechcomBank" />
+                                    <img src="http://ahotua.vn/images/img/VietcomBank.png" width="90" height="50" alt="VietcomBank" />
                                 </div>
                                 <div class="bank-detail">
                                     <span class="title title-b" style="font-weight: bold; line-height: 30px;">Ngân hàng Vietcombank </span>
                                     <br />
-                                    <span>Tên tài khoản: Đoàn Quang Thắng</span>
+                                    <span>Tên tài khoản: Công ty cổ phần Ahotua Việt Nam</span>
                                     <br />
-                                    <span>Số tài khoản: 0611001719111</span>
+                                    <span>Số tài khoản: 0491000056160</span>
+                                    <br />
+                                    <span>Địa chỉ: Ngân hàng TMCP Ngoại thương Việt Nam -  chi nhánh Thăng Long</span>
                                 </div>
                                 <div class="clearfix"></div>
 								

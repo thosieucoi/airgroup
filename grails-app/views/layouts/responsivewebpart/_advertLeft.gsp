@@ -30,7 +30,7 @@
 
 	function hideRegisterLeft() {
 		$("#registerclose").css('margin-left', '10px');
-		//$("#registerFacebook").css('display','none');
+		$("#registerFacebook").css('display','none');
 		$("#registerAhotua").css('display','none');
 		$("#messageAhotua").css('display','none');
 		$("#registerLeftPane").css('width','50px');
@@ -39,7 +39,7 @@
 
 	function showRegisterLeft() {
 		$("#registerclose").css('margin-left', '122px');
-		//$("#registerFacebook").css('display','block');
+		$("#registerFacebook").css('display','block');
 		$("#registerAhotua").css('display','block');
 		$("#messageAhotua").css('display','block');
 		$("#registerLeftPane").css('width','155px');

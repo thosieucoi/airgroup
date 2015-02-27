@@ -70,11 +70,12 @@
 								<tr>
 									<td><img
 										src="${resource(dir:'images',file:'bank-logo-VCB.gif')}" /></td>
-									<td><span><b>Ngân hàng TMCP Ngoại Thương Việt
-												Nam - Vietcombank</b> </span><br /> <span>Tên tài khoản : <b>Đoàn Quang Thắng</b>
-												</span><br /> <span>Số tài khoản :
-												<b>0611001719111</b></span><br /> <span>Phòng giao dịch </span><br /> <span>Chi
-											Nhánh: <b>VCB chi nhánh Ba Đình</b>
+									<td><span><b>Ngân hàng Vietcombank</b> </span><br /> 
+												<span>Tên tài khoản : <b>Công ty cổ phần Ahotua Việt Nam</b></span>
+												<br /> 
+												<span>Số tài khoản :<b>0491000056160</b></span>
+												<br /> 
+												<span>Phòng giao dịch </span><br /> <span>Chi Nhánh: <b>Thăng Long </b>
 									</span><br /></td>
 								</tr>
 							</table>

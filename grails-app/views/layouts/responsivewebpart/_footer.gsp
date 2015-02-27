@@ -7,7 +7,7 @@
 			<li class="item8"><g:link controller="register"><span style="color: #fff;">Đăng ký</span></g:link></li>
 		</sec:ifNotLoggedIn>
 		<br/>
-		<li class="item8"><span style="color: #fff;">Copyright © 2015. Công ty Cổ Phần Ahotua</span></li>
+		<li class="item8"><span style="color: #fff;">Copyright © 2015. Công ty Cổ Phần Ahotua Việt Nam</span></li>
 		<li>
 			<a href="https://www.facebook.com/pages/V%C3%A9-m%C3%A1y-bay-tr%E1%BB%B1c-tuy%E1%BA%BFn-Ahotua/1518289555126754">
 				<img src="${resource(dir:'images/newuiimg',file:'Facebook-icon.png')}">
