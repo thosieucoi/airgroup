@@ -41,11 +41,11 @@ class HomeController {
 
 		DateTimeFormatter dateTimeFormat = DateTimeFormat.forPattern("yyyy-MM-dd HH:mm:ss.S")
 
-		def lastThreeNewsKM = NewsContent.findAllByActiveAndCategory("Active","${message(code:'navigation.admin.promotion')}",[max:3, offset:0, sort:"createdOn", order:"desc"])
+		def lastThreeShare = NewsContent.findAllByActiveAndCategory("Active","${message(code:'navigation.admin.share')}",[max:3, offset:0, sort:"createdOn", order:"desc"])
 		def lastThreeNews = NewsContent.findAllByActiveAndCategory("Active","${message(code:'navigation.admin.news')}",[max:3, offset: 0, sort:"createdOn", order:"desc"])
 		
 		render view: "index", model: [lastFiveFeedback: lastFiveFeedback, policy:policy, different:different, advert:advert ,
-					users: users, lastThreeNews:lastThreeNews, lastThreeNewsKM: lastThreeNewsKM]
+					users: users, lastThreeNews:lastThreeNews, lastThreeShare: lastThreeShare]
 	}
 	
 	def listUsers={

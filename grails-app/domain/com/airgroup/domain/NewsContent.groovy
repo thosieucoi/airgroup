@@ -32,7 +32,7 @@ class NewsContent extends WcmContent  {
 		content(maxSize: WcmContent.MAX_CONTENT_SIZE)
 		introduction(maxSize: WcmContent.MAX_CONTENT_SIZE)
 		template(nullable: true)
-		category(inList:["Tin tức","Khuyến mại"])
+		category(inList:["Tin tức","Chia sẻ"])
 		active(inList:["Active","Deactive"])
 	}
 

@@ -18,21 +18,6 @@ class NewsController {
 		[newsListTT:newsListTT, totalTT:totalTT]
 	}
 	
-	def saleoff = {
-		if(params.type=='0'){
-			def newsPagination = [max: params.max, offset: params.offset]
-			session.newsPagination = newsPagination
-		}else if(params.type=='1'){
-			def promotionPagination = [max: params.max, offset: params.offset]
-			session.promotionPagination = promotionPagination
-		}
-		def totalKM = NewsContent.findAllByActiveAndCategory("Active","${message(code:'navigation.admin.promotion')}").size();
-		def newsListKM = NewsContent.findAllByActiveAndCategory("Active","${message(code:'navigation.admin.promotion')}",session.promotionPagination ?:[max:8, offset:0, sort:"createdOn", order:"desc"])
-		params.offset = null
-		params.max = null
-		[newsListKM:newsListKM,totalKM:totalKM]
-	}
-
 	def list = {
 		def newsList = newsService.listBackEnd(params)
 	}
@@ -64,7 +49,7 @@ class NewsController {
 		def content = NewsContent.get(infoid)
 		def bigCategory = content.category
 		if(bigCategory.equals("promotion")){
-			bigCategory = "${message(code:'navigation.admin.promotion')}"
+			bigCategory = "${message(code:'navigation.admin.share')}"
 		}else if(bigCategory.equals("news")){
 			bigCategory = "${message(code:'navigation.admin.news')}"
 		}

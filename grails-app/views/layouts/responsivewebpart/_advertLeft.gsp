@@ -87,7 +87,7 @@
 
 ._58mi {
 	min-width: 150px;
-	padding: 5px 5px;
+	padding: 5px 3px;
 	text-align: center;
 }
 

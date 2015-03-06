@@ -63,41 +63,36 @@
 		<div class="space-10 hidden-xs"></div>
 
 		<div class="row hidden-xs">
-			<article id="y-kien-khach-hang" class="col-md-4 col-sm-4 col-xs-4">
-				<div class="bg-type-2 region-type-2">
+			<article id="tin-tuc-khuyen-mai" class="col-md-4 col-sm-4 col-xs-4">
+				<div class="bg-type-2 region-type-3">
 					<div class="title title-upper title-b">
-						<g:link controller="feedback" action="index">Ý KIẾN KHÁCH HÀNG</g:link>
+						<g:link controller="share" action="index">
+	                        	Chia sẻ kinh nghiệm
+	                        </g:link>
 					</div>
-					<div class="line line-horizontal box-margin-10"></div>
-					<ul class="tour-tree-img tree-img-32 separate-line">
-						<g:each var="feedbackInstance" in="${lastFiveFeedback}">
+					<div class="line line-horizontal"></div>
+					<ul>
+						<g:each in="${lastThreeShare}" var="share">
 							<li>
-								<div class="img-feedback">
-									<img
-										src="${resource(dir:'images/newuiimg',file:'icon-message.jpg') }"
-										width="32" height="32" alt="">
+								<span>
+									<g:link action="detailsInfo" controller="news"
+											params="[infoid:share.id]">
+											<img src="${resource(dir:'images/newuiimg',file:'share.png') }" width="20" />
+									</g:link>
+								</span>
+								<g:link controller="news" action="detailsInfo"
+									params="[infoid:share.id]">
+									<span class="location">${StringUtils.abbreviate(share.title,45)}</span>
+								</g:link>
+								<div class="description">
+									${StringUtils.abbreviate(share.introduction,250)}
 								</div>
-								<div class="detail-news">
-									<strong>
-										"${StringUtils.abbreviate(feedbackInstance.content, 45)}”
-									</strong>
-									<p class="description title-i">
-										${StringUtils.abbreviate(feedbackInstance.name, 25)}
-									</p>
-								</div>
-								<div class="clearfix"></div>
 							</li>
 						</g:each>
 					</ul>
-
-					<div class="command">
-						<a style="text-decoration: none"
-							href="${createLink(action: 'index', controller:'feedback') }">
-							<input type="button" class="feedback-button" value="Xem thêm" />
-						</a>
-					</div>
 				</div>
 			</article>
+		
 			<article id="tin-tuc" class="col-md-4 col-sm-4 col-xs-4">
 				<div class="bg-type-2 region-type-2">
 					<div class="title title-upper title-b">
@@ -135,33 +130,40 @@
 					</ul>
 				</div>
 			</article>
-			<article id="tin-tuc-khuyen-mai" class="col-md-4 col-sm-4 col-xs-4">
-				<div class="bg-type-2 region-type-3">
+			
+			<article id="y-kien-khach-hang" class="col-md-4 col-sm-4 col-xs-4">
+				<div class="bg-type-2 region-type-2">
 					<div class="title title-upper title-b">
-						<g:link controller="news" action="saleoff">
-	                        	Khuyến mại
-	                        </g:link>
+						<g:link controller="feedback" action="index">Ý KIẾN KHÁCH HÀNG</g:link>
 					</div>
-					<div class="line line-horizontal"></div>
-					<ul>
-						<g:each in="${lastThreeNewsKM}" var="newsaleoff">
+					<div class="line line-horizontal box-margin-10"></div>
+					<ul class="tour-tree-img tree-img-32 separate-line">
+						<g:each var="feedbackInstance" in="${lastFiveFeedback}">
 							<li>
-								<span>
-									<g:link action="detailsInfo" controller="news"
-											params="[infoid:newsaleoff.id]">
-											<img src="${resource(dir:'images/newuiimg',file:'sale.png') }" width="20" />
-									</g:link>
-								</span>
-								<g:link controller="news" action="detailsInfo"
-									params="[infoid:newsaleoff.id]">
-									<span class="location">${StringUtils.abbreviate(newsaleoff.title,45)}</span>
-								</g:link>
-								<div class="description">
-									${StringUtils.abbreviate(newsaleoff.introduction,250)}
+								<div class="img-feedback">
+									<img
+										src="${resource(dir:'images/newuiimg',file:'icon-message.jpg') }"
+										width="32" height="32" alt="">
 								</div>
+								<div class="detail-news">
+									<strong>
+										"${StringUtils.abbreviate(feedbackInstance.content, 45)}”
+									</strong>
+									<p class="description title-i">
+										${StringUtils.abbreviate(feedbackInstance.name, 25)}
+									</p>
+								</div>
+								<div class="clearfix"></div>
 							</li>
 						</g:each>
 					</ul>
+
+					<div class="command">
+						<a style="text-decoration: none"
+							href="${createLink(action: 'index', controller:'feedback') }">
+							<input type="button" class="feedback-button" value="Xem thêm" />
+						</a>
+					</div>
 				</div>
 			</article>
 		</div>

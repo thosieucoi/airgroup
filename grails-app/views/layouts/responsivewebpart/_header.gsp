@@ -64,11 +64,11 @@
 						<li><g:link controller="information" action="index">Thông tin & Tiện ích</g:link>
 					</g:else>-->
 					
-					<g:if test="${params['controller'].equals('news') && params['action'].equals('saleoff')}">
-						<li class="active"><g:link controller="news" action="saleoff">Khuyến mại</g:link>
+					<g:if test="${params['controller'].equals('share') && params['action'].equals('index')}">
+						<li class="active"><g:link controller="share" action="index">Chia sẻ kinh nghiệm</g:link>
 					</g:if>
 					<g:else>
-						<li><g:link controller="news" action="saleoff">Khuyến Mại</g:link>
+						<li><g:link controller="share" action="index">Chia sẻ kinh nghiệm</g:link>
 					</g:else>
 					
 					<g:if test="${params['controller'].equals('feedback')}">

@@ -20,17 +20,17 @@
 						<g:link controller="news" action="index">Tin Tức</g:link>
 					</g:if>
 					<g:else>
-						<g:link controller="news" action="saleoff">Khuyến Mại</g:link>
+						<g:link controller="share" action="index">Chia sẻ kinh nghiệm</g:link>
 					</g:else>
 					
 					
 					<span class="">&gt;</span>
-					<a class="current" href="#">Chi tiết tin tức</a>
+					<a class="current" href="#">Chi tiết bài viết</a>
 				</article>
 			</section>
 
 			<section class="row">
-				<article id="tour-details" class="col-md-8 col-sm-8 col-xs-12">
+				<article id="tour-details" class="col-md-8 col-sm-8 col-xs-12" style="width:100%;">
 					<div class="bg-type-2">
 						<div class="adv">
 							<div class="title title-upper title-b" style="text-align: left; padding: 10px;">
@@ -49,7 +49,6 @@
 					</div>
 				</article>
 				
-				<g:include view="layouts/responsivewebpart/_searchFlightForm.gsp" />
 			</section>
 			<p class="box-padding-10"></p>
 		</div>

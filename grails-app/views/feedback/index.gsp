@@ -33,7 +33,7 @@
 									<td valign="top"><span class="datepost"> ${message(code: 'feedback.listform.sendDate', default: 'Sent Date')}:
 											<g:formatDate formatName="date.time.format"  date="${feedbackInstance.sendDate}" />
 									</span><br /> <span class="nameKH"> ${fieldValue(bean: feedbackInstance, field: "name")}
-											- ${fieldValue(bean: feedbackInstance, field: "phoneNumber")} ${fieldValue(bean: feedbackInstance, field: "address")}
+											- ${fieldValue(bean: feedbackInstance, field: "address")}
 									</span></td>
 								</tr>
 								<tr>
@@ -51,8 +51,8 @@
 					<div style="clear: both"></div>
 
 					<div class="paginateButtons">
-						<g:hiddenField controller="feedback" action="list" name="offset" value="${offset}"/>
-						<g:hiddenField controller="feedback" action="list" name="max" value="${max}"/>
+						<g:hiddenField controller="feedback" action="index" name="offset" value="${offset}"/>
+						<g:hiddenField controller="feedback" action="index" name="max" value="${max}"/>
 						<g:paginate next="Forward" prev="Back" max="5" maxsteps="10"
 							controller="feedback" action="list"
 							total="${feedbackTotal ? feedbackTotal:0}" />
