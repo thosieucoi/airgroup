@@ -42,15 +42,15 @@ jQuery(document).ready(function(){
 	}
 	
 	//Number of infants 0->5
-	for(i=0;i<11;i++){
+	for(i=0;i<8;i++){
 		jQuery('#infants').append('<option value="'+i+'">'+i+'</option>');
 	}
 	//Number of kids 0->9
-	for(i=0;i<16;i++){
+	for(i=0;i<8;i++){
 		jQuery('#kids').append('<option value="'+i+'">'+i+'</option>');
 	}
 	//Number of adults 1->50
-	for(i=1;i<51;i++){
+	for(i=1;i<8;i++){
 		jQuery('#adults').append('<option value="'+i+'">'+i+'</option>');
 	}
 	

@@ -307,9 +307,7 @@
 							<td><b>Họ và tên*</b><br> <i
 								style="font-size: 11px; color: #999; font-style: normal">(ví
 									dụ: Nguyen Van A)</i></td>
-							<td><b>Ngày sinh</b><br> <i
-								style="font-size: 11px; color: #999; font-style: normal">(ví
-									dụ: 27/09/2013)</i></td>
+							<td></td>
 						</tr>
 						<% for(i=0;i<new Integer(session.parameters.adults+"");i++){ %>
 					<tr>
@@ -390,7 +388,7 @@
 						<tr>
 							<td><span class="hidden-xs">Email<i class="hidden-xs"
 									style="font-size: 11px; color: #999; font-style: normal">Ví
-										dụ: booking@elines.vn </i></span><br class="hidden-xs" /> <input name="email" type="text" placeholder="Email" value ='<sec:loggedInUserInfo field="username" />'
+										dụ: booker@ahotua.vn </i></span><br class="hidden-xs" /> <input name="email" type="text" placeholder="Email" value ='<sec:loggedInUserInfo field="username" />'
 								 /></td>
 							<td><span class="hidden-xs">Điện thoại*</span><br class="hidden-xs"/> 
 								<g:if test="${session.parameters.phoneNumber}" >	

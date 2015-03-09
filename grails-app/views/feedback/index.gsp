@@ -54,7 +54,7 @@
 						<g:hiddenField controller="feedback" action="index" name="offset" value="${offset}"/>
 						<g:hiddenField controller="feedback" action="index" name="max" value="${max}"/>
 						<g:paginate next="Forward" prev="Back" max="5" maxsteps="10"
-							controller="feedback" action="list"
+							controller="feedback" action="index"
 							total="${feedbackTotal ? feedbackTotal:0}" />
 					</div>
 				</div>

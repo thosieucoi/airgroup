@@ -825,7 +825,7 @@ footer{
 }
 
 #tim-chuyen-bay .control-collection .row > div{
-    padding-top: 5px;
+    padding-top: 3px;
 }
 
 #tim-chuyen-bay.box-large .day-input{
@@ -1547,10 +1547,10 @@ v#e-may-bay-gia-re > div,
     float: left;
 }
 
-.img-news-margin-right-10 img{height:240px !important; width:300px !important; }
+.img-news-margin-right-10 img{height:170px !important; width:300px !important; }
 .img-news-margin-right-10{
     float: left;
-    margin-right: 10px;
+    margin: 5px;
 }
 
 <!--customercare-->

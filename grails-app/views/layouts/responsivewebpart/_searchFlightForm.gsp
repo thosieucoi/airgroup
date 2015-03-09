@@ -101,9 +101,15 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-md-4 col-sm-4 col-xs-4">
-								<label for="customerPhoneNumber" class="control-label" style="width: 80px">Điện thoại:</label> <input id="customerPhoneNumber" class="control-input"
-									style="width:185px" value="${phoneNumber}" />
+							<div class="col-md-4 col-sm-4 col-xs-4" style="width:100%;">
+								</br>
+								<g:link controller="policy" action="guide">
+									<img src="${resource(dir:'images/newuiimg',file:'guide.jpg') }" alt="hướng dẫn đặt vé"
+													width="22px" height="22px" />
+									<span style="color:white;font-weight: bold;text-decoration: underline;">Hướng dẫn đặt vé</span>
+								</g:link>
+								<input id="customerPhoneNumber" class="control-input"
+									style="width:185px;visibility: hidden;" value="${phoneNumber}" />
 							</div>
 						</div>
 						<div class="row">

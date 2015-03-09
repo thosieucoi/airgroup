@@ -14,6 +14,18 @@
 	</div>
 	</g:if>
 </sec:ifNotLoggedIn>
+<sec:ifLoggedIn>
+	<div id="registerLeftPane">
+		<aside id="adv-left" class="hidden-xs hotlineRight">
+			<div id="registerLeft" class="contentHotline">
+				<div id="registerclose" class="registerclose">
+					<a href="javascript:void(0)"><h5 style="color: #d51317;" id="arrowLeft"> << </h5></a>
+				</div>
+				<h5 id="messageAhotua">Đặt vé máy bay bằng giá hãng, thanh toán tiện lợi với những dịch vụ tiện ích nhất.</h5>
+			</div>
+		</aside>
+	</div>
+</sec:ifLoggedIn>
 <script>
 	j = 0;
 	$("#registerclose").click(function(){

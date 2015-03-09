@@ -80,6 +80,13 @@
 											class="control-input" style="height: 25px;"></select>
 										<div class="description title-while">(&lt; 2 tuổi)</div>
 									</div>
+									<div class="col-md-3 col-sm-3 col-xs-3" style="width:100%;">
+										<g:link controller="policy" action="guide">
+											<img src="${resource(dir:'images/newuiimg',file:'guide.jpg') }" alt="hướng dẫn đặt vé"
+													width="22px" height="22px" />
+											<span style="color:white;font-weight: bold;text-decoration: underline;">Hướng dẫn đặt vé</span>
+										</g:link>
+									</div>
 								</div>
 
 								<div class="space-10"></div>

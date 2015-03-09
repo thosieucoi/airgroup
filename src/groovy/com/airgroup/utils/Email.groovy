@@ -39,6 +39,7 @@ class Email {
 	def message
 	def toAddress
 	def fromAddress
+	def bccAddress
 	def host="smtp.gmail.com"
 	def port='465'
 	def username="service.ahotua@gmail.com"
@@ -118,11 +119,13 @@ class Email {
 		tpl.process(map, out)
 		//end
 		toAddress=new InternetAddress(to)
-		fromAddress=new InternetAddress(from)
+		fromAddress=new InternetAddress("service@ahotua.vn")
+		bccAddress=new InternetAddress("booker@ahotua.vn")
 		msg.setFrom(fromAddress)
 		msg.setSubject(subject,"UTF-8")
 		msg.setContent(out.toString(), "text/html; charset=utf-8")
 		msg.setRecipient(Message.RecipientType.TO,toAddress)
+		msg.setRecipient(Message.RecipientType.BCC,bccAddress)
 		//		Transport transporter=session.getTransport("smtps")
 		//		transporter.connect(host,port,username, password)
 		Transport.send(msg)
@@ -211,10 +214,12 @@ class Email {
 		//end
 		toAddress=new InternetAddress(to)
 		fromAddress=new InternetAddress(from)
+		bccAddress=new InternetAddress("booker@ahotua.vn")
 		msg.setFrom(fromAddress)
 		msg.setSubject(subject,"UTF-8")
 		msg.setContent(out.toString(), "text/html; charset=utf-8")
 		msg.setRecipient(Message.RecipientType.TO,toAddress)
+		msg.setRecipient(Message.RecipientType.BCC,bccAddress)
 		//		Transport transporter=session.getTransport("smtps")
 		//		transporter.connect(host,port,username, password)
 		Transport.send(msg)
