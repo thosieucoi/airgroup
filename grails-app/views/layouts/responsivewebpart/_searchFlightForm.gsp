@@ -4,7 +4,7 @@
 		<g:form name="submitForm" controller="flight"
 			action="switchSearchPage" method="POST">
 			<div
-				class="book hdd bg-type-red box-border-radius-5 region-type-2 box-padding-10">
+				class="book hdd box-border-radius-5 region-type-2">
 				<div class="title">
 					<img
 						src="${resource(dir:'images/img',file:'icon-tim-chuyen-bay.png') }"

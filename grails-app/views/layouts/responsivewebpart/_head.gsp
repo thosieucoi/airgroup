@@ -1,12 +1,31 @@
-<head>
+<head prefix="og: http://ogp.me/ns# fb:http://ogp.me/ns/fb#">
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <title><g:layoutTitle default="AHOTUA" /></title>
 <link rel="icon" href="${resource(dir:'images/newuiimg',file:'icon-logo.png')}" type="image/x-icon">
 <link rel="shortcut icon" href="${resource(dir:'images/newuiimg',file:'icon-logo.png')}" type="image/x-icon">
 <g:javascript library="application" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="keywords" content="">
-<meta name="description" content="{TITLE}">
+<meta name="news_keywords" content="Vé máy bay trực tuyến Ahotua">
+<meta http-equiv="content-language" content="vi">
+<meta name="robots" content="index,follow,noodp">
+<meta property="og:site_name" content="Ahotua Việt Nam">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="vi_VN">
+
+<meta property="og:description" name="description" content="${session.description}">
+<meta property="og:title" content="${session.title}">    
+<meta property="og:url" content="${session.url}">
+<meta property="og:image" content="${session.image}" >
+
+<!-- HOME_INDEX_AHOTUA -->
+<meta name="copyright" content="Copyright © 2015 by AHOTUA.VN">
+<meta name="abstract" content="AHOTUA.VN Website bán vé máy bay số 1 Việt Nam">
+<meta name="distribution" content="Global">
+<meta name="author" content="ahotua.vn">
+<meta http-equiv="refresh" content="1200">
+<meta name="REVISIT-AFTER" content="1 DAYS">
+<meta name="RATING" content="GENERAL">
+
 <link rel="stylesheet" type="text/css"
 	href="${resource(dir:'css/newuicss',file:'bootstrap.css') }">
 <link rel="stylesheet" type="text/css"

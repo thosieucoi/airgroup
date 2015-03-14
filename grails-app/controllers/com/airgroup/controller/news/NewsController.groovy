@@ -1,4 +1,6 @@
 package com.airgroup.controller.news
+
+import org.apache.commons.lang.StringUtils;
 import org.weceem.content.*
 import com.airgroup.domain.*;
 class NewsController {
@@ -59,6 +61,13 @@ class NewsController {
 
 		params.offset = null
 		params.max = null
+		
+		session.title = content.title
+		session.description = content.introduction
+		session.url = "http://ahotua.vn/news/detailsInfo?infoid=" + content.id
+		def image = content.image
+		image= image.substring(image.indexOf("src=\"") + 5)
+		session.image = "http://ahotua.vn" + image.substring(0, image.indexOf("\""))
 		
 		[content : content, bigCategory:bigCategory, newsList:newsList]
 	}

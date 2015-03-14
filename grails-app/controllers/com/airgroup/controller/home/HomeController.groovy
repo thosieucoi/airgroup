@@ -44,6 +44,11 @@ class HomeController {
 		def lastThreeShare = NewsContent.findAllByActiveAndCategory("Active","${message(code:'navigation.admin.share')}",[max:3, offset:0, sort:"createdOn", order:"desc"])
 		def lastThreeNews = NewsContent.findAllByActiveAndCategory("Active","${message(code:'navigation.admin.news')}",[max:3, offset: 0, sort:"createdOn", order:"desc"])
 		
+		session.title = "${message(code:'home.og.title')}"
+		session.description = "${message(code:'home.og.description')}"
+		session.url = "${message(code:'home.og.url')}"
+		session.image = "${message(code:'home.og.image')}"
+		
 		render view: "index", model: [lastFiveFeedback: lastFiveFeedback, policy:policy, different:different, advert:advert ,
 					users: users, lastThreeNews:lastThreeNews, lastThreeShare: lastThreeShare]
 	}
