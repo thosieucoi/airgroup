@@ -66,7 +66,7 @@
 
 		<div class="row hidden-xs">
 			<article id="tin-tuc-khuyen-mai" class="col-md-4 col-sm-4 col-xs-4">
-				<div class="bg-type-2 region-type-3">
+				<div class="bg-type-2 region-type-3" style="height:350px;">
 					<div class="title title-upper title-b">
 						<g:link controller="share" action="index">
 	                        	Chia sẻ kinh nghiệm
@@ -87,7 +87,7 @@
 									<span class="location">${StringUtils.abbreviate(share.title,45)}</span>
 								</g:link>
 								<div class="description">
-									${StringUtils.abbreviate(share.introduction,250)}
+									${StringUtils.abbreviate(share.introduction,150)}
 								</div>
 							</li>
 						</g:each>
@@ -96,7 +96,7 @@
 			</article>
 		
 			<article id="tin-tuc" class="col-md-4 col-sm-4 col-xs-4">
-				<div class="bg-type-2 region-type-2">
+				<div class="bg-type-2 region-type-2" style="height:350px;">
 					<div class="title title-upper title-b">
 						<g:link controller="news" action="index">
                         		Tin Tức
@@ -134,7 +134,7 @@
 			</article>
 			
 			<article id="y-kien-khach-hang" class="col-md-4 col-sm-4 col-xs-4">
-				<div class="bg-type-2 region-type-2">
+				<div class="bg-type-2 region-type-2" style="height:350px;">
 					<div class="title title-upper title-b">
 						<g:link controller="feedback" action="index">Ý KIẾN KHÁCH HÀNG</g:link>
 					</div>
@@ -174,7 +174,7 @@
 
 		<div class="row hidden-xs">
 			<article class="col-md-4 col-sm-4 col-xs-4">
-				<div class="bg-type-2 region-type-3">
+				<div class="bg-type-2 region-type-3" style="height:350px;">
 					<div id="myCarousel1" class="carousel slide" data-ride="carousel">
 						<div class="carousel-inner">
 							<div class="item active">
@@ -200,7 +200,7 @@
 				</div>
 			</article>
 			<article id="hinh-thuc-thanh-toan" class="col-md-4 col-sm-4 col-xs-4">
-				<div class="bg-type-2 region-type-3">
+				<div class="bg-type-2 region-type-3" style="height:350px;">
 					<div class="title title-upper title-b">Hình thức thanh toán</div>
 					<div class="line line-horizontal box-margin-10"></div>
 					<ul>
@@ -250,7 +250,7 @@
 				</div>
 			</article>
 			<article id="giao-dich" class="col-md-4 col-sm-4 col-xs-4">
-				<div class="bg-type-2 region-type-3">
+				<div class="bg-type-2 region-type-3" style="height:350px;">
 					<div class="title title-upper title-b">Giao dịch</div>
 					<div class="line line-horizontal box-margin-10"></div>
 					<ul id="banks">
@@ -261,9 +261,9 @@
 							</div>
 							<div class="bank-detail">
 								<span class="title title-b">Ngân hàng Vietcombank </span> <br />
-								<span>Tên tài khoản: Công ty cổ phần Ahotua Việt Nam</span> <br /> 
-								<span>Số tài khoản: 0491000056160</span><br /> 
-								<span>Địa chỉ: Ngân hàng TMCP Ngoại thương Việt Nam -  chi nhánh Thăng Long</span>
+								<span><b>Tên tài khoản:</b> Công ty cổ phần Ahotua Việt Nam</span> <br /> 
+								<span><b>Số tài khoản:</b> 0491000056160</span><br /> 
+								<span><b>Địa chỉ:</b> Ngân hàng TMCP Ngoại thương Việt Nam -  chi nhánh Thăng Long</span>
 							</div>
 							<div class="clearfix"></div>
 						</li>

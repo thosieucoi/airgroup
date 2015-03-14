@@ -948,7 +948,7 @@ footer{
 
 ul.separate-line li{
     border-top: 1px dotted #ccc;
-    padding-bottom: 5px;
+    padding-bottom: 0px;
 }
 
 ul.separate-line li:first-child{
