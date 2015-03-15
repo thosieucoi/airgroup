@@ -388,6 +388,7 @@ div.login_page_interstitial {
 #register_link {
 	margin-top: 5px;
 	float: left;
+	margin-bottom: 40px;
 }
 
 #register_link a {

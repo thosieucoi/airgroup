@@ -43,6 +43,11 @@ class LoginController {
 	 * Show the login page.
 	 */
 	def auth = {
+			session.title = "${message(code:'home.og.title')}"
+			session.description = "${message(code:'home.og.description')}"
+			session.url = "${message(code:'home.og.url')}"
+			session.image = "${message(code:'home.og.image')}"
+		
 			def config = SpringSecurityUtils.securityConfig
 			if (springSecurityService.isLoggedIn()) {
 				CMSUser user=CMSUser.findByUsername(springSecurityService.authentication.name)

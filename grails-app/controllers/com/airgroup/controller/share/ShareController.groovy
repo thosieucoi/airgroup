@@ -16,6 +16,12 @@ class ShareController {
 		def newsListShare = NewsContent.findAllByActiveAndCategory("Active","${message(code:'navigation.admin.share')}",session.promotionPagination ?:[max:8, offset:0, sort:"createdOn", order:"desc"])
 		params.offset = null
 		params.max = null
+		
+		session.title = "${message(code:'home.og.title')}"
+		session.description = "${message(code:'home.og.description')}"
+		session.url = "${message(code:'home.og.url')}"
+		session.image = "${message(code:'home.og.image')}"
+		
 		[newsListShare:newsListShare,totalShare:totalShare]
 	}
 }

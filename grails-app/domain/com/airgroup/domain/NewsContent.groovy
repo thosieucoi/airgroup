@@ -44,7 +44,7 @@ class NewsContent extends WcmContent  {
 	 */
 	static editors = {
 		title(editor:'String')
-		introduction(editor:'HTMLContent')
+		introduction(editor:'LongString')
 		content(editor:'HTMLContent') // Forces use of the HTMLContent rich editor
 		image(editor:'HTMLContent')
 		template()

@@ -26,6 +26,12 @@ class RegisterController {
 			redirect uri: "/home"
 		def CMSUserInstance = new CMSUser()
 		CMSUserInstance.properties = params
+		
+		session.title = "${message(code:'home.og.title')}"
+		session.description = "${message(code:'home.og.description')}"
+		session.url = "${message(code:'home.og.url')}"
+		session.image = "${message(code:'home.og.image')}"
+		
 		return [CMSUserInstance: CMSUserInstance]
 	}
 

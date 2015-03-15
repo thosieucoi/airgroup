@@ -297,7 +297,7 @@ div.login_page_interstitial {
 
 #login_button_inline {
 	float: left;
-	margin-bottom: 5px;
+	margin-bottom: 40px;
 	margin-right: 5px;
 }
 
