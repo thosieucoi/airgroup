@@ -127,6 +127,26 @@
                 <fieldset style="border: 1px solid #ccc; background: #FFEDED">
                 <legend style="text-align: center;color: #007CC3;font-size: 18px;font-weight: bold;">Thông tin giao dịch</legend>
                 <table style="width: 100%;table-layout: fixed; font-family: arial; font-size: 13px;">
+			   
+			   <tr>
+			     <td valign="top">
+				 <div class="bank-logo">
+                                    <img src="http://ahotua.vn/images/img/TechcomBank.png" width="90" height="50" alt="Techcombank" />
+                                </div>
+                                <div class="bank-detail">
+                                    <span class="title title-b" style="font-weight: bold; line-height: 30px;">Ngân hàng Techcombank </span>
+                                    <br />
+                                    <span>Tên tài khoản: Công ty cổ phần Ahotua Việt Nam</span>
+                                    <br />
+                                    <span>Số tài khoản: 19129041129011</span>
+                                    <br />
+                                    <span>Địa chỉ: Ngân hàng TMCP Kỹ Thương Việt Nam -  chi nhánh Hoàng Quốc Việt</span>
+                                </div>
+                                <div class="clearfix"></div>
+								
+				 </td>
+			   </tr>
+			   
 			   <tr>
 			     <td valign="top">
 				 <div class="bank-logo">
@@ -140,6 +160,44 @@
                                     <span>Số tài khoản: 0491000056160</span>
                                     <br />
                                     <span>Địa chỉ: Ngân hàng TMCP Ngoại thương Việt Nam -  chi nhánh Thăng Long</span>
+                                </div>
+                                <div class="clearfix"></div>
+								
+				 </td>
+			   </tr>
+			   
+			   <tr>
+			     <td valign="top">
+				 <div class="bank-logo">
+                                    <img src="http://ahotua.vn/images/img/BIDV.jpg" width="90" height="50" alt="BIDV" />
+                                </div>
+                                <div class="bank-detail">
+                                    <span class="title title-b" style="font-weight: bold; line-height: 30px;">Ngân hàng BIDV </span>
+                                    <br />
+                                    <span>Tên tài khoản: Công ty cổ phần Ahotua Việt Nam</span>
+                                    <br />
+                                    <span>Số tài khoản: 21510001634267</span>
+                                    <br />
+                                    <span>Địa chỉ: Ngân Hàng Đầu Tư Và Phát Triển Việt Nam -  chi nhánh Cầu Giấy</span>
+                                </div>
+                                <div class="clearfix"></div>
+								
+				 </td>
+			   </tr>
+			   
+			   <tr>
+			     <td valign="top">
+				 <div class="bank-logo">
+                                    <img src="http://ahotua.vn/images/img/vietin.jpg" width="90" height="50" alt="Vietinbank" />
+                                </div>
+                                <div class="bank-detail">
+                                    <span class="title title-b" style="font-weight: bold; line-height: 30px;">Ngân hàng Vietinbank </span>
+                                    <br />
+                                    <span>Tên tài khoản: Công ty cổ phần Ahotua Việt Nam</span>
+                                    <br />
+                                    <span>Số tài khoản: 10201-000216255-5</span>
+                                    <br />
+                                    <span>Địa chỉ: Ngân Hàng TMCP Công Thương Việt Nam -  chi nhánh Nam Thăng Long</span>
                                 </div>
                                 <div class="clearfix"></div>
 								

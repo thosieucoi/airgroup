@@ -30,7 +30,7 @@
 							<tr>
 								<td class="value">
 									<span>
-										Mã máy bay
+										Mã chuyến bay
 									</span>
 									<br /> 
 									<input class="control-input" name="mamaybay" id="mamaybay" maxlength="100" />

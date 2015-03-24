@@ -6,7 +6,7 @@
 <meta name="layout" content="responsivemasterpage" />
 <g:set var="entityName"
 	value="${message(code: 'News', default: 'News')}" />
-<title>Khuyến mại Vé máy bay, đại lý máy bay ahotua</title>
+<title>Chia sẻ kinh nghiệm Vé máy bay, đại lý máy bay ahotua</title>
 </head>
 <body class="">
 	<div id="tour-section" class="row">
@@ -60,12 +60,12 @@
 				<div style="clear: both"></div>
 
 				<div class="paginateButtons">
-					<g:hiddenField controller="news" action="index" name="offset"
+					<g:hiddenField controller="share" action="index" name="offset"
 						value="${offset}" />
-					<g:hiddenField controller="news" action="index" name="max"
+					<g:hiddenField controller="share" action="index" name="max"
 						value="${max}" />
 					<g:paginate total="${totalShare}" max="8"
-						offset="${session.newsPagination?.offset}" params="[type:0]" />
+						offset="${session.sharePagination?.offset}" params="[type:0]" />
 				</div>
 			</article>
 			

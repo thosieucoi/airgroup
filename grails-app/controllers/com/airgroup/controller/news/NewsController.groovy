@@ -7,11 +7,8 @@ class NewsController {
 	def newsService
 	def index = {
 		if(params.type=='0'){
-			def newsPagination = [max: params.max, offset: params.offset]
+			def newsPagination = [max: params.max, offset: params.offset, sort:"createdOn", order:"desc"]
 			session.newsPagination = newsPagination
-		}else if(params.type=='1'){
-			def promotionPagination = [max: params.max, offset: params.offset]
-			session.promotionPagination = promotionPagination
 		}
 		def totalTT = NewsContent.findAllByActiveAndCategory("Active","${message(code:'navigation.admin.news')}").size();
 		def newsListTT = NewsContent.findAllByActiveAndCategory("Active","${message(code:'navigation.admin.news')}",session.newsPagination ?:[max:8, offset: 0, sort:"createdOn", order:"desc"])

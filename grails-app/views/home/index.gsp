@@ -256,14 +256,56 @@
 					<ul id="banks">
 						<li>
 							<div class="bank-logo">
-								<img src="images/img/VietcomBank.png" width="70" height="40"
-									alt="MBBank" />
+								<img src="images/img/TechcomBank.png" width="70" height="40"
+									alt="Techcombank" />
 							</div>
 							<div class="bank-detail">
-								<span class="title title-b">Ngân hàng Vietcombank </span> <br />
+								<span class="title title-b">Ngân Hàng Techcombank Việt Nam</span> <br />
+								<span><b>Tên tài khoản:</b> Công ty cổ phần Ahotua Việt Nam</span> <br /> 
+								<span><b>Số tài khoản:</b> 19129041129011</span><br /> 
+								<span><b>Địa chỉ:</b> Ngân hàng TMCP Kỹ Thương Việt Nam -  chi nhánh Hoàng Quốc Việt</span>
+							</div>
+							<div class="clearfix"></div>
+						</li>
+						
+						<li>
+							<div class="bank-logo">
+								<img src="images/img/VietcomBank.png" width="70" height="40"
+									alt="Vietcombank" />
+							</div>
+							<div class="bank-detail">
+								<span class="title title-b">Ngân hàng Vietcombank Việt Nam</span> <br />
 								<span><b>Tên tài khoản:</b> Công ty cổ phần Ahotua Việt Nam</span> <br /> 
 								<span><b>Số tài khoản:</b> 0491000056160</span><br /> 
 								<span><b>Địa chỉ:</b> Ngân hàng TMCP Ngoại thương Việt Nam -  chi nhánh Thăng Long</span>
+							</div>
+							<div class="clearfix"></div>
+						</li>
+						
+						<li>
+							<div class="bank-logo">
+								<img src="images/img/BIDV.jpg" width="70" height="40"
+									alt="BIDV" />
+							</div>
+							<div class="bank-detail">
+								<span class="title title-b">Ngân hàng BIDV Việt Nam</span> <br />
+								<span><b>Tên tài khoản:</b> Công ty cổ phần Ahotua Việt Nam</span> <br /> 
+								<span><b>Số tài khoản:</b> 21510001634267</span><br /> 
+								<span><b>Địa chỉ:</b> Ngân Hàng Đầu Tư Và Phát Triển Việt Nam -  chi nhánh Cầu Giấy</span>
+							</div>
+							<div class="clearfix"></div>
+						</li>
+						
+						<li>
+							<div class="bank-logo">
+								<img src="images/img/vietin.jpg" width="70" height="40"
+									alt="Vietinbank" />
+							</div>
+							<div class="bank-detail">
+								<span class="title title-b">Ngân hàng Vietinbank Việt Nam</span> <br />
+								<span><b>Tên tài khoản:</b> Công ty cổ phần Ahotua Việt Nam</span> <br /> 
+								<span><b>Số tài khoản:</b> 10201-000216255-5</span><br /> 
+								<span><b>Địa chỉ:</b> Ngân Hàng TMCP Công Thương Việt Nam -  chi nhánh Nam Thăng Long</span>
 							</div>
 							<div class="clearfix"></div>
 						</li>

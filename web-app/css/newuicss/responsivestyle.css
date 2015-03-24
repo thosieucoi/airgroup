@@ -1312,7 +1312,7 @@ v#e-may-bay-gia-re > div,
 /*booking ticket*/
 #tour-page #tour-section .det{ float:none; margin:auto;  width: 640px; height: 440px;}
 #tour-page #tour-section .hone{ margin:20px 0}
-#tour-page #tour-section #chon-chuyen-bay-1{min-height: 622px;background-color: #FFFFFF;border: 1px solid #CCCCCC;text-align: left; margin-bottom:20px}
+#tour-page #tour-section #chon-chuyen-bay-1{min-height: 622px;background-color: #FFFFFF;border: 1px solid #CCCCCC;text-align: left; margin-bottom:70px}
 #tour-page #tour-section #chon-chuyen-bay-1 h1{ 
 	height:36px;
 	line-height: 36px; 
@@ -1537,7 +1537,7 @@ v#e-may-bay-gia-re > div,
 .paing{width:300px; margin:auto; padding:20px 0}
 .paing a{ background:#ccc; padding:10px}
 .paing a.active-ing{ background:#999; color:#fff; font-weight:bold}
-.paginateButtons{width:300px; margin:auto; padding:20px 0}
+.paginateButtons{width:300px; margin:auto; padding:40px 0}
 .paginateButtons a{ background:#ccc; padding:10px; margin:0 4px 0 0 }
 .paginateButtons span.currentStep{ background:#999; padding:10px; color:#fff; font-weight:bold;margin: 0 4px 0 0;}
 

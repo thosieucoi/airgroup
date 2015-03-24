@@ -67,6 +67,18 @@
 							<table>
 								<tr>
 									<td><img
+										src="${resource(dir:'images',file:'bank-techcom-logo.gif')}" /></td>
+									<td><span><b>Ngân hàng Techcombank</b> </span><br /> 
+												<span>Tên tài khoản : <b>Công ty cổ phần Ahotua Việt Nam</b></span>
+												<br /> 
+												<span>Số tài khoản :<b>19129041129011</b></span>
+												<br /> 
+												<span>Phòng giao dịch </span><br /> <span>Chi Nhánh: <b>Hoàng Quốc Việt </b>
+									</span><br /></td>
+								</tr>
+							
+								<tr>
+									<td><img
 										src="${resource(dir:'images',file:'bank-logo-VCB.gif')}" /></td>
 									<td><span><b>Ngân hàng Vietcombank</b> </span><br /> 
 												<span>Tên tài khoản : <b>Công ty cổ phần Ahotua Việt Nam</b></span>
@@ -74,6 +86,30 @@
 												<span>Số tài khoản :<b>0491000056160</b></span>
 												<br /> 
 												<span>Phòng giao dịch </span><br /> <span>Chi Nhánh: <b>Thăng Long </b>
+									</span><br /></td>
+								</tr>
+								
+								<tr>
+									<td><img
+										src="${resource(dir:'images',file:'bank-bidv-logo.gif')}" /></td>
+									<td><span><b>Ngân hàng BIDV</b> </span><br /> 
+												<span>Tên tài khoản : <b>Công ty cổ phần Ahotua Việt Nam</b></span>
+												<br /> 
+												<span>Số tài khoản :<b>21510001634267</b></span>
+												<br /> 
+												<span>Phòng giao dịch </span><br /> <span>Chi Nhánh: <b>Cầu Giấy </b>
+									</span><br /></td>
+								</tr>
+								
+								<tr>
+									<td><img
+										src="${resource(dir:'images',file:'bank-vietin-logo.gif')}" /></td>
+									<td><span><b>Ngân hàng Vietinbank</b> </span><br /> 
+												<span>Tên tài khoản : <b>Công ty cổ phần Ahotua Việt Nam</b></span>
+												<br /> 
+												<span>Số tài khoản :<b>10201-000216255-5</b></span>
+												<br /> 
+												<span>Phòng giao dịch </span><br /> <span>Chi Nhánh: <b>Nam Thăng Long </b>
 									</span><br /></td>
 								</tr>
 							</table>
@@ -93,6 +129,8 @@
 					</div>
 				</div>
 				<div style="clear: both"></div>
+				
+				
 				
 				<input type="checkbox" id="taxcheckbox"  value="hd" style="margin: 0 5px"
 					class="hd-check" /><b> Tôi muốn xuất hóa đơn</b>
