@@ -468,7 +468,7 @@ public class VietnamAirlinesFlight extends SearchFlights {
 		for (Element obElement : obData) {
 			Elements obPriceData = obElement.select("td");
 			int obIndex = obPriceData.size() - 1;
-			while(obPriceData.get(obIndex).text().contains("Sold out")){
+			while(obPriceData.get(obIndex).text().contains("Sold out") || obPriceData.get(obIndex).text().contains("Hết vé")){
 				obIndex = obIndex - 1;
 			}
 			String obId = "";
@@ -479,7 +479,7 @@ public class VietnamAirlinesFlight extends SearchFlights {
 				for (Element ibElement : ibData) {
 					Elements ibPriceData = ibElement.select("td");
 					int ibIndex = ibPriceData.size() - 1;
-					while(ibPriceData.get(ibIndex).text().contains("Sold out")){
+					while(ibPriceData.get(ibIndex).text().contains("Sold out") || ibPriceData.get(ibIndex).text().contains("Hết vé")){
 						ibIndex = ibIndex - 1;
 					}
 					if (obPriceData.get(obIndex).attr("fare-family-key").contains("SS")) {

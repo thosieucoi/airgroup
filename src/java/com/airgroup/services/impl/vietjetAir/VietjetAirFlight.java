@@ -60,7 +60,7 @@ public class VietjetAirFlight extends SearchFlights {
 			.first()
 			.select("tr:nth-child(3) > td > b")
 			.text();
-
+		
 		Elements obElements = document.select("tr[id^=gridTravelOptDep]");
 
 		outboundFares = parseFare(obElements, search, depDate, true);
@@ -131,10 +131,13 @@ public class VietjetAirFlight extends SearchFlights {
 				} else {
 					fare.setInboundSegments(parseSegments(element, date));
 				}
+				
+				
+				
 				Float totalPrice = Float.parseFloat(element
 					.select("input[id=total_complete_charges]")
 					.val()
-					.replaceAll(",", ""));
+					.replaceAll(",", "").replaceAll(" VND", ""));
 				// Float basePrice = Float.parseFloat(element
 				// .select("input[id=fare]")
 				// .val()
@@ -147,7 +150,7 @@ public class VietjetAirFlight extends SearchFlights {
 				fare.setAirlineCode("VJ");
 				fares.add(fare);
 			} catch (Exception e) {
-
+				System.out.println("========" + e.toString());
 			}
 		}
 		return fares;
@@ -158,9 +161,9 @@ public class VietjetAirFlight extends SearchFlights {
 
 		CuriositySegment segment = new CuriositySegment();
 
-		String depInfo = element.select("td[class=SegInfo]").get(0).text();
-		String arrInfo = element.select("td[class=SegInfo]").get(1).text();
-		String flightInfo = element.select("td[class=SegInfo]").get(2).text();
+		String depInfo = element.select("td[class=SegInfo]").get(1).text();
+		String arrInfo = element.select("td[class=SegInfo]").get(2).text();
+		String flightInfo = element.select("td[class=SegInfo]").get(3).text();
 
 		segment.setDepartureCode(depInfo.substring(6, 9));
 		segment.setArrivalCode(arrInfo.substring(6, 9));
@@ -175,7 +178,7 @@ public class VietjetAirFlight extends SearchFlights {
 		}
 
 		segment.setAirlineCode(flightInfo.substring(0, 2));
-		segment.setFlightNumber(flightInfo.substring(2, 6));
+		segment.setFlightNumber(flightInfo.substring(2, 5));
 
 		segments.add(segment);
 		return segments;
