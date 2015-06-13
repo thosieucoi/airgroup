@@ -6,15 +6,13 @@ class Advert {
 	
 //	Long id
 	byte[] slidePic
-	byte[] pagePic
 	Short status
 	String slidePicFileName
-	String pagePicFileName
+	String linkAdvert
 	Date activeTime
 
 	static constraints = {
 		slidePic maxSize: 2097152
-		pagePic maxSize: 2097152
 	}
 
 	static mapping={

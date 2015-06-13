@@ -35,8 +35,8 @@
 						<td><input type="file" name="slidePic" id="slidePic" /></td>
 					</tr>
 					<tr id="img_slide">
-						<td><label>Ảnh quảng cáo: </label></td>
-						<td><input type="file" name="pagePic" id="pagePic" /></td>
+						<td><label>Link quảng cáo: </label></td>
+						<td><input type="text" name="linkAdvert" id="linkAdvert" /></td>
 					</tr>
 					<tr>
 						<td></td>

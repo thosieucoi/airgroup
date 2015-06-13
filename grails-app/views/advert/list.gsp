@@ -50,7 +50,7 @@
                         
                             <g:sortableColumn property="slidePicFileName" title="${message(code: 'advert.slideImage.lable', default: 'Slide Image')}" />
                         
-                            <g:sortableColumn property="pagePicFileName" title="${message(code: 'advert.pageImage.label', default: 'Page Image')}" />
+                            <g:sortableColumn property="linkAdvert" title="${message(code: 'advert.pageImage.label', default: 'Page Image')}" />
                         
                             <g:sortableColumn property="status" title="${message(code: 'common.status', default: 'Status')}" />
                         
@@ -73,8 +73,8 @@
 								</a>						
 							</td>
 							
-							<td><a href="${createLink(controller:'advert', action:'showPageImage', id:advertInstance.id)}" rel="single"  class="pirobox" title="${fieldValue(bean: advertInstance, field: "pagePicFileName")}">
-							${fieldValue(bean: advertInstance, field: "pagePicFileName")}
+							<td><a href="${advertInstance.linkAdvert}" title="${fieldValue(bean: advertInstance, field: "linkAdvert")}">
+							${fieldValue(bean: advertInstance, field: "linkAdvert")}
 								</a>
 							</td>
 							
@@ -94,9 +94,6 @@
                             	<g:link id="xoaLink" onclick="myFunction(${advertInstance?.id})" class="hideOrder"
 										value="[advertId: advertInstance?.id]">Xóa</g:link>	
                             </td>
-<%--                            <td>--%>
-<%--                            <img src="${createLink(controller:'advert', action:'slideImage', id:4)}" />--%>
-<%--                            </td>--%>
                         </tr>
                     </g:each>
                     </tbody>

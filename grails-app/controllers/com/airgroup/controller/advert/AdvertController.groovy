@@ -27,19 +27,18 @@ class AdvertController {
 	}
 	def save = {
 		def sPic = request.getFile('slidePic')
-		def pPic = request.getFile('pagePic')
+		def linkAdvert = request.getParameter('linkAdvert')
 		def okcontents = ['image/png', 'image/jpeg', 'image/gif', 'image/bmp']
-		if (!okcontents.contains(sPic.getContentType()) || !okcontents.contains(pPic.getContentType())) {
+		if (!okcontents.contains(sPic.getContentType())) {
 		  flash.message = "${message(code: 'advert.image.type')}"
 		  redirect(action: "create")
 		  return;
 		}
+		
 		def advert = new Advert()
 		advert.slidePic = sPic.getBytes()
+		advert.linkAdvert = linkAdvert
 		advert.slidePicFileName = sPic.originalFilename
-		
-		advert.pagePic = pPic.getBytes()
-		advert.pagePicFileName = pPic.originalFilename
 		advert.activeTime = new Date() 
 		advert.status = 1
 		if(!advert.save()){
@@ -100,16 +99,6 @@ class AdvertController {
 		}
 	}
 	def showSlideImage = {
-		def advert = Advert.get(params.id)
-		response.outputStream << advert.slidePic // write the image to the outputstream
-		response.outputStream.flush()
-	  }
-	def showPageImage = {
-		def advert = Advert.get(params.id)
-		response.outputStream << advert.pagePic // write the image to the outputstream
-		response.outputStream.flush()
-	  }
-	def slideImage = {
 		def advert = Advert.get(params.id)
 		response.outputStream << advert.slidePic // write the image to the outputstream
 		response.outputStream.flush()
