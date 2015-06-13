@@ -27,13 +27,13 @@
 							<th><input id="chkHead" type="checkbox"/></th>
 							
 							<g:sortableColumn property="id"
-								title="${message(code: 'tour.id.label', default: 'Mã tour')}" />
+								title="${message(code: 'tour.id.label', default: 'Tiêu đề')}" />
 							
-							<g:sortableColumn property="title"
-								title="${message(code: 'tour.name.label', default: 'Tên tour')}" />
-								
 							<g:sortableColumn property="category"
-								title="${message(code: 'tour.name.label', default: 'Mục')}" />
+								title="${message(code: 'tour.name.label', default: 'Danh Mục')}" />
+								
+							<g:sortableColumn property="title"
+								title="${message(code: 'tour.name.label', default: 'Thành phố')}" />
 	
 							<g:sortableColumn property="createdOn"
 								title="${message(code: 'tour.createdDate.label', default: 'Ngày đăng')}" />
@@ -55,17 +55,17 @@
 								</td>
 	
 								<td>
-									${tourInstance.title}
+									${tourInstance.category}
 								</td>
 								
 								<td>
-									${tourInstance.category}
+									${tourInstance.location}
 								</td>
 	
 								<td><g:formatDate formatName="date.time.format.full" date="${tourInstance.createdOn}" /></td>
 								
 								<td style="width: 200px;">
-									<g:link action="show" id="${tourInstance.id}" class="button ui-corner-all">
+									<g:link action="details" id="${tourInstance.id}" class="button ui-corner-all">
 										<g:message code="common.command.view" encodeAs="HTML" />
 									</g:link>
 									<g:link id="${tourInstance.id}" controller="information" action="delete" class="button ui-corner-all"
@@ -87,7 +87,7 @@
 			<g:paginate	
 				next="Forward" prev="Back"
 				max="20" maxsteps="10"
-				controller="tour" action="listBackEnd"
+				controller="information" action="listBackEnd"
 				total="${total}" />
 		</div>
 	</div>

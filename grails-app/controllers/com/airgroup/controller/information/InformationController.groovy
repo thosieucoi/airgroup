@@ -56,11 +56,6 @@ class InformationController{
 		def tourList = tourService.getTourListBackEnd(params)
 	}
 
-	def show = {
-		def tourInfo = Tour.get(params.id)
-		[tourInfo : tourInfo]
-	}
-
 	def create = {
 		//def parent_id =Long.parseLong(WcmContent.findAllWhere(identifier:"TourDirectory").get(0).toString().split(":")[1].trim());
 		//redirect(uri:"/admin/editor/create?parent.id="+parent_id+"&type=com.airgroup.domain.Tour&space.id=" + WcmSpace.findByName("Default").id)

@@ -132,22 +132,12 @@
 					</g:link></li>
 			</sec:ifAnyGranted>
 			<sec:ifAnyGranted roles="ROLE_ADMIN">
-				<li class="mainlist"><a href="javascript:void(0)"><span><g:message
-								code="navigation.admin.tour" /></span><em></em></a>
-					<div class="sublist">
-						<ul>
-							<li><g:link controller="information" action="listBackEnd">
-									<span><g:message code="navigation.admin.list.tour" /></span>
-									<em></em>
-								</g:link> <g:link controller="tourIntro">
-									<span><g:message code="navigation.admin.tour.intro" /></span>
-									<em></em>
-								</g:link> <g:link controller="link" action="listBackEnd">
-									<span><g:message code="navigation.admin.list.link" /></span>
-									<em></em>
-								</g:link></li>
-						</ul>
-					</div></li>
+				<li class="mainlist">
+					<g:link controller="information" action="listBackEnd">
+						<span><g:message
+								code="navigation.admin.information" /></span><em></em>
+					</g:link>
+				</li>
 			</sec:ifAnyGranted>
 			<sec:ifAnyGranted roles="ROLE_ADMIN, ROLE_USER, ROLE_ACCOUNTING">
 				<li><g:link controller="rate">

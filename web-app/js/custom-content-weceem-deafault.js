@@ -25,11 +25,11 @@ jQuery(document).ready(function(){
 	jQuery('#phoneNumber').attr('maxlength', '15')
 	
 	//Rename field from English to Vietnamese
-	var title = "Tiêu đề"
-	var location = "Thành phố"
+	var title = "Tiêu đề*"
+	var location = "Thành phố*"
 	var category = "Danh mục*"
-	var status = "Trạng thái"
-	var content = "Nội dung"
+	var status = "Trạng thái*"
+	var content = "Nội dung*"
 	if(domain == tourDomain){
 		jQuery("label[for='aliasURI']").parent().css("display","none")
 		jQuery("label[for='aliasURI']").css("display","none")
@@ -37,25 +37,7 @@ jQuery(document).ready(function(){
 		jQuery("input[name='aliasURI']").parent().css("display","none")
 		jQuery("input[name='aliasURI']").val('abc')
 		
-//		jQuery("#aliasURI").val("tour")
 		//Prevent user from entering non-number into tips value text-box
-		jQuery("#phoneNumber").keydown(function(event) {
-	        // Allow: backspace, delete, tab, escape, and enter
-	        if ( event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9 || event.keyCode == 27 || event.keyCode == 13 || 
-	             // Allow: Ctrl+A
-	            (event.keyCode == 65 && event.ctrlKey === true) || 
-	             // Allow: home, end, left, right
-	            (event.keyCode >= 35 && event.keyCode <= 39)) {
-	                 // let it happen, don't do anything
-	                 return;
-	        }
-	        else {
-	            // Ensure that it is a number and stop the key press
-	            if (event.shiftKey || (event.keyCode < 48 || event.keyCode > 57) && (event.keyCode < 96 || event.keyCode > 105 )) {
-	                event.preventDefault(); 
-	            }   
-	        }
-	    })
 		jQuery("body form[enctype='multipart/form-data'] label").each(function(){
 			if(jQuery(this).prop('for') == 'title'){
 				jQuery(this).html(title)
@@ -66,7 +48,7 @@ jQuery(document).ready(function(){
 			if(jQuery(this).prop('for') == 'category'){
 				jQuery(this).html(category)
 			}
-			if(jQuery(this).prop('for') == 'status'){
+			if(jQuery(this).prop('for') == 'informationStatus'){
 				jQuery(this).html(status)
 			}
 			if(jQuery(this).prop('for') == 'content'){
