@@ -25,14 +25,11 @@ jQuery(document).ready(function(){
 	jQuery('#phoneNumber').attr('maxlength', '15')
 	
 	//Rename field from English to Vietnamese
-	var name = "TÃªn tour*"
-	var duration = "Thá»�i gian*"
-	var startLocation = "Khá»Ÿi hÃ nh*"
-	var price = "GiÃ¡*"
-	var phoneNumber = "Sá»‘ Ä‘iá»‡n thoáº¡i*"
-	var category = "Danh má»¥c*"
-	var status = "Tráº¡ng thÃ¡i*"
-	var content = "Ná»™i dung"
+	var title = "Tiêu đề"
+	var location = "Thành phố"
+	var category = "Danh mục*"
+	var status = "Trạng thái"
+	var content = "Nội dung"
 	if(domain == tourDomain){
 		jQuery("label[for='aliasURI']").parent().css("display","none")
 		jQuery("label[for='aliasURI']").css("display","none")
@@ -60,20 +57,11 @@ jQuery(document).ready(function(){
 	        }
 	    })
 		jQuery("body form[enctype='multipart/form-data'] label").each(function(){
-			if(jQuery(this).prop('for') == 'name'){
-				jQuery(this).html(name)
+			if(jQuery(this).prop('for') == 'title'){
+				jQuery(this).html(title)
 			}
-			if(jQuery(this).prop('for') == 'duration'){
-				jQuery(this).html(duration)
-			}
-			if(jQuery(this).prop('for') == 'startLocation'){
-				jQuery(this).html(startLocation)
-			}
-			if(jQuery(this).prop('for') == 'price'){
-				jQuery(this).html(price)
-			}
-			if(jQuery(this).prop('for') == 'phoneNumber'){
-				jQuery(this).html(phoneNumber)
+			if(jQuery(this).prop('for') == 'location'){
+				jQuery(this).html(location)
 			}
 			if(jQuery(this).prop('for') == 'category'){
 				jQuery(this).html(category)
@@ -87,27 +75,7 @@ jQuery(document).ready(function(){
 		})
 	}
 	
-	//Convert from English -> Vietnamese
-	var asiaCategory = "ChÃ¢u Ã�"
-	var americaCategory = "ChÃ¢u Má»¹"
-	var domesticCateogory = "Ná»™i Ä�á»‹a"
-	var europeCateogory = "ChÃ¢u Ã‚u"
-	var southEastAsia = "Ä�Ã´ng Nam Ã�"
-	jQuery("#category option").each(function(){
-		var recentCategory = jQuery(this).val()
-		if(recentCategory == "Asia"){
-			jQuery(this).html(asiaCategory)
-		} else if(recentCategory == "America"){
-			jQuery(this).html(americaCategory)
-		} else if(recentCategory == "Domestic"){
-			jQuery(this).html(domesticCateogory)
-		} else if(recentCategory == "Europe"){
-			jQuery(this).html(europeCateogory)
-		} else if(recentCategory == "South East Asia"){
-			jQuery(this).html(southEastAsia)
-		}
-	})
-	jQuery("#tourStatus option").each(function(){
+	jQuery("#informationStatus option").each(function(){
 		var status = jQuery(this).val()
 		if(status == 1){
 			jQuery(this).html("Active")
@@ -137,6 +105,6 @@ jQuery(document).ready(function(){
 	
 	//Remove default header and add custom header
 	if(domain == tourDomain){
-		jQuery('body h1').html('<a href="/tour/listBackEnd" class="menuButton">Quáº£n lÃ½ tour</a> > <a href="/tour/create" class="menuButton">ThÃªm má»›i tour</a>')
+		jQuery('body h1').html('<a href="/tour/listBackEnd" class="menuButton">Quản lý tour</a> > <a href="/tour/create" class="menuButton">Thêm mới tour</a>')
 	}
 })

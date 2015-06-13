@@ -379,7 +379,7 @@ label.control-label{
 }
 
 .tree-two-cols li {
-    width: 50%;
+    width: 100%;
     float: left;
 }
 
@@ -938,8 +938,8 @@ footer{
 }
 
 .tree-img-130 .detail-news{
-    padding-left: 140px;
     color: #666;
+ 	margin: 5px;
 }
 
 .tour-tree-img .detail-news .title{
@@ -987,11 +987,11 @@ v#e-may-bay-gia-re > div,
 #tour-socials  img:hover{width: 90px}
 
 #tour-cate-details ul{
-    margin: 10px;
+    margin: 5px;
 }
 
 #tour-cate-details ul li{
-    margin-top: 10px;
+    padding: 10px;
 }
 
 #tour-cate-details > div > img {
@@ -1542,9 +1542,10 @@ v#e-may-bay-gia-re > div,
 .paginateButtons span.currentStep{ background:#999; padding:10px; color:#fff; font-weight:bold;margin: 0 4px 0 0;}
 
 /*Image*/
-.img-tours img{height:70px !important; width:130px !important; }
+.img-tours img{width:208px !important; height:130px !important;}
 .img-tours{
     float: left;
+    margin: 5px;
 }
 
 .img-news-margin-right-10 img{height:170px !important; width:300px !important; }
@@ -2269,3 +2270,58 @@ v#e-may-bay-gia-re > div,
         clear: both !important;
     }
 
+#tour-cate-details .search-box {
+  float: left;
+  background: rgba(235,240,240,.5);
+  padding: 15px;
+  margin-left: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 96%;
+  -o-border-radius: 5px;
+  -icab-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#tour-cate-details .search-box-type {
+  height: 43px;
+  border: none;
+  padding: 10px 10px 10px 4px;
+  font-size: 14px;
+}
+
+#tour-cate-details .search-box-text {
+  height: 43px;
+  margin-left: -1px;
+  border-radius: 0 4px 4px 0;
+  padding: 0 15px;
+  font-size: 15px;
+  border: none;
+}
+
+#tour-cate-details .search-box-button {
+  text-transform: uppercase;
+  text-decoration: none;
+  position: static;
+  display: inline-block;
+  cursor: pointer;
+  overflow: visible;
+  padding: 5px 25px 0 60px;
+  height: 43px;
+  width: auto;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 10px;
+  background: #b83523 url("../newuiimg/ico-search.png") no-repeat 25px center;
+  border: none;
+  border-bottom: solid 2px #bb5727;
+  border-right: solid 1px #bb5727;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+}

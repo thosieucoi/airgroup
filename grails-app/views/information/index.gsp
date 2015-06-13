@@ -8,38 +8,49 @@
 	<title><g:message code="title.homepage" args="[entityName]" /></title>
 </head>
 <body class="">
-    <div id="tour-page">
-        <div id="tour-section" class="row">
-            <div id="break-crumb" class="row title-b">
-                <article class="col-md-12 col-sm-12 col-xs-12">
+       <div id="break-crumb" class="row title-b">
+            <article class="col-md-12 col-sm-12 col-xs-12">
 					<g:link controller="home" action="index"><img
 						src="${resource(dir:'images/img',file:'icon-home-black.png')}"
 						alt="home" />Trang chủ</g:link>
                     <span class="">&gt;</span>
                     <a href="#" class="current">Thông tin tiện ích</a>
-                </article>
-            </div>
+            </article>
+        </div>
             
-            <div class="row">
-                <g:include view="layouts/responsivewebpart/_tourCategory.gsp"/>
-                <article id="tour-cate-details" class="col-md-9 col-sm-9 col-xs-12">
+        <div class="row">
+                <article id="tour-cate-details" class="col-md-12 col-sm-12 col-xs-12">
                     <div class="bg-type-2 region-type-2">
+                    <g:form controller="information" action="search" method="POST">
+                    	<div class="search-box">
+							<div class="search-box-left">
+							    <select class="search-box-type" id="search-product-type" name="category">
+							        <option value="Destination" selected="">Các địa điểm nổi tiếng</option>
+							        <option value="Hotel">Khách sạn</option>
+							        <option value="Taxi">Các hãng Taxi</option>
+							        <option value="Tour">Các tour du lịch</option>
+							    </select>
+							    <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+							    <input type="text" onclick="select()" class="search-box-text ui-autocomplete-input" id="tog" autocomplete="off" placeholder="Tên thành phố" name="city">
+							    <input type="submit" class="search-box-button" value="Tìm kiếm">
+							</div>
+							<g:include view="flight/includes/_searchflight.gsp" />
+                    	</div>
+                    </g:form>
                         <img src="${resource(dir:'images/newuiimg',file:'quoc-te.png') }" alt="" width="32" height="32" />
-                        <span class="title title-upper title-b"><g:link controller="information" action="list" params="[category:'DomesticNews']">Thông Tin</g:link></span>
+                        <span class="title title-upper title-b"><a href="javascript:void(0);" >Các địa điểm nổi tiếng</a></span>
                         <div class="line line-horizontal box-margin-10"></div>
 
                         <ul class="tree-img-130 tree-two-cols">
-                        	<g:each in="${domesticNews}" status="i" var="tourInstance">
+                        	<g:each in="${destinations}" status="i" var="tourInstance">
 	                            <li>
 	                                <div class="img-tours">
-	                                    <a href="tourDetail?id=${tourInstance.id }">${StringUtils.substringBetween(tourInstance.image, '<p>', '</p>')}</a>
+	                                    <g:link controller="information" action="details" params="[id:tourInstance.id]" class="title title-b">${StringUtils.substringBetween(tourInstance.image, '<p>', '</p>')}</g:link>
 	                                </div>
 	                                <div class="detail-news">
-	                                    <g:link controller="information" action="tourDetail" params="[id:tourInstance.id]" class="title title-b">${tourInstance.name}</g:link>
+	                                    <g:link controller="information" action="details" params="[id:tourInstance.id]" class="title title-b">${tourInstance.title}</g:link>
 	                                    <div class="description">
-	                                        <div class="tour-address">${tourInstance.code?"Mã Tour:":"" } ${tourInstance.code}</div>
-	                                        <div class="tour-time">${tourInstance.duration?"Thời gian:":"" }  ${tourInstance.duration}</div>
-	                                        <div>${tourInstance.price?"Giá:":""} <span class="tour-price">${tourInstance.price}</span></div>
+	                                    <div class="tour-address">${tourInstance.introduction}</div>
 	                                    </div>
 	                                </div>
 	                                <div class="clearfix"></div>
@@ -47,87 +58,71 @@
                             </g:each>
                         </ul>
 
+                        <img src="${resource(dir:'images/newuiimg',file:'quoc-te.png') }" alt="" width="32" height="32" />
+                        <span class="title title-upper title-b"><a href="javascript:void(0);" >Khách sạn</a></span>
+                        <div class="line line-horizontal box-margin-10"></div>
+
+                        <ul class="tree-img-130 tree-two-cols">
+	                        <g:each in="${hotels}" status="i" var="tourInstance">
+		                            <li>
+		                                <div class="img-tours">
+		                                    <g:link controller="information" action="details" params="[id:tourInstance.id]" class="title title-b">${StringUtils.substringBetween(tourInstance.image, '<p>', '</p>')}</g:link>
+		                                </div>
+		                                <div class="detail-news">
+		                                    <g:link controller="information" action="details" params="[id:tourInstance.id]" class="title title-b">${tourInstance.title}</g:link>
+		                                    <div class="description">
+		                                    <div class="tour-address">${tourInstance.introduction}</div>
+		                                    </div>
+		                                </div>
+		                                <div class="clearfix"></div>
+		                            </li>
+	                           </g:each>
+                        </ul>
+
+                        <img src="${resource(dir:'images/newuiimg',file:'quoc-te.png') }" alt="" width="32" height="32" />
+                        <span class="title title-upper title-b"><a href="javascript:void(0);" >Các hãng Taxi</a></span>
+                        <div class="line line-horizontal box-margin-10"></div>
+
+                        <ul class="tree-img-130 tree-two-cols">
+	                        <g:each in="${taxis}" status="i" var="tourInstance">
+		                            <li>
+		                                <div class="img-tours">
+		                                	<g:link controller="information" action="details" params="[id:tourInstance.id]" class="title title-b">${StringUtils.substringBetween(tourInstance.image, '<p>', '</p>')}</g:link>
+		                                </div>
+		                                <div class="detail-news">
+		                                    <g:link controller="information" action="details" params="[id:tourInstance.id]" class="title title-b">${tourInstance.title}</g:link>
+		                                    <div class="description">
+		                                    <div class="tour-address">${tourInstance.introduction}</div>
+		                                    </div>
+		                                </div>
+		                                <div class="clearfix"></div>
+		                            </li>
+	                           </g:each>
+                        </ul>
+                    
+                        <img src="${resource(dir:'images/newuiimg',file:'quoc-te.png') }" alt="" width="32" height="32" />
+                        <span class="title title-upper title-b"><a href="javascript:void(0);" >Các Tour Du lịch</a></span>
+                        <div class="line line-horizontal box-margin-10"></div>
+
+                        <ul class="tree-img-130 tree-two-cols">
+	                        <g:each in="${tours}" status="i" var="tourInstance">
+		                            <li>
+		                                <div class="img-tours">
+		                                   <g:link controller="information" action="details" params="[id:tourInstance.id]" class="title title-b">${StringUtils.substringBetween(tourInstance.image, '<p>', '</p>')}</g:link>
+		                                </div>
+		                                <div class="detail-news">
+		                                    <g:link controller="information" action="details" params="[id:tourInstance.id]" class="title title-b">${tourInstance.title}</g:link>
+		                                    <div class="description">
+		                                    <div class="tour-address">${tourInstance.introduction}</div>
+		                                    </div>
+		                                </div>
+		                                <div class="clearfix"></div>
+		                            </li>
+	                           </g:each>
+                        </ul>
                         <div class="space-40"></div>
-
-                        <img src="${resource(dir:'images/newuiimg',file:'quoc-te.png') }" alt="" width="32" height="32" />
-                        <span class="title title-upper title-b"><g:link controller="information" action="list" params="[category:'InternationalNews']">Tin quốc tế</g:link></span>
-                        <div class="line line-horizontal box-margin-10"></div>
-
-                        <ul class="tree-img-130 tree-two-cols">
-	                        <g:each in="${internationalNews}" status="i" var="tourInstance">
-		                            <li>
-		                                <div class="img-tours">
-		                                    <a href="tourDetail?id=${tourInstance.id }">${StringUtils.substringBetween(tourInstance.image, '<p>', '</p>')}</a>
-		                                </div>
-		                                <div class="detail-news">
-		                                    <g:link controller="information" action="tourDetail" params="[id:tourInstance.id]" class="title title-b">${tourInstance.name}</g:link>
-		                                    <div class="description">
-		                                        <div class="tour-address">${tourInstance.code?"Mã Tour:":"" } ${tourInstance.code}</div>
-	                                        <div class="tour-time">${tourInstance.duration?"Thời gian:":"" }  ${tourInstance.duration}</div>
-	                                        <div>${tourInstance.price?"Giá:":""} <span class="tour-price">${tourInstance.price}</span></div>
-		                                    </div>
-		                                </div>
-		                                <div class="clearfix"></div>
-		                            </li>
-	                           </g:each>
-                        </ul>
-
-                        <div class="space-20"></div>
-                    </div>
-                    <div class="space-10"></div>
-
-                    <div class="bg-type-2 region-type-2">
-                        <img src="${resource(dir:'images/newuiimg',file:'quoc-te.png') }" alt="" width="32" height="32" />
-                        <span class="title title-upper title-b"><g:link controller="information" action="list" params="[category:'Special']">Tour đặc biệt</g:link></span>
-                        <div class="line line-horizontal box-margin-10"></div>
-
-                        <ul class="tree-img-130 tree-two-cols">
-	                        <g:each in="${special}" status="i" var="tourInstance">
-		                            <li>
-		                                <div class="img-tours">
-		                                	<a href="tourDetail?id=${tourInstance.id }">${StringUtils.substringBetween(tourInstance.image, '<p>', '</p>')}</a>
-		                                </div>
-		                                <div class="detail-news">
-		                                    <g:link controller="information" action="tourDetail" params="[id:tourInstance.id]" class="title title-b">${tourInstance.name}</g:link>
-		                                    <div class="description">
-		                                        <div class="tour-address">${tourInstance.code?"Mã Tour:":"" } ${tourInstance.code}</div>
-	                                        <div class="tour-time">${tourInstance.duration?"Thời gian:":"" }  ${tourInstance.duration}</div>
-	                                        <div>${tourInstance.price?"Giá:":""} <span class="tour-price">${tourInstance.price}</span></div>
-		                                    </div>
-		                                </div>
-		                                <div class="clearfix"></div>
-		                            </li>
-	                           </g:each>
-                        </ul>
-                    </div>
-                    <div class="space-10"></div>
-                    <div class="bg-type-2 region-type-2">
-                        <img src="${resource(dir:'images/newuiimg',file:'quoc-te.png') }" alt="" width="32" height="32" />
-                        <span class="title title-upper title-b"><g:link controller="information" action="list" params="[category:'TourList']">Trong nước & quốc tế</g:link></span>
-                        <div class="line line-horizontal box-margin-10"></div>
-
-                        <ul class="tree-img-130 tree-two-cols">
-	                        <g:each in="${tourInstanceList}" status="i" var="tourInstance">
-		                            <li>
-		                                <div class="img-tours">
-		                                   <a href="tourDetail?id=${tourInstance.id }">${StringUtils.substringBetween(tourInstance.image, '<p>', '</p>')}</a>
-		                                </div>
-		                                <div class="detail-news">
-		                                    <g:link controller="information" action="tourDetail" params="[id:tourInstance.id]" class="title title-b">${tourInstance.name}</g:link>
-		                                    <div class="description">
-		                                        <div class="tour-address">${tourInstance.code?"Mã Tour:":"" } ${tourInstance.code}</div>
-	                                        <div class="tour-time">${tourInstance.duration?"Thời gian:":"" }  ${tourInstance.duration}</div>
-	                                        <div>${tourInstance.price?"Giá:":""} <span class="tour-price">${tourInstance.price}</span></div>
-		                                    </div>
-		                                </div>
-		                                <div class="clearfix"></div>
-		                            </li>
-	                           </g:each>
-                        </ul>
                     </div>
                 </article>
-		       </div>
-             </div>
-      	</div>
+		  </div>
 </body>
 </html>

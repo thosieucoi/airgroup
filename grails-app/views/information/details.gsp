@@ -15,7 +15,7 @@
 					src="${resource(dir:'images/img',file:'icon-home-black.png')}"
 					alt="home" />Trang chủ</g:link>
 					<span class="">&gt;</span>
-						<g:link controller="information" action="index"  class="current">Du lịch</g:link>
+                    <g:link controller="information">Thông tin tiện ích</g:link>
 				</article>
 			</section>
 
@@ -24,34 +24,19 @@
 					<div class="bg-type-2">
 						<div class="adv">
 							<div class="title title-upper title-b">
-								${bigCategory}
+								${detail.title }
 							</div>
 
 							<div class="tour-box">
-								<a class="title title-b">
-									${tourDetail.name }
-								</a>
 								<div class="description">
 									<div class="tour-time">
-										${tourDetail.duration?"Thời gian:":"" }  ${tourDetail.duration}
-									</div>
-									<div>
-										${tourDetail.startLocation?"Khởi hành:":"" }  ${tourDetail.startLocation}
-									</div>
-									<div>
-										${tourDetail.price?"Giá:":""}
-										${tourDetail.price }
-									</div>
-									<div>
-										${tourDetail.phoneNumber?"Đặt tour:":""} <strong class="tour-phone">
-											${tourDetail.phoneNumber }
-										</strong>
+										${detail.introduction}
 									</div>
 								</div>
 							</div>
 						</div>
 						<div id="tour-details-content">
-							${tourDetail.content }
+							${detail.content }
 						</div>
 					</div>
 				</article>

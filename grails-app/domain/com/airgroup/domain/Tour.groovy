@@ -18,36 +18,26 @@ class Tour extends WcmContent {
 
 	/* Add your custom content fields here */
 	//static belongsTo=[category:Category]
-	String name
-	String duration
-	String startLocation
-	String price
-	String phoneNumber
+	String location
 	String category
-	String content
 	String introduction
-	Short tourStatus
+	String content
+	Short informationStatus
 	Integer validFor = 0;
 	String aliasURI = UUID.randomUUID().toString();
 	String title = "TourTitle"
 	String image
-	String code
 
 
 	/**
 	 * Standard Grails constraints for your properties
 	 */
 	static constraints = {
-		introduction maxSize:250
-		code(maxSize:20)
-		name (maxSize:500)
-		duration()
-		startLocation()
-		price()
-		phoneNumber(minSize:8)
-		category(inList:["Hotel","Taxi","Destination", "PreprareForFly", "Guide", "MapOfAirport"])
+		introduction(maxSize: WcmContent.MAX_CONTENT_SIZE)
+		location()
+		category(inList:["Destination", "Hotel","Taxi", "Tour"])
 		content(maxSize: WcmContent.MAX_CONTENT_SIZE)
-		tourStatus(inList:[(Short)1,(Short)0])
+		informationStatus(inList:[(Short)1,(Short)0])
 	}
 
 	/**
@@ -57,21 +47,17 @@ class Tour extends WcmContent {
 	 * of the property. You can override this to use a custom editor you define.
 	 */
 	static editors = {
-		code(editor:'String')
-		name(editor:'String')
-		duration(editor:'String')
-		startLocation(editor:'String')
-		price(editor:'String')
-		phoneNumber(editor:'String')
+		title(editor:'String')
+		location(editor:'String')
 		category(editor:'SelectInList')
-		tourStatus(editor:'SelectInList')
+		introduction(editor:'LongString')
 		content(editor:'HTMLContent')
 		image(editor:'HTMLContent')
+		informationStatus(editor:'SelectInList')
 		//uploadedFile(editor:'ContentFileUpload')
 		parent(hidden:true)
 		//title(hidden:true)
 		aliasURI(hidden:true)
-		title()
 		orderIndex hidden:true
 		createdBy hidden:true
 		createdOn hidden: true

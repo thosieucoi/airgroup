@@ -80,6 +80,13 @@
 					<g:else>
 						<li><g:link controller="contactUs" action="infor">Liên hệ </g:link></li>
 					</g:else>
+					
+					<g:if test="${params['controller'].equals('information')}">
+						<li class="active"><g:link controller="information">Thông tin và tiện ích</g:link></li>
+					</g:if>
+					<g:else>
+						<li><g:link controller="information">Thông tin và tiện ích</g:link></li>
+					</g:else>
 				</ul>
 			</div>
 		</div>

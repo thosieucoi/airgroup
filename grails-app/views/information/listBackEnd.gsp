@@ -29,7 +29,7 @@
 							<g:sortableColumn property="id"
 								title="${message(code: 'tour.id.label', default: 'Mã tour')}" />
 							
-							<g:sortableColumn property="name"
+							<g:sortableColumn property="title"
 								title="${message(code: 'tour.name.label', default: 'Tên tour')}" />
 								
 							<g:sortableColumn property="category"
@@ -51,11 +51,11 @@
 								</td>
 							
 								<td>
-									${tourInstance.code}
+									${tourInstance.title}
 								</td>
 	
 								<td>
-									${tourInstance.name}
+									${tourInstance.title}
 								</td>
 								
 								<td>
@@ -69,7 +69,7 @@
 										<g:message code="common.command.view" encodeAs="HTML" />
 									</g:link>
 									<g:link id="${tourInstance.id}" controller="information" action="delete" class="button ui-corner-all"
-										onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')} [${tourInstance.name.encodeAsJavaScript()}]?');">
+										onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')} [${tourInstance.title.encodeAsJavaScript()}]?');">
 										<g:message code="command.delete" encodeAs="HTML"/>
 									</g:link>
 									<g:link id="${tourInstance.id}" controller="information" action="edit" class="button ui-corner-all">
