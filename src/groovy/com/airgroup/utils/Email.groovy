@@ -120,7 +120,7 @@ class Email {
 		//end
 		toAddress=new InternetAddress(to)
 		fromAddress=new InternetAddress("service@ahotua.vn")
-		bccAddress=new InternetAddress("booker@ahotua.vn")
+		bccAddress=new InternetAddress("ahotua-booker@ahotua.vn")
 		msg.setFrom(fromAddress)
 		msg.setSubject(subject,"UTF-8")
 		msg.setContent(out.toString(), "text/html; charset=utf-8")
@@ -214,7 +214,7 @@ class Email {
 		//end
 		toAddress=new InternetAddress(to)
 		fromAddress=new InternetAddress(from)
-		bccAddress=new InternetAddress("booker@ahotua.vn")
+		bccAddress=new InternetAddress("ahotua-booker@ahotua.vn")
 		msg.setFrom(fromAddress)
 		msg.setSubject(subject,"UTF-8")
 		msg.setContent(out.toString(), "text/html; charset=utf-8")
