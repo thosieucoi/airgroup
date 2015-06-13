@@ -50,11 +50,13 @@
                         
                             <g:sortableColumn property="slidePicFileName" title="${message(code: 'advert.slideImage.lable', default: 'Slide Image')}" />
                         
-                            <g:sortableColumn property="linkAdvert" title="${message(code: 'advert.pageImage.label', default: 'Page Image')}" />
+                            <g:sortableColumn property="linkAdvert" title="${message(code: 'advert.link.label', default: 'Link')}" />
                         
                             <g:sortableColumn property="status" title="${message(code: 'common.status', default: 'Status')}" />
+                            
+                             <th>Action</th>
                         
-                            <th><g:message code="user.header.actions"/></th>
+                            <th>Xóa</th>
                         
                         </tr>
                     </thead>
@@ -73,11 +75,19 @@
 								</a>						
 							</td>
 							
-							<td><a href="${advertInstance.linkAdvert}" title="${fieldValue(bean: advertInstance, field: "linkAdvert")}">
+							<td><a href="${advertInstance.linkAdvert}" title="${fieldValue(bean: advertInstance, field: "linkAdvert")}" target="_blank">
 							${fieldValue(bean: advertInstance, field: "linkAdvert")}
 								</a>
 							</td>
 							
+							<td>
+                            	<g:if test="${advertInstance.status == 1}">
+	                            	Deactive
+                            	</g:if>
+                            	<g:elseif test="${advertInstance.status == 0}">
+                           			Active
+                            	</g:elseif>
+                            </td>
 							
                             <td>
                             	<g:if test="${advertInstance.status == 1}">

@@ -31,7 +31,7 @@
 					<g:each var="advertInstance" in="${advert}" status="st">
 						<g:if test="${st==0}">
 							<div class="item active">
-								<a href="${advertInstance.linkAdvert}">
+								<a href="${advertInstance.linkAdvert}" target="_blank">
 									<img
 										src="${createLink(controller:'home', action:'slideImage', id:advertInstance.id)}" alt="ahotua"/>
 								</a>
@@ -39,7 +39,7 @@
 						</g:if>
 						<g:else>
 							<div class="item">
-								<a href="${advertInstance.linkAdvert}">
+								<a href="${advertInstance.linkAdvert}" target="_blank">
 									<img
 										src="${createLink(controller:'home', action:'slideImage', id:advertInstance.id)}" alt="ahotua"/>
 								</a>
