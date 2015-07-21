@@ -25,7 +25,7 @@ public class HongKongAirlinesTest {
 		CuriositySearch search = new CuriositySearch();
 		search.setDepartureCode("HAN");
 		search.setArrivalCode("HKG");
-		search.setOutboundDate(DATE_FORMATTER.parseDateTime("30-09-2013"));
+		search.setOutboundDate(DATE_FORMATTER.parseDateTime("10-01-2015"));
 		//search.setInboundDate(DATE_FORMATTER.parseDateTime("24-09-2013"));
 		search.setAdultsCount(1);
 		search.setChildrenCount(0);

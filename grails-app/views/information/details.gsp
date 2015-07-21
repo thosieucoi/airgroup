@@ -4,7 +4,7 @@
 <meta name="layout" content="responsivemasterpage" />
 <g:set var="entityName"
 	value="${message(code: 'Tour', default: 'Tour')}" />
-	<title><g:message code="title.homepage" args="[entityName]" /></title>
+	<title>${detail.title} Vé máy bay, đại lý máy bay ahotua</title>
 </head>
 <body class="">
 	<div id="tour-page">
@@ -39,6 +39,8 @@
 							${detail.content }
 						</div>
 					</div>
+					
+					<div class="space-40"></div>
 				</article>
 			</section>
 		</div>

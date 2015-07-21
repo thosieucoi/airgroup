@@ -17,7 +17,7 @@ public class AbacusRequestResult extends FlightResponse {
 
 	@Override
 	public String getURL() {
-		return "https://abacuswebstart.abacus.com.sg/hpv-vietnam/flight-result.aspx";
+		return "https://abacuswebstart.abacus.com.sg/khang-vuong/flight-result.aspx";
 	}
 
 	@Override

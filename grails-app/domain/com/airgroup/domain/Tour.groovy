@@ -35,7 +35,7 @@ class Tour extends WcmContent {
 	static constraints = {
 		introduction(maxSize: WcmContent.MAX_CONTENT_SIZE)
 		location()
-		category(inList:["Destination", "Hotel","Taxi", "Tour"])
+		category(inList:["Destination", "Hotel","Taxi", "Tour", "Speciality", "Festival"])
 		content(maxSize: WcmContent.MAX_CONTENT_SIZE)
 		informationStatus(inList:[(Short)1,(Short)0])
 	}

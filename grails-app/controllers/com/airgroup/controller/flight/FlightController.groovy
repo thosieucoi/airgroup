@@ -440,6 +440,7 @@ class FlightController {
 		}
 		passengers.append("</table>")
 		String outboundFromLocation=""
+		String outboundToLocation=""
 		String outboundDuration=""
 		List outboundFlights=null
 		StringBuilder flightDetails=new StringBuilder("")
@@ -447,6 +448,7 @@ class FlightController {
 			def arr=JSON.parse(session.outboundItem.toString())
 			outbound=arr
 			outboundFromLocation=session.parameters.departureCode.toString()
+			outboundToLocation=session.parameters.arrivalCode.toString()
 			outboundDuration=arr.outboundDuration.toString()
 			outboundFlights=arr.oflights.toList()
 		}
@@ -493,6 +495,7 @@ class FlightController {
 					inboundFromLocation,
 					inboundDuration,
 					outboundFromLocation,
+					outboundToLocation,
 					outboundDuration,
 					outboundFlights,
 					inboundFlights,
@@ -613,11 +616,13 @@ class FlightController {
 			}
 			passengers.append("</table>")
 			String outboundFromLocation=""
+			String outboundToLocation=""
 			String outboundDuration=""
 			List outboundFlights=null
 			StringBuilder flightDetails=new StringBuilder("")
 			if(currentItemArray.oflights!=null){
 				outboundFromLocation=session.parameters.departureCode.toString()
+				outboundToLocation=session.parameters.arrivalCode.toString()
 				outboundDuration=currentItemArray.outboundDuration.toString()
 				outboundFlights=currentItemArray.oflights.toList()
 				outbound=currentItemArray
@@ -663,6 +668,7 @@ class FlightController {
 						inboundFromLocation,
 						inboundDuration,
 						outboundFromLocation,
+						outboundToLocation,
 						outboundDuration,
 						outboundFlights,
 						inboundFlights,

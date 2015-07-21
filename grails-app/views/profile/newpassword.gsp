@@ -12,7 +12,7 @@
 				<img src="${resource(dir:'images/img',file:'icon-home-black.png')}"
 					alt="home" />Trang chủ</g:link>
 			<span class="">&gt;</span> <a
-				href="javascript:void(0);"
+				href="#"
 				class="current">Mật khẩu mới</a>
 		</article>
 	</section>

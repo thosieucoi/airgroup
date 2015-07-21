@@ -34,6 +34,13 @@
 										<option value="Destination">Các địa điểm nổi tiếng</option>
 									</g:else>
 									
+									<g:if test="${cat.equals('Speciality')}">
+										<option value="Speciality" selected="">Các món ăn, sản phẩm đặc biệt</option>
+									</g:if>
+									<g:else>
+										<option value="Speciality">Các món ăn, sản phẩm đặc biệt</option>
+									</g:else>
+									
 									<g:if test="${cat.equals('Hotel')}">
 										<option value="Hotel" selected="">Khách sạn</option>
 									</g:if>

@@ -40,7 +40,7 @@
 							<li><input type="radio" name="vp" /><span> Văn phòng
 									Ahotua tại Hà Nội</span>
 								<ul>
-									<li><span><b>Địa chỉ:</b> Số nhà 21, ngách 100/24, ngõ 100, đường Hoàng Quốc Việt, phường Nghĩa Đô, quận Cầu Giấy </span></li>
+									<li><span><b>Địa chỉ:</b> Số nhà 17, ngách 20, ngõ 100, đường Hoàng Quốc Việt, phường Nghĩa Đô, quận Cầu Giấy </span></li>
 									<li><span><b>Điện thoại :</b> 04 66813026 </span></li>
 								</ul></li>
 						</ul>

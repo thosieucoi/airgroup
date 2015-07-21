@@ -71,7 +71,7 @@ public class AmericanAirlinesFlight extends SearchFlights {
 
 		Document document = Jsoup.parse(doc);
 
-		Elements flightElements = document.select("div[class=flightResult]");
+		Elements flightElements = document.select("div[class=wsFlightResult wsFlightResultBorder]");
 
 		for (Element flightElement : flightElements) {
 			CuriosityFare fare = CuriosityFare.newFromTrip(search);
@@ -85,11 +85,11 @@ public class AmericanAirlinesFlight extends SearchFlights {
 			}
 
 			Element priceElement = flightElement
-				.select("div[id^=divFareInfo] > table > tbody")
+				.select("div[class=divShowFareInfoHid] > table > tbody")
 				.first();
-
+			System.out.println("==========" + flightElement.toString());
 			float tax = Float.parseFloat(priceElement
-				.select("tr:has(td:contains(Est.)) > td.textright")
+				.select("tr:has(td:contains(Est. Taxes)) > td.textright")
 				.text()
 				.replaceAll(",", ""));
 
@@ -97,6 +97,7 @@ public class AmericanAirlinesFlight extends SearchFlights {
 				.select("tr:has(td:contains(Adult)) > td.textright")
 				.text()
 				.replaceAll(",", "");
+			
 			fare.setPricePerAdult((Float.parseFloat(adultPrice) / search.getAdultsCount()) +
 									(tax / search.getPassengersCount()));
 
@@ -114,9 +115,10 @@ public class AmericanAirlinesFlight extends SearchFlights {
 				.text()
 				.replaceAll(",", "");
 
+			
 			String currencyCode = flightElement
-				.select("td.flightResultPricePn > span")
-				.get(1)
+				.select("div[class=PriceCurrency]")
+				.get(0)
 				.text();
 
 			fare.setCurrencyCode(currencyCode);
@@ -132,7 +134,7 @@ public class AmericanAirlinesFlight extends SearchFlights {
 			boolean isReturn) {
 		List<CuriositySegment> segments = Lists.newArrayList();
 
-		String text = "";
+		/**String text = "";
 
 		if (!isReturn) {
 			text = element
@@ -219,7 +221,7 @@ public class AmericanAirlinesFlight extends SearchFlights {
 						DATE_TIME_FORMATTER.print(nextSegment.getArrivalTime().plusDays(1)));
 				}
 			}
-		}
+		}**/
 		return segments;
 	}
 }

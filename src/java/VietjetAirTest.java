@@ -20,8 +20,8 @@ public class VietjetAirTest {
 		CuriositySearch search = new CuriositySearch();
 		search.setDepartureCode("HAN");
 		search.setArrivalCode("SGN");
-		search.setOutboundDate(DATE_TIME_FORMATTER.parseDateTime("20140510"));
-//		search.setInboundDate(DATE_TIME_FORMATTER.parseDateTime("20140620"));
+		search.setOutboundDate(DATE_TIME_FORMATTER.parseDateTime("20150701"));
+		//search.setInboundDate(DATE_TIME_FORMATTER.parseDateTime("20150620"));
 		search.setAdultsCount(1);
 		search.setChildrenCount(1);
 		search.setInfantsCount(1);

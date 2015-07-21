@@ -70,7 +70,7 @@ class AdvertController {
 	
 	def activeDeactiveAdvert = {
 		if ((params.status).toShort() == 0) {
-			if(Advert.countByStatus((params.status).toShort()) == 4) {
+			if(Advert.countByStatus((params.status).toShort()) == 10) {
 				flash.message = "${message(code: 'advert.active.full')}"
 				redirect(action: "list")
 			}else{

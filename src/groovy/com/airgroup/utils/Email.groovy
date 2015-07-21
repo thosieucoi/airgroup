@@ -62,6 +62,7 @@ class Email {
 	String inboundFromLocation,
 	String inboundDuration,
 	String outboundFromLocation,
+	String outboundToLocation,
 	String outboundDuration,
 	List outboundFlights,
 	List inboundFlights,
@@ -105,6 +106,7 @@ class Email {
 		map.put("passengers",passengers)
 		map.put("flightDetails", flightDetails)
 		map.put("outboundFromLocation", outboundFromLocation)
+		map.put("outboundToLocation", outboundToLocation)
 		map.put("outboundDuration",outboundDuration)
 		map.put("outboundFlights",outboundFlights)
 		map.put("inboundFromLocation",inboundFromLocation)

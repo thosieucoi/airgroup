@@ -21,36 +21,36 @@
 	    <div style="clear:both"></div>
 	    <div class="se-ticket">
 	    	<ul>
-	        	<li class="se-title"><a href="javascript:;" airport="Hanoi (HAN)">Miền Bắc </a></li>
-	            <li><a href="javascript:;" airport="Hanoi (HAN)">Hà Nội </a></li>
-	            <li><a href="javascript:;" airport="Haiphong (HPH)">Hải Phòng </a></li>
-	            <li><a href="javascript:;" airport="Dienbien (DIN)">Điện Biên </a></li>
-	            <li><a href="javascript:;" airport="Thanhhoa (THD)">Thanh Hóa </a></li>
+	        	<li class="se-title"><a href="#" airport="Hanoi (HAN)">Miền Bắc </a></li>
+	            <li><a href="#" airport="Hanoi (HAN)">Hà Nội </a></li>
+	            <li><a href="#" airport="Haiphong (HPH)">Hải Phòng </a></li>
+	            <li><a href="#" airport="Dienbien (DIN)">Điện Biên </a></li>
+	            <li><a href="#" airport="Thanhhoa (THD)">Thanh Hóa </a></li>
 	        </ul>
 	        <ul>
-	        	<li class="se-title"><a href="javascript:;" airport="Hanoi (HAN)">Miền Trung </a></li>
-	            <li><a href="javascript:;" airport="Vinh (VII)">Vinh </a></li>
-	            <li><a href="javascript:;" airport="Hue (HUI)">Huế </a></li>
-	            <li><a href="javascript:;" airport="Donghoi (VDH)">Đồng Hới </a></li>
-	            <li><a href="javascript:;" airport="Danang (DAD)">Đà Nẵng </a></li>
-	            <li><a href="javascript:;" airport="Pleiku (PXU)">Pleiku </a></li>
-	            <li><a href="javascript:;" airport="Tuyhoa (TBB)">Tuy Hòa </a></li>
+	        	<li class="se-title"><a href="#" airport="Hanoi (HAN)">Miền Trung </a></li>
+	            <li><a href="#" airport="Vinh (VII)">Vinh </a></li>
+	            <li><a href="#" airport="Hue (HUI)">Huế </a></li>
+	            <li><a href="#" airport="Donghoi (VDH)">Đồng Hới </a></li>
+	            <li><a href="#" airport="Danang (DAD)">Đà Nẵng </a></li>
+	            <li><a href="#" airport="Pleiku (PXU)">Pleiku </a></li>
+	            <li><a href="#" airport="Tuyhoa (TBB)">Tuy Hòa </a></li>
 	        </ul>
 	    </div>
 	     <div class="se-ticket">
 	    	<ul>
-	        	<li class="se-title"><a href="javascript:;" airport="Hanoi (HAN)">Miền Nam </a></li>
-	            <li><a href="javascript:;" airport="Ho Chi Minh (SGN)">Hồ Chí Minh </a></li>
-	            <li><a href="javascript:;" airport="Nha Trang (CXR)">Nha Trang </a></li>
-	            <li><a href="javascript:;" airport="Da Lat (DLI)">Đà Lạt </a></li>
-	            <li><a href="javascript:;" airport="Phu Quoc (PQC)">Phú Quốc </a></li>
-	            <li><a href="javascript:;" airport="Tam Ky (VCL)">Tam Kỳ </a></li>
-	            <li><a href="javascript:;" airport="Qui Nhon (UIH)">Qui Nhơn </a></li>
-	            <li><a href="javascript:;" airport="Can Tho (VCA)">Cần Thơ </a></li>
-	            <li><a href="javascript:;" airport="Con Dao (VCS)">Côn Đảo </a></li>
-	            <li><a href="javascript:;" airport="Ban Me Thuot (BMV)">Ban Mê Thuột </a></li>
-	            <li><a href="javascript:;" airport="Rach Gia (VKG)">Rạch Giá </a></li>
-	            <li><a href="javascript:;" airport="Ca Mau (CAH)">Cà Mau </a></li>
+	        	<li class="se-title"><a href="#" airport="Hanoi (HAN)">Miền Nam </a></li>
+	            <li><a href="#" airport="Ho Chi Minh (SGN)">Hồ Chí Minh </a></li>
+	            <li><a href="#" airport="Nha Trang (CXR)">Nha Trang </a></li>
+	            <li><a href="#" airport="Da Lat (DLI)">Đà Lạt </a></li>
+	            <li><a href="#" airport="Phu Quoc (PQC)">Phú Quốc </a></li>
+	            <li><a href="#" airport="Tam Ky (VCL)">Tam Kỳ </a></li>
+	            <li><a href="#" airport="Qui Nhon (UIH)">Qui Nhơn </a></li>
+	            <li><a href="#" airport="Can Tho (VCA)">Cần Thơ </a></li>
+	            <li><a href="#" airport="Con Dao (VCS)">Côn Đảo </a></li>
+	            <li><a href="#" airport="Ban Me Thuot (BMV)">Ban Mê Thuột </a></li>
+	            <li><a href="#" airport="Rach Gia (VKG)">Rạch Giá </a></li>
+	            <li><a href="#" airport="Ca Mau (CAH)">Cà Mau </a></li>
 	        </ul>
 	    </div>
 	    <div class="se-ticket word">
@@ -70,36 +70,36 @@
 	   	<div style="clear:both"></div>
 	    <div class="se-ticket">
 	    	<ul>
-	        	<li class="se-title"><a href="javascript:;" airport="Hanoi (HAN)">Miền Bắc </a></li>
-	            <li><a href="javascript:;" airport="Hanoi (HAN)">Hà Nội </a></li>
-	            <li><a href="javascript:;" airport="Haiphong (HPH)">Hải Phòng </a></li>
-	            <li><a href="javascript:;" airport="Dienbien (DIN)">Điện Biên </a></li>
-	            <li><a href="javascript:;" airport="Thanhhoa (THD)">Thanh Hóa </a></li>
+	        	<li class="se-title"><a href="#" airport="Hanoi (HAN)">Miền Bắc </a></li>
+	            <li><a href="#" airport="Hanoi (HAN)">Hà Nội </a></li>
+	            <li><a href="#" airport="Haiphong (HPH)">Hải Phòng </a></li>
+	            <li><a href="#" airport="Dienbien (DIN)">Điện Biên </a></li>
+	            <li><a href="#" airport="Thanhhoa (THD)">Thanh Hóa </a></li>
 	        </ul>
 	        <ul>
-	        	<li class="se-title"><a href="javascript:;" airport="Hanoi (HAN)">Miền Trung </a></li>
-	            <li><a href="javascript:;" airport="Vinh (VII)">Vinh </a></li>
-	            <li><a href="javascript:;" airport="Hue (HUI)">Huế </a></li>
-	            <li><a href="javascript:;" airport="Donghoi (VDH)">Đồng Hới </a></li>
-	            <li><a href="javascript:;" airport="Danang (DAD)">Đà Nẵng </a></li>
-	            <li><a href="javascript:;" airport="Pleiku (PXU)">Pleiku </a></li>
-	            <li><a href="javascript:;" airport="Tuyhoa (TBB)">Tuy Hòa </a></li>
+	        	<li class="se-title"><a href="#" airport="Hanoi (HAN)">Miền Trung </a></li>
+	            <li><a href="#" airport="Vinh (VII)">Vinh </a></li>
+	            <li><a href="#" airport="Hue (HUI)">Huế </a></li>
+	            <li><a href="#" airport="Donghoi (VDH)">Đồng Hới </a></li>
+	            <li><a href="#" airport="Danang (DAD)">Đà Nẵng </a></li>
+	            <li><a href="#" airport="Pleiku (PXU)">Pleiku </a></li>
+	            <li><a href="#" airport="Tuyhoa (TBB)">Tuy Hòa </a></li>
 	        </ul>
 	    </div>
 	    <div class="se-ticket">
 	    	<ul>
-	        	<li class="se-title"><a href="javascript:;" airport="Hanoi (HAN)">Miền Nam </a></li>
-	            <li><a href="javascript:;" airport="Ho Chi Minh (SGN)">Hồ Chí Minh </a></li>
-	            <li><a href="javascript:;" airport="Nha Trang (CXR)">Nha Trang </a></li>
-	            <li><a href="javascript:;" airport="Da Lat (DLI)">Đà Lạt </a></li>
-	            <li><a href="javascript:;" airport="Phu Quoc (PQC)">Phú Quốc </a></li>
-	            <li><a href="javascript:;" airport="Tam Ky (VCL)">Tam Kỳ </a></li>
-	            <li><a href="javascript:;" airport="Qui Nhon (UIH)">Qui Nhơn </a></li>
-	            <li><a href="javascript:;" airport="Can Tho (VCA)">Cần Thơ </a></li>
-	            <li><a href="javascript:;" airport="Con Dao (VCS)">Côn Đảo </a></li>
-	            <li><a href="javascript:;" airport="Ban Me Thuot (BMV)">Ban Mê Thuột </a></li>
-	            <li><a href="javascript:;" airport="Rach Gia (VKG)">Rạch Giá </a></li>
-	            <li><a href="javascript:;" airport="Ca Mau (CAH)">Cà Mau </a></li>
+	        	<li class="se-title"><a href="#" airport="Hanoi (HAN)">Miền Nam </a></li>
+	            <li><a href="#" airport="Ho Chi Minh (SGN)">Hồ Chí Minh </a></li>
+	            <li><a href="#" airport="Nha Trang (CXR)">Nha Trang </a></li>
+	            <li><a href="#" airport="Da Lat (DLI)">Đà Lạt </a></li>
+	            <li><a href="#" airport="Phu Quoc (PQC)">Phú Quốc </a></li>
+	            <li><a href="#" airport="Tam Ky (VCL)">Tam Kỳ </a></li>
+	            <li><a href="#" airport="Qui Nhon (UIH)">Qui Nhơn </a></li>
+	            <li><a href="#" airport="Can Tho (VCA)">Cần Thơ </a></li>
+	            <li><a href="#" airport="Con Dao (VCS)">Côn Đảo </a></li>
+	            <li><a href="#" airport="Ban Me Thuot (BMV)">Ban Mê Thuột </a></li>
+	            <li><a href="#" airport="Rach Gia (VKG)">Rạch Giá </a></li>
+	            <li><a href="#" airport="Ca Mau (CAH)">Cà Mau </a></li>
 	        </ul>
 	    </div>
 	    <div class="se-ticket word">

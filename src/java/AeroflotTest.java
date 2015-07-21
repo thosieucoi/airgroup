@@ -25,8 +25,8 @@ public class AeroflotTest {
 		CuriositySearch search = new CuriositySearch();
 		search.setDepartureCode("HAN");
 		search.setArrivalCode("MOW");
-		search.setOutboundDate(DATE_FORMATTER.parseDateTime("06-09-2013"));
-		search.setInboundDate(DATE_FORMATTER.parseDateTime("17-09-2013"));
+		search.setOutboundDate(DATE_FORMATTER.parseDateTime("30-01-2015"));
+		//search.setInboundDate(DATE_FORMATTER.parseDateTime("17-09-2013"));
 		search.setAdultsCount(1);
 		search.setChildrenCount(0);
 		search.setInfantsCount(0);

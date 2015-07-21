@@ -19,7 +19,7 @@ public class AbacusLanguage extends FlightResponse {
 
 	@Override
 	public String getURL() {
-		return "https://abacuswebstart.abacus.com.sg/hpv-vietnam/flight-search.aspx?fare=FAREX";
+		return "https://abacuswebstart.abacus.com.sg/khang-vuong/flight-search.aspx?fare=FAREX";
 	}
 
 	@Override

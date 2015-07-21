@@ -31,7 +31,7 @@ class InformationController{
 		if(params.max == null){
 			params.max = 8
 		}
-		//params.max = 4
+		//params.max = 8
 		if(params.offset == null){
 			params.offset = 0
 		}
@@ -43,7 +43,7 @@ class InformationController{
 		def total
 		
 		tourList = Tour.executeQuery("from Tour t where t.category = '" + cat + "' and t.informationStatus=1 and t.location='" + city + "' order by createdOn desc",[max:params.max, offset: params.offset])
-		total = Tour.executeQuery("from Tour t where t.category = 'Destination' and t.informationStatus=1 and t.location='HAN'").size()
+		total = Tour.executeQuery("from Tour t where t.category = '" + cat + "' and t.informationStatus=1 and t.location='" + city + "'").size()
 		
 		[listCategory:tourList,total:total,bigCategory:bigCategory, offset: params.offset, max: params.max, cat:cat, city:city]
 	}

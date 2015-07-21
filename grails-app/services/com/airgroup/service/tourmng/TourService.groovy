@@ -12,15 +12,17 @@ class TourService {
 	def getTourListFrontEndIndex(def params){
 		params.max = 4
 		def destinations
+		def specialities
 		def hotels
 		def taxis
 		def tours
 		
 		destinations = Tour.executeQuery("from Tour t where t.category='Destination' and t.informationStatus=1 order by rand()", [max: 4])
+		specialities = Tour.executeQuery("from Tour t where t.category='Speciality' and t.informationStatus=1 order by rand()", [max: 4])
 		hotels = Tour.findAllByCategoryInListAndInformationStatus(["Hotel"],(short) 1, [max:params.max, offset: params.offset, sort:"createdOn", order:"desc"])
 		taxis = Tour.findAllByCategoryInListAndInformationStatus(["Taxi"],(short) 1, [max:params.max, offset: params.offset, sort:"createdOn", order:"desc"])
 		tours = Tour.findAllByCategoryInListAndInformationStatus(["Tour"],(short) 1, [max:params.max, offset: params.offset, sort:"createdOn", order:"desc"])
-		[tours:tours,hotels:hotels,taxis:taxis,destinations:destinations, offset: params.offset, max: params.max]
+		[tours:tours,hotels:hotels,taxis:taxis,destinations:destinations, specialities:specialities, offset: params.offset, max: params.max]
 	}
 	
 	def getTourDetail(long id){

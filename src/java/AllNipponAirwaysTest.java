@@ -22,7 +22,7 @@ public class AllNipponAirwaysTest {
 		CuriositySearch search = new CuriositySearch();
 		search.setDepartureCode("HAN");
 		search.setArrivalCode("TYO");
-		search.setOutboundDate(DATE_FORMATTER.parseDateTime("25-10-2013"));
+		search.setOutboundDate(DATE_FORMATTER.parseDateTime("30-01-2015"));
 		//search.setInboundDate(DATE_FORMATTER.parseDateTime("30-10-2013"));
 		search.setAdultsCount(1);
 		search.setChildrenCount(1);

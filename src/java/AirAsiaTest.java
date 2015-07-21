@@ -18,14 +18,14 @@ public class AirAsiaTest {
 		CuriositySearch search = new CuriositySearch();
 		search.setDepartureCode("BWN");
 		search.setArrivalCode("SIN");
-		search.setOutboundDate(DATE_TIME_FORMATTER.parseDateTime("20140525"));
+		search.setOutboundDate(DATE_TIME_FORMATTER.parseDateTime("20150130"));
 		// search.setInboundDate(DATE_TIME_FORMATTER.parseDateTime("20140430"));
 		search.setAdultsCount(1);
 		search.setChildrenCount(1);
 		search.setInfantsCount(1);
 
 		List<CuriosityFare> fares = flight.getFare(search);
-
+		System.err.println("Load data");
 		for (CuriosityFare fare : fares) {
 			System.err.println("Price " + fare.getPrice());
 			System.err.println("Adult Price " + fare.getPricePerAdult());

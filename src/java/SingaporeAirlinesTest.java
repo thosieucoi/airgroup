@@ -17,8 +17,8 @@ public class SingaporeAirlinesTest {
 		CuriositySearch search = new CuriositySearch();
 		search.setDepartureCode("SGN");
 		search.setArrivalCode("SIN");
-		search.setOutboundDate(DATE_FORMATTER.parseDateTime("25-OCT-2013"));
-		search.setInboundDate(DATE_FORMATTER.parseDateTime("30-OCT-2013"));
+		search.setOutboundDate(DATE_FORMATTER.parseDateTime("25-JAN-2015"));
+		search.setInboundDate(DATE_FORMATTER.parseDateTime("30-JAN-2015"));
 		search.setAdultsCount(1);
 		search.setChildrenCount(0);
 		search.setInfantsCount(0);

@@ -25,14 +25,14 @@ public class AbacusTest {
 		CuriositySearch search = new CuriositySearch();
 		search.setDepartureCode("HAN");
 		search.setArrivalCode("SGN");
-		search.setOutboundDate(DATE_TIME_FORMATTER.parseDateTime("20140510"));
+		search.setOutboundDate(DATE_TIME_FORMATTER.parseDateTime("20150130"));
 		// search.setInboundDate(DATE_TIME_FORMATTER.parseDateTime("20131130"));
 		search.setAdultsCount(1);
 		search.setChildrenCount(0);
 		search.setInfantsCount(0);
 
 		List<CuriosityFare> fares = flight.getFare(search);
-
+		System.err.println("Load data");
 		for (CuriosityFare fare : fares) {
 			System.err.println("Price " + fare.getPrice());
 			System.err.println("Adult Price " + fare.getPricePerAdult());

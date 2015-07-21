@@ -24,7 +24,7 @@ public class JetstarTest {
 		CuriositySearch search = new CuriositySearch();
 		search.setDepartureCode("HAN");
 		search.setArrivalCode("SGN");
-		search.setOutboundDate(DATE_FORMATTER.parseDateTime("20140509"));
+		search.setOutboundDate(DATE_FORMATTER.parseDateTime("20150417"));
 		//search.setInboundDate(DATE_FORMATTER.parseDateTime("20130905"));
 		search.setAdultsCount(1);
 		search.setChildrenCount(0);

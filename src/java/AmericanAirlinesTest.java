@@ -28,8 +28,8 @@ public class AmericanAirlinesTest {
 		CuriositySearch search = new CuriositySearch();
 		search.setDepartureCode("JFK");
 		search.setArrivalCode("LHR");
-		search.setOutboundDate(DATE_FORMATTER.parseDateTime("2013-10-25"));
-		search.setInboundDate(DATE_FORMATTER.parseDateTime("2013-10-30"));
+		search.setOutboundDate(DATE_FORMATTER.parseDateTime("2015-01-30"));
+		//search.setInboundDate(DATE_FORMATTER.parseDateTime("2013-10-30"));
 		search.setAdultsCount(1);
 		search.setChildrenCount(0);
 		search.setInfantsCount(0);

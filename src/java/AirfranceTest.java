@@ -25,7 +25,7 @@ public class AirfranceTest {
 		CuriositySearch search = new CuriositySearch();
 		search.setDepartureCode("SGN");
 		search.setArrivalCode("CDG");
-		search.setOutboundDate(DATE_FORMATTER.parseDateTime("15-09-2013"));
+		search.setOutboundDate(DATE_FORMATTER.parseDateTime("30-01-2015"));
 		//search.setInboundDate(DATE_FORMATTER.parseDateTime("19-09-2013"));
 		search.setAdultsCount(1);
 		search.setChildrenCount(1);

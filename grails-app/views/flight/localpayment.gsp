@@ -29,7 +29,7 @@
 									
 				</p>
 				<fieldset class="payment-a">
-					<legend>Qúy Khách Lưu Ý</legend>
+					<legend>Quý khách lưu ý</legend>
 					<span>Thông tin đơn hàng của quý khách sẽ được gửi tới địa chỉ email: <a> ${email }</a>
 					</span><br /> <span>Trong thời gian sớm nhất (trong vòng 12h tới)
 						nhân viên Ahotua sẽ liên hệ với Quý khách theo số điện thoại <a
@@ -41,7 +41,17 @@
 				</fieldset>
 
 				<p>
-					<b>Chúc quý khách thượng lộ bình an & có những chuyến bay thật thoải mái!</b>
+					<b>Chúc quý khách thượng lộ bình an và có những chuyến bay thật thoải mái!</b>
+				</p>
+				<p class="tt-pay">
+					<a href="/information/search?category=Destination&city=${session.parameters.arrivalCode }">Các địa điểm nổi tiếng : ${session.parameters.arrivalCode }</a>
+					<br/>
+					<a href="/information/search?category=Hotel&city=${session.parameters.arrivalCode }">Khách sạn : ${session.parameters.arrivalCode }</a>
+					<br/>
+					<a href="/information/search?category=Taxi&city=${session.parameters.arrivalCode }">Các hãng Taxi : ${session.parameters.arrivalCode }</a>
+					<br/>
+					<a href="/information/search?category=Tour&city=${session.parameters.arrivalCode }">Các Tour du lịch : ${session.parameters.arrivalCode }</a>
+					<br/>
 				</p>
 			</div>
 

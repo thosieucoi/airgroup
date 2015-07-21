@@ -15,7 +15,7 @@
         <div class="maildetail" style="margin:5px 0; border:1px solid #ccc">
         	<ul class="mail-one" style="height:32px; background:#007CC3; padding:0; margin:0">
             	<li style=" list-style:none; float:left; padding:0 5px;width:150px"><a href="http://ahotua.vn/flight/search" style="color:#f0f0f0; text-decoration:none; display:block; line-height:32px">Tìm và đặt vé</a></li>
-                <li style=" list-style:none; float:left; padding:0 5px;width:150px"><a href="http://ahotua.vn/feedback/list" style="color:#f0f0f0; text-decoration:none; display:block; line-height:32px">Ý kiến khách hàng</a></li>
+                <li style=" list-style:none; float:left; padding:0 5px;width:150px"><a href="http://ahotua.vn/information" style="color:#f0f0f0; text-decoration:none; display:block; line-height:32px">Thông tin và tiện ích</a></li>
                 <li style=" list-style:none; float:left; padding:0 5px;width:150px"><a href="http://ahotua.vn/contactUs/infor" style="color:#f0f0f0; text-decoration:none; display:block; line-height:32px">Liên hệ</a></li>
             </ul><br />
             <p style="padding:0 5px">Kính chào ông <a href="" style="text-decoration:none; color:#0E70A5">${customerName}</a></p>
@@ -120,7 +120,7 @@
                 <p style="padding:5px 0">Hình thức thanh toán của quý khách đã lựa chọn : <a href="" style="text-decoration:none; color: #0E70A5;">${paymentType}</a></p>
                 <p style="padding:5px 0">
                 	<a href="" style="text-decoration:none; color: #0E70A5;"><b>Văn phòng Hà Nội</b></a><br />
-                    <a href="" style="text-decoration:none; color: #0E70A5;"><b> Địa chỉ:</b> Số nhà 21, ngách 100/24, ngõ 100, đường Hoàng Quốc Việt, phường Nghĩa Đô, quận Cầu Giấy, Thành phố Hà Nội, Việt Nam</a><br />
+                    <a href="" style="text-decoration:none; color: #0E70A5;"><b> Địa chỉ:</b> Số nhà 17, ngách 20, ngõ 100, đường Hoàng Quốc Việt, phường Nghĩa Đô, quận Cầu Giấy, Thành phố Hà Nội, Việt Nam</a><br />
    					 <a href="" style="text-decoration:none; color: #0E70A5;"><b>Điện thoại : </b>04 66813026</a><br />
 
                 </p>
@@ -208,10 +208,13 @@
                  <p class="note" style=" color:red; background:#F7E496;padding:5px 0"><b>Chú ý:</b><br /> Email này được gửi tự động bởi hệ thống của Ahotua. Vui lòng không trả lời email này.</p><br />
             </div>
 			
-            <ul class="mail-one" style=" height:32px; background:#007CC3; padding:0; margin:0">
-            	<li style=" list-style:none; float:left; padding:0 5px;width:150px"><a href="http://ahotua.vn/flight/search" style="color:#f0f0f0; text-decoration:none; display:block; line-height:32px">Tìm và đặt vé</a></li>
-                <li style=" list-style:none; float:left; padding:0 5px;width:150px"><a href="http://ahotua.vn/feedback/index" style="color:#f0f0f0; text-decoration:none; display:block; line-height:32px">Ý kiến khách hàng</a></li>
-                <li style=" list-style:none; float:left; padding:0 5px;width:150px"><a href="http://ahotua.vn/contactUs/infor" style="color:#f0f0f0; text-decoration:none; display:block; line-height:32px">Liên hệ</a></li>
+            <ul class="mail-one" style=" height:125px; background:#007CC3; padding:0; margin:0">
+            	<li style=" list-style:none; float:left; padding:0 5px;width:100%"><a href="http://ahotua.vn/information?category=Destination&city=${outboundToLocation}" style="color:#f0f0f0; text-decoration:none; display:block; line-height:32px">Các địa điểm nổi tiếng ${outboundToLocation}</a></li>
+                <li style=" list-style:none; float:left; padding:0 5px;width:100%"><a href="http://ahotua.vn/information?category=Hotel&city=${outboundToLocation}" style="color:#f0f0f0; text-decoration:none; display:block; line-height:32px">Khách sạn ${outboundToLocation}</a></li>
+				
+                <li style=" list-style:none; float:left; padding:0 5px;width:100%"><a href="http://ahotua.vn/information?category=Taxi&city=${outboundToLocation}" style="color:#f0f0f0; text-decoration:none; display:block; line-height:32px">Các hãng Taxi ${outboundToLocation}</a></li>
+				
+				<li style=" list-style:none; float:left; padding:0 5px;width:100%"><a href="http://ahotua.vn/information?category=Tour&city=${outboundToLocation}" style="color:#f0f0f0; text-decoration:none; display:block; line-height:32px">Các Tour du lịch ${outboundToLocation}</a></li>
             </ul>
         </div>
         

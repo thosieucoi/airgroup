@@ -24,12 +24,12 @@ public class VietnamAirlinesTest {
 		CuriositySearch search = new CuriositySearch();
 		search.setDepartureCode("HAN");
 		search.setArrivalCode("SGN");
-		search.setOutboundDate(DATE_FORMATTER.parseDateTime("2015-01-08"));
+		search.setOutboundDate(DATE_FORMATTER.parseDateTime("2015-04-17"));
 //		search.setInboundDate(DATE_FORMATTER.parseDateTime("2013-12-30"));
 		search.setAdultsCount(1);
 		search.setChildrenCount(0);
 		search.setInfantsCount(0);
-		search.setInboundDate(DATE_FORMATTER.parseDateTime("2015-01-10"));
+		//search.setInboundDate(DATE_FORMATTER.parseDateTime("2015-01-10"));
 		List<CuriosityFare> fares = vietnamFlight.getFare(search);
 		System.err.println("Load data");
 		for (CuriosityFare fare : fares) {
